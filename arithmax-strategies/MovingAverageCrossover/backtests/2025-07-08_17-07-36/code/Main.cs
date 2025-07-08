@@ -1,0 +1,95 @@
+#region imports
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Globalization;
+    using System.Drawing;
+    using QuantConnect;
+    using QuantConnect.Algorithm.Framework;
+    using QuantConnect.Algorithm.Framework.Selection;
+    using QuantConnect.Algorithm.Framework.Alphas;
+    using QuantConnect.Algorithm.Framework.Portfolio;
+    using QuantConnect.Algorithm.Framework.Portfolio.SignalExports;
+    using QuantConnect.Algorithm.Framework.Execution;
+    using QuantConnect.Algorithm.Framework.Risk;
+    using QuantConnect.Algorithm.Selection;
+    using QuantConnect.Api;
+    using QuantConnect.Parameters;
+    using QuantConnect.Benchmarks;
+    using QuantConnect.Brokerages;
+    using QuantConnect.Commands;
+    using QuantConnect.Configuration;
+    using QuantConnect.Util;
+    using QuantConnect.Interfaces;
+    using QuantConnect.Algorithm;
+    using QuantConnect.Indicators;
+    using QuantConnect.Data;
+    using QuantConnect.Data.Auxiliary;
+    using QuantConnect.Data.Consolidators;
+    using QuantConnect.Data.Custom;
+    using QuantConnect.Data.Custom.IconicTypes;
+    using QuantConnect.DataSource;
+    using QuantConnect.Data.Fundamental;
+    using QuantConnect.Data.Market;
+    using QuantConnect.Data.Shortable;
+    using QuantConnect.Data.UniverseSelection;
+    using QuantConnect.Notifications;
+    using QuantConnect.Orders;
+    using QuantConnect.Orders.Fees;
+    using QuantConnect.Orders.Fills;
+    using QuantConnect.Orders.OptionExercise;
+    using QuantConnect.Orders.Slippage;
+    using QuantConnect.Orders.TimeInForces;
+    using QuantConnect.Python;
+    using QuantConnect.Scheduling;
+    using QuantConnect.Securities;
+    using QuantConnect.Securities.Equity;
+    using QuantConnect.Securities.Future;
+    using QuantConnect.Securities.Option;
+    using QuantConnect.Securities.Positions;
+    using QuantConnect.Securities.Forex;
+    using QuantConnect.Securities.Crypto;
+    using QuantConnect.Securities.CryptoFuture;
+    using QuantConnect.Securities.IndexOption;
+    using QuantConnect.Securities.Interfaces;
+    using QuantConnect.Securities.Volatility;
+    using QuantConnect.Storage;
+    using QuantConnect.Statistics;
+    using QCAlgorithmFramework = QuantConnect.Algorithm.QCAlgorithm;
+    using QCAlgorithmFrameworkBridge = QuantConnect.Algorithm.QCAlgorithm;
+    using Calendar = QuantConnect.Data.Consolidators.Calendar;
+#endregion
+namespace QuantConnect.Algorithm.CSharp
+{
+    public class MovingAverageCrossover : QCAlgorithm
+    {
+        private IndicatorBase<BarIndicator> _fastMA;
+        private IndicatorBase<BarIndicator> _slowMA;
+
+        public override void Initialize()
+        {
+            SetStartDate(2020, 1, 1);
+            SetEndDate(2021, 1, 1);
+            SetCash(100000);
+
+            var symbol = AddEquity("AAPL", Resolution.Daily).Symbol;
+            _fastMA = SMA(symbol, 50, MovingAverageType.Wilders, Resolution.Daily);
+            _slowMA = SMA(symbol, 200, MovingAverageType.Wilders, Resolution.Daily);
+        }
+
+        public override void OnData(Slice data)
+        {
+            if (!Portfolio.Invested && _fastMA > _slowMA)
+            {
+                SetHoldings("AAPL", 1.0);
+                Debug("Purchased AAPL: Fast MA > Slow MA");
+            }
+            else if (Portfolio.Invested && _fastMA < _slowMA)
+            {
+                Liquidate("AAPL");
+                Debug("Sold AAPL: Fast MA < Slow MA");
+            }
+        }
+    }
+}
