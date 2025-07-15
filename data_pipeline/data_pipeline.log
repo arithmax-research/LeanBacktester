@@ -1,0 +1,25 @@
+2025-07-15 11:23:21,885 - utils - INFO - Testing logging system
+2025-07-15 11:30:41,004 - utils - INFO - Testing logging system
+2025-07-15 11:31:18,538 - utils - INFO - Running in test mode with limited symbols and date range
+2025-07-15 11:31:18,538 - utils - INFO - Starting data download from 2025-07-08 to 2025-07-15
+2025-07-15 11:31:18,539 - utils - INFO - Resolution: minute
+2025-07-15 11:31:18,539 - utils - INFO - Starting Alpaca data download...
+2025-07-15 11:31:18,539 - utils - INFO - Starting download for 2 symbols
+2025-07-15 11:31:18,570 - utils - INFO - Downloading AAPL data for minute resolution
+2025-07-15 11:31:23,628 - utils - ERROR - Error getting bars for AAPL: subscription does not permit querying recent SIP data
+2025-07-15 11:31:23,935 - utils - INFO - Downloading GOOGL data for minute resolution
+2025-07-15 11:31:28,562 - utils - ERROR - Error getting bars for GOOGL: subscription does not permit querying recent SIP data
+2025-07-15 11:31:28,869 - utils - INFO - Download completed
+2025-07-15 11:31:28,870 - utils - INFO - Alpaca download completed
+2025-07-15 11:31:28,870 - utils - INFO - Starting Binance data download...
+2025-07-15 11:31:29,129 - utils - INFO - Starting download for 2 symbols
+2025-07-15 11:31:29,130 - utils - INFO - Downloading BTCUSDT data for minute resolution
+2025-07-15 11:31:32,287 - utils - INFO - Downloading ETHUSDT data for minute resolution
+2025-07-15 11:31:35,472 - utils - INFO - Download completed
+2025-07-15 11:31:35,473 - utils - INFO - Binance download completed
+2025-07-15 11:31:35,473 - utils - INFO - Data pipeline completed successfully!
+2025-07-15 11:32:42,220 - utils - INFO - Starting data download from 2024-07-15 to 2025-07-15
+2025-07-15 11:32:42,220 - utils - INFO - Resolution: minute
+2025-07-15 11:32:42,220 - utils - INFO - Starting Binance data download...
+2025-07-15 11:32:42,568 - utils - INFO - Starting download for 2 symbols
+2025-07-15 11:32:42,593 - utils - INFO - Downloading BTCUSDT data for minute resolution
