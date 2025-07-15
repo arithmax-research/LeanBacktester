@@ -42,11 +42,16 @@ def create_lean_tradebar_csv(data: List[Dict], symbol: str, date: datetime, reso
     csv_content = []
     
     for bar in data:
-        time_ms = milliseconds_since_midnight(bar['timestamp'])
+        if resolution == 'daily':
+            # For daily data, use full date format YYYYMMDD HH:MM
+            time_str = bar['timestamp'].strftime("%Y%m%d %H:%M")
+        else:
+            # For intraday data, use milliseconds since midnight
+            time_str = milliseconds_since_midnight(bar['timestamp'])
         
         # Format: Time, Open, High, Low, Close, Volume
         row = [
-            time_ms,
+            time_str,
             int(bar['open'] * 10000),  # Convert to deci-cents for equity
             int(bar['high'] * 10000),
             int(bar['low'] * 10000),
@@ -62,11 +67,16 @@ def create_lean_crypto_csv(data: List[Dict], symbol: str, date: datetime, resolu
     csv_content = []
     
     for bar in data:
-        time_ms = milliseconds_since_midnight(bar['timestamp'])
+        if resolution == 'daily':
+            # For daily data, use full date format YYYYMMDD HH:MM
+            time_str = bar['timestamp'].strftime("%Y%m%d %H:%M")
+        else:
+            # For intraday data, use milliseconds since midnight
+            time_str = milliseconds_since_midnight(bar['timestamp'])
         
         # Format: Time, Open, High, Low, Close, Volume
         row = [
-            time_ms,
+            time_str,
             float(bar['open']),  # Keep actual prices for crypto
             float(bar['high']),
             float(bar['low']),
