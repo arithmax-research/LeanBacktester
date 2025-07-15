@@ -67,16 +67,11 @@ def create_lean_crypto_csv(data: List[Dict], symbol: str, date: datetime, resolu
     csv_content = []
     
     for bar in data:
-        if resolution == 'daily':
-            # For daily data, use full date format YYYYMMDD HH:MM
-            time_str = bar['timestamp'].strftime("%Y%m%d %H:%M")
-        else:
-            # For intraday data, use milliseconds since midnight
-            time_str = milliseconds_since_midnight(bar['timestamp'])
+        time_ms = milliseconds_since_midnight(bar['timestamp'])
         
         # Format: Time, Open, High, Low, Close, Volume
         row = [
-            time_str,
+            time_ms,
             float(bar['open']),  # Keep actual prices for crypto
             float(bar['high']),
             float(bar['low']),

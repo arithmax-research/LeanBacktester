@@ -1,7 +1,0 @@
-2020-01-01 00:00:00 Launching analysis for 1351789797 with LEAN Engine v2.5.0.0
-2020-01-01 00:00:00 Accurate daily end-times now enabled by default. See more at https://qnt.co/3YHaWHL. To disable it and use legacy daily bars set self.settings.daily_precise_end_time = False.
-2020-03-16 16:00:00 Purchased AAPL: Fast MA > Slow MA
-2020-03-23 16:00:00 Warning: all market orders sent using daily data, or market orders sent after hours are automatically converted into MarketOnOpen orders.
-2020-03-23 16:00:00 Sold AAPL: Fast MA < Slow MA
-2020-06-10 16:00:00 Purchased AAPL: Fast MA > Slow MA
-2020-12-31 16:00:00 Algorithm Id:(1351789797) completed in 0.71 seconds at 3k data points per second. Processing total of 2,032 data points.

@@ -66,29 +66,45 @@ namespace QuantConnect.Algorithm.CSharp
     {
         private SimpleMovingAverage _fastMA;
         private SimpleMovingAverage _slowMA;
+        private Symbol _symbol;
 
         public override void Initialize()
         {
-            SetStartDate(2020, 1, 1);
-            SetEndDate(2021, 1, 1);
+            // Set the date range for backtesting
+            SetStartDate(2021, 1, 1);
+            SetEndDate(2024, 12, 31);
             SetCash(100000);
 
-            var symbol = AddEquity("AAPL", Resolution.Daily).Symbol;
-            _fastMA = SMA(symbol, 50);
-            _slowMA = SMA(symbol, 200);
+            // Add equity with PLTR
+            _symbol = AddEquity("PLTR", Resolution.Daily).Symbol;
+            
+            // Set up moving averages
+            _fastMA = SMA(_symbol, 50);
+            _slowMA = SMA(_symbol, 200);
+
+            // Set warmup period to ensure indicators are ready
+            SetWarmUp(200);
         }
 
         public override void OnData(Slice data)
         {
+            // Don't trade during warmup period
+            if (IsWarmingUp) return;
+            
+            // Ensure both moving averages are ready
+            if (!_fastMA.IsReady || !_slowMA.IsReady) return;
+            
+            // Golden cross: Fast MA crosses above Slow MA (buy signal)
             if (!Portfolio.Invested && _fastMA > _slowMA)
             {
-                SetHoldings("AAPL", 1.0);
-                Debug("Purchased AAPL: Fast MA > Slow MA");
+                SetHoldings(_symbol, 1.0);
+                Debug($"Purchased {_symbol}: Fast MA ({_fastMA.Current.Value:F2}) > Slow MA ({_slowMA.Current.Value:F2})");
             }
+            // Death cross: Fast MA crosses below Slow MA (sell signal)
             else if (Portfolio.Invested && _fastMA < _slowMA)
             {
-                Liquidate("AAPL");
-                Debug("Sold AAPL: Fast MA < Slow MA");
+                Liquidate(_symbol);
+                Debug($"Sold {_symbol}: Fast MA ({_fastMA.Current.Value:F2}) < Slow MA ({_slowMA.Current.Value:F2})");
             }
         }
     }
