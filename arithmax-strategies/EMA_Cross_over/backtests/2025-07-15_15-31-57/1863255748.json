@@ -1,0 +1,2379 @@
+{
+  "rollingWindow": {
+    "M1_20200131": {
+      "tradeStatistics": {
+        "startDateTime": "2020-01-03T21:00:00Z",
+        "endDateTime": "2020-01-29T21:00:00Z",
+        "totalNumberOfTrades": 2,
+        "numberOfWinningTrades": 1,
+        "numberOfLosingTrades": 1,
+        "totalProfitLoss": "13.48",
+        "totalProfit": "98.45",
+        "totalLoss": "-84.97",
+        "largestProfit": "98.45",
+        "largestLoss": "-84.97",
+        "averageProfitLoss": "6.74",
+        "averageProfit": "98.45",
+        "averageLoss": "-84.97",
+        "averageTradeDuration": "13.00:00:00",
+        "averageWinningTradeDuration": "25.00:00:00",
+        "averageLosingTradeDuration": "1.00:00:00",
+        "medianTradeDuration": "25.00:00:00",
+        "medianWinningTradeDuration": "25.00:00:00",
+        "medianLosingTradeDuration": "1.00:00:00",
+        "maxConsecutiveWinningTrades": 1,
+        "maxConsecutiveLosingTrades": 1,
+        "profitLossRatio": "1.1586",
+        "winLossRatio": "1",
+        "winRate": "0.5",
+        "lossRate": "0.5",
+        "averageMAE": "-42.485",
+        "averageMFE": "145.90",
+        "largestMAE": "-84.97",
+        "largestMFE": "291.80",
+        "maximumClosedTradeDrawdown": "-84.97",
+        "maximumIntraTradeDrawdown": "-291.80",
+        "profitLossStandardDeviation": "129.6975",
+        "profitLossDownsideDeviation": "0",
+        "profitFactor": "1.1586",
+        "sharpeRatio": "0.0520",
+        "sortinoRatio": "0",
+        "profitToMaxDrawdownRatio": "0.1586",
+        "maximumEndTradeDrawdown": "-193.35",
+        "averageEndTradeDrawdown": "-139.16",
+        "maximumDrawdownDuration": "00:00:00",
+        "totalFees": "3"
+      },
+      "portfolioStatistics": {
+        "averageWinRate": "0.0010",
+        "averageLossRate": "-0.0009",
+        "profitLossRatio": "1.1101",
+        "winRate": "0.5",
+        "lossRate": "0.5",
+        "expectancy": "0.0551",
+        "startEquity": "100000",
+        "endEquity": "100628.6664",
+        "compoundingAnnualReturn": "0.0781",
+        "drawdown": "0.005",
+        "totalNetProfit": "0.0063",
+        "sharpeRatio": "1.9260",
+        "probabilisticSharpeRatio": "0.7403",
+        "sortinoRatio": "1.6745",
+        "alpha": "0.0114",
+        "beta": "0.1480",
+        "annualStandardDeviation": "0.0175",
+        "annualVariance": "0.0003",
+        "informationRatio": "-1.5600",
+        "trackingError": "0.0748",
+        "treynorRatio": "0.2271",
+        "portfolioTurnover": "0.0164",
+        "valueAtRisk99": "-0.002",
+        "valueAtRisk95": "-0.002"
+      },
+      "closedTrades": []
+    },
+    "M1_20200229": {
+      "tradeStatistics": {
+        "startDateTime": "2020-01-03T21:00:00Z",
+        "endDateTime": "2020-02-26T21:00:00Z",
+        "totalNumberOfTrades": 10,
+        "numberOfWinningTrades": 4,
+        "numberOfLosingTrades": 6,
+        "totalProfitLoss": "-423.86",
+        "totalProfit": "1144.34",
+        "totalLoss": "-1568.20",
+        "largestProfit": "681.90",
+        "largestLoss": "-570.15",
+        "averageProfitLoss": "-42.3860",
+        "averageProfit": "286.0850",
+        "averageLoss": "-261.3667",
+        "averageTradeDuration": "11.19:11:59.9999999",
+        "averageWinningTradeDuration": "16.12:00:00",
+        "averageLosingTradeDuration": "8.16:00:00",
+        "medianTradeDuration": "13.00:00:00",
+        "medianWinningTradeDuration": "21.00:00:00",
+        "medianLosingTradeDuration": "5.00:00:00",
+        "maxConsecutiveWinningTrades": 2,
+        "maxConsecutiveLosingTrades": 2,
+        "profitLossRatio": "1.0946",
+        "winLossRatio": "0.6667",
+        "winRate": "0.4",
+        "lossRate": "0.6",
+        "averageMAE": "-192.9730",
+        "averageMFE": "341.0860",
+        "largestMAE": "-570.15",
+        "largestMFE": "1818.59",
+        "maximumClosedTradeDrawdown": "-1023.94",
+        "maximumIntraTradeDrawdown": "-1830.19",
+        "profitLossStandardDeviation": "348.0583",
+        "profitLossDownsideDeviation": "160.4500",
+        "profitFactor": "0.7297",
+        "sharpeRatio": "-0.1218",
+        "sortinoRatio": "-0.2642",
+        "profitToMaxDrawdownRatio": "-0.4140",
+        "maximumEndTradeDrawdown": "-1526.56",
+        "averageEndTradeDrawdown": "-383.4720",
+        "maximumDrawdownDuration": "5.00:00:00",
+        "totalFees": "12"
+      },
+      "portfolioStatistics": {
+        "averageWinRate": "0.0029",
+        "averageLossRate": "-0.0026",
+        "profitLossRatio": "1.0833",
+        "winRate": "0.4",
+        "lossRate": "0.6",
+        "expectancy": "-0.1667",
+        "startEquity": "100091.118",
+        "endEquity": "100384.0654",
+        "compoundingAnnualReturn": "0.0388",
+        "drawdown": "0.020",
+        "totalNetProfit": "0.0029",
+        "sharpeRatio": "0.1074",
+        "probabilisticSharpeRatio": "0.4254",
+        "sortinoRatio": "0.1396",
+        "alpha": "0.0014",
+        "beta": "-0.0115",
+        "annualStandardDeviation": "0.0717",
+        "annualVariance": "0.0051",
+        "informationRatio": "2.4852",
+        "trackingError": "0.2241",
+        "treynorRatio": "-0.6682",
+        "portfolioTurnover": "0.0531",
+        "valueAtRisk99": "-0.010",
+        "valueAtRisk95": "-0.007"
+      },
+      "closedTrades": []
+    },
+    "M1_20200320": {
+      "tradeStatistics": {
+        "startDateTime": "2020-02-26T21:00:00Z",
+        "endDateTime": "2020-03-16T20:00:00Z",
+        "totalNumberOfTrades": 5,
+        "numberOfWinningTrades": 1,
+        "numberOfLosingTrades": 4,
+        "totalProfitLoss": "-1743.69",
+        "totalProfit": "137.45",
+        "totalLoss": "-1881.14",
+        "largestProfit": "137.45",
+        "largestLoss": "-1024.8",
+        "averageProfitLoss": "-348.7380",
+        "averageProfit": "137.45",
+        "averageLoss": "-470.2850",
+        "averageTradeDuration": "3.19:00:00",
+        "averageWinningTradeDuration": "7.00:00:00",
+        "averageLosingTradeDuration": "2.23:45:00",
+        "medianTradeDuration": "3.23:00:00",
+        "medianWinningTradeDuration": "7.00:00:00",
+        "medianLosingTradeDuration": "3.23:00:00",
+        "maxConsecutiveWinningTrades": 1,
+        "maxConsecutiveLosingTrades": 4,
+        "profitLossRatio": "0.2923",
+        "winLossRatio": "0.25",
+        "winRate": "0.2",
+        "lossRate": "0.8",
+        "averageMAE": "-424.2880",
+        "averageMFE": "147.8120",
+        "largestMAE": "-1024.8",
+        "largestMFE": "293.26",
+        "maximumClosedTradeDrawdown": "-1881.14",
+        "maximumIntraTradeDrawdown": "-2280.30",
+        "profitLossStandardDeviation": "433.3580",
+        "profitLossDownsideDeviation": "389.7533",
+        "profitFactor": "0.0731",
+        "sharpeRatio": "-0.8047",
+        "sortinoRatio": "-0.8948",
+        "profitToMaxDrawdownRatio": "-0.9269",
+        "maximumEndTradeDrawdown": "-1024.8",
+        "averageEndTradeDrawdown": "-496.5500",
+        "maximumDrawdownDuration": "00:00:00",
+        "totalFees": "5"
+      },
+      "portfolioStatistics": {
+        "averageWinRate": "0.0013",
+        "averageLossRate": "-0.0047",
+        "profitLossRatio": "0.2699",
+        "winRate": "0.2",
+        "lossRate": "0.8",
+        "expectancy": "-0.7460",
+        "startEquity": "100384.0654",
+        "endEquity": "102698.16",
+        "compoundingAnnualReturn": "0.5508",
+        "drawdown": "0.021",
+        "totalNetProfit": "0.0231",
+        "sharpeRatio": "1.7961",
+        "probabilisticSharpeRatio": "0.5607",
+        "sortinoRatio": "4.4443",
+        "alpha": "0.1699",
+        "beta": "-0.2377",
+        "annualStandardDeviation": "0.2186",
+        "annualVariance": "0.0478",
+        "informationRatio": "1.2562",
+        "trackingError": "1.0587",
+        "treynorRatio": "-1.6518",
+        "portfolioTurnover": "0.0366",
+        "valueAtRisk99": "-0.031",
+        "valueAtRisk95": "-0.021"
+      },
+      "closedTrades": []
+    },
+    "M3_20200131": {
+      "tradeStatistics": {
+        "startDateTime": "2020-01-03T21:00:00Z",
+        "endDateTime": "2020-01-29T21:00:00Z",
+        "totalNumberOfTrades": 2,
+        "numberOfWinningTrades": 1,
+        "numberOfLosingTrades": 1,
+        "totalProfitLoss": "13.48",
+        "totalProfit": "98.45",
+        "totalLoss": "-84.97",
+        "largestProfit": "98.45",
+        "largestLoss": "-84.97",
+        "averageProfitLoss": "6.74",
+        "averageProfit": "98.45",
+        "averageLoss": "-84.97",
+        "averageTradeDuration": "13.00:00:00",
+        "averageWinningTradeDuration": "25.00:00:00",
+        "averageLosingTradeDuration": "1.00:00:00",
+        "medianTradeDuration": "25.00:00:00",
+        "medianWinningTradeDuration": "25.00:00:00",
+        "medianLosingTradeDuration": "1.00:00:00",
+        "maxConsecutiveWinningTrades": 1,
+        "maxConsecutiveLosingTrades": 1,
+        "profitLossRatio": "1.1586",
+        "winLossRatio": "1",
+        "winRate": "0.5",
+        "lossRate": "0.5",
+        "averageMAE": "-42.485",
+        "averageMFE": "145.90",
+        "largestMAE": "-84.97",
+        "largestMFE": "291.80",
+        "maximumClosedTradeDrawdown": "-84.97",
+        "maximumIntraTradeDrawdown": "-291.80",
+        "profitLossStandardDeviation": "129.6975",
+        "profitLossDownsideDeviation": "0",
+        "profitFactor": "1.1586",
+        "sharpeRatio": "0.0520",
+        "sortinoRatio": "0",
+        "profitToMaxDrawdownRatio": "0.1586",
+        "maximumEndTradeDrawdown": "-193.35",
+        "averageEndTradeDrawdown": "-139.16",
+        "maximumDrawdownDuration": "00:00:00",
+        "totalFees": "3"
+      },
+      "portfolioStatistics": {
+        "averageWinRate": "0.0010",
+        "averageLossRate": "-0.0009",
+        "profitLossRatio": "1.1101",
+        "winRate": "0.5",
+        "lossRate": "0.5",
+        "expectancy": "0.0551",
+        "startEquity": "100000",
+        "endEquity": "100628.6664",
+        "compoundingAnnualReturn": "0.0781",
+        "drawdown": "0.005",
+        "totalNetProfit": "0.0063",
+        "sharpeRatio": "1.9260",
+        "probabilisticSharpeRatio": "0.7403",
+        "sortinoRatio": "1.6745",
+        "alpha": "0.0114",
+        "beta": "0.1480",
+        "annualStandardDeviation": "0.0175",
+        "annualVariance": "0.0003",
+        "informationRatio": "-1.5600",
+        "trackingError": "0.0748",
+        "treynorRatio": "0.2271",
+        "portfolioTurnover": "0.0164",
+        "valueAtRisk99": "-0.002",
+        "valueAtRisk95": "-0.002"
+      },
+      "closedTrades": []
+    },
+    "M3_20200229": {
+      "tradeStatistics": {
+        "startDateTime": "2020-01-03T21:00:00Z",
+        "endDateTime": "2020-02-26T21:00:00Z",
+        "totalNumberOfTrades": 12,
+        "numberOfWinningTrades": 5,
+        "numberOfLosingTrades": 7,
+        "totalProfitLoss": "-410.38",
+        "totalProfit": "1242.79",
+        "totalLoss": "-1653.17",
+        "largestProfit": "681.90",
+        "largestLoss": "-570.15",
+        "averageProfitLoss": "-34.1983",
+        "averageProfit": "248.558",
+        "averageLoss": "-236.1671",
+        "averageTradeDuration": "11.23:59:59.9999999",
+        "averageWinningTradeDuration": "18.04:48:00",
+        "averageLosingTradeDuration": "7.13:42:51.4285714",
+        "medianTradeDuration": "13.00:00:00",
+        "medianWinningTradeDuration": "21.00:00:00",
+        "medianLosingTradeDuration": "3.00:00:00",
+        "maxConsecutiveWinningTrades": 2,
+        "maxConsecutiveLosingTrades": 3,
+        "profitLossRatio": "1.0525",
+        "winLossRatio": "0.7143",
+        "winRate": "0.4167",
+        "lossRate": "0.5833",
+        "averageMAE": "-167.8917",
+        "averageMFE": "308.5550",
+        "largestMAE": "-570.15",
+        "largestMFE": "1818.59",
+        "maximumClosedTradeDrawdown": "-1023.94",
+        "maximumIntraTradeDrawdown": "-1830.19",
+        "profitLossStandardDeviation": "317.8257",
+        "profitLossDownsideDeviation": "160.9305",
+        "profitFactor": "0.7518",
+        "sharpeRatio": "-0.1076",
+        "sortinoRatio": "-0.2125",
+        "profitToMaxDrawdownRatio": "-0.4008",
+        "maximumEndTradeDrawdown": "-1526.56",
+        "averageEndTradeDrawdown": "-342.7533",
+        "maximumDrawdownDuration": "6.00:00:00",
+        "totalFees": "15"
+      },
+      "portfolioStatistics": {
+        "averageWinRate": "0.0025",
+        "averageLossRate": "-0.0024",
+        "profitLossRatio": "1.0393",
+        "winRate": "0.4167",
+        "lossRate": "0.5833",
+        "expectancy": "-0.1503",
+        "startEquity": "100000",
+        "endEquity": "100384.0654",
+        "compoundingAnnualReturn": "0.0240",
+        "drawdown": "0.020",
+        "totalNetProfit": "0.0038",
+        "sharpeRatio": "-0.0857",
+        "probabilisticSharpeRatio": "0.3787",
+        "sortinoRatio": "-0.0907",
+        "alpha": "0.0047",
+        "beta": "0.0288",
+        "annualStandardDeviation": "0.0513",
+        "annualVariance": "0.0026",
+        "informationRatio": "1.8953",
+        "trackingError": "0.1643",
+        "treynorRatio": "-0.1526",
+        "portfolioTurnover": "0.0345",
+        "valueAtRisk99": "-0.007",
+        "valueAtRisk95": "-0.005"
+      },
+      "closedTrades": []
+    },
+    "M3_20200320": {
+      "tradeStatistics": {
+        "startDateTime": "2020-01-03T21:00:00Z",
+        "endDateTime": "2020-03-16T20:00:00Z",
+        "totalNumberOfTrades": 17,
+        "numberOfWinningTrades": 6,
+        "numberOfLosingTrades": 11,
+        "totalProfitLoss": "-2154.07",
+        "totalProfit": "1380.24",
+        "totalLoss": "-3534.31",
+        "largestProfit": "681.90",
+        "largestLoss": "-1024.8",
+        "averageProfitLoss": "-126.7100",
+        "averageProfit": "230.040",
+        "averageLoss": "-321.3009",
+        "averageTradeDuration": "9.14:03:31.7647059",
+        "averageWinningTradeDuration": "16.08:00:00",
+        "averageLosingTradeDuration": "5.21:43:38.1818182",
+        "medianTradeDuration": "5.00:00:00",
+        "medianWinningTradeDuration": "21.00:00:00",
+        "medianLosingTradeDuration": "3.00:00:00",
+        "maxConsecutiveWinningTrades": 2,
+        "maxConsecutiveLosingTrades": 4,
+        "profitLossRatio": "0.7160",
+        "winLossRatio": "0.5455",
+        "winRate": "0.3529",
+        "lossRate": "0.6471",
+        "averageMAE": "-243.3024",
+        "averageMFE": "261.2776",
+        "largestMAE": "-1024.8",
+        "largestMFE": "1818.59",
+        "maximumClosedTradeDrawdown": "-2613.05",
+        "maximumIntraTradeDrawdown": "-3513.60",
+        "profitLossStandardDeviation": "371.7799",
+        "profitLossDownsideDeviation": "273.9770",
+        "profitFactor": "0.3905",
+        "sharpeRatio": "-0.3408",
+        "sortinoRatio": "-0.4625",
+        "profitToMaxDrawdownRatio": "-0.8244",
+        "maximumEndTradeDrawdown": "-1526.56",
+        "averageEndTradeDrawdown": "-387.9876",
+        "maximumDrawdownDuration": "6.00:00:00",
+        "totalFees": "20"
+      },
+      "portfolioStatistics": {
+        "averageWinRate": "0.0023",
+        "averageLossRate": "-0.0033",
+        "profitLossRatio": "0.7007",
+        "winRate": "0.3529",
+        "lossRate": "0.6471",
+        "expectancy": "-0.3997",
+        "startEquity": "100000",
+        "endEquity": "102698.16",
+        "compoundingAnnualReturn": "0.1310",
+        "drawdown": "0.032",
+        "totalNetProfit": "0.0270",
+        "sharpeRatio": "0.6790",
+        "probabilisticSharpeRatio": "0.4592",
+        "sortinoRatio": "0.8678",
+        "alpha": "-0.0471",
+        "beta": "-0.2081",
+        "annualStandardDeviation": "0.1121",
+        "annualVariance": "0.0126",
+        "informationRatio": "1.2814",
+        "trackingError": "0.5216",
+        "treynorRatio": "-0.3659",
+        "portfolioTurnover": "0.0350",
+        "valueAtRisk99": "-0.016",
+        "valueAtRisk95": "-0.011"
+      },
+      "closedTrades": []
+    },
+    "M6_20200131": {
+      "tradeStatistics": {
+        "startDateTime": "2020-01-03T21:00:00Z",
+        "endDateTime": "2020-01-29T21:00:00Z",
+        "totalNumberOfTrades": 2,
+        "numberOfWinningTrades": 1,
+        "numberOfLosingTrades": 1,
+        "totalProfitLoss": "13.48",
+        "totalProfit": "98.45",
+        "totalLoss": "-84.97",
+        "largestProfit": "98.45",
+        "largestLoss": "-84.97",
+        "averageProfitLoss": "6.74",
+        "averageProfit": "98.45",
+        "averageLoss": "-84.97",
+        "averageTradeDuration": "13.00:00:00",
+        "averageWinningTradeDuration": "25.00:00:00",
+        "averageLosingTradeDuration": "1.00:00:00",
+        "medianTradeDuration": "25.00:00:00",
+        "medianWinningTradeDuration": "25.00:00:00",
+        "medianLosingTradeDuration": "1.00:00:00",
+        "maxConsecutiveWinningTrades": 1,
+        "maxConsecutiveLosingTrades": 1,
+        "profitLossRatio": "1.1586",
+        "winLossRatio": "1",
+        "winRate": "0.5",
+        "lossRate": "0.5",
+        "averageMAE": "-42.485",
+        "averageMFE": "145.90",
+        "largestMAE": "-84.97",
+        "largestMFE": "291.80",
+        "maximumClosedTradeDrawdown": "-84.97",
+        "maximumIntraTradeDrawdown": "-291.80",
+        "profitLossStandardDeviation": "129.6975",
+        "profitLossDownsideDeviation": "0",
+        "profitFactor": "1.1586",
+        "sharpeRatio": "0.0520",
+        "sortinoRatio": "0",
+        "profitToMaxDrawdownRatio": "0.1586",
+        "maximumEndTradeDrawdown": "-193.35",
+        "averageEndTradeDrawdown": "-139.16",
+        "maximumDrawdownDuration": "00:00:00",
+        "totalFees": "3"
+      },
+      "portfolioStatistics": {
+        "averageWinRate": "0.0010",
+        "averageLossRate": "-0.0009",
+        "profitLossRatio": "1.1101",
+        "winRate": "0.5",
+        "lossRate": "0.5",
+        "expectancy": "0.0551",
+        "startEquity": "100000",
+        "endEquity": "100628.6664",
+        "compoundingAnnualReturn": "0.0781",
+        "drawdown": "0.005",
+        "totalNetProfit": "0.0063",
+        "sharpeRatio": "1.9260",
+        "probabilisticSharpeRatio": "0.7403",
+        "sortinoRatio": "1.6745",
+        "alpha": "0.0114",
+        "beta": "0.1480",
+        "annualStandardDeviation": "0.0175",
+        "annualVariance": "0.0003",
+        "informationRatio": "-1.5600",
+        "trackingError": "0.0748",
+        "treynorRatio": "0.2271",
+        "portfolioTurnover": "0.0164",
+        "valueAtRisk99": "-0.002",
+        "valueAtRisk95": "-0.002"
+      },
+      "closedTrades": []
+    },
+    "M6_20200229": {
+      "tradeStatistics": {
+        "startDateTime": "2020-01-03T21:00:00Z",
+        "endDateTime": "2020-02-26T21:00:00Z",
+        "totalNumberOfTrades": 12,
+        "numberOfWinningTrades": 5,
+        "numberOfLosingTrades": 7,
+        "totalProfitLoss": "-410.38",
+        "totalProfit": "1242.79",
+        "totalLoss": "-1653.17",
+        "largestProfit": "681.90",
+        "largestLoss": "-570.15",
+        "averageProfitLoss": "-34.1983",
+        "averageProfit": "248.558",
+        "averageLoss": "-236.1671",
+        "averageTradeDuration": "11.23:59:59.9999999",
+        "averageWinningTradeDuration": "18.04:48:00",
+        "averageLosingTradeDuration": "7.13:42:51.4285714",
+        "medianTradeDuration": "13.00:00:00",
+        "medianWinningTradeDuration": "21.00:00:00",
+        "medianLosingTradeDuration": "3.00:00:00",
+        "maxConsecutiveWinningTrades": 2,
+        "maxConsecutiveLosingTrades": 3,
+        "profitLossRatio": "1.0525",
+        "winLossRatio": "0.7143",
+        "winRate": "0.4167",
+        "lossRate": "0.5833",
+        "averageMAE": "-167.8917",
+        "averageMFE": "308.5550",
+        "largestMAE": "-570.15",
+        "largestMFE": "1818.59",
+        "maximumClosedTradeDrawdown": "-1023.94",
+        "maximumIntraTradeDrawdown": "-1830.19",
+        "profitLossStandardDeviation": "317.8257",
+        "profitLossDownsideDeviation": "160.9305",
+        "profitFactor": "0.7518",
+        "sharpeRatio": "-0.1076",
+        "sortinoRatio": "-0.2125",
+        "profitToMaxDrawdownRatio": "-0.4008",
+        "maximumEndTradeDrawdown": "-1526.56",
+        "averageEndTradeDrawdown": "-342.7533",
+        "maximumDrawdownDuration": "6.00:00:00",
+        "totalFees": "15"
+      },
+      "portfolioStatistics": {
+        "averageWinRate": "0.0025",
+        "averageLossRate": "-0.0024",
+        "profitLossRatio": "1.0393",
+        "winRate": "0.4167",
+        "lossRate": "0.5833",
+        "expectancy": "-0.1503",
+        "startEquity": "100000",
+        "endEquity": "100384.0654",
+        "compoundingAnnualReturn": "0.0240",
+        "drawdown": "0.020",
+        "totalNetProfit": "0.0038",
+        "sharpeRatio": "-0.0857",
+        "probabilisticSharpeRatio": "0.3787",
+        "sortinoRatio": "-0.0907",
+        "alpha": "0.0047",
+        "beta": "0.0288",
+        "annualStandardDeviation": "0.0513",
+        "annualVariance": "0.0026",
+        "informationRatio": "1.8953",
+        "trackingError": "0.1643",
+        "treynorRatio": "-0.1526",
+        "portfolioTurnover": "0.0345",
+        "valueAtRisk99": "-0.007",
+        "valueAtRisk95": "-0.005"
+      },
+      "closedTrades": []
+    },
+    "M6_20200320": {
+      "tradeStatistics": {
+        "startDateTime": "2020-01-03T21:00:00Z",
+        "endDateTime": "2020-03-16T20:00:00Z",
+        "totalNumberOfTrades": 17,
+        "numberOfWinningTrades": 6,
+        "numberOfLosingTrades": 11,
+        "totalProfitLoss": "-2154.07",
+        "totalProfit": "1380.24",
+        "totalLoss": "-3534.31",
+        "largestProfit": "681.90",
+        "largestLoss": "-1024.8",
+        "averageProfitLoss": "-126.7100",
+        "averageProfit": "230.040",
+        "averageLoss": "-321.3009",
+        "averageTradeDuration": "9.14:03:31.7647059",
+        "averageWinningTradeDuration": "16.08:00:00",
+        "averageLosingTradeDuration": "5.21:43:38.1818182",
+        "medianTradeDuration": "5.00:00:00",
+        "medianWinningTradeDuration": "21.00:00:00",
+        "medianLosingTradeDuration": "3.00:00:00",
+        "maxConsecutiveWinningTrades": 2,
+        "maxConsecutiveLosingTrades": 4,
+        "profitLossRatio": "0.7160",
+        "winLossRatio": "0.5455",
+        "winRate": "0.3529",
+        "lossRate": "0.6471",
+        "averageMAE": "-243.3024",
+        "averageMFE": "261.2776",
+        "largestMAE": "-1024.8",
+        "largestMFE": "1818.59",
+        "maximumClosedTradeDrawdown": "-2613.05",
+        "maximumIntraTradeDrawdown": "-3513.60",
+        "profitLossStandardDeviation": "371.7799",
+        "profitLossDownsideDeviation": "273.9770",
+        "profitFactor": "0.3905",
+        "sharpeRatio": "-0.3408",
+        "sortinoRatio": "-0.4625",
+        "profitToMaxDrawdownRatio": "-0.8244",
+        "maximumEndTradeDrawdown": "-1526.56",
+        "averageEndTradeDrawdown": "-387.9876",
+        "maximumDrawdownDuration": "6.00:00:00",
+        "totalFees": "20"
+      },
+      "portfolioStatistics": {
+        "averageWinRate": "0.0023",
+        "averageLossRate": "-0.0033",
+        "profitLossRatio": "0.7007",
+        "winRate": "0.3529",
+        "lossRate": "0.6471",
+        "expectancy": "-0.3997",
+        "startEquity": "100000",
+        "endEquity": "102698.16",
+        "compoundingAnnualReturn": "0.1310",
+        "drawdown": "0.032",
+        "totalNetProfit": "0.0270",
+        "sharpeRatio": "0.6790",
+        "probabilisticSharpeRatio": "0.4592",
+        "sortinoRatio": "0.8678",
+        "alpha": "-0.0471",
+        "beta": "-0.2081",
+        "annualStandardDeviation": "0.1121",
+        "annualVariance": "0.0126",
+        "informationRatio": "1.2814",
+        "trackingError": "0.5216",
+        "treynorRatio": "-0.3659",
+        "portfolioTurnover": "0.0350",
+        "valueAtRisk99": "-0.016",
+        "valueAtRisk95": "-0.011"
+      },
+      "closedTrades": []
+    },
+    "M12_20200131": {
+      "tradeStatistics": {
+        "startDateTime": "2020-01-03T21:00:00Z",
+        "endDateTime": "2020-01-29T21:00:00Z",
+        "totalNumberOfTrades": 2,
+        "numberOfWinningTrades": 1,
+        "numberOfLosingTrades": 1,
+        "totalProfitLoss": "13.48",
+        "totalProfit": "98.45",
+        "totalLoss": "-84.97",
+        "largestProfit": "98.45",
+        "largestLoss": "-84.97",
+        "averageProfitLoss": "6.74",
+        "averageProfit": "98.45",
+        "averageLoss": "-84.97",
+        "averageTradeDuration": "13.00:00:00",
+        "averageWinningTradeDuration": "25.00:00:00",
+        "averageLosingTradeDuration": "1.00:00:00",
+        "medianTradeDuration": "25.00:00:00",
+        "medianWinningTradeDuration": "25.00:00:00",
+        "medianLosingTradeDuration": "1.00:00:00",
+        "maxConsecutiveWinningTrades": 1,
+        "maxConsecutiveLosingTrades": 1,
+        "profitLossRatio": "1.1586",
+        "winLossRatio": "1",
+        "winRate": "0.5",
+        "lossRate": "0.5",
+        "averageMAE": "-42.485",
+        "averageMFE": "145.90",
+        "largestMAE": "-84.97",
+        "largestMFE": "291.80",
+        "maximumClosedTradeDrawdown": "-84.97",
+        "maximumIntraTradeDrawdown": "-291.80",
+        "profitLossStandardDeviation": "129.6975",
+        "profitLossDownsideDeviation": "0",
+        "profitFactor": "1.1586",
+        "sharpeRatio": "0.0520",
+        "sortinoRatio": "0",
+        "profitToMaxDrawdownRatio": "0.1586",
+        "maximumEndTradeDrawdown": "-193.35",
+        "averageEndTradeDrawdown": "-139.16",
+        "maximumDrawdownDuration": "00:00:00",
+        "totalFees": "3"
+      },
+      "portfolioStatistics": {
+        "averageWinRate": "0.0010",
+        "averageLossRate": "-0.0009",
+        "profitLossRatio": "1.1101",
+        "winRate": "0.5",
+        "lossRate": "0.5",
+        "expectancy": "0.0551",
+        "startEquity": "100000",
+        "endEquity": "100628.6664",
+        "compoundingAnnualReturn": "0.0781",
+        "drawdown": "0.005",
+        "totalNetProfit": "0.0063",
+        "sharpeRatio": "1.9260",
+        "probabilisticSharpeRatio": "0.7403",
+        "sortinoRatio": "1.6745",
+        "alpha": "0.0114",
+        "beta": "0.1480",
+        "annualStandardDeviation": "0.0175",
+        "annualVariance": "0.0003",
+        "informationRatio": "-1.5600",
+        "trackingError": "0.0748",
+        "treynorRatio": "0.2271",
+        "portfolioTurnover": "0.0164",
+        "valueAtRisk99": "-0.002",
+        "valueAtRisk95": "-0.002"
+      },
+      "closedTrades": []
+    },
+    "M12_20200229": {
+      "tradeStatistics": {
+        "startDateTime": "2020-01-03T21:00:00Z",
+        "endDateTime": "2020-02-26T21:00:00Z",
+        "totalNumberOfTrades": 12,
+        "numberOfWinningTrades": 5,
+        "numberOfLosingTrades": 7,
+        "totalProfitLoss": "-410.38",
+        "totalProfit": "1242.79",
+        "totalLoss": "-1653.17",
+        "largestProfit": "681.90",
+        "largestLoss": "-570.15",
+        "averageProfitLoss": "-34.1983",
+        "averageProfit": "248.558",
+        "averageLoss": "-236.1671",
+        "averageTradeDuration": "11.23:59:59.9999999",
+        "averageWinningTradeDuration": "18.04:48:00",
+        "averageLosingTradeDuration": "7.13:42:51.4285714",
+        "medianTradeDuration": "13.00:00:00",
+        "medianWinningTradeDuration": "21.00:00:00",
+        "medianLosingTradeDuration": "3.00:00:00",
+        "maxConsecutiveWinningTrades": 2,
+        "maxConsecutiveLosingTrades": 3,
+        "profitLossRatio": "1.0525",
+        "winLossRatio": "0.7143",
+        "winRate": "0.4167",
+        "lossRate": "0.5833",
+        "averageMAE": "-167.8917",
+        "averageMFE": "308.5550",
+        "largestMAE": "-570.15",
+        "largestMFE": "1818.59",
+        "maximumClosedTradeDrawdown": "-1023.94",
+        "maximumIntraTradeDrawdown": "-1830.19",
+        "profitLossStandardDeviation": "317.8257",
+        "profitLossDownsideDeviation": "160.9305",
+        "profitFactor": "0.7518",
+        "sharpeRatio": "-0.1076",
+        "sortinoRatio": "-0.2125",
+        "profitToMaxDrawdownRatio": "-0.4008",
+        "maximumEndTradeDrawdown": "-1526.56",
+        "averageEndTradeDrawdown": "-342.7533",
+        "maximumDrawdownDuration": "6.00:00:00",
+        "totalFees": "15"
+      },
+      "portfolioStatistics": {
+        "averageWinRate": "0.0025",
+        "averageLossRate": "-0.0024",
+        "profitLossRatio": "1.0393",
+        "winRate": "0.4167",
+        "lossRate": "0.5833",
+        "expectancy": "-0.1503",
+        "startEquity": "100000",
+        "endEquity": "100384.0654",
+        "compoundingAnnualReturn": "0.0240",
+        "drawdown": "0.020",
+        "totalNetProfit": "0.0038",
+        "sharpeRatio": "-0.0857",
+        "probabilisticSharpeRatio": "0.3787",
+        "sortinoRatio": "-0.0907",
+        "alpha": "0.0047",
+        "beta": "0.0288",
+        "annualStandardDeviation": "0.0513",
+        "annualVariance": "0.0026",
+        "informationRatio": "1.8953",
+        "trackingError": "0.1643",
+        "treynorRatio": "-0.1526",
+        "portfolioTurnover": "0.0345",
+        "valueAtRisk99": "-0.007",
+        "valueAtRisk95": "-0.005"
+      },
+      "closedTrades": []
+    },
+    "M12_20200320": {
+      "tradeStatistics": {
+        "startDateTime": "2020-01-03T21:00:00Z",
+        "endDateTime": "2020-03-16T20:00:00Z",
+        "totalNumberOfTrades": 17,
+        "numberOfWinningTrades": 6,
+        "numberOfLosingTrades": 11,
+        "totalProfitLoss": "-2154.07",
+        "totalProfit": "1380.24",
+        "totalLoss": "-3534.31",
+        "largestProfit": "681.90",
+        "largestLoss": "-1024.8",
+        "averageProfitLoss": "-126.7100",
+        "averageProfit": "230.040",
+        "averageLoss": "-321.3009",
+        "averageTradeDuration": "9.14:03:31.7647059",
+        "averageWinningTradeDuration": "16.08:00:00",
+        "averageLosingTradeDuration": "5.21:43:38.1818182",
+        "medianTradeDuration": "5.00:00:00",
+        "medianWinningTradeDuration": "21.00:00:00",
+        "medianLosingTradeDuration": "3.00:00:00",
+        "maxConsecutiveWinningTrades": 2,
+        "maxConsecutiveLosingTrades": 4,
+        "profitLossRatio": "0.7160",
+        "winLossRatio": "0.5455",
+        "winRate": "0.3529",
+        "lossRate": "0.6471",
+        "averageMAE": "-243.3024",
+        "averageMFE": "261.2776",
+        "largestMAE": "-1024.8",
+        "largestMFE": "1818.59",
+        "maximumClosedTradeDrawdown": "-2613.05",
+        "maximumIntraTradeDrawdown": "-3513.60",
+        "profitLossStandardDeviation": "371.7799",
+        "profitLossDownsideDeviation": "273.9770",
+        "profitFactor": "0.3905",
+        "sharpeRatio": "-0.3408",
+        "sortinoRatio": "-0.4625",
+        "profitToMaxDrawdownRatio": "-0.8244",
+        "maximumEndTradeDrawdown": "-1526.56",
+        "averageEndTradeDrawdown": "-387.9876",
+        "maximumDrawdownDuration": "6.00:00:00",
+        "totalFees": "20"
+      },
+      "portfolioStatistics": {
+        "averageWinRate": "0.0023",
+        "averageLossRate": "-0.0033",
+        "profitLossRatio": "0.7007",
+        "winRate": "0.3529",
+        "lossRate": "0.6471",
+        "expectancy": "-0.3997",
+        "startEquity": "100000",
+        "endEquity": "102698.16",
+        "compoundingAnnualReturn": "0.1310",
+        "drawdown": "0.032",
+        "totalNetProfit": "0.0270",
+        "sharpeRatio": "0.6790",
+        "probabilisticSharpeRatio": "0.4592",
+        "sortinoRatio": "0.8678",
+        "alpha": "-0.0471",
+        "beta": "-0.2081",
+        "annualStandardDeviation": "0.1121",
+        "annualVariance": "0.0126",
+        "informationRatio": "1.2814",
+        "trackingError": "0.5216",
+        "treynorRatio": "-0.3659",
+        "portfolioTurnover": "0.0350",
+        "valueAtRisk99": "-0.016",
+        "valueAtRisk95": "-0.011"
+      },
+      "closedTrades": []
+    }
+  },
+  "totalPerformance": {
+    "tradeStatistics": {
+      "startDateTime": "2020-01-03T21:00:00Z",
+      "endDateTime": "2020-03-16T20:00:00Z",
+      "totalNumberOfTrades": 17,
+      "numberOfWinningTrades": 6,
+      "numberOfLosingTrades": 11,
+      "totalProfitLoss": "-2154.07",
+      "totalProfit": "1380.24",
+      "totalLoss": "-3534.31",
+      "largestProfit": "681.90",
+      "largestLoss": "-1024.8",
+      "averageProfitLoss": "-126.7100",
+      "averageProfit": "230.040",
+      "averageLoss": "-321.3009",
+      "averageTradeDuration": "9.14:03:31.7647059",
+      "averageWinningTradeDuration": "16.08:00:00",
+      "averageLosingTradeDuration": "5.21:43:38.1818182",
+      "medianTradeDuration": "5.00:00:00",
+      "medianWinningTradeDuration": "21.00:00:00",
+      "medianLosingTradeDuration": "3.00:00:00",
+      "maxConsecutiveWinningTrades": 2,
+      "maxConsecutiveLosingTrades": 4,
+      "profitLossRatio": "0.7160",
+      "winLossRatio": "0.5455",
+      "winRate": "0.3529",
+      "lossRate": "0.6471",
+      "averageMAE": "-243.3024",
+      "averageMFE": "261.2776",
+      "largestMAE": "-1024.8",
+      "largestMFE": "1818.59",
+      "maximumClosedTradeDrawdown": "-2613.05",
+      "maximumIntraTradeDrawdown": "-3513.60",
+      "profitLossStandardDeviation": "371.7799",
+      "profitLossDownsideDeviation": "273.9770",
+      "profitFactor": "0.3905",
+      "sharpeRatio": "-0.3408",
+      "sortinoRatio": "-0.4625",
+      "profitToMaxDrawdownRatio": "-0.8244",
+      "maximumEndTradeDrawdown": "-1526.56",
+      "averageEndTradeDrawdown": "-387.9876",
+      "maximumDrawdownDuration": "6.00:00:00",
+      "totalFees": "20"
+    },
+    "portfolioStatistics": {
+      "averageWinRate": "0.0023",
+      "averageLossRate": "-0.0033",
+      "profitLossRatio": "0.7007",
+      "winRate": "0.3529",
+      "lossRate": "0.6471",
+      "expectancy": "-0.3997",
+      "startEquity": "100000",
+      "endEquity": "102698.16",
+      "compoundingAnnualReturn": "0.1310",
+      "drawdown": "0.032",
+      "totalNetProfit": "0.0270",
+      "sharpeRatio": "0.6790",
+      "probabilisticSharpeRatio": "0.4592",
+      "sortinoRatio": "0.8678",
+      "alpha": "-0.0471",
+      "beta": "-0.2081",
+      "annualStandardDeviation": "0.1121",
+      "annualVariance": "0.0126",
+      "informationRatio": "1.2814",
+      "trackingError": "0.5216",
+      "treynorRatio": "-0.3659",
+      "portfolioTurnover": "0.0350",
+      "valueAtRisk99": "-0.016",
+      "valueAtRisk95": "-0.011"
+    },
+    "closedTrades": [
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2020-01-03T21:00:00Z",
+        "entryPrice": 314.272787922,
+        "direction": 0,
+        "quantity": 26.0,
+        "exitTime": "2020-01-28T21:00:00Z",
+        "exitPrice": 318.059442828,
+        "profitLoss": 98.45,
+        "totalFees": 2.0,
+        "mae": 0.00,
+        "mfe": 291.80,
+        "duration": "25.00:00:00",
+        "endTradeDrawdown": -193.35,
+        "isWin": true
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2020-01-28T21:00:00Z",
+        "entryPrice": 318.059442828,
+        "direction": 1,
+        "quantity": 26.0,
+        "exitTime": "2020-01-29T21:00:00Z",
+        "exitPrice": 321.32751192,
+        "profitLoss": -84.97,
+        "totalFees": 1.0,
+        "mae": -84.97,
+        "mfe": 0.00,
+        "duration": "1.00:00:00",
+        "endTradeDrawdown": -84.97,
+        "isWin": false
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2020-01-29T21:00:00Z",
+        "entryPrice": 321.32751192,
+        "direction": 0,
+        "quantity": 26.0,
+        "exitTime": "2020-02-03T21:00:00Z",
+        "exitPrice": 316.38626973,
+        "profitLoss": -128.47,
+        "totalFees": 1.0,
+        "mae": -169.69,
+        "mfe": 0.00,
+        "duration": "5.00:00:00",
+        "endTradeDrawdown": -128.47,
+        "isWin": false
+      },
+      {
+        "symbol": {
+          "value": "NVDA",
+          "id": "NVDA 2T",
+          "permtick": "NVDA"
+        },
+        "entryTime": "2020-01-31T21:00:00Z",
+        "entryPrice": 243.97,
+        "direction": 0,
+        "quantity": 34.0,
+        "exitTime": "2020-02-03T21:00:00Z",
+        "exitPrice": 235.7,
+        "profitLoss": -281.18,
+        "totalFees": 2.0,
+        "mae": -281.18,
+        "mfe": 0.00,
+        "duration": "3.00:00:00",
+        "endTradeDrawdown": -281.18,
+        "isWin": false
+      },
+      {
+        "symbol": {
+          "value": "GOOGL",
+          "id": "GOOG T1AZ164W5VTX",
+          "permtick": "GOOGL"
+        },
+        "entryTime": "2020-01-03T21:00:00Z",
+        "entryPrice": 1348.0,
+        "direction": 0,
+        "quantity": 6.0,
+        "exitTime": "2020-02-03T21:00:00Z",
+        "exitPrice": 1461.65,
+        "profitLoss": 681.90,
+        "totalFees": 2.0,
+        "mae": 0.0,
+        "mfe": 820.14,
+        "duration": "31.00:00:00",
+        "endTradeDrawdown": -138.24,
+        "isWin": true
+      },
+      {
+        "symbol": {
+          "value": "GOOGL",
+          "id": "GOOG T1AZ164W5VTX",
+          "permtick": "GOOGL"
+        },
+        "entryTime": "2020-02-03T21:00:00Z",
+        "entryPrice": 1461.65,
+        "direction": 1,
+        "quantity": 5.0,
+        "exitTime": "2020-02-04T21:00:00Z",
+        "exitPrice": 1454.49,
+        "profitLoss": 35.80,
+        "totalFees": 1.0,
+        "mae": 0.00,
+        "mfe": 81.20,
+        "duration": "1.00:00:00",
+        "endTradeDrawdown": -45.40,
+        "isWin": true
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2020-02-03T21:00:00Z",
+        "entryPrice": 316.38626973,
+        "direction": 1,
+        "quantity": 26.0,
+        "exitTime": "2020-02-05T21:00:00Z",
+        "exitPrice": 325.133736102,
+        "profitLoss": -227.43,
+        "totalFees": 1.0,
+        "mae": -241.93,
+        "mfe": 0.00,
+        "duration": "2.00:00:00",
+        "endTradeDrawdown": -227.43,
+        "isWin": false
+      },
+      {
+        "symbol": {
+          "value": "NVDA",
+          "id": "NVDA 2T",
+          "permtick": "NVDA"
+        },
+        "entryTime": "2020-02-03T21:00:00Z",
+        "entryPrice": 235.7,
+        "direction": 1,
+        "quantity": 35.0,
+        "exitTime": "2020-02-05T21:00:00Z",
+        "exitPrice": 251.99,
+        "profitLoss": -570.15,
+        "totalFees": 1.0,
+        "mae": -570.15,
+        "mfe": 0.0,
+        "duration": "2.00:00:00",
+        "endTradeDrawdown": -570.15,
+        "isWin": false
+      },
+      {
+        "symbol": {
+          "value": "NVDA",
+          "id": "NVDA 2T",
+          "permtick": "NVDA"
+        },
+        "entryTime": "2020-02-05T21:00:00Z",
+        "entryPrice": 251.99,
+        "direction": 0,
+        "quantity": 4.0,
+        "exitTime": "2020-02-18T21:00:00Z",
+        "exitPrice": 285.6435,
+        "profitLoss": 134.61,
+        "totalFees": 1.0,
+        "mae": -1.60,
+        "mfe": 178.32,
+        "duration": "13.00:00:00",
+        "endTradeDrawdown": -43.71,
+        "isWin": true
+      },
+      {
+        "symbol": {
+          "value": "GOOGL",
+          "id": "GOOG T1AZ164W5VTX",
+          "permtick": "GOOGL"
+        },
+        "entryTime": "2020-02-04T21:00:00Z",
+        "entryPrice": 1454.49,
+        "direction": 0,
+        "quantity": 5.0,
+        "exitTime": "2020-02-24T21:00:00Z",
+        "exitPrice": 1423.05,
+        "profitLoss": -157.20,
+        "totalFees": 1.0,
+        "mae": -173.15,
+        "mfe": 351.90,
+        "duration": "20.00:00:00",
+        "endTradeDrawdown": -509.10,
+        "isWin": false
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2020-02-05T21:00:00Z",
+        "entryPrice": 325.133736102,
+        "direction": 0,
+        "quantity": 25.0,
+        "exitTime": "2020-02-25T21:00:00Z",
+        "exitPrice": 316.983132648,
+        "profitLoss": -203.77,
+        "totalFees": 1.0,
+        "mae": -480.43,
+        "mfe": 160.71,
+        "duration": "20.00:00:00",
+        "endTradeDrawdown": -364.48,
+        "isWin": false
+      },
+      {
+        "symbol": {
+          "value": "NVDA",
+          "id": "NVDA 2T",
+          "permtick": "NVDA"
+        },
+        "entryTime": "2020-02-05T21:00:00Z",
+        "entryPrice": 251.99,
+        "direction": 0,
+        "quantity": 29.0,
+        "exitTime": "2020-02-26T21:00:00Z",
+        "exitPrice": 262.06,
+        "profitLoss": 292.03,
+        "totalFees": 1.0,
+        "mae": -11.60,
+        "mfe": 1818.59,
+        "duration": "21.00:00:00",
+        "endTradeDrawdown": -1526.56,
+        "isWin": true
+      },
+      {
+        "symbol": {
+          "value": "NVDA",
+          "id": "NVDA 2T",
+          "permtick": "NVDA"
+        },
+        "entryTime": "2020-02-26T21:00:00Z",
+        "entryPrice": 262.06,
+        "direction": 1,
+        "quantity": 31.0,
+        "exitTime": "2020-03-02T21:00:00Z",
+        "exitPrice": 276.9,
+        "profitLoss": -460.04,
+        "totalFees": 1.0,
+        "mae": -460.04,
+        "mfe": 293.26,
+        "duration": "5.00:00:00",
+        "endTradeDrawdown": -753.30,
+        "isWin": false
+      },
+      {
+        "symbol": {
+          "value": "NVDA",
+          "id": "NVDA 2T",
+          "permtick": "NVDA"
+        },
+        "entryTime": "2020-03-02T21:00:00Z",
+        "entryPrice": 276.9,
+        "direction": 0,
+        "quantity": 30.0,
+        "exitTime": "2020-03-04T21:00:00Z",
+        "exitPrice": 270.2,
+        "profitLoss": -201.0,
+        "totalFees": 1.0,
+        "mae": -335.40,
+        "mfe": 228.30,
+        "duration": "2.00:00:00",
+        "endTradeDrawdown": -429.30,
+        "isWin": false
+      },
+      {
+        "symbol": {
+          "value": "NVDA",
+          "id": "NVDA 2T",
+          "permtick": "NVDA"
+        },
+        "entryTime": "2020-03-04T21:00:00Z",
+        "entryPrice": 270.2,
+        "direction": 1,
+        "quantity": 31.0,
+        "exitTime": "2020-03-05T21:00:00Z",
+        "exitPrice": 276.5,
+        "profitLoss": -195.3,
+        "totalFees": 1.0,
+        "mae": -195.3,
+        "mfe": 0.0,
+        "duration": "1.00:00:00",
+        "endTradeDrawdown": -195.3,
+        "isWin": false
+      },
+      {
+        "symbol": {
+          "value": "NVDA",
+          "id": "NVDA 2T",
+          "permtick": "NVDA"
+        },
+        "entryTime": "2020-03-05T21:00:00Z",
+        "entryPrice": 276.5,
+        "direction": 0,
+        "quantity": 28.0,
+        "exitTime": "2020-03-09T20:00:00Z",
+        "exitPrice": 239.9,
+        "profitLoss": -1024.8,
+        "totalFees": 1.0,
+        "mae": -1024.8,
+        "mfe": 0.0,
+        "duration": "3.23:00:00",
+        "endTradeDrawdown": -1024.8,
+        "isWin": false
+      },
+      {
+        "symbol": {
+          "value": "NVDA",
+          "id": "NVDA 2T",
+          "permtick": "NVDA"
+        },
+        "entryTime": "2020-03-09T20:00:00Z",
+        "entryPrice": 239.9,
+        "direction": 1,
+        "quantity": 5.0,
+        "exitTime": "2020-03-16T20:00:00Z",
+        "exitPrice": 212.41,
+        "profitLoss": 137.45,
+        "totalFees": 1.0,
+        "mae": -105.90,
+        "mfe": 217.50,
+        "duration": "7.00:00:00",
+        "endTradeDrawdown": -80.05,
+        "isWin": true
+      }
+    ]
+  },
+  "charts": {
+    "EMA_GOOGL": {
+      "name": "EMA_GOOGL",
+      "chartType": 0,
+      "series": {
+        "EMA": {"name":"EMA","unit":"$","index":0,"seriesType":0,"values":[[1567828680,1183.2205],[1568087880,1185.3205],[1568174280,1187.2614],[1568260680,1190.3793],[1568347080,1194.6261],[1568433480,1198.9502],[1568692680,1202.0626],[1568779080,1204.7119],[1568865480,1207.3727],[1568951880,1210.3610],[1569038280,1212.2161],[1569297480,1214.3565],[1569383880,1214.7349],[1569470280,1217.7068],[1569556680,1220.0481],[1569643080,1220.6102],[1569902280,1220.6606],[1569988680,1219.2644],[1570075080,1215.3268],[1570161480,1212.8605],[1570247880,1212.6795],[1570507080,1212.2576],[1570593480,1210.1502],[1570679880,1209.4121],[1570766280,1209.4176],[1570852680,1210.0169],[1571111880,1210.7553],[1571198280,1213.7538],[1571284680,1216.5392],[1571371080,1219.9926],[1571457480,1222.3181],[1571716680,1224.4097],[1571803080,1226.0087],[1571889480,1229.0203],[1571975880,1231.8860],[1572062280,1234.9730],[1572321480,1240.1166],[1572407880,1242.0731],[1572494280,1243.8471],[1572580680,1245.2712],[1572667080,1247.8406],[1572929880,1251.8186],[1573016280,1255.5921],[1573102680,1258.9652],[1573189080,1263.5342],[1573275480,1267.8643],[1573534680,1270.7610],[1573621080,1273.2800],[1573707480,1275.4609],[1573793880,1278.6694],[1573880280,1283.8952],[1574139480,1287.3185],[1574225880,1289.7253],[1574312280,1290.8810],[1574398680,1291.7628],[1574485080,1291.9444],[1574744280,1293.2488],[1574830680,1295.1299],[1574917080,1296.7489],[1575089880,1297.4481],[1575349080,1296.6302],[1575435480,1296.4501],[1575521880,1298.5920],[1575608280,1301.2937],[1575694680,1304.9220],[1575953880,1308.5475],[1576040280,1311.8182],[1576126680,1314.9069],[1576213080,1318.1053],[1576299480,1320.8448],[1576558680,1324.6406],[1576645080,1327.5215],[1576731480,1329.8442],[1576817880,1332.3771],[1576904280,1334.1717],[1577163480,1335.7391],[1577249880,1336.5668],[1577422680,1339.0338],[1577509080,1340.5201],[1577768280,1340.4430],[1577854680,1340.3427],[1578027480,1343.0415],[1578113880,1344.8013],[1578373080,1349.8498],[1578459480,1354.1603],[1578545880,1359.0060],[1578632280,1364.7949],[1578718680,1370.9059],[1578977880,1377.4891],[1579064280,1382.5464],[1579150680,1387.9419],[1579237080,1393.8675],[1579323480,1402.0249],[1579669080,1409.6653],[1579755480,1416.7610],[1579841880,1423.2304],[1579928280,1427.3199],[1580187480,1427.7399],[1580273880,1429.9076],[1580360280,1432.4592],[1580446680,1434.5345],[1580533080,1434.3674],[1580792280,1438.9610],[1580878680,1439.5752],[1580965080,1440.1919],[1581051480,1443.5993],[1581137880,1446.9813],[1581397080,1452.8554],[1581483480,1458.3035],[1581569880,1464.0489],[1581656280,1468.7480],[1581742680,1473.5082],[1582088280,1477.8827],[1582174680,1482.3577],[1582261080,1485.6560],[1582347480,1485.4468],[1582606680,1479.2005],[1582693080,1470.3547],[1582779480,1462.7466],[1582865880,1448.6708],[1582952280,1438.2497],[1583211480,1433.3041],[1583297880,1424.2008],[1583384280,1420.1436],[1583470680,1410.1071],[1583557080,1399.2150],[1583812680,1381.7459],[1583899080,1371.5958],[1583985480,1356.2915],[1584071880,1332.9828],[1584158280,1321.6768],[1584417480,1297.9933],[1584503880,1280.8568],[1584590280,1262.7933],[1584676680,1248.4006]],"color":"","scatterMarkerSymbol":"none"},
+        "Price": {"name":"Price","unit":"$","index":0,"seriesType":0,"values":[[1567828680,1206.32],[1568087880,1205.27],[1568174280,1205.7],[1568260680,1220.0],[1568347080,1234.97],[1568433480,1240.03],[1568692680,1231.63],[1568779080,1229.88],[1568865480,1232.65],[1568951880,1238.75],[1569038280,1229.84],[1569297480,1234.69],[1569383880,1218.33],[1569470280,1245.94],[1569556680,1242.29],[1569643080,1225.95],[1569902280,1221.14],[1569988680,1206.0],[1570075080,1177.92],[1570161480,1189.43],[1570247880,1210.96],[1570507080,1208.25],[1570593480,1190.13],[1570679880,1202.4],[1570766280,1209.47],[1570852680,1215.71],[1571111880,1217.77],[1571198280,1242.24],[1571284680,1243.0],[1571371080,1252.8],[1571457480,1244.41],[1571716680,1244.28],[1571803080,1241.2],[1571889480,1257.63],[1571975880,1259.11],[1572062280,1264.3],[1572321480,1288.98],[1572407880,1260.66],[1572494280,1260.7],[1572580680,1258.8],[1572667080,1272.25],[1572929880,1289.61],[1573016280,1291.44],[1573102680,1291.01],[1573189080,1306.94],[1573275480,1309.0],[1573534680,1298.28],[1573621080,1297.21],[1573707480,1296.18],[1573793880,1309.15],[1573880280,1333.54],[1574139480,1319.84],[1574225880,1312.59],[1574312280,1301.86],[1574398680,1300.14],[1574485080,1293.67],[1574744280,1305.64],[1574830680,1313.0],[1574917080,1312.13],[1575089880,1304.09],[1575349080,1288.86],[1575435480,1294.74],[1575521880,1318.94],[1575608280,1326.96],[1575694680,1339.39],[1575953880,1342.99],[1576040280,1342.89],[1576126680,1344.25],[1576213080,1348.49],[1576299480,1346.87],[1576558680,1360.7],[1576645080,1354.89],[1576731480,1351.91],[1576817880,1356.44],[1576904280,1351.22],[1577163480,1350.63],[1577249880,1344.43],[1577422680,1362.47],[1577509080,1354.64],[1577768280,1339.71],[1577854680,1339.39],[1578027480,1368.68],[1578113880,1361.52],[1578373080,1397.81],[1578459480,1395.11],[1578545880,1405.04],[1578632280,1419.79],[1578718680,1428.96],[1578977880,1440.03],[1579064280,1430.59],[1579150680,1439.2],[1579237080,1450.16],[1579323480,1479.52],[1579669080,1482.25],[1579755480,1484.17],[1579841880,1484.69],[1579928280,1466.17],[1580187480,1431.73],[1580273880,1450.5],[1580360280,1456.7],[1580446680,1454.25],[1580533080,1432.78],[1580792280,1482.6],[1580878680,1445.41],[1580965080,1446.05],[1581051480,1475.97],[1581137880,1479.11],[1581397080,1508.66],[1581483480,1510.06],[1581569880,1518.63],[1581656280,1513.39],[1581742680,1518.73],[1582088280,1519.44],[1582174680,1524.87],[1582261080,1516.99],[1582347480,1483.46],[1582606680,1419.86],[1582693080,1386.32],[1582779480,1390.47],[1582865880,1314.95],[1582952280,1339.25],[1583211480,1386.32],[1583297880,1337.72],[1583384280,1381.6],[1583470680,1314.76],[1583557080,1295.74],[1583812680,1215.79],[1583899080,1275.17],[1583985480,1210.9],[1584071880,1111.55],[1584158280,1214.27],[1584417480,1073.0],[1584503880,1118.06],[1584590280,1091.19],[1584676680,1111.67]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    },
+    "Drawdown": {
+      "name": "Drawdown",
+      "chartType": 0,
+      "series": {
+        "Equity Drawdown": {"name":"Equity Drawdown","unit":"%","index":0,"seriesType":0,"values":[[1577854800,0.0],[1577941200,0.0],[1578027600,0.0],[1578114000,0.0],[1578200400,0.0],[1578286800,0.0],[1578373200,0.0],[1578459600,-0.04],[1578546000,0.0],[1578632400,0.0],[1578718800,0.0],[1578805200,0.0],[1578891600,0.0],[1578978000,0.0],[1579064400,-0.07],[1579150800,0.0],[1579237200,0.0],[1579323600,0.0],[1579410000,0.0],[1579496400,0.0],[1579582800,0.0],[1579669200,0.0],[1579755600,0.0],[1579842000,0.0],[1579928400,-0.18],[1580014800,-0.18],[1580101200,-0.18],[1580187600,-0.52],[1580274000,-0.42],[1580360400,-0.46],[1580446800,-0.45],[1580533200,-0.98],[1580619600,-0.98],[1580706000,-0.98],[1580792400,-1.08],[1580878800,-1.35],[1580965200,-1.62],[1581051600,-1.34],[1581138000,-1.45],[1581224400,-1.45],[1581310800,-1.45],[1581397200,-0.87],[1581483600,-0.69],[1581570000,-0.44],[1581656400,-0.54],[1581742800,0.0],[1581829200,0.0],[1581915600,0.0],[1582002000,0.0],[1582088400,0.0],[1582174800,0.0],[1582261200,-0.24],[1582347600,-0.91],[1582434000,-0.91],[1582520400,-0.91],[1582606800,-2.04],[1582693200,-1.88],[1582779600,-2.04],[1582866000,-0.87],[1582952400,-1.55],[1583038800,-1.55],[1583125200,-1.55],[1583211600,-2.37],[1583298000,-2.18],[1583384400,-3.06],[1583470800,-2.25],[1583557200,-2.21],[1583643600,-2.21],[1583726400,-2.21],[1583812800,-2.05],[1583899200,-3.24],[1583985600,-2.01],[1584072000,0.0],[1584158400,-2.1],[1584244800,-2.1],[1584331200,-2.1],[1584417600,0.0],[1584504000,-1.57],[1584590400,-0.36],[1584676800,-0.95]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    },
+    "Portfolio Turnover": {
+      "name": "Portfolio Turnover",
+      "chartType": 0,
+      "series": {
+        "Portfolio Turnover": {"name":"Portfolio Turnover","unit":"%","index":0,"seriesType":0,"values":[[1577941200,0.0],[1578027600,0.0],[1578114000,0.162412],[1578200400,0.0],[1578286800,0.0],[1578373200,0.0],[1578459600,0.0],[1578546000,0.0],[1578632400,0.0],[1578718800,0.0],[1578805200,0.0],[1578891600,0.0],[1578978000,0.0],[1579064400,0.0],[1579150800,0.0],[1579237200,0.0],[1579323600,0.0],[1579410000,0.0],[1579496400,0.0],[1579582800,0.0],[1579669200,0.0],[1579755600,0.0],[1579842000,0.0],[1579928400,0.0],[1580014800,0.0],[1580101200,0.0],[1580187600,0.0],[1580274000,0.1643001],[1580360400,0.1660667],[1580446800,0.0],[1580533200,0.08287429],[1580619600,0.0],[1580706000,0.0],[1580792400,0.4879776],[1580878800,0.1458547],[1580965200,0.3390562],[1581051600,0.0],[1581138000,0.0],[1581224400,0.0],[1581310800,0.0],[1581397200,0.0],[1581483600,0.0],[1581570000,0.0],[1581656400,0.0],[1581742800,0.0],[1581829200,0.0],[1581915600,0.0],[1582002000,0.0],[1582088400,0.01127102],[1582174800,0.0],[1582261200,0.0],[1582347600,0.0],[1582434000,0.0],[1582520400,0.0],[1582606800,0.1424756],[1582693200,0.1615859],[1582779600,0.157423],[1582866000,0.0],[1582952400,0.01269435],[1583038800,0.0],[1583125200,0.0],[1583211600,0.1696752],[1583298000,0.0],[1583384400,0.1667407],[1583470800,0.1636712],[1583557200,0.0],[1583643600,0.0],[1583726400,0.0],[1583812800,0.1417157],[1583899200,0.01129655],[1583985600,0.0],[1584072000,0.0],[1584158400,0.04047202],[1584244800,0.0],[1584331200,0.0],[1584417600,0.01024297],[1584504000,0.02840506],[1584590400,0.0],[1584676800,0.0]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    },
+    "Exposure": {
+      "name": "Exposure",
+      "chartType": 0,
+      "series": {
+        "Equity - Short Ratio": {"name":"Equity - Short Ratio","unit":"","index":0,"seriesType":0,"values":[[1577854800,0.0],[1577941200,0.0],[1578027600,0.0],[1578114000,0.0],[1578200400,0.0],[1578286800,0.0],[1578373200,0.0],[1578459600,0.0],[1578546000,0.0],[1578632400,0.0],[1578718800,0.0],[1578805200,0.0],[1578891600,0.0],[1578978000,0.0],[1579064400,0.0],[1579150800,0.0],[1579237200,0.0],[1579323600,0.0],[1579410000,0.0],[1579496400,0.0],[1579582800,0.0],[1579669200,0.0],[1579755600,0.0],[1579842000,0.0],[1579928400,0.0],[1580014800,0.0],[1580101200,0.0],[1580187600,0.0],[1580274000,-0.0826],[1580360400,0.0],[1580446800,0.0],[1580533200,0.0],[1580619600,0.0],[1580706000,0.0],[1580792400,-0.2407],[1580878800,-0.1707],[1580965200,0.0],[1581051600,0.0],[1581138000,0.0],[1581224400,0.0],[1581310800,0.0],[1581397200,0.0],[1581483600,0.0],[1581570000,0.0],[1581656400,0.0],[1581742800,0.0],[1581829200,0.0],[1581915600,0.0],[1582002000,0.0],[1582088400,0.0],[1582174800,0.0],[1582261200,0.0],[1582347600,0.0],[1582434000,0.0],[1582520400,0.0],[1582606800,-0.0711],[1582693200,-0.1488],[1582779600,-0.232],[1582866000,-0.2174],[1582952400,-0.2385],[1583038800,-0.2385],[1583125200,-0.2385],[1583211600,-0.1625],[1583298000,-0.157],[1583384400,-0.2536],[1583470800,-0.1563],[1583557200,-0.1539],[1583643600,-0.1539],[1583726400,-0.1539],[1583812800,-0.2191],[1583899200,-0.2454],[1583985600,-0.2298],[1584072000,-0.2021],[1584158400,-0.2684],[1584244800,-0.2684],[1584331200,-0.2684],[1584417600,-0.2138],[1584504000,-0.2616],[1584590400,-0.2462],[1584676800,-0.2537]],"color":"","scatterMarkerSymbol":"none"},
+        "Equity - Long Ratio": {"name":"Equity - Long Ratio","unit":"","index":0,"seriesType":0,"values":[[1577854800,0.0],[1577941200,0.0],[1578027600,0.0],[1578114000,0.1635],[1578200400,0.1635],[1578286800,0.1635],[1578373200,0.1656],[1578459600,0.1653],[1578546000,0.1661],[1578632400,0.1673],[1578718800,0.1676],[1578805200,0.1676],[1578891600,0.1676],[1578978000,0.1686],[1579064400,0.168],[1579150800,0.1686],[1579237200,0.1697],[1579323600,0.1714],[1579410000,0.1714],[1579496400,0.1714],[1579582800,0.1714],[1579669200,0.1714],[1579755600,0.1715],[1579842000,0.1716],[1579928400,0.1701],[1580014800,0.1701],[1580101200,0.1701],[1580187600,0.1673],[1580274000,0.0865],[1580360400,0.1694],[1580446800,0.1696],[1580533200,0.248],[1580619600,0.248],[1580706000,0.248],[1580792400,0.0],[1580878800,0.0725],[1580965200,0.2378],[1581051600,0.24],[1581138000,0.2391],[1581224400,0.2391],[1581310800,0.2391],[1581397200,0.2436],[1581483600,0.245],[1581570000,0.2468],[1581656400,0.2461],[1581742800,0.2511],[1581829200,0.2511],[1581915600,0.2511],[1582002000,0.2511],[1582088400,0.241],[1582174800,0.2454],[1582261200,0.2436],[1582347600,0.2385],[1582434000,0.2385],[1582520400,0.2385],[1582606800,0.1583],[1582693200,0.076],[1582779600,0.0],[1582866000,0.0],[1582952400,0.0],[1583038800,0.0],[1583125200,0.0],[1583211600,0.0833],[1583298000,0.0799],[1583384400,0.0],[1583470800,0.0768],[1583557200,0.0747],[1583643600,0.0747],[1583726400,0.0747],[1583812800,0.0],[1583899200,0.0],[1583985600,0.0],[1584072000,0.0],[1584158400,0.0],[1584244800,0.0],[1584331200,0.0],[1584417600,0.0],[1584504000,0.0],[1584590400,0.0],[1584676800,0.0]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    },
+    "Strategy Equity": {
+      "name": "Strategy Equity",
+      "chartType": 0,
+      "series": {
+        "Equity": {"name":"Equity","unit":"$","index":0,"seriesType":2,"values":[[1577854800,100000.0,100000.0,100000.0,100000.0],[1577941200,100000.0,100000.0,100000.0,100000.0],[1577977200,100000.0,100000.0,100000.0,100000.0],[1578027600,100000.0,100000.0,100000.0,100000.0],[1578063600,100000.0,100000.0,100000.0,100000.0],[1578114000,100000.0,100110.1569,100000.0,100110.1569],[1578200400,100110.1569,100110.1569,100110.1569,100110.1569],[1578286800,100110.1569,100110.1569,100110.1569,100110.1569],[1578322800,100110.1569,100110.1569,100110.1569,100110.1569],[1578373200,100110.1569,100359.1881,100110.1569,100359.1881],[1578409200,100359.1881,100359.1881,100359.1881,100359.1881],[1578459600,100359.1881,100359.1881,100319.8377,100319.8377],[1578495600,100319.8377,100319.8377,100319.8377,100319.8377],[1578546000,100319.8377,100423.1746,100319.8377,100423.1746],[1578582000,100423.1746,100423.1746,100423.1746,100423.1746],[1578632400,100423.1746,100567.6427,100423.1746,100567.6427],[1578668400,100567.6427,100567.6427,100567.6427,100567.6427],[1578718800,100567.6427,100598.7491,100567.6427,100598.7491],[1578805200,100598.7491,100598.7491,100598.7491,100598.7491],[1578891600,100598.7491,100598.7491,100598.7491,100598.7491],[1578927600,100598.7491,100598.7491,100598.7491,100598.7491],[1578978000,100598.7491,100722.1548,100598.7491,100722.1548],[1579014000,100722.1548,100722.1548,100722.1548,100722.1548],[1579064400,100722.1548,100722.1548,100652.7948,100652.7948],[1579100400,100652.7948,100652.7948,100652.7948,100652.7948],[1579150800,100652.7948,100723.2804,100652.7948,100723.2804],[1579186800,100723.2804,100723.2804,100723.2804,100723.2804],[1579237200,100723.2804,100858.4918,100723.2804,100858.4918],[1579273200,100858.4918,100858.4918,100858.4918,100858.4918],[1579323600,100858.4918,101060.855,100858.4918,101060.855],[1579410000,101060.855,101060.855,101060.855,101060.855],[1579496400,101060.855,101060.855,101060.855,101060.855],[1579582800,101060.855,101060.855,101060.855,101060.855],[1579618800,101060.855,101060.855,101060.855,101060.855],[1579669200,101060.855,101060.855,101060.699,101060.699],[1579705200,101060.699,101060.699,101060.699,101060.699],[1579755600,101060.699,101073.2366,101060.699,101073.2366],[1579791600,101073.2366,101073.2366,101073.2366,101073.2366],[1579842000,101073.2366,101086.0238,101073.2366,101086.0238],[1579878000,101086.0238,101086.0238,101086.0238,101086.0238],[1579928400,101086.0238,101086.0238,100899.8556,100899.8556],[1580014800,100899.8556,100899.8556,100899.8556,100899.8556],[1580101200,100899.8556,100899.8556,100899.8556,100899.8556],[1580137200,100899.8556,100899.8556,100899.8556,100899.8556],[1580187600,100899.8556,100899.8556,100559.1465,100559.1465],[1580223600,100559.1465,100559.1465,100559.1465,100559.1465],[1580274000,100559.1465,100663.8977,100559.1465,100663.8977],[1580310000,100663.8977,100663.8977,100663.8977,100663.8977],[1580360400,100663.8977,100663.8977,100616.3999,100616.3999],[1580396400,100616.3999,100616.3999,100616.3999,100616.3999],[1580446800,100616.3999,100628.6664,100616.3999,100628.6664],[1580482800,100628.6664,100628.6664,100628.6664,100628.6664],[1580533200,100628.6664,100628.6664,100091.118,100091.118],[1580619600,100091.118,100091.118,100091.118,100091.118],[1580706000,100091.118,100091.118,100091.118,100091.118],[1580742000,100091.118,100091.118,100091.118,100091.118],[1580792400,100091.118,100091.118,99991.3421,99991.3421],[1580828400,99991.3421,99991.3421,99991.3421,99991.3421],[1580878800,99991.3421,99991.3421,99721.8182,99721.8182],[1580914800,99721.8182,99721.8182,99721.8182,99721.8182],[1580965200,99721.8182,99721.8182,99444.0999,99444.0999],[1581001200,99444.0999,99444.0999,99444.0999,99444.0999],[1581051600,99444.0999,99736.1019,99444.0999,99736.1019],[1581087600,99736.1019,99736.1019,99736.1019,99736.1019],[1581138000,99736.1019,99736.1019,99620.6453,99620.6453],[1581224400,99620.6453,99620.6453,99620.6453,99620.6453],[1581310800,99620.6453,99620.6453,99620.6453,99620.6453],[1581346800,99620.6453,99620.6453,99620.6453,99620.6453],[1581397200,99620.6453,100204.6,99620.6453,100204.6],[1581433200,100204.6,100204.6,100204.6,100204.6],[1581483600,100204.6,100388.1477,100204.6,100388.1477],[1581519600,100388.1477,100388.1477,100388.1477,100388.1477],[1581570000,100388.1477,100637.2848,100388.1477,100637.2848],[1581606000,100637.2848,100637.2848,100637.2848,100637.2848],[1581656400,100637.2848,100637.2848,100544.1953,100544.1953],[1581692400,100544.1953,100544.1953,100544.1953,100544.1953],[1581742800,100544.1953,101211.4379,100544.1953,101211.4379],[1581829200,101211.4379,101211.4379,101211.4379,101211.4379],[1581915600,101211.4379,101211.4379,101211.4379,101211.4379],[1582002000,101211.4379,101211.4379,101211.4379,101211.4379],[1582038000,101211.4379,101211.4379,101211.4379,101211.4379],[1582088400,101211.4379,101372.7403,101211.4379,101372.7403],[1582124400,101372.7403,101372.7403,101372.7403,101372.7403],[1582174800,101372.7403,101965.0435,101372.7403,101965.0435],[1582210800,101965.0435,101965.0435,101965.0435,101965.0435],[1582261200,101965.0435,101965.0435,101717.6418,101717.6418],[1582297200,101717.6418,101717.6418,101717.6418,101717.6418],[1582347600,101717.6418,101717.6418,101040.8401,101040.8401],[1582434000,101040.8401,101040.8401,101040.8401,101040.8401],[1582520400,101040.8401,101040.8401,101040.8401,101040.8401],[1582556400,101040.8401,101040.8401,101040.8401,101040.8401],[1582606800,101040.8401,101040.8401,99880.282,99880.282],[1582642800,99880.282,99880.282,99880.282,99880.282],[1582693200,99880.282,100046.7128,99880.282,100046.7128],[1582729200,100046.7128,100046.7128,100046.7128,100046.7128],[1582779600,100046.7128,100046.7128,99881.2189,99881.2189],[1582815600,99881.2189,99881.2189,99881.2189,99881.2189],[1582866000,99881.2189,101081.2753,99881.2189,101081.2753],[1582902000,101081.2753,101081.2753,101081.2753,101081.2753],[1582952400,101081.2753,101081.2753,100384.0654,100384.0654],[1583038800,100384.0654,100384.0654,100384.0654,100384.0654],[1583125200,100384.0654,100384.0654,100384.0654,100384.0654],[1583161200,100384.0654,100384.0654,100384.0654,100384.0654],[1583211600,100384.0654,100384.0654,99548.4194,99548.4194],[1583247600,99548.4194,99548.4194,99548.4194,99548.4194],[1583298000,99548.4194,99743.8639,99548.4194,99743.8639],[1583334000,99743.8639,99743.8639,99743.8639,99743.8639],[1583384400,99743.8639,99743.8639,98849.3204,98849.3204],[1583420400,98849.3204,98849.3204,98849.3204,98849.3204],[1583470800,98849.3204,99672.367,98849.3204,99672.367],[1583506800,99672.367,99672.367,99672.367,99672.367],[1583557200,99672.367,99711.8073,99672.367,99711.8073],[1583643600,99711.8073,99711.8073,99711.8073,99711.8073],[1583726400,99711.8073,99711.8073,99711.8073,99711.8073],[1583762400,99711.8073,99711.8073,99711.8073,99711.8073],[1583812800,99711.8073,99876.6998,99711.8073,99876.6998],[1583848800,99876.6998,99876.6998,99876.6998,99876.6998],[1583899200,99876.6998,99876.6998,98659.2607,98659.2607],[1583935200,98659.2607,98659.2607,98659.2607,98659.2607],[1583985600,98659.2607,99910.5067,98659.2607,99910.5067],[1584021600,99910.5067,99910.5067,99910.5067,99910.5067],[1584072000,99910.5067,102212.107,99910.5067,102212.107],[1584108000,102212.107,102212.107,102212.107,102212.107],[1584158400,102212.107,102212.107,100060.8456,100060.8456],[1584244800,100060.8456,100060.8456,100060.8456,100060.8456],[1584331200,100060.8456,100060.8456,100060.8456,100060.8456],[1584367200,100060.8456,100060.8456,100060.8456,100060.8456],[1584417600,100060.8456,103685.7568,100060.8456,103685.7568],[1584453600,103685.7568,103685.7568,103685.7568,103685.7568],[1584504000,103685.7568,103685.7568,102053.2792,102053.2792],[1584540000,102053.2792,102053.2792,102053.2792,102053.2792],[1584590400,102053.2792,103315.4166,102053.2792,103315.4166],[1584626400,103315.4166,103315.4166,103315.4166,103315.4166],[1584676800,103315.4166,103315.4166,102698.16,102698.16]]},
+        "Return": {"name":"Return","unit":"%","index":1,"seriesType":3,"values":[[1577854800,0.0],[1577941200,0.0],[1578027600,0.0],[1578114000,0.1101569],[1578200400,0.0],[1578286800,0.0],[1578373200,0.2487572],[1578459600,-0.03920962],[1578546000,0.1030074],[1578632400,0.1438594],[1578718800,0.03093077],[1578805200,0.0],[1578891600,0.0],[1578978000,0.1226712],[1579064400,-0.06886273],[1579150800,0.0700285],[1579237200,0.1342404],[1579323600,0.2006408],[1579410000,0.0],[1579496400,0.0],[1579582800,0.0],[1579669200,-0.0001544003],[1579755600,0.01240601],[1579842000,0.01265144],[1579928400,-0.1841681],[1580014800,0.0],[1580101200,0.0],[1580187600,-0.3376706],[1580274000,0.1041687],[1580360400,-0.04718454],[1580446800,0.01219132],[1580533200,-0.5341901],[1580619600,0.0],[1580706000,0.0],[1580792400,-0.09968512],[1580878800,-0.2695472],[1580965200,-0.278493],[1581051600,0.2936343],[1581138000,-0.1157621],[1581224400,0.0],[1581310800,0.0],[1581397200,0.5861785],[1581483600,0.183173],[1581570000,0.2481738],[1581656400,-0.09249999],[1581742800,0.6636311],[1581829200,0.0],[1581915600,0.0],[1582002000,0.0],[1582088400,0.1593717],[1582174800,0.5842825],[1582261200,-0.2426338],[1582347600,-0.665373],[1582434000,0.0],[1582520400,0.0],[1582606800,-1.148603],[1582693200,0.1666303],[1582779600,-0.1654167],[1582866000,1.201484],[1582952400,-0.6897518],[1583038800,0.0],[1583125200,0.0],[1583211600,-0.8324488],[1583298000,0.1963311],[1583384400,-0.8968407],[1583470800,0.8326275],[1583557200,0.03956994],[1583643600,0.0],[1583726400,0.0],[1583812800,0.1653691],[1583899200,-1.218942],[1583985600,1.26825],[1584072000,2.303662],[1584158400,-2.104703],[1584244800,0.0],[1584331200,0.0],[1584417600,3.622707],[1584504000,-1.574447],[1584590400,1.236744],[1584676800,-0.5974487]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    },
+    "EMA_SPY": {
+      "name": "EMA_SPY",
+      "chartType": 0,
+      "series": {
+        "Price": {"name":"Price","unit":"$","index":0,"seriesType":0,"values":[[1567828680,288.8707],[1568087880,289.0161],[1568174280,288.9482],[1568260680,291.0029],[1568347080,292.0109],[1568433480,291.8171],[1568692680,290.9157],[1568779080,291.6523],[1568865480,291.8268],[1568951880,291.8074],[1569038280,290.4283],[1569297480,290.3601],[1569383880,288.0817],[1569470280,289.7857],[1569556680,289.182],[1569643080,287.6241],[1569902280,288.958],[1569988680,285.521],[1570075080,280.4773],[1570161480,282.7752],[1570247880,286.6017],[1570507080,285.3652],[1570593480,280.9349],[1570679880,283.6028],[1570766280,285.521],[1570852680,288.4809],[1571111880,288.1596],[1571198280,291.0125],[1571284680,290.5451],[1571371080,291.402],[1571457480,290.1264],[1571716680,292.0933],[1571803080,291.1391],[1571889480,291.9862],[1571975880,292.4633],[1572062280,293.6609],[1572321480,295.3161],[1572407880,295.2285],[1572494280,296.134],[1572580680,295.3454],[1572667080,298.0814],[1572929880,299.279],[1573016280,298.948],[1573102680,299.0161],[1573189080,300.0677],[1573275480,300.8077],[1573534680,300.2332],[1573621080,300.8661],[1573707480,300.9635],[1573793880,301.4016],[1573880280,303.5827],[1574139480,303.8066],[1574225880,303.719],[1574312280,302.5895],[1574398680,302.1027],[1574485080,302.7745],[1574744280,305.1211],[1574830680,305.8124],[1574917080,307.1755],[1575089880,306.0363],[1575349080,303.4366],[1575435480,301.4016],[1575521880,303.2613],[1575608280,303.8066],[1575694680,306.5816],[1575953880,305.6176],[1576040280,305.2769],[1576126680,306.1434],[1576213080,308.7821],[1576299480,308.9671],[1576558680,311.0897],[1576645080,311.1579],[1576731480,311.1773],[1576817880,312.4529],[1576904280,313.8227],[1577163480,314.3021],[1577249880,314.3119],[1577422680,315.9851],[1577509080,315.9068],[1577768280,314.1652],[1577854680,314.9284],[1578027480,317.8735],[1578113880,315.4665],[1578373080,316.67],[1578459480,315.7796],[1578545880,317.4626],[1578632280,319.6152],[1578718680,318.6954],[1578977880,320.8872],[1579064280,320.398],[1579150680,321.122],[1579237080,323.7932],[1579323480,324.8011],[1579669080,324.1651],[1579755480,324.2042],[1579841880,324.576],[1579928280,321.6895],[1580187480,316.533],[1580273880,319.85],[1580360280,319.5858],[1580446680,320.623],[1580533080,314.8012],[1580792280,317.1397],[1580878680,321.9733],[1580965080,325.6915],[1581051480,326.7873],[1581137880,325.0457],[1581397080,327.4723],[1581483480,328.0398],[1581569880,330.1533],[1581656280,329.801],[1581742680,330.3294],[1582088280,329.4781],[1582174680,331.0534],[1582261080,329.6934],[1582347480,326.2981],[1582606680,315.4763],[1582693080,305.9167],[1582779480,304.7915],[1582865880,291.1028],[1582952280,289.8797],[1583211480,302.4334],[1583297880,293.774],[1583384280,306.1222],[1583470680,295.9462],[1583557080,291.0538],[1583812680,268.3241],[1583899080,282.2085],[1583985480,268.4513],[1584071880,242.7667],[1584158280,263.5199],[1584417480,234.6845],[1584503880,247.3556],[1584590280,234.8313],[1584676680,235.3303]],"color":"","scatterMarkerSymbol":"none"},
+        "EMA": {"name":"EMA","unit":"$","index":0,"seriesType":0,"values":[[1567828680,281.6109],[1568087880,282.3161],[1568174280,282.9478],[1568260680,283.7149],[1568347080,284.505],[1568433480,285.2014],[1568692680,285.7456],[1568779080,286.3082],[1568865480,286.8337],[1568951880,287.3074],[1569038280,287.6046],[1569297480,287.8671],[1569383880,287.8875],[1569470280,288.0683],[1569556680,288.1744],[1569643080,288.122],[1569902280,288.2016],[1569988680,287.9463],[1570075080,287.2349],[1570161480,286.8102],[1570247880,286.7904],[1570507080,286.6546],[1570593480,286.1099],[1570679880,285.8711],[1570766280,285.8378],[1570852680,286.0895],[1571111880,286.2867],[1571198280,286.7367],[1571284680,287.0994],[1571371080,287.5092],[1571457480,287.7585],[1571716680,288.1713],[1571803080,288.4539],[1571889480,288.7904],[1571975880,289.1402],[1572062280,289.5707],[1572321480,290.1179],[1572407880,290.6046],[1572494280,291.1312],[1572580680,291.5326],[1572667080,292.1563],[1572929880,292.8346],[1573016280,293.4168],[1573102680,293.9501],[1573189080,294.5327],[1573275480,295.1303],[1573534680,295.6163],[1573621080,296.1163],[1573707480,296.5779],[1573793880,297.0373],[1573880280,297.6607],[1574139480,298.246],[1574225880,298.7673],[1574312280,299.1313],[1574398680,299.4143],[1574485080,299.7343],[1574744280,300.2473],[1574830680,300.7773],[1574917080,301.3867],[1575089880,301.8295],[1575349080,301.9826],[1575435480,301.9272],[1575521880,302.0543],[1575608280,302.2212],[1575694680,302.6365],[1575953880,302.9204],[1576040280,303.1448],[1576126680,303.4304],[1576213080,303.9401],[1576299480,304.4188],[1576558680,305.0542],[1576645080,305.6355],[1576731480,306.1633],[1576817880,306.7623],[1576904280,307.4347],[1577163480,308.0887],[1577249880,308.6814],[1577422680,309.377],[1577509080,309.9989],[1577768280,310.3957],[1577854680,310.8274],[1578027480,311.4984],[1578113880,311.8763],[1578373080,312.3329],[1578459480,312.6611],[1578545880,313.1184],[1578632280,313.7372],[1578718680,314.2094],[1578977880,314.8454],[1579064280,315.3742],[1579150680,315.9216],[1579237080,316.6713],[1579323480,317.4455],[1579669080,318.0855],[1579755480,318.6682],[1579841880,319.2309],[1579928280,319.465],[1580187480,319.1858],[1580273880,319.2491],[1580360280,319.2811],[1580446680,319.4089],[1580533080,318.9701],[1580792280,318.7958],[1580878680,319.0984],[1580965080,319.7263],[1581051480,320.3988],[1581137880,320.8413],[1581397080,321.4729],[1581483480,322.0983],[1581569880,322.8654],[1581656280,323.526],[1581742680,324.1739],[1582088280,324.6791],[1582174680,325.2861],[1582261080,325.7059],[1582347480,325.7623],[1582606680,324.7827],[1582693080,322.9859],[1582779480,321.2531],[1582865880,318.3816],[1582952280,315.6672],[1583211480,314.4068],[1583297880,312.4418],[1583384280,311.8399],[1583470680,310.3262],[1583557080,308.4908],[1583812680,304.6654],[1583899080,302.5266],[1583985480,299.2814],[1584071880,293.899],[1584158280,291.0057],[1584417480,285.6418],[1584503880,281.9955],[1584590280,277.5037],[1584676680,273.4872]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    },
+    "Portfolio": {
+      "name": "Portfolio",
+      "chartType": 0,
+      "series": {
+        "Total Return %": {"name":"Total Return %","unit":"$","index":0,"seriesType":0,"values":[[1565409480,0.0],[1565668680,0.0],[1565755080,0.0],[1565841480,0.0],[1565927880,0.0],[1566014280,0.0],[1566273480,0.0],[1566359880,0.0],[1566446280,0.0],[1566532680,0.0],[1566619080,0.0],[1566878280,0.0],[1566964680,0.0],[1567051080,0.0],[1567137480,0.0],[1567223880,0.0],[1567569480,0.0],[1567655880,0.0],[1567742280,0.0],[1567828680,0.0],[1568087880,0.0],[1568174280,0.0],[1568260680,0.0],[1568347080,0.0],[1568433480,0.0],[1568692680,0.0],[1568779080,0.0],[1568865480,0.0],[1568951880,0.0],[1569038280,0.0],[1569297480,0.0],[1569383880,0.0],[1569470280,0.0],[1569556680,0.0],[1569643080,0.0],[1569902280,0.0],[1569988680,0.0],[1570075080,0.0],[1570161480,0.0],[1570247880,0.0],[1570507080,0.0],[1570593480,0.0],[1570679880,0.0],[1570766280,0.0],[1570852680,0.0],[1571111880,0.0],[1571198280,0.0],[1571284680,0.0],[1571371080,0.0],[1571457480,0.0],[1571716680,0.0],[1571803080,0.0],[1571889480,0.0],[1571975880,0.0],[1572062280,0.0],[1572321480,0.0],[1572407880,0.0],[1572494280,0.0],[1572580680,0.0],[1572667080,0.0],[1572929880,0.0],[1573016280,0.0],[1573102680,0.0],[1573189080,0.0],[1573275480,0.0],[1573534680,0.0],[1573621080,0.0],[1573707480,0.0],[1573793880,0.0],[1573880280,0.0],[1574139480,0.0],[1574225880,0.0],[1574312280,0.0],[1574398680,0.0],[1574485080,0.0],[1574744280,0.0],[1574830680,0.0],[1574917080,0.0],[1575089880,0.0],[1575349080,0.0],[1575435480,0.0],[1575521880,0.0],[1575608280,0.0],[1575694680,0.0],[1575953880,0.0],[1576040280,0.0],[1576126680,0.0],[1576213080,0.0],[1576299480,0.0],[1576558680,0.0],[1576645080,0.0],[1576731480,0.0],[1576817880,0.0],[1576904280,0.0],[1577163480,0.0],[1577249880,0.0],[1577422680,0.0],[1577509080,0.0],[1577768280,0.0],[1577854680,0.0],[1578027480,0.0],[1578113880,0.1101569],[1578373080,0.3591881],[1578459480,0.3198377],[1578545880,0.4231746],[1578632280,0.5676427],[1578718680,0.5987491],[1578977880,0.7221548],[1579064280,0.6527948],[1579150680,0.7232804],[1579237080,0.8584918],[1579323480,1.060855],[1579669080,1.060699],[1579755480,1.073237],[1579841880,1.086024],[1579928280,0.8998556],[1580187480,0.5591465],[1580273880,0.6638977],[1580360280,0.6163999],[1580446680,0.6286664],[1580533080,0.09111804],[1580792280,-0.008657911],[1580878680,-0.2781818],[1580965080,-0.5559001],[1581051480,-0.2638981],[1581137880,-0.3793547],[1581397080,0.2046],[1581483480,0.3881477],[1581569880,0.6372848],[1581656280,0.5441953],[1581742680,1.211438],[1582088280,1.37274],[1582174680,1.965043],[1582261080,1.717642],[1582347480,1.04084],[1582606680,-0.119718],[1582693080,0.04671279],[1582779480,-0.1187811],[1582865880,1.081275],[1582952280,0.3840654],[1583211480,-0.4515806],[1583297880,-0.2561361],[1583384280,-1.15068],[1583470680,-0.327633],[1583557080,-0.2881927],[1583812680,-0.1233002],[1583899080,-1.340739],[1583985480,-0.08949327],[1584071880,2.212107],[1584158280,0.06084561],[1584417480,3.685757],[1584503880,2.053279],[1584590280,3.315417],[1584676680,2.69816]],"color":"","scatterMarkerSymbol":"none"},
+        "Total Value": {"name":"Total Value","unit":"$","index":0,"seriesType":0,"values":[[1565409480,100000.0],[1565668680,100000.0],[1565755080,100000.0],[1565841480,100000.0],[1565927880,100000.0],[1566014280,100000.0],[1566273480,100000.0],[1566359880,100000.0],[1566446280,100000.0],[1566532680,100000.0],[1566619080,100000.0],[1566878280,100000.0],[1566964680,100000.0],[1567051080,100000.0],[1567137480,100000.0],[1567223880,100000.0],[1567569480,100000.0],[1567655880,100000.0],[1567742280,100000.0],[1567828680,100000.0],[1568087880,100000.0],[1568174280,100000.0],[1568260680,100000.0],[1568347080,100000.0],[1568433480,100000.0],[1568692680,100000.0],[1568779080,100000.0],[1568865480,100000.0],[1568951880,100000.0],[1569038280,100000.0],[1569297480,100000.0],[1569383880,100000.0],[1569470280,100000.0],[1569556680,100000.0],[1569643080,100000.0],[1569902280,100000.0],[1569988680,100000.0],[1570075080,100000.0],[1570161480,100000.0],[1570247880,100000.0],[1570507080,100000.0],[1570593480,100000.0],[1570679880,100000.0],[1570766280,100000.0],[1570852680,100000.0],[1571111880,100000.0],[1571198280,100000.0],[1571284680,100000.0],[1571371080,100000.0],[1571457480,100000.0],[1571716680,100000.0],[1571803080,100000.0],[1571889480,100000.0],[1571975880,100000.0],[1572062280,100000.0],[1572321480,100000.0],[1572407880,100000.0],[1572494280,100000.0],[1572580680,100000.0],[1572667080,100000.0],[1572929880,100000.0],[1573016280,100000.0],[1573102680,100000.0],[1573189080,100000.0],[1573275480,100000.0],[1573534680,100000.0],[1573621080,100000.0],[1573707480,100000.0],[1573793880,100000.0],[1573880280,100000.0],[1574139480,100000.0],[1574225880,100000.0],[1574312280,100000.0],[1574398680,100000.0],[1574485080,100000.0],[1574744280,100000.0],[1574830680,100000.0],[1574917080,100000.0],[1575089880,100000.0],[1575349080,100000.0],[1575435480,100000.0],[1575521880,100000.0],[1575608280,100000.0],[1575694680,100000.0],[1575953880,100000.0],[1576040280,100000.0],[1576126680,100000.0],[1576213080,100000.0],[1576299480,100000.0],[1576558680,100000.0],[1576645080,100000.0],[1576731480,100000.0],[1576817880,100000.0],[1576904280,100000.0],[1577163480,100000.0],[1577249880,100000.0],[1577422680,100000.0],[1577509080,100000.0],[1577768280,100000.0],[1577854680,100000.0],[1578027480,100000.0],[1578113880,100110.1569],[1578373080,100359.1881],[1578459480,100319.8377],[1578545880,100423.1746],[1578632280,100567.6427],[1578718680,100598.7491],[1578977880,100722.1548],[1579064280,100652.7948],[1579150680,100723.2804],[1579237080,100858.4918],[1579323480,101060.8550],[1579669080,101060.6990],[1579755480,101073.2366],[1579841880,101086.0238],[1579928280,100899.8556],[1580187480,100559.1465],[1580273880,100663.8977],[1580360280,100616.3999],[1580446680,100628.6664],[1580533080,100091.1180],[1580792280,99991.3421],[1580878680,99721.8182],[1580965080,99444.0999],[1581051480,99736.1019],[1581137880,99620.6453],[1581397080,100204.6000],[1581483480,100388.1477],[1581569880,100637.2848],[1581656280,100544.1953],[1581742680,101211.4379],[1582088280,101372.7403],[1582174680,101965.0435],[1582261080,101717.6418],[1582347480,101040.8401],[1582606680,99880.2820],[1582693080,100046.7128],[1582779480,99881.2189],[1582865880,101081.2753],[1582952280,100384.0654],[1583211480,99548.4194],[1583297880,99743.8639],[1583384280,98849.3204],[1583470680,99672.3670],[1583557080,99711.8073],[1583812680,99876.6998],[1583899080,98659.2607],[1583985480,99910.5067],[1584071880,102212.1070],[1584158280,100060.8456],[1584417480,103685.7568],[1584503880,102053.2792],[1584590280,103315.4166],[1584676680,102698.1600]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    },
+    "Capacity": {
+      "name": "Capacity",
+      "chartType": 0,
+      "series": {
+        "Strategy Capacity": {"name":"Strategy Capacity","unit":"$","index":0,"seriesType":0,"values":[[1577854800,0.0],[1577941200,0.0],[1578027600,0.0],[1578114000,0.0],[1578200400,0.0],[1578286800,0.0],[1578373200,0.0],[1578459600,0.0],[1578546000,149506000.0],[1578632400,149506000.0],[1578718800,149506000.0],[1578805200,149506000.0],[1578891600,149506000.0],[1578978000,149506000.0],[1579064400,149506000.0],[1579150800,386464000.0],[1579237200,386464000.0],[1579323600,386464000.0],[1579410000,386464000.0],[1579496400,386464000.0],[1579582800,386464000.0],[1579669200,386464000.0],[1579755600,533952000.0],[1579842000,533952000.0],[1579928400,533952000.0],[1580014800,533952000.0],[1580101200,533952000.0],[1580187600,533952000.0],[1580274000,533952000.0],[1580360400,636280000.0],[1580446800,636280000.0],[1580533200,636280000.0],[1580619600,636280000.0],[1580706000,636280000.0],[1580792400,636280000.0],[1580878800,636280000.0],[1580965200,538289000.0],[1581051600,538289000.0],[1581138000,538289000.0],[1581224400,538289000.0],[1581310800,538289000.0],[1581397200,538289000.0],[1581483600,538289000.0],[1581570000,401318000.0],[1581656400,401318000.0],[1581742800,401318000.0],[1581829200,401318000.0],[1581915600,401318000.0],[1582002000,401318000.0],[1582088400,401318000.0],[1582174800,344514000.0],[1582261200,344514000.0],[1582347600,344514000.0],[1582434000,344514000.0],[1582520400,344514000.0],[1582606800,344514000.0],[1582693200,344514000.0],[1582779600,342724000.0],[1582866000,342724000.0],[1582952400,342724000.0],[1583038800,342724000.0],[1583125200,342724000.0],[1583211600,342724000.0],[1583298000,342724000.0],[1583384400,1270956000.0],[1583470800,1270956000.0],[1583557200,1270956000.0],[1583643600,1270956000.0],[1583726400,1270956000.0],[1583812800,1270956000.0],[1583899200,1270956000.0],[1583985600,1922919000.0],[1584072000,1922919000.0],[1584158400,1922919000.0],[1584244800,1922919000.0],[1584331200,1922919000.0],[1584417600,1922919000.0],[1584504000,1922919000.0],[1584590400,1531257000.0],[1584676800,1531257000.0]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    },
+    "Assets Sales Volume": {
+      "name": "Assets Sales Volume",
+      "chartType": 0,
+      "series": {
+        "NVDA": {"name":"NVDA","unit":"$","index":0,"seriesType":7,"values":[[1580533200,8294.98],[1580619600,8294.98],[1580706000,8294.98],[1580792400,24558.28],[1580878800,24558.28],[1580965200,41693.6],[1581051600,41693.6],[1581138000,41693.6],[1581224400,41693.6],[1581310800,41693.6],[1581397200,41693.6],[1581483600,41693.6],[1581570000,41693.6],[1581656400,41693.6],[1581742800,41693.6],[1581829200,41693.6],[1581915600,41693.6],[1582002000,41693.6],[1582088400,42836.174],[1582174800,42836.174],[1582261200,42836.174],[1582347600,42836.174],[1582434000,42836.174],[1582520400,42836.174],[1582606800,42836.174],[1582693200,42836.174],[1582779600,58559.774],[1582866000,58559.774],[1582952400,58559.774],[1583038800,58559.774],[1583125200,58559.774],[1583211600,75450.674],[1583298000,75450.674],[1583384400,91932.874],[1583470800,108246.374],[1583557200,108246.374],[1583643600,108246.374],[1583726400,108246.374],[1583812800,122400.474],[1583899200,122400.474],[1583985600,122400.474],[1584072000,122400.474],[1584158400,124244.474],[1584244800,124244.474],[1584331200,124244.474],[1584417600,125306.524],[1584504000,127114.714],[1584590400,127114.714],[1584676800,127114.714]],"color":"","scatterMarkerSymbol":"none"},
+        "GOOGL": {"name":"GOOGL","unit":"$","index":0,"seriesType":7,"values":[[1578114000,8088.0],[1578200400,8088.0],[1578286800,8088.0],[1578373200,8088.0],[1578459600,8088.0],[1578546000,8088.0],[1578632400,8088.0],[1578718800,8088.0],[1578805200,8088.0],[1578891600,8088.0],[1578978000,8088.0],[1579064400,8088.0],[1579150800,8088.0],[1579237200,8088.0],[1579323600,8088.0],[1579410000,8088.0],[1579496400,8088.0],[1579582800,8088.0],[1579669200,8088.0],[1579755600,8088.0],[1579842000,8088.0],[1579928400,8088.0],[1580014800,8088.0],[1580101200,8088.0],[1580187600,8088.0],[1580274000,8088.0],[1580360400,8088.0],[1580446800,8088.0],[1580533200,8088.0],[1580619600,8088.0],[1580706000,8088.0],[1580792400,24166.15],[1580878800,38711.05],[1580965200,38711.05],[1581051600,38711.05],[1581138000,38711.05],[1581224400,38711.05],[1581310800,38711.05],[1581397200,38711.05],[1581483600,38711.05],[1581570000,38711.05],[1581656400,38711.05],[1581742800,38711.05],[1581829200,38711.05],[1581915600,38711.05],[1582002000,38711.05],[1582088400,38711.05],[1582174800,38711.05],[1582261200,38711.05],[1582347600,38711.05],[1582434000,38711.05],[1582520400,38711.05],[1582606800,52941.55],[1582693200,52941.55],[1582779600,52941.55],[1582866000,52941.55],[1582952400,54215.86],[1583038800,54215.86],[1583125200,54215.86],[1583211600,54215.86],[1583298000,54215.86],[1583384400,54215.86],[1583470800,54215.86],[1583557200,54215.86],[1583643600,54215.86],[1583726400,54215.86],[1583812800,54215.86],[1583899200,54215.86],[1583985600,54215.86],[1584072000,54215.86],[1584158400,55390.85],[1584244800,55390.85],[1584331200,55390.85],[1584417600,55390.85],[1584504000,56481.49],[1584590400,56481.49],[1584676800,56481.49]],"color":"","scatterMarkerSymbol":"none"},
+        "SPY": {"name":"SPY","unit":"$","index":0,"seriesType":7,"values":[[1578114000,8171.0925],[1578200400,8171.0925],[1578286800,8171.0925],[1578373200,8171.0925],[1578459600,8171.0925],[1578546000,8171.0925],[1578632400,8171.0925],[1578718800,8171.0925],[1578805200,8171.0925],[1578891600,8171.0925],[1578978000,8171.0925],[1579064400,8171.0925],[1579150800,8171.0925],[1579237200,8171.0925],[1579323600,8171.0925],[1579410000,8171.0925],[1579496400,8171.0925],[1579582800,8171.0925],[1579669200,8171.0925],[1579755600,8171.0925],[1579842000,8171.0925],[1579928400,8171.0925],[1580014800,8171.0925],[1580101200,8171.0925],[1580187600,8171.0925],[1580274000,24710.1835],[1580360400,41419.2141],[1580446800,41419.2141],[1580533200,41419.2141],[1580619600,41419.2141],[1580706000,41419.2141],[1580792400,57871.3002],[1580878800,57871.3002],[1580965200,74453.1207],[1581051600,74453.1207],[1581138000,74453.1207],[1581224400,74453.1207],[1581310800,74453.1207],[1581397200,74453.1207],[1581483600,74453.1207],[1581570000,74453.1207],[1581656400,74453.1207],[1581742800,74453.1207],[1581829200,74453.1207],[1581915600,74453.1207],[1582002000,74453.1207],[1582088400,74453.1207],[1582174800,74453.1207],[1582261200,74453.1207],[1582347600,74453.1207],[1582434000,74453.1207],[1582520400,74453.1207],[1582606800,74453.1207],[1582693200,90619.2605],[1582779600,90619.2605],[1582866000,90619.2605],[1582952400,90619.2605],[1583038800,90619.2605],[1583125200,90619.2605],[1583211600,90619.2605],[1583298000,90619.2605],[1583384400,90619.2605],[1583470800,90619.2605],[1583557200,90619.2605],[1583643600,90619.2605],[1583726400,90619.2605],[1583812800,90619.2605],[1583899200,91733.7699],[1583985600,91733.7699],[1584072000,91733.7699],[1584158400,92764.4445],[1584244800,92764.4445],[1584331200,92764.4445],[1584417600,92764.4445],[1584504000,92764.4445],[1584590400,92764.4445],[1584676800,92764.4445]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    },
+    "Portfolio Margin": {
+      "name": "Portfolio Margin",
+      "chartType": 0,
+      "series": {
+        "NVDA": {"name":"NVDA","unit":"%","index":0,"seriesType":5,"indexName":"Margin Used (%)","tooltip":"{SERIES_NAME}: {VALUE}%","values":[[1580533200,4.016],[1580619600,4.016],[1580706000,4.016],[1580792400,4.206],[1580878800,4.337],[1580965200,4.161],[1581051600,4.206],[1581138000,4.167],[1581224400,4.167],[1581310800,4.167],[1581397200,4.33],[1581483600,4.403],[1581570000,4.468],[1581656400,4.444],[1581742800,4.724],[1581829200,4.724],[1581915600,4.724],[1582002000,4.724],[1582088400,4.242],[1582174800,4.475],[1582261200,4.401],[1582347600,4.22],[1582434000,4.22],[1582520400,4.22],[1582606800,3.967],[1582693200,3.798],[1582779600,4.154],[1582866000,3.873],[1582952400,4.17],[1583038800,4.17],[1583125200,4.17],[1583211600,4.165],[1583298000,3.996],[1583384400,4.461],[1583470800,3.839],[1583557200,3.736],[1583643600,3.736],[1583726400,3.736],[1583812800,3.809],[1583899200,4.102],[1583985600,3.824],[1584072000,3.28],[1584158400,4.695],[1584244800,4.695],[1584331200,4.695],[1584417600,3.22],[1584504000,4.577],[1584590400,4.221],[1584676800,4.459]],"color":"","scatterMarkerSymbol":"none"},
+        "GOOGL": {"name":"GOOGL","unit":"%","index":0,"seriesType":5,"indexName":"Margin Used (%)","tooltip":"{SERIES_NAME}: {VALUE}%","values":[[1578114000,4.08],[1578200400,4.08],[1578286800,4.08],[1578373200,4.178],[1578459600,4.172],[1578546000,4.197],[1578632400,4.235],[1578718800,4.261],[1578805200,4.261],[1578891600,4.261],[1578978000,4.289],[1579064400,4.264],[1579150800,4.287],[1579237200,4.313],[1579323600,4.392],[1579410000,4.392],[1579496400,4.392],[1579582800,4.392],[1579669200,4.4],[1579755600,4.405],[1579842000,4.406],[1579928400,4.359],[1580014800,4.359],[1580101200,4.359],[1580187600,4.271],[1580274000,4.323],[1580360400,4.343],[1580446800,4.335],[1580533200,4.294],[1580619600,4.294],[1580706000,4.294],[1580792400,3.707],[1580878800,3.624],[1580965200,3.635],[1581051600,3.7],[1581138000,3.712],[1581224400,3.712],[1581310800,3.712],[1581397200,3.764],[1581483600,3.761],[1581570000,3.773],[1581656400,3.763],[1581742800,3.751],[1581829200,3.751],[1581915600,3.751],[1582002000,3.751],[1582088400,3.747],[1582174800,3.739],[1582261200,3.728],[1582347600,3.67],[1582434000,3.67],[1582520400,3.67],[1582606800,3.554],[1582693200,3.464],[1582779600,3.48],[1582866000,3.252],[1582952400,4.002],[1583038800,4.002],[1583125200,4.002],[1583211600,4.178],[1583298000,4.023],[1583384400,4.193],[1583470800,3.957],[1583557200,3.898],[1583643600,3.898],[1583726400,3.898],[1583812800,3.652],[1583899200,3.877],[1583985600,3.636],[1584072000,3.262],[1584158400,4.247],[1584244800,4.247],[1584331200,4.247],[1584417600,3.622],[1584504000,4.382],[1584590400,4.225],[1584676800,4.33]],"color":"","scatterMarkerSymbol":"none"},
+        "SPY": {"name":"SPY","unit":"%","index":0,"seriesType":5,"indexName":"Margin Used (%)","tooltip":"{SERIES_NAME}: {VALUE}%","values":[[1578114000,4.097],[1578200400,4.097],[1578286800,4.097],[1578373200,4.102],[1578459600,4.092],[1578546000,4.11],[1578632400,4.132],[1578718800,4.118],[1578805200,4.118],[1578891600,4.118],[1578978000,4.142],[1579064400,4.138],[1579150800,4.145],[1579237200,4.173],[1579323600,4.178],[1579410000,4.178],[1579496400,4.178],[1579582800,4.178],[1579669200,4.17],[1579755600,4.17],[1579842000,4.174],[1579928400,4.145],[1580014800,4.145],[1580101200,4.145],[1580187600,4.092],[1580274000,4.131],[1580360400,4.129],[1580446800,4.142],[1580533200,4.089],[1580619600,4.089],[1580706000,4.089],[1580792400,4.123],[1580878800,4.197],[1580965200,4.094],[1581051600,4.096],[1581138000,4.079],[1581224400,4.079],[1581310800,4.079],[1581397200,4.085],[1581483600,4.085],[1581570000,4.101],[1581656400,4.1],[1581742800,4.08],[1581829200,4.08],[1581915600,4.08],[1582002000,4.08],[1582088400,4.063],[1582174800,4.058],[1582261200,4.052],[1582347600,4.037],[1582434000,4.037],[1582520400,4.037],[1582606800,3.948],[1582693200,3.975],[1582779600,3.967],[1582866000,3.744],[1582952400,3.754],[1583038800,3.754],[1583125200,3.754],[1583211600,3.949],[1583298000,3.829],[1583384400,4.026],[1583470800,3.86],[1583557200,3.795],[1583643600,3.795],[1583726400,3.795],[1583812800,3.493],[1583899200,4.291],[1583985600,4.03],[1584072000,3.563],[1584158400,4.477],[1584244800,4.477],[1584331200,4.477],[1584417600,3.848],[1584504000,4.12],[1584590400,3.864],[1584676800,3.896]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    },
+    "EMA_NVDA": {
+      "name": "EMA_NVDA",
+      "chartType": 0,
+      "series": {
+        "Price": {"name":"Price","unit":"$","index":0,"seriesType":0,"values":[[1580446680,245.81],[1580533080,236.43],[1580792280,240.33],[1580878680,247.13],[1580965080,250.76],[1581051480,254.245],[1581137880,251.59],[1581397080,262.97],[1581483480,267.89],[1581569880,272.54],[1581656280,270.7799],[1581742680,289.79],[1582088280,296.57],[1582174680,314.7],[1582261080,308.7],[1582347480,294.07],[1582606680,273.2799],[1582693080,262.05],[1582779480,267.65],[1582865880,252.6],[1582952280,270.07],[1583211480,276.43],[1583297880,265.72],[1583384280,284.51],[1583470680,273.29],[1583557080,266.08],[1583812680,245.44],[1583899080,261.08],[1583985480,246.47],[1584071880,216.31],[1584158280,240.93],[1584417480,196.4],[1584503880,217.27],[1584590280,202.82],[1584676680,212.97]],"color":"","scatterMarkerSymbol":"none"},
+        "EMA": {"name":"EMA","unit":"$","index":0,"seriesType":0,"values":[[1580446680,245.229],[1580533080,244.391],[1580792280,244.0042],[1580878680,244.3019],[1580965080,244.917],[1581051480,245.8054],[1581137880,246.3563],[1581397080,247.9385],[1581483480,249.8387],[1581569880,252.0007],[1581656280,253.7892],[1581742680,257.2179],[1582088280,260.9657],[1582174680,266.0832],[1582261080,270.142],[1582347480,272.4208],[1582606680,272.5026],[1582693080,271.5072],[1582779480,271.1398],[1582865880,269.3741],[1582952280,269.4404],[1583211480,270.1061],[1583297880,269.6883],[1583384280,271.0999],[1583470680,271.3085],[1583557080,270.8106],[1583812680,268.3943],[1583899080,267.6977],[1583985480,265.676],[1584071880,260.9745],[1584158280,259.0655],[1584417480,253.0974],[1584503880,249.6852],[1584590280,245.2219],[1584676680,242.1503]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    },
+    "Benchmark": {
+      "name": "Benchmark",
+      "chartType": 0,
+      "series": {
+        "Benchmark": {"name":"Benchmark","unit":"$","index":0,"seriesType":0,"values":[[1577854800,314.9284],[1577941200,314.9284],[1578027600,317.8735],[1578114000,315.4665],[1578200400,315.4665],[1578286800,315.4665],[1578373200,316.67],[1578459600,315.7796],[1578546000,317.4626],[1578632400,319.6152],[1578718800,318.6954],[1578805200,318.6954],[1578891600,318.6954],[1578978000,320.8872],[1579064400,320.398],[1579150800,321.122],[1579237200,323.7932],[1579323600,324.8011],[1579410000,324.8011],[1579496400,324.8011],[1579582800,324.8011],[1579669200,324.1651],[1579755600,324.2042],[1579842000,324.576],[1579928400,321.6895],[1580014800,321.6895],[1580101200,321.6895],[1580187600,316.533],[1580274000,319.85],[1580360400,319.5858],[1580446800,320.623],[1580533200,314.8012],[1580619600,314.8012],[1580706000,314.8012],[1580792400,317.1397],[1580878800,321.9733],[1580965200,325.6915],[1581051600,326.7873],[1581138000,325.0457],[1581224400,325.0457],[1581310800,325.0457],[1581397200,327.4723],[1581483600,328.0398],[1581570000,330.1533],[1581656400,329.801],[1581742800,330.3294],[1581829200,330.3294],[1581915600,330.3294],[1582002000,330.3294],[1582088400,329.4781],[1582174800,331.0534],[1582261200,329.6934],[1582347600,326.2981],[1582434000,326.2981],[1582520400,326.2981],[1582606800,315.4763],[1582693200,305.9167],[1582779600,304.7915],[1582866000,291.1028],[1582952400,289.8797],[1583038800,289.8797],[1583125200,289.8797],[1583211600,302.4334],[1583298000,293.774],[1583384400,306.1222],[1583470800,295.9462],[1583557200,291.0538],[1583643600,291.0538],[1583726400,291.0538],[1583812800,268.3241],[1583899200,282.2085],[1583985600,268.4513],[1584072000,242.7667],[1584158400,263.5199],[1584244800,263.5199],[1584331200,263.5199],[1584417600,234.6845],[1584504000,247.3556],[1584590400,234.8313],[1584676800,235.3303]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    }
+  },
+  "orders": {
+    "1": {
+      "type": 4,
+      "id": 1,
+      "contingentId": 0,
+      "brokerId": [
+        "1"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 314.272787922,
+      "priceCurrency": "USD",
+      "time": "2020-01-02T21:00:00Z",
+      "createdTime": "2020-01-02T21:00:00Z",
+      "lastFillTime": "2020-01-03T21:00:00Z",
+      "quantity": 26.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 8171.092485972,
+      "orderSubmissionData": {
+        "bidPrice": 317.87353470600,
+        "askPrice": 317.87353470600,
+        "lastPrice": 317.87353470600
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "2": {
+      "type": 4,
+      "id": 2,
+      "contingentId": 0,
+      "brokerId": [
+        "2"
+      ],
+      "symbol": {
+        "value": "GOOGL",
+        "id": "GOOG T1AZ164W5VTX",
+        "permtick": "GOOGL"
+      },
+      "price": 1348.0,
+      "priceCurrency": "USD",
+      "time": "2020-01-02T21:00:00Z",
+      "createdTime": "2020-01-02T21:00:00Z",
+      "lastFillTime": "2020-01-03T21:00:00Z",
+      "quantity": 6.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 8088.0,
+      "orderSubmissionData": {
+        "bidPrice": 1368.6800,
+        "askPrice": 1368.6800,
+        "lastPrice": 1368.6800
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "3": {
+      "type": 4,
+      "id": 3,
+      "contingentId": 0,
+      "brokerId": [
+        "3"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 318.059442828,
+      "priceCurrency": "USD",
+      "time": "2020-01-27T21:00:00Z",
+      "createdTime": "2020-01-27T21:00:00Z",
+      "lastFillTime": "2020-01-28T21:00:00Z",
+      "quantity": -52.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -16539.091027056,
+      "orderSubmissionData": {
+        "bidPrice": 316.53303930000,
+        "askPrice": 316.53303930000,
+        "lastPrice": 316.53303930000
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "4": {
+      "type": 4,
+      "id": 4,
+      "contingentId": 0,
+      "brokerId": [
+        "4"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 321.32751192,
+      "priceCurrency": "USD",
+      "time": "2020-01-28T21:00:00Z",
+      "createdTime": "2020-01-28T21:00:00Z",
+      "lastFillTime": "2020-01-29T21:00:00Z",
+      "quantity": 52.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 16709.03061984,
+      "orderSubmissionData": {
+        "bidPrice": 319.85003158200,
+        "askPrice": 319.85003158200,
+        "lastPrice": 319.85003158200
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "5": {
+      "type": 4,
+      "id": 5,
+      "contingentId": 0,
+      "brokerId": [
+        "5"
+      ],
+      "symbol": {
+        "value": "NVDA",
+        "id": "NVDA 2T",
+        "permtick": "NVDA"
+      },
+      "price": 243.97,
+      "priceCurrency": "USD",
+      "time": "2020-01-30T21:00:00Z",
+      "createdTime": "2020-01-30T21:00:00Z",
+      "lastFillTime": "2020-01-31T21:00:00Z",
+      "quantity": 34.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 8294.98,
+      "orderSubmissionData": {
+        "bidPrice": 245.8100,
+        "askPrice": 245.8100,
+        "lastPrice": 245.8100
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "6": {
+      "type": 4,
+      "id": 6,
+      "contingentId": 0,
+      "brokerId": [
+        "6"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 316.38626973,
+      "priceCurrency": "USD",
+      "time": "2020-01-31T21:00:00Z",
+      "createdTime": "2020-01-31T21:00:00Z",
+      "lastFillTime": "2020-02-03T21:00:00Z",
+      "quantity": -52.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -16452.08602596,
+      "orderSubmissionData": {
+        "bidPrice": 314.80115837400,
+        "askPrice": 314.80115837400,
+        "lastPrice": 314.80115837400
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "7": {
+      "type": 4,
+      "id": 7,
+      "contingentId": 0,
+      "brokerId": [
+        "7"
+      ],
+      "symbol": {
+        "value": "NVDA",
+        "id": "NVDA 2T",
+        "permtick": "NVDA"
+      },
+      "price": 235.7,
+      "priceCurrency": "USD",
+      "time": "2020-01-31T21:00:00Z",
+      "createdTime": "2020-01-31T21:00:00Z",
+      "lastFillTime": "2020-02-03T21:00:00Z",
+      "quantity": -69.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -16263.3,
+      "orderSubmissionData": {
+        "bidPrice": 236.4300,
+        "askPrice": 236.4300,
+        "lastPrice": 236.4300
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "8": {
+      "type": 4,
+      "id": 8,
+      "contingentId": 0,
+      "brokerId": [
+        "8"
+      ],
+      "symbol": {
+        "value": "GOOGL",
+        "id": "GOOG T1AZ164W5VTX",
+        "permtick": "GOOGL"
+      },
+      "price": 1461.65,
+      "priceCurrency": "USD",
+      "time": "2020-01-31T21:00:00Z",
+      "createdTime": "2020-01-31T21:00:00Z",
+      "lastFillTime": "2020-02-03T21:00:00Z",
+      "quantity": -11.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -16078.15,
+      "orderSubmissionData": {
+        "bidPrice": 1432.7800,
+        "askPrice": 1432.7800,
+        "lastPrice": 1432.7800
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "9": {
+      "type": 4,
+      "id": 9,
+      "contingentId": 0,
+      "brokerId": [
+        "9"
+      ],
+      "symbol": {
+        "value": "GOOGL",
+        "id": "GOOG T1AZ164W5VTX",
+        "permtick": "GOOGL"
+      },
+      "price": 1454.49,
+      "priceCurrency": "USD",
+      "time": "2020-02-03T21:00:00Z",
+      "createdTime": "2020-02-03T21:00:00Z",
+      "lastFillTime": "2020-02-04T21:00:00Z",
+      "quantity": 10.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 14544.90,
+      "orderSubmissionData": {
+        "bidPrice": 1482.6000,
+        "askPrice": 1482.6000,
+        "lastPrice": 1482.6000
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "10": {
+      "type": 4,
+      "id": 10,
+      "contingentId": 0,
+      "brokerId": [
+        "10"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 325.133736102,
+      "priceCurrency": "USD",
+      "time": "2020-02-04T21:00:00Z",
+      "createdTime": "2020-02-04T21:00:00Z",
+      "lastFillTime": "2020-02-05T21:00:00Z",
+      "quantity": 51.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 16581.820541202,
+      "orderSubmissionData": {
+        "bidPrice": 321.97329802800,
+        "askPrice": 321.97329802800,
+        "lastPrice": 321.97329802800
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "11": {
+      "type": 4,
+      "id": 11,
+      "contingentId": 0,
+      "brokerId": [
+        "11"
+      ],
+      "symbol": {
+        "value": "NVDA",
+        "id": "NVDA 2T",
+        "permtick": "NVDA"
+      },
+      "price": 251.99,
+      "priceCurrency": "USD",
+      "time": "2020-02-04T21:00:00Z",
+      "createdTime": "2020-02-04T21:00:00Z",
+      "lastFillTime": "2020-02-05T21:00:00Z",
+      "quantity": 68.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 17135.32,
+      "orderSubmissionData": {
+        "bidPrice": 247.1300,
+        "askPrice": 247.1300,
+        "lastPrice": 247.1300
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "12": {
+      "type": 4,
+      "id": 12,
+      "contingentId": 0,
+      "brokerId": [
+        "12"
+      ],
+      "symbol": {
+        "value": "NVDA",
+        "id": "NVDA 2T",
+        "permtick": "NVDA"
+      },
+      "price": 285.6435,
+      "priceCurrency": "USD",
+      "time": "2020-02-14T21:00:00Z",
+      "createdTime": "2020-02-14T21:00:00Z",
+      "lastFillTime": "2020-02-18T21:00:00Z",
+      "quantity": -4.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -1142.5740,
+      "orderSubmissionData": {
+        "bidPrice": 289.7900,
+        "askPrice": 289.7900,
+        "lastPrice": 289.7900
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "13": {
+      "type": 4,
+      "id": 13,
+      "contingentId": 0,
+      "brokerId": [
+        "13"
+      ],
+      "symbol": {
+        "value": "GOOGL",
+        "id": "GOOG T1AZ164W5VTX",
+        "permtick": "GOOGL"
+      },
+      "price": 1423.05,
+      "priceCurrency": "USD",
+      "time": "2020-02-21T21:00:00Z",
+      "createdTime": "2020-02-21T21:00:00Z",
+      "lastFillTime": "2020-02-24T21:00:00Z",
+      "quantity": -10.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -14230.50,
+      "orderSubmissionData": {
+        "bidPrice": 1483.4600,
+        "askPrice": 1483.4600,
+        "lastPrice": 1483.4600
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "14": {
+      "type": 4,
+      "id": 14,
+      "contingentId": 0,
+      "brokerId": [
+        "14"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 316.983132648,
+      "priceCurrency": "USD",
+      "time": "2020-02-24T21:00:00Z",
+      "createdTime": "2020-02-24T21:00:00Z",
+      "lastFillTime": "2020-02-25T21:00:00Z",
+      "quantity": -51.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -16166.139765048,
+      "orderSubmissionData": {
+        "bidPrice": 315.47629839600,
+        "askPrice": 315.47629839600,
+        "lastPrice": 315.47629839600
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "15": {
+      "type": 4,
+      "id": 15,
+      "contingentId": 0,
+      "brokerId": [
+        "15"
+      ],
+      "symbol": {
+        "value": "NVDA",
+        "id": "NVDA 2T",
+        "permtick": "NVDA"
+      },
+      "price": 262.06,
+      "priceCurrency": "USD",
+      "time": "2020-02-25T21:00:00Z",
+      "createdTime": "2020-02-25T21:00:00Z",
+      "lastFillTime": "2020-02-26T21:00:00Z",
+      "quantity": -60.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -15723.60,
+      "orderSubmissionData": {
+        "bidPrice": 262.0500,
+        "askPrice": 262.0500,
+        "lastPrice": 262.0500
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "16": {
+      "type": 4,
+      "id": 16,
+      "contingentId": 0,
+      "brokerId": [
+        "16"
+      ],
+      "symbol": {
+        "value": "GOOGL",
+        "id": "GOOG T1AZ164W5VTX",
+        "permtick": "GOOGL"
+      },
+      "price": 1274.31,
+      "priceCurrency": "USD",
+      "time": "2020-02-27T21:00:00Z",
+      "createdTime": "2020-02-27T21:00:00Z",
+      "lastFillTime": "2020-02-28T21:00:00Z",
+      "quantity": -1.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -1274.31,
+      "orderSubmissionData": {
+        "bidPrice": 1314.9500,
+        "askPrice": 1314.9500,
+        "lastPrice": 1314.9500
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "17": {
+      "type": 4,
+      "id": 17,
+      "contingentId": 0,
+      "brokerId": [
+        "17"
+      ],
+      "symbol": {
+        "value": "NVDA",
+        "id": "NVDA 2T",
+        "permtick": "NVDA"
+      },
+      "price": 276.9,
+      "priceCurrency": "USD",
+      "time": "2020-02-28T21:00:00Z",
+      "createdTime": "2020-02-28T21:00:00Z",
+      "lastFillTime": "2020-03-02T21:00:00Z",
+      "quantity": 61.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 16890.9,
+      "orderSubmissionData": {
+        "bidPrice": 270.0700,
+        "askPrice": 270.0700,
+        "lastPrice": 270.0700
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "18": {
+      "type": 4,
+      "id": 18,
+      "contingentId": 0,
+      "brokerId": [
+        "18"
+      ],
+      "symbol": {
+        "value": "NVDA",
+        "id": "NVDA 2T",
+        "permtick": "NVDA"
+      },
+      "price": 270.2,
+      "priceCurrency": "USD",
+      "time": "2020-03-03T21:00:00Z",
+      "createdTime": "2020-03-03T21:00:00Z",
+      "lastFillTime": "2020-03-04T21:00:00Z",
+      "quantity": -61.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -16482.2,
+      "orderSubmissionData": {
+        "bidPrice": 265.7200,
+        "askPrice": 265.7200,
+        "lastPrice": 265.7200
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "19": {
+      "type": 4,
+      "id": 19,
+      "contingentId": 0,
+      "brokerId": [
+        "19"
+      ],
+      "symbol": {
+        "value": "NVDA",
+        "id": "NVDA 2T",
+        "permtick": "NVDA"
+      },
+      "price": 276.5,
+      "priceCurrency": "USD",
+      "time": "2020-03-04T21:00:00Z",
+      "createdTime": "2020-03-04T21:00:00Z",
+      "lastFillTime": "2020-03-05T21:00:00Z",
+      "quantity": 59.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 16313.5,
+      "orderSubmissionData": {
+        "bidPrice": 284.5100,
+        "askPrice": 284.5100,
+        "lastPrice": 284.5100
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "20": {
+      "type": 4,
+      "id": 20,
+      "contingentId": 0,
+      "brokerId": [
+        "20"
+      ],
+      "symbol": {
+        "value": "NVDA",
+        "id": "NVDA 2T",
+        "permtick": "NVDA"
+      },
+      "price": 239.9,
+      "priceCurrency": "USD",
+      "time": "2020-03-06T21:00:00Z",
+      "createdTime": "2020-03-06T21:00:00Z",
+      "lastFillTime": "2020-03-09T20:00:00Z",
+      "quantity": -59.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -14154.1,
+      "orderSubmissionData": {
+        "bidPrice": 266.0800,
+        "askPrice": 266.0800,
+        "lastPrice": 266.0800
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "21": {
+      "type": 4,
+      "id": 21,
+      "contingentId": 0,
+      "brokerId": [
+        "21"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 278.627351688,
+      "priceCurrency": "USD",
+      "time": "2020-03-09T20:00:00Z",
+      "createdTime": "2020-03-09T20:00:00Z",
+      "lastFillTime": "2020-03-10T20:00:00Z",
+      "quantity": -4.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -1114.509406752,
+      "orderSubmissionData": {
+        "bidPrice": 268.32412787400,
+        "askPrice": 268.32412787400,
+        "lastPrice": 268.32412787400
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "22": {
+      "type": 4,
+      "id": 22,
+      "contingentId": 0,
+      "brokerId": [
+        "22"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 257.668657092,
+      "priceCurrency": "USD",
+      "time": "2020-03-12T20:00:00Z",
+      "createdTime": "2020-03-12T20:00:00Z",
+      "lastFillTime": "2020-03-13T20:00:00Z",
+      "quantity": -4.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -1030.674628368,
+      "orderSubmissionData": {
+        "bidPrice": 242.76665341800,
+        "askPrice": 242.76665341800,
+        "lastPrice": 242.76665341800
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "23": {
+      "type": 4,
+      "id": 23,
+      "contingentId": 0,
+      "brokerId": [
+        "23"
+      ],
+      "symbol": {
+        "value": "NVDA",
+        "id": "NVDA 2T",
+        "permtick": "NVDA"
+      },
+      "price": 230.5,
+      "priceCurrency": "USD",
+      "time": "2020-03-12T20:00:00Z",
+      "createdTime": "2020-03-12T20:00:00Z",
+      "lastFillTime": "2020-03-13T20:00:00Z",
+      "quantity": -8.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -1844.0,
+      "orderSubmissionData": {
+        "bidPrice": 216.3100,
+        "askPrice": 216.3100,
+        "lastPrice": 216.3100
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "24": {
+      "type": 4,
+      "id": 24,
+      "contingentId": 0,
+      "brokerId": [
+        "24"
+      ],
+      "symbol": {
+        "value": "GOOGL",
+        "id": "GOOG T1AZ164W5VTX",
+        "permtick": "GOOGL"
+      },
+      "price": 1174.99,
+      "priceCurrency": "USD",
+      "time": "2020-03-12T20:00:00Z",
+      "createdTime": "2020-03-12T20:00:00Z",
+      "lastFillTime": "2020-03-13T20:00:00Z",
+      "quantity": -1.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -1174.99,
+      "orderSubmissionData": {
+        "bidPrice": 1111.5500,
+        "askPrice": 1111.5500,
+        "lastPrice": 1111.5500
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "25": {
+      "type": 4,
+      "id": 25,
+      "contingentId": 0,
+      "brokerId": [
+        "25"
+      ],
+      "symbol": {
+        "value": "NVDA",
+        "id": "NVDA 2T",
+        "permtick": "NVDA"
+      },
+      "price": 212.41,
+      "priceCurrency": "USD",
+      "time": "2020-03-13T20:00:00Z",
+      "createdTime": "2020-03-13T20:00:00Z",
+      "lastFillTime": "2020-03-16T20:00:00Z",
+      "quantity": 5.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 1062.05,
+      "orderSubmissionData": {
+        "bidPrice": 240.9300,
+        "askPrice": 240.9300,
+        "lastPrice": 240.9300
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "26": {
+      "type": 4,
+      "id": 26,
+      "contingentId": 0,
+      "brokerId": [
+        "26"
+      ],
+      "symbol": {
+        "value": "NVDA",
+        "id": "NVDA 2T",
+        "permtick": "NVDA"
+      },
+      "price": 200.91,
+      "priceCurrency": "USD",
+      "time": "2020-03-16T20:00:00Z",
+      "createdTime": "2020-03-16T20:00:00Z",
+      "lastFillTime": "2020-03-17T20:00:00Z",
+      "quantity": -9.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -1808.19,
+      "orderSubmissionData": {
+        "bidPrice": 196.4000,
+        "askPrice": 196.4000,
+        "lastPrice": 196.4000
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    },
+    "27": {
+      "type": 4,
+      "id": 27,
+      "contingentId": 0,
+      "brokerId": [
+        "27"
+      ],
+      "symbol": {
+        "value": "GOOGL",
+        "id": "GOOG T1AZ164W5VTX",
+        "permtick": "GOOGL"
+      },
+      "price": 1090.64,
+      "priceCurrency": "USD",
+      "time": "2020-03-16T20:00:00Z",
+      "createdTime": "2020-03-16T20:00:00Z",
+      "lastFillTime": "2020-03-17T20:00:00Z",
+      "quantity": -1.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -1090.64,
+      "orderSubmissionData": {
+        "bidPrice": 1073.0000,
+        "askPrice": 1073.0000,
+        "lastPrice": 1073.0000
+      },
+      "isMarketable": false,
+      "priceAdjustmentMode": 1
+    }
+  },
+  "profitLoss": {
+    "2020-01-28T21:00:00Z": 96.453027556,
+    "2020-01-29T21:00:00Z": -86.969796392,
+    "2020-02-03T21:00:00Z": -130.47229694,
+    "2020-02-03T21:00:00.001Z": -283.18,
+    "2020-02-03T21:00:00.002Z": 679.90,
+    "2020-02-04T21:00:00Z": 33.80,
+    "2020-02-05T21:00:00Z": -229.434125672,
+    "2020-02-05T21:00:00.001Z": -572.15,
+    "2020-02-18T21:00:00Z": 132.6140,
+    "2020-02-24T21:00:00Z": -159.20,
+    "2020-02-25T21:00:00Z": -205.765086350,
+    "2020-02-26T21:00:00Z": 290.03,
+    "2020-03-02T21:00:00Z": -462.04,
+    "2020-03-04T21:00:00Z": -203.0,
+    "2020-03-05T21:00:00Z": -197.3,
+    "2020-03-09T20:00:00Z": -1026.8,
+    "2020-03-16T20:00:00Z": 125.8089743589743589743589744
+  },
+  "statistics": {
+    "Total Orders": "27",
+    "Average Win": "0.23%",
+    "Average Loss": "-0.33%",
+    "Compounding Annual Return": "13.097%",
+    "Drawdown": "3.200%",
+    "Expectancy": "-0.400",
+    "Start Equity": "100000",
+    "End Equity": "102698.16",
+    "Net Profit": "2.698%",
+    "Sharpe Ratio": "0.679",
+    "Sortino Ratio": "0.868",
+    "Probabilistic Sharpe Ratio": "45.919%",
+    "Loss Rate": "65%",
+    "Win Rate": "35%",
+    "Profit-Loss Ratio": "0.70",
+    "Alpha": "-0.047",
+    "Beta": "-0.208",
+    "Annual Standard Deviation": "0.112",
+    "Annual Variance": "0.013",
+    "Information Ratio": "1.281",
+    "Tracking Error": "0.522",
+    "Treynor Ratio": "-0.366",
+    "Total Fees": "$27.00",
+    "Estimated Strategy Capacity": "$1900000000.00",
+    "Lowest Capacity Asset": "GOOG T1AZ164W5VTX",
+    "Portfolio Turnover": "3.50%"
+  },
+  "runtimeStatistics": {
+    "Equity": "$102,698.16",
+    "Fees": "-$27.00",
+    "Holdings": "$26,052.30",
+    "Net Profit": "$-2,190.71",
+    "Probabilistic Sharpe Ratio": "45.919%",
+    "Return": "2.70 %",
+    "Unrealized": "$4,885.87",
+    "Volume": "$276,360.65"
+  },
+  "state": {
+    "StartTime": "2025-07-15 13:32:11",
+    "EndTime": "2025-07-15 13:32:13",
+    "RuntimeError": "Runtime Error: Cannot perform runtime binding on a null reference in Main.cs:line 141",
+    "StackTrace": "System.Exception: Cannot perform runtime binding on a null reference in Main.cs:line 141\n ---> QuantConnect.Exceptions.SystemExceptionInterpreter+SanitizedException: Cannot perform runtime binding on a null reference\n   at CallSite.Target(Closure, CallSite, Object)\n   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)\n   at QuantConnect.Algorithm.CSharp.EMACrossover.OnData(Slice data) in /Users/misango/codechest/Lean_cli_test/arithmax-strategies/EMA_Cross_over/Main.cs:line 141\n   at QuantConnect.Lean.Engine.AlgorithmManager.Run(AlgorithmNodePacket job, IAlgorithm algorithm, ISynchronizer synchronizer, ITransactionHandler transactions, IResultHandler results, IRealTimeHandler realtime, ILeanManager leanManager, CancellationTokenSource cancellationTokenSource) in Engine/AlgorithmManager.cs:line 536\n   --- End of inner exception stack trace ---",
+    "LogCount": "43",
+    "OrderCount": "27",
+    "InsightCount": "0",
+    "Name": "local",
+    "Hostname": "tsf-500-wpa-6-242",
+    "Status": "RuntimeError"
+  },
+  "algorithmConfiguration": {
+    "name": "local",
+    "tags": [],
+    "accountCurrency": "USD",
+    "brokerage": 0,
+    "accountType": 0,
+    "parameters": {},
+    "outOfSampleMaxEndDate": null,
+    "outOfSampleDays": 0,
+    "startDate": "2020-01-01 00:00:00",
+    "endDate": "2023-12-31 23:59:59",
+    "tradingDaysPerYear": 252
+  }
+}

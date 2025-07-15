@@ -1,0 +1,568 @@
+2025-07-15T13:36:48.0989771Z TRACE:: Engine.Main(): LEAN ALGORITHMIC TRADING ENGINE v2.5.0.0 Mode: DEBUG (64bit) Host: tsf-500-wpa-6-242
+2025-07-15T13:36:48.1093133Z TRACE:: Engine.Main(): Started 1:36 PM
+2025-07-15T13:36:48.1263400Z TRACE:: Config.Get(): Configuration key not found. Key: lean-manager-type - Using default value: LocalLeanManager
+2025-07-15T13:36:48.1665437Z TRACE:: JobQueue.NextJob(): Selected EMA_Cross_over.dll
+2025-07-15T13:36:48.2414288Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-capacity - Using default value: 120
+2025-07-15T13:36:48.2418222Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-time-interval-minutes - Using default value: 1440
+2025-07-15T13:36:48.2422428Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-refill-amount - Using default value: 18
+2025-07-15T13:36:48.2439178Z TRACE:: Config.GetValue(): storage-limit - Using default value: 10737418240
+2025-07-15T13:36:48.2455327Z TRACE:: Config.GetValue(): storage-permissions - Using default value: Read=True Write=True Delete=True
+2025-07-15T13:36:48.2459353Z TRACE:: Config.Get(): Configuration key not found. Key: optimization-id - Using default value: 
+2025-07-15T13:36:48.2462245Z TRACE:: Config.Get(): Configuration key not found. Key: backtest-name - Using default value: local
+2025-07-15T13:36:48.2531108Z TRACE:: Config.Get(): Configuration key not found. Key: data-channel - Using default value: 
+2025-07-15T13:36:48.2541174Z TRACE:: Config.Get(): Configuration key not found. Key: python-venv - Using default value: 
+2025-07-15T13:36:48.2549398Z TRACE:: Config.Get(): Configuration key not found. Key: out-of-sample-max-end-date - Using default value: 
+2025-07-15T13:36:48.2553417Z TRACE:: Config.GetValue(): out-of-sample-days - Using default value: 0
+2025-07-15T13:36:48.2574786Z TRACE:: Config.Get(): Configuration key not found. Key: data-permission-manager - Using default value: DataPermissionManager
+2025-07-15T13:36:48.2578242Z TRACE:: Config.Get(): Configuration key not found. Key: data-monitor - Using default value: QuantConnect.Data.DataMonitor
+2025-07-15T13:36:48.2810829Z TRACE:: Config.GetValue(): algorithm-creation-timeout - Using default value: 90
+2025-07-15T13:36:48.2984316Z TRACE:: Config.GetValue(): zip-data-cache-provider - Using default value: 10
+2025-07-15T13:36:48.3002492Z TRACE:: Config.Get(): Configuration key not found. Key: fundamental-data-provider - Using default value: CoarseFundamentalDataProvider
+2025-07-15T13:36:48.3042463Z TRACE:: AlgorithmManager.CreateTokenBucket(): Initializing LeakyBucket: Capacity: 120 RefillAmount: 18 TimeInterval: 1440
+2025-07-15T13:36:48.3061708Z TRACE:: Config.GetValue(): algorithm-manager-time-loop-maximum - Using default value: 20
+2025-07-15T13:36:48.3166054Z TRACE:: Config.GetValue(): downloader-data-update-period - Using default value: 7
+2025-07-15T13:36:48.3228533Z TRACE:: Engine.Run(): Resource limits '0' CPUs. 2147483647 MB RAM.
+2025-07-15T13:36:48.3241968Z TRACE:: TextSubscriptionDataSourceReader.SetCacheSize(): Setting cache size to 71582788 items
+2025-07-15T13:36:49.3293026Z TRACE:: Loader.TryCreateILAlgorithm(): Loading only the algorithm assembly
+2025-07-15T13:36:49.3489703Z TRACE:: Config.Get(): Configuration key not found. Key: databases-refresh-period - Using default value: 1.00:00:00
+2025-07-15T13:36:49.5122681Z TRACE:: Loader.TryCreateILAlgorithm(): Loaded EMACrossover
+2025-07-15T13:36:49.5182551Z TRACE:: LocalObjectStore.Initialize(): Storage Root: /Storage. StorageFileCount 9999999. StorageLimit 10240MB. StoragePermissions Read=True Write=True Delete=True
+2025-07-15T13:36:49.5327506Z TRACE:: Config.GetValue(): zip-data-cache-provider - Using default value: 10
+2025-07-15T13:36:49.5447842Z TRACE:: HistoryProviderManager.Initialize(): history providers [SubscriptionDataReaderHistoryProvider]
+2025-07-15T13:36:49.5543248Z TRACE:: BaseSetupHandler.Setup(LocalPlatform): UID: 395632, PID: -977212551, Version: 2.5.0.0, Source: WebIDE
+2025-07-15T13:36:49.5675190Z TRACE:: Config.Get(): Configuration key not found. Key: security-data-feeds - Using default value: 
+2025-07-15T13:36:49.8575295Z TRACE:: BaseSetupHandler.SetupCurrencyConversions():
+Account Type: Margin
+
+Symbol      Quantity    Conversion = Value in USD
+USD: $      100000.00 @       1.00 = $100000
+-------------------------------------------------
+CashBook Total Value:                $100000
+
+2025-07-15T13:36:49.8617556Z TRACE:: Total margin information: TotalMarginUsed: 0.00, MarginRemaining: 100000.00
+2025-07-15T13:36:49.8626139Z TRACE:: SetUp Backtesting: User: 395632 ProjectId: -977212551 AlgoId: 1113064533
+2025-07-15T13:36:49.8662088Z TRACE:: Dates: Start: 01/01/2020 End: 01/01/2025 Cash: ¤100,000.00 MaximumRuntime: 100.00:00:00 MaxOrders: 2147483647
+2025-07-15T13:36:49.8705118Z TRACE:: BacktestingResultHandler(): Sample Period Set: 658.08
+2025-07-15T13:36:49.8733588Z TRACE:: Config.GetValue(): forward-console-messages - Using default value: True
+2025-07-15T13:36:49.8752643Z TRACE:: JOB HANDLERS:
+         DataFeed:             QuantConnect.Lean.Engine.DataFeeds.FileSystemDataFeed
+         Setup:                QuantConnect.Lean.Engine.Setup.BacktestingSetupHandler
+         RealTime:             QuantConnect.Lean.Engine.RealTime.BacktestingRealTimeHandler
+         Results:              QuantConnect.Lean.Engine.Results.BacktestingResultHandler
+         Transactions:         QuantConnect.Lean.Engine.TransactionHandlers.BacktestingTransactionHandler
+         Object Store:         QuantConnect.Lean.Engine.Storage.LocalObjectStore
+         History Provider:     QuantConnect.Lean.Engine.HistoricalData.HistoryProviderManager
+         Brokerage:            QuantConnect.Brokerages.Backtesting.BacktestingBrokerage
+         Data Provider:        QuantConnect.Lean.Engine.DataFeeds.DefaultDataProvider
+
+2025-07-15T13:36:49.9116444Z TRACE:: Event Name "Daily Sampling", scheduled to run.
+2025-07-15T13:36:49.9153696Z TRACE:: AlgorithmManager.Run(): Begin DataStream - Start: 1/1/2020 12:00:00 AM Stop: 1/1/2025 11:59:59 PM Time: 8/9/2019 12:00:00 AM Warmup: True
+2025-07-15T13:36:49.9365321Z TRACE:: Debug: Launching analysis for 1113064533 with LEAN Engine v2.5.0.0
+2025-07-15T13:36:49.9818909Z TRACE:: Config.GetValue(): data-feed-workers-count - Using default value: 12
+2025-07-15T13:36:49.9834083Z TRACE:: Config.GetValue(): data-feed-max-work-weight - Using default value: 400
+2025-07-15T13:36:49.9838548Z TRACE:: WeightedWorkScheduler(): will use 12 workers and MaxWorkWeight is 400
+2025-07-15T13:36:50.1138443Z TRACE:: UniverseSelection.AddPendingInternalDataFeeds(): Adding internal benchmark data feed SPY,#0,SPY,Hour,TradeBar,Trade,Adjusted,OpenInterest,Internal
+2025-07-15T13:36:50.5038172Z TRACE:: Debug: Accurate daily end-times now enabled by default. See more at https://qnt.co/3YHaWHL. To disable it and use legacy daily bars set self.settings.daily_precise_end_time = False.
+2025-07-15T13:36:50.5046924Z TRACE:: Debug: Algorithm starting warm up...
+2025-07-15T13:36:50.5051820Z TRACE:: Debug: Algorithm finished warming up.
+2025-07-15T13:36:50.7279499Z TRACE:: Log: Rebalancing NVDA: Current Weight: 0.00%, Target Weight: 11.11%, Price: $245.81, EMA: $245.23
+2025-07-15T13:36:50.7781993Z TRACE:: Config.GetValue(): portfolio-margin-series-count - Using default value: 5
+2025-07-15T13:36:50.7787530Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.68%, Target Weight: -11.11%, Price: $236.43, EMA: $244.39
+2025-07-15T13:36:50.8297818Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.47%, Target Weight: 11.11%, Price: $247.13, EMA: $244.30
+2025-07-15T13:36:50.8301594Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.68%, Target Weight: 11.11%, Price: $289.79, EMA: $257.22
+2025-07-15T13:36:50.8304017Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.01%, Target Weight: -11.11%, Price: $262.05, EMA: $271.51
+2025-07-15T13:36:50.8305975Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.44%, Target Weight: 11.11%, Price: $270.07, EMA: $269.44
+2025-07-15T13:36:50.8310300Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.80%, Target Weight: -11.11%, Price: $265.72, EMA: $269.69
+2025-07-15T13:36:50.8314569Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.91%, Target Weight: 11.11%, Price: $284.51, EMA: $271.10
+2025-07-15T13:36:50.8322919Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.33%, Target Weight: -11.11%, Price: $266.08, EMA: $270.81
+2025-07-15T13:36:50.8327046Z TRACE:: Log: Rebalancing NVDA: Current Weight: -8.84%, Target Weight: -11.11%, Price: $216.31, EMA: $260.97
+2025-07-15T13:36:50.8330957Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.45%, Target Weight: -11.11%, Price: $240.93, EMA: $259.07
+2025-07-15T13:36:50.8334706Z TRACE:: Log: Rebalancing NVDA: Current Weight: -8.74%, Target Weight: -11.11%, Price: $196.40, EMA: $253.10
+2025-07-15T13:36:50.8338612Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.22%, Target Weight: -11.11%, Price: $217.27, EMA: $249.69
+2025-07-15T13:36:50.8344486Z TRACE:: Log: Rebalancing NVDA: Current Weight: -10.08%, Target Weight: -11.11%, Price: $202.82, EMA: $245.22
+2025-07-15T13:36:50.8348031Z TRACE:: Log: Rebalancing NVDA: Current Weight: -13.74%, Target Weight: 11.11%, Price: $249.18, EMA: $237.44
+2025-07-15T13:36:50.8351577Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.70%, Target Weight: -11.11%, Price: $243.07, EMA: $245.24
+2025-07-15T13:36:50.8355249Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.56%, Target Weight: 11.11%, Price: $255.47, EMA: $246.22
+2025-07-15T13:36:50.8361993Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.56%, Target Weight: -11.11%, Price: $243.91, EMA: $246.00
+2025-07-15T13:36:50.8366502Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.20%, Target Weight: 11.11%, Price: $268.40, EMA: $248.13
+2025-07-15T13:36:50.8396945Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.12%, Target Weight: 11.11%, Price: $294.70, EMA: $262.30
+2025-07-15T13:36:50.8401699Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.04%, Target Weight: 11.11%, Price: $269.51, EMA: $267.46
+2025-07-15T13:36:50.8917568Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.16%, Target Weight: 11.11%, Price: $304.87, EMA: $285.82
+2025-07-15T13:36:50.8947552Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.29%, Target Weight: 11.11%, Price: $350.01, EMA: $306.32
+2025-07-15T13:36:50.8950977Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.43%, Target Weight: 11.11%, Price: $408.64, EMA: $376.31
+2025-07-15T13:36:50.8955329Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.72%, Target Weight: 11.11%, Price: $493.48, EMA: $440.97
+2025-07-15T13:36:50.8975765Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.30%, Target Weight: 11.11%, Price: $573.86, EMA: $499.23
+2025-07-15T13:36:50.8982417Z TRACE:: Log: Rebalancing NVDA: Current Weight: 9.74%, Target Weight: 11.11%, Price: $520.62, EMA: $501.26
+2025-07-15T13:36:50.8986191Z TRACE:: Log: Rebalancing NVDA: Current Weight: 9.94%, Target Weight: -11.11%, Price: $476.52, EMA: $499.22
+2025-07-15T13:36:50.9497441Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.61%, Target Weight: 11.11%, Price: $508.60, EMA: $500.11
+2025-07-15T13:36:50.9503249Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.35%, Target Weight: -11.11%, Price: $492.47, EMA: $499.39
+2025-07-15T13:36:50.9509590Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.36%, Target Weight: 11.11%, Price: $514.89, EMA: $499.76
+2025-07-15T13:36:50.9513967Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.65%, Target Weight: -11.11%, Price: $500.58, EMA: $501.55
+2025-07-15T13:36:50.9518083Z TRACE:: Log: Rebalancing NVDA: Current Weight: -10.72%, Target Weight: 11.11%, Price: $500.69, EMA: $500.03
+2025-07-15T13:36:50.9520857Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.43%, Target Weight: -11.11%, Price: $484.95, EMA: $499.06
+2025-07-15T13:36:50.9524410Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.69%, Target Weight: 11.11%, Price: $514.95, EMA: $500.13
+2025-07-15T13:36:50.9529235Z TRACE:: Log: Rebalancing NVDA: Current Weight: 11.12%, Target Weight: -11.11%, Price: $539.91, EMA: $541.26
+2025-07-15T13:36:50.9536681Z TRACE:: Log: Rebalancing NVDA: Current Weight: -10.67%, Target Weight: 11.11%, Price: $545.82, EMA: $541.70
+2025-07-15T13:36:50.9551891Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.59%, Target Weight: -11.11%, Price: $540.99, EMA: $541.63
+2025-07-15T13:36:50.9561757Z TRACE:: Log: Rebalancing NVDA: Current Weight: -10.64%, Target Weight: 11.11%, Price: $543.61, EMA: $541.20
+2025-07-15T13:36:50.9567647Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.30%, Target Weight: -11.11%, Price: $525.65, EMA: $539.72
+2025-07-15T13:36:50.9571844Z TRACE:: Log: Rebalancing PLTR: Current Weight: 0.00%, Target Weight: 11.11%, Price: $10.95, EMA: $9.67
+2025-07-15T13:36:50.9579553Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.41%, Target Weight: 11.11%, Price: $551.77, EMA: $530.29
+2025-07-15T13:36:50.9584707Z TRACE:: Log: Rebalancing PLTR: Current Weight: 13.59%, Target Weight: 11.11%, Price: $13.83, EMA: $10.59
+2025-07-15T13:36:50.9588664Z TRACE:: Log: Rebalancing NVDA: Current Weight: 9.83%, Target Weight: -11.11%, Price: $510.80, EMA: $536.33
+2025-07-15T13:36:51.0097403Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.72%, Target Weight: 11.11%, Price: $15.96, EMA: $11.72
+2025-07-15T13:36:51.0101508Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.24%, Target Weight: 11.11%, Price: $536.72, EMA: $536.37
+2025-07-15T13:36:51.0104838Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.64%, Target Weight: -11.11%, Price: $531.88, EMA: $536.11
+2025-07-15T13:36:51.0110940Z TRACE:: Log: Rebalancing NVDA: Current Weight: -10.84%, Target Weight: 11.11%, Price: $540.61, EMA: $536.54
+2025-07-15T13:36:51.0116540Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.31%, Target Weight: 11.11%, Price: $17.85, EMA: $13.18
+2025-07-15T13:36:51.0119784Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.38%, Target Weight: -11.11%, Price: $523.51, EMA: $535.46
+2025-07-15T13:36:51.0124036Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.81%, Target Weight: 11.11%, Price: $21.04, EMA: $15.14
+2025-07-15T13:36:51.0127735Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.33%, Target Weight: 11.11%, Price: $23.82, EMA: $15.97
+2025-07-15T13:36:51.0133357Z TRACE:: Log: Rebalancing PLTR: Current Weight: 13.21%, Target Weight: 11.11%, Price: $29.05, EMA: $17.22
+2025-07-15T13:36:51.0140309Z TRACE:: Log: Rebalancing NVDA: Current Weight: -10.61%, Target Weight: 11.11%, Price: $536.06, EMA: $532.77
+2025-07-15T13:36:51.0144884Z TRACE:: Log: Rebalancing PLTR: Current Weight: 9.92%, Target Weight: 11.11%, Price: $25.67, EMA: $19.69
+2025-07-15T13:36:51.0154522Z TRACE:: Log: Rebalancing PLTR: Current Weight: 9.81%, Target Weight: 11.11%, Price: $22.51, EMA: $19.96
+2025-07-15T13:36:51.0159254Z TRACE:: Log: Rebalancing PLTR: Current Weight: 13.81%, Target Weight: 11.11%, Price: $28.94, EMA: $21.47
+2025-07-15T13:36:51.0163577Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.45%, Target Weight: -11.11%, Price: $534.00, EMA: $535.58
+2025-07-15T13:36:51.0169640Z TRACE:: Log: Rebalancing NVDA: Current Weight: -10.98%, Target Weight: 11.11%, Price: $532.35, EMA: $531.38
+2025-07-15T13:36:51.0172906Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.06%, Target Weight: 11.11%, Price: $25.92, EMA: $24.19
+2025-07-15T13:36:51.0176605Z TRACE:: Log: Rebalancing NVDA: Current Weight: 11.01%, Target Weight: -11.11%, Price: $529.70, EMA: $531.48
+2025-07-15T13:36:51.0180591Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.02%, Target Weight: 11.11%, Price: $533.65, EMA: $531.69
+2025-07-15T13:36:51.0184658Z TRACE:: Log: Rebalancing NVDA: Current Weight: 11.03%, Target Weight: -11.11%, Price: $530.88, EMA: $531.61
+2025-07-15T13:36:51.0188716Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.00%, Target Weight: 11.11%, Price: $533.29, EMA: $531.77
+2025-07-15T13:36:51.0192324Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.98%, Target Weight: -11.11%, Price: $531.13, EMA: $531.71
+2025-07-15T13:36:51.0196586Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.13%, Target Weight: 11.11%, Price: $28.69, EMA: $25.61
+2025-07-15T13:36:51.0200351Z TRACE:: Log: Rebalancing PLTR: Current Weight: 9.99%, Target Weight: -11.11%, Price: $25.63, EMA: $25.80
+2025-07-15T13:36:51.0217586Z TRACE:: Log: Rebalancing PLTR: Current Weight: -10.09%, Target Weight: -11.11%, Price: $23.55, EMA: $25.43
+2025-07-15T13:36:51.0232948Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.15%, Target Weight: 11.11%, Price: $536.19, EMA: $527.40
+2025-07-15T13:36:51.0238048Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.00%, Target Weight: -11.11%, Price: $504.58, EMA: $525.23
+2025-07-15T13:36:51.0242982Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.67%, Target Weight: 11.11%, Price: $533.76, EMA: $526.04
+2025-07-15T13:36:51.0248601Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.02%, Target Weight: 11.11%, Price: $25.20, EMA: $25.04
+2025-07-15T13:36:51.0253775Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.90%, Target Weight: -11.11%, Price: $24.92, EMA: $25.22
+2025-07-15T13:36:51.0258402Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.52%, Target Weight: -11.11%, Price: $528.01, EMA: $530.23
+2025-07-15T13:36:51.0263636Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.25%, Target Weight: 11.11%, Price: $25.64, EMA: $25.26
+2025-07-15T13:36:51.0776848Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.16%, Target Weight: 11.11%, Price: $534.63, EMA: $528.62
+2025-07-15T13:36:51.0780103Z TRACE:: Log: Rebalancing PLTR: Current Weight: 13.81%, Target Weight: 11.11%, Price: $32.58, EMA: $26.20
+2025-07-15T13:36:51.0782473Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.16%, Target Weight: 11.11%, Price: $36.23, EMA: $27.15
+2025-07-15T13:36:51.0784885Z TRACE:: Log: Rebalancing NVDA: Current Weight: 9.84%, Target Weight: -11.11%, Price: $516.71, EMA: $532.67
+2025-07-15T13:36:51.0787989Z TRACE:: Log: Rebalancing PLTR: Current Weight: 9.73%, Target Weight: 11.11%, Price: $31.02, EMA: $30.56
+2025-07-15T13:36:51.0790533Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.65%, Target Weight: 11.11%, Price: $542.27, EMA: $531.54
+2025-07-15T13:36:51.0795572Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.57%, Target Weight: 11.11%, Price: $36.05, EMA: $31.59
+2025-07-15T13:36:51.0799655Z TRACE:: Log: Rebalancing PLTR: Current Weight: 9.87%, Target Weight: -11.11%, Price: $31.91, EMA: $32.53
+2025-07-15T13:36:51.0802742Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.62%, Target Weight: -11.11%, Price: $27.84, EMA: $32.09
+2025-07-15T13:36:51.0807350Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.94%, Target Weight: -11.11%, Price: $25.17, EMA: $31.00
+2025-07-15T13:36:51.0817249Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.95%, Target Weight: -11.11%, Price: $29.00, EMA: $30.81
+2025-07-15T13:36:51.0820715Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.96%, Target Weight: -11.11%, Price: $565.68, EMA: $570.68
+2025-07-15T13:36:51.0825774Z TRACE:: Log: Rebalancing PLTR: Current Weight: -10.07%, Target Weight: -11.11%, Price: $26.39, EMA: $29.82
+2025-07-15T13:36:51.0830504Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.25%, Target Weight: 11.11%, Price: $579.96, EMA: $571.57
+2025-07-15T13:36:51.0834603Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.97%, Target Weight: -11.11%, Price: $23.96, EMA: $29.26
+2025-07-15T13:36:51.0838484Z TRACE:: Log: Rebalancing NVDA: Current Weight: 9.76%, Target Weight: -11.11%, Price: $532.30, EMA: $567.83
+2025-07-15T13:36:51.0841870Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.87%, Target Weight: -11.11%, Price: $494.81, EMA: $551.39
+2025-07-15T13:36:51.0845544Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.92%, Target Weight: -11.11%, Price: $463.73, EMA: $538.48
+2025-07-15T13:36:51.0851954Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.40%, Target Weight: 11.11%, Price: $26.73, EMA: $26.24
+2025-07-15T13:36:51.0855923Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.44%, Target Weight: -11.11%, Price: $519.74, EMA: $530.33
+2025-07-15T13:36:51.1366839Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.59%, Target Weight: -11.11%, Price: $25.61, EMA: $26.28
+2025-07-15T13:36:51.1371845Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.24%, Target Weight: 11.11%, Price: $531.65, EMA: $528.97
+2025-07-15T13:36:51.1376988Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.32%, Target Weight: -11.11%, Price: $508.90, EMA: $527.46
+2025-07-15T13:36:51.1386890Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.23%, Target Weight: 11.11%, Price: $527.45, EMA: $526.29
+2025-07-15T13:36:51.1390897Z TRACE:: Log: Rebalancing PLTR: Current Weight: -10.10%, Target Weight: -11.11%, Price: $23.26, EMA: $25.43
+2025-07-15T13:36:51.1394090Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.62%, Target Weight: -11.11%, Price: $522.83, EMA: $525.96
+2025-07-15T13:36:51.1398269Z TRACE:: Log: Rebalancing NVDA: Current Weight: -10.10%, Target Weight: -11.11%, Price: $501.41, EMA: $521.88
+2025-07-15T13:36:51.1403068Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.86%, Target Weight: 11.11%, Price: $533.93, EMA: $521.53
+2025-07-15T13:36:51.1407274Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.44%, Target Weight: 11.11%, Price: $24.04, EMA: $23.76
+2025-07-15T13:36:51.1413001Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.75%, Target Weight: -11.11%, Price: $23.34, EMA: $23.72
+2025-07-15T13:36:51.1424788Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.38%, Target Weight: 11.11%, Price: $608.36, EMA: $547.51
+2025-07-15T13:36:51.1431564Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.16%, Target Weight: 11.11%, Price: $25.42, EMA: $23.88
+2025-07-15T13:36:51.1438875Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.42%, Target Weight: -11.11%, Price: $23.70, EMA: $23.86
+2025-07-15T13:36:51.1442833Z TRACE:: Log: Rebalancing PLTR: Current Weight: -10.06%, Target Weight: -11.11%, Price: $21.78, EMA: $23.34
+2025-07-15T13:36:51.1448444Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.00%, Target Weight: 11.11%, Price: $23.41, EMA: $23.25
+2025-07-15T13:36:51.1453125Z TRACE:: Log: Rebalancing PLTR: Current Weight: 11.09%, Target Weight: -11.11%, Price: $23.37, EMA: $23.42
+2025-07-15T13:36:51.1457239Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.62%, Target Weight: -11.11%, Price: $593.47, EMA: $596.63
+2025-07-15T13:36:51.1462065Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.96%, Target Weight: -11.11%, Price: $21.15, EMA: $22.94
+2025-07-15T13:36:51.1467927Z TRACE:: Log: Rebalancing NVDA: Current Weight: -10.49%, Target Weight: 11.11%, Price: $592.49, EMA: $591.86
+2025-07-15T13:36:51.1474075Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.60%, Target Weight: -11.11%, Price: $18.47, EMA: $22.02
+2025-07-15T13:36:51.1480274Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.61%, Target Weight: -11.11%, Price: $570.63, EMA: $589.84
+2025-07-15T13:36:51.1484492Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.34%, Target Weight: -11.11%, Price: $20.21, EMA: $21.84
+2025-07-15T13:36:51.1489099Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.92%, Target Weight: -11.11%, Price: $18.37, EMA: $21.26
+2025-07-15T13:36:51.1494216Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.27%, Target Weight: -11.11%, Price: $20.08, EMA: $21.15
+2025-07-15T13:36:51.1498418Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.77%, Target Weight: 11.11%, Price: $21.24, EMA: $21.10
+2025-07-15T13:36:51.1502825Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.67%, Target Weight: -11.11%, Price: $20.67, EMA: $21.06
+2025-07-15T13:36:51.1508303Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.05%, Target Weight: 11.11%, Price: $584.50, EMA: $576.40
+2025-07-15T13:36:51.1513977Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.46%, Target Weight: 11.11%, Price: $21.22, EMA: $21.01
+2025-07-15T13:36:51.1519256Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.19%, Target Weight: 11.11%, Price: $649.78, EMA: $599.03
+2025-07-15T13:36:51.1523615Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.47%, Target Weight: 11.11%, Price: $24.45, EMA: $21.88
+2025-07-15T13:36:51.1528459Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.25%, Target Weight: 11.11%, Price: $746.29, EMA: $677.88
+2025-07-15T13:36:51.1531921Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.94%, Target Weight: -11.11%, Price: $24.72, EMA: $25.22
+2025-07-15T13:36:51.1541970Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.93%, Target Weight: -11.11%, Price: $22.45, EMA: $24.24
+2025-07-15T13:36:51.1589637Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.89%, Target Weight: -11.11%, Price: $758.65, EMA: $777.33
+2025-07-15T13:36:51.2107655Z TRACE:: Log: Rebalancing NVDA: Current Weight: -2.48%, Target Weight: -11.11%, Price: $186.12, EMA: $714.81
+2025-07-15T13:36:51.2111830Z TRACE:: Log: Rebalancing PLTR: Current Weight: -10.02%, Target Weight: -11.11%, Price: $21.81, EMA: $22.93
+2025-07-15T13:36:51.2115673Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.55%, Target Weight: 11.11%, Price: $22.52, EMA: $22.49
+2025-07-15T13:36:51.2118553Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.34%, Target Weight: -11.11%, Price: $206.37, EMA: $353.47
+2025-07-15T13:36:51.2121824Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.76%, Target Weight: -11.11%, Price: $21.82, EMA: $22.43
+2025-07-15T13:36:51.2125188Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.70%, Target Weight: 11.11%, Price: $22.93, EMA: $22.48
+2025-07-15T13:36:51.2131647Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.80%, Target Weight: -11.11%, Price: $22.35, EMA: $22.50
+2025-07-15T13:36:51.2139267Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.24%, Target Weight: 11.11%, Price: $24.89, EMA: $22.73
+2025-07-15T13:36:51.2144076Z TRACE:: Log: Rebalancing NVDA: Current Weight: -10.07%, Target Weight: -11.11%, Price: $190.40, EMA: $261.09
+2025-07-15T13:36:51.2148993Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.25%, Target Weight: -11.11%, Price: $208.16, EMA: $250.61
+2025-07-15T13:36:51.2153395Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.70%, Target Weight: 11.11%, Price: $28.63, EMA: $25.93
+2025-07-15T13:36:51.2158337Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.74%, Target Weight: 11.11%, Price: $224.82, EMA: $223.94
+2025-07-15T13:36:51.2163131Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.77%, Target Weight: -11.11%, Price: $220.81, EMA: $223.64
+2025-07-15T13:36:51.2167688Z TRACE:: Log: Rebalancing PLTR: Current Weight: 9.89%, Target Weight: -11.11%, Price: $25.34, EMA: $26.71
+2025-07-15T13:36:51.2171651Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.96%, Target Weight: -11.11%, Price: $23.17, EMA: $25.80
+2025-07-15T13:36:51.2177598Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.72%, Target Weight: -11.11%, Price: $197.32, EMA: $215.68
+2025-07-15T13:36:51.2182372Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.37%, Target Weight: 11.11%, Price: $217.46, EMA: $212.26
+2025-07-15T13:36:51.2188411Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.99%, Target Weight: 11.11%, Price: $24.69, EMA: $24.60
+2025-07-15T13:36:51.2192859Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.90%, Target Weight: -11.11%, Price: $24.22, EMA: $24.56
+2025-07-15T13:36:51.2197644Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.33%, Target Weight: 11.11%, Price: $24.78, EMA: $24.58
+2025-07-15T13:36:51.2238740Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.90%, Target Weight: -11.11%, Price: $24.43, EMA: $24.57
+2025-07-15T13:36:51.2242997Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.53%, Target Weight: 11.11%, Price: $25.41, EMA: $24.65
+2025-07-15T13:36:51.2253979Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.61%, Target Weight: 11.11%, Price: $247.17, EMA: $221.45
+2025-07-15T13:36:51.2260549Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.84%, Target Weight: 11.11%, Price: $298.01, EMA: $243.50
+2025-07-15T13:36:51.2263852Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.33%, Target Weight: -11.11%, Price: $24.25, EMA: $25.44
+2025-07-15T13:36:51.2268734Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.72%, Target Weight: -11.11%, Price: $21.50, EMA: $24.03
+2025-07-15T13:36:51.2276961Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.89%, Target Weight: -11.11%, Price: $19.38, EMA: $22.17
+2025-07-15T13:36:51.2280960Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.81%, Target Weight: -11.11%, Price: $300.37, EMA: $305.28
+2025-07-15T13:36:51.2286302Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.01%, Target Weight: 11.11%, Price: $324.27, EMA: $307.09
+2025-07-15T13:36:51.2294334Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.31%, Target Weight: -11.11%, Price: $304.90, EMA: $307.84
+2025-07-15T13:36:51.2302532Z TRACE:: Log: Rebalancing NVDA: Current Weight: -10.04%, Target Weight: -11.11%, Price: $281.61, EMA: $304.84
+2025-07-15T13:36:51.2308463Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.99%, Target Weight: 11.11%, Price: $304.59, EMA: $302.96
+2025-07-15T13:36:51.2314218Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.34%, Target Weight: -11.11%, Price: $283.87, EMA: $301.15
+2025-07-15T13:36:51.2322750Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.66%, Target Weight: 11.11%, Price: $296.40, EMA: $296.10
+2025-07-15T13:36:51.2328906Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.89%, Target Weight: -11.11%, Price: $295.86, EMA: $297.91
+2025-07-15T13:36:51.2335722Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.09%, Target Weight: 11.11%, Price: $301.21, EMA: $297.90
+2025-07-15T13:36:51.2340539Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.56%, Target Weight: -11.11%, Price: $292.90, EMA: $297.42
+2025-07-15T13:36:51.2348185Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.85%, Target Weight: -11.11%, Price: $16.96, EMA: $18.78
+2025-07-15T13:36:51.2858712Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.82%, Target Weight: -11.11%, Price: $265.75, EMA: $286.14
+2025-07-15T13:36:51.2864419Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.59%, Target Weight: -11.11%, Price: $14.97, EMA: $17.35
+2025-07-15T13:36:51.2869112Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.73%, Target Weight: -11.11%, Price: $241.50, EMA: $275.54
+2025-07-15T13:36:51.2873432Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.80%, Target Weight: -11.11%, Price: $13.53, EMA: $16.53
+2025-07-15T13:36:51.2900635Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.89%, Target Weight: -11.11%, Price: $223.24, EMA: $263.70
+2025-07-15T13:36:51.2904527Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.89%, Target Weight: -11.11%, Price: $12.28, EMA: $15.31
+2025-07-15T13:36:51.2928679Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.69%, Target Weight: -11.11%, Price: $13.71, EMA: $14.93
+2025-07-15T13:36:51.2933107Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.21%, Target Weight: -11.11%, Price: $244.86, EMA: $252.87
+2025-07-15T13:36:51.2939155Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.38%, Target Weight: 11.11%, Price: $252.42, EMA: $252.27
+2025-07-15T13:36:51.2944811Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.99%, Target Weight: -11.11%, Price: $12.45, EMA: $14.50
+2025-07-15T13:36:51.2947781Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.33%, Target Weight: -11.11%, Price: $239.48, EMA: $251.05
+2025-07-15T13:36:51.2951526Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.56%, Target Weight: 11.11%, Price: $251.08, EMA: $250.12
+2025-07-15T13:36:51.2957328Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.53%, Target Weight: -11.11%, Price: $13.87, EMA: $14.10
+2025-07-15T13:36:51.2960524Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.55%, Target Weight: -11.11%, Price: $239.49, EMA: $251.12
+2025-07-15T13:36:51.2967737Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.62%, Target Weight: 11.11%, Price: $14.17, EMA: $13.92
+2025-07-15T13:36:51.2972238Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.35%, Target Weight: 11.11%, Price: $264.95, EMA: $251.71
+2025-07-15T13:36:51.2976638Z TRACE:: Log: Rebalancing PLTR: Current Weight: 9.40%, Target Weight: -11.11%, Price: $11.77, EMA: $13.72
+2025-07-15T13:36:51.2980660Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.42%, Target Weight: -11.11%, Price: $245.07, EMA: $252.23
+2025-07-15T13:36:51.2984333Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.66%, Target Weight: -11.11%, Price: $10.48, EMA: $13.18
+2025-07-15T13:36:51.2990119Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.83%, Target Weight: -11.11%, Price: $223.87, EMA: $246.72
+2025-07-15T13:36:51.2994708Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.72%, Target Weight: -11.11%, Price: $11.83, EMA: $12.81
+2025-07-15T13:36:51.2999268Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.22%, Target Weight: -11.11%, Price: $243.85, EMA: $245.28
+2025-07-15T13:36:51.3007039Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.42%, Target Weight: -11.11%, Price: $213.52, EMA: $239.36
+2025-07-15T13:36:51.3012299Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.61%, Target Weight: -11.11%, Price: $10.50, EMA: $11.80
+2025-07-15T13:36:51.3016673Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.82%, Target Weight: 11.11%, Price: $11.79, EMA: $11.71
+2025-07-15T13:36:51.3020194Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.96%, Target Weight: 11.11%, Price: $244.96, EMA: $233.12
+2025-07-15T13:36:51.3023061Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.12%, Target Weight: 11.11%, Price: $13.27, EMA: $12.07
+2025-07-15T13:36:51.3027033Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.28%, Target Weight: 11.11%, Price: $281.50, EMA: $247.49
+2025-07-15T13:36:51.3031156Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.08%, Target Weight: -11.11%, Price: $259.31, EMA: $261.52
+2025-07-15T13:36:51.3041502Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.91%, Target Weight: -11.11%, Price: $13.00, EMA: $13.15
+2025-07-15T13:36:51.3044773Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.77%, Target Weight: -11.11%, Price: $231.19, EMA: $255.60
+2025-07-15T13:36:51.3050185Z TRACE:: Log: Rebalancing NVDA: Current Weight: -10.06%, Target Weight: -11.11%, Price: $215.04, EMA: $248.60
+2025-07-15T13:36:51.3054480Z TRACE:: Log: Rebalancing PLTR: Current Weight: -10.90%, Target Weight: 11.11%, Price: $12.91, EMA: $12.86
+2025-07-15T13:36:51.3061263Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.97%, Target Weight: -11.11%, Price: $12.79, EMA: $12.85
+2025-07-15T13:36:51.3065844Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.80%, Target Weight: -11.11%, Price: $195.15, EMA: $229.54
+2025-07-15T13:36:51.3069523Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.33%, Target Weight: -11.11%, Price: $11.12, EMA: $12.52
+2025-07-15T13:36:51.3074576Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.99%, Target Weight: -11.11%, Price: $10.12, EMA: $11.55
+2025-07-15T13:36:51.3081297Z TRACE:: Log: Rebalancing PLTR: Current Weight: -7.86%, Target Weight: -11.11%, Price: $7.46, EMA: $10.98
+2025-07-15T13:36:51.3088335Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.06%, Target Weight: -11.11%, Price: $169.50, EMA: $202.54
+2025-07-15T13:36:51.3118922Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.82%, Target Weight: -11.11%, Price: $6.71, EMA: $10.26
+2025-07-15T13:36:51.3122674Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.22%, Target Weight: -11.11%, Price: $7.34, EMA: $9.98
+2025-07-15T13:36:51.3126618Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.92%, Target Weight: -11.11%, Price: $8.34, EMA: $9.82
+2025-07-15T13:36:51.3129710Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.82%, Target Weight: -11.11%, Price: $7.55, EMA: $8.91
+2025-07-15T13:36:51.3132529Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.55%, Target Weight: -11.11%, Price: $8.36, EMA: $8.78
+2025-07-15T13:36:51.3138256Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.89%, Target Weight: 11.11%, Price: $8.85, EMA: $8.79
+2025-07-15T13:36:51.3143382Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.64%, Target Weight: 11.11%, Price: $188.11, EMA: $180.29
+2025-07-15T13:36:51.3149305Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.96%, Target Weight: -11.11%, Price: $8.68, EMA: $8.78
+2025-07-15T13:36:51.3153349Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.89%, Target Weight: 11.11%, Price: $9.30, EMA: $8.80
+2025-07-15T13:36:51.3156346Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.45%, Target Weight: -11.11%, Price: $8.68, EMA: $8.87
+2025-07-15T13:36:51.3160761Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.77%, Target Weight: -11.11%, Price: $180.48, EMA: $183.87
+2025-07-15T13:36:51.3164201Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.58%, Target Weight: -11.11%, Price: $7.64, EMA: $8.70
+2025-07-15T13:36:51.3169177Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.43%, Target Weight: -11.11%, Price: $156.47, EMA: $180.05
+2025-07-15T13:36:51.3178218Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.91%, Target Weight: 11.11%, Price: $8.71, EMA: $8.48
+2025-07-15T13:36:51.3184372Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.70%, Target Weight: 11.11%, Price: $10.19, EMA: $8.77
+2025-07-15T13:36:51.3189977Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.11%, Target Weight: 11.11%, Price: $171.26, EMA: $170.84
+2025-07-15T13:36:51.3194768Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.97%, Target Weight: -11.11%, Price: $168.69, EMA: $170.63
+2025-07-15T13:36:51.3201832Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.09%, Target Weight: 11.11%, Price: $9.23, EMA: $8.93
+2025-07-15T13:36:51.3241948Z TRACE:: Log: Rebalancing NVDA: Current Weight: -10.06%, Target Weight: -11.11%, Price: $155.42, EMA: $168.25
+2025-07-15T13:36:51.3757112Z TRACE:: Log: Rebalancing PLTR: Current Weight: 11.10%, Target Weight: -11.11%, Price: $9.28, EMA: $9.36
+2025-07-15T13:36:51.3760550Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.47%, Target Weight: 11.11%, Price: $161.01, EMA: $158.51
+2025-07-15T13:36:51.3763493Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.24%, Target Weight: 11.11%, Price: $9.34, EMA: $9.27
+2025-07-15T13:36:51.3766334Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.22%, Target Weight: 11.11%, Price: $10.49, EMA: $9.46
+2025-07-15T13:36:51.3769436Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.15%, Target Weight: -11.11%, Price: $9.40, EMA: $9.50
+2025-07-15T13:36:51.3773870Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.72%, Target Weight: 11.11%, Price: $10.02, EMA: $9.55
+2025-07-15T13:36:51.3805181Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.21%, Target Weight: 11.11%, Price: $179.84, EMA: $167.34
+2025-07-15T13:36:51.3809049Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.15%, Target Weight: 11.11%, Price: $11.20, EMA: $9.99
+2025-07-15T13:36:51.3815166Z TRACE:: Log: Rebalancing PLTR: Current Weight: 9.91%, Target Weight: -11.11%, Price: $9.82, EMA: $10.20
+2025-07-15T13:36:51.3818355Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.58%, Target Weight: -11.11%, Price: $170.86, EMA: $176.08
+2025-07-15T13:36:51.3823825Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.68%, Target Weight: 11.11%, Price: $180.97, EMA: $176.54
+2025-07-15T13:36:51.3832180Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.57%, Target Weight: -11.11%, Price: $8.51, EMA: $9.71
+2025-07-15T13:36:51.3835309Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.69%, Target Weight: -11.11%, Price: $178.49, EMA: $180.72
+2025-07-15T13:36:51.3842585Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.05%, Target Weight: 11.11%, Price: $179.13, EMA: $178.41
+2025-07-15T13:36:51.3846535Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.07%, Target Weight: -11.11%, Price: $162.60, EMA: $176.91
+2025-07-15T13:36:51.3851073Z TRACE:: Log: Rebalancing PLTR: Current Weight: -10.05%, Target Weight: -11.11%, Price: $7.72, EMA: $8.74
+2025-07-15T13:36:51.3857313Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.24%, Target Weight: -11.11%, Price: $139.37, EMA: $168.03
+2025-07-15T13:36:51.3862192Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.79%, Target Weight: -11.11%, Price: $125.61, EMA: $141.85
+2025-07-15T13:36:51.3867594Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.24%, Target Weight: 11.11%, Price: $7.94, EMA: $7.81
+2025-07-15T13:36:51.3891258Z TRACE:: Log: Rebalancing PLTR: Current Weight: 11.13%, Target Weight: -11.11%, Price: $8.04, EMA: $8.05
+2025-07-15T13:36:51.3899690Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.11%, Target Weight: 11.11%, Price: $8.07, EMA: $8.05
+2025-07-15T13:36:51.3903874Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.30%, Target Weight: -11.11%, Price: $7.53, EMA: $8.01
+2025-07-15T13:36:51.3907881Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.86%, Target Weight: -11.11%, Price: $112.27, EMA: $125.24
+2025-07-15T13:36:51.3912196Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.14%, Target Weight: 11.11%, Price: $8.16, EMA: $8.02
+2025-07-15T13:36:51.3924059Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.76%, Target Weight: -11.11%, Price: $7.91, EMA: $8.01
+2025-07-15T13:36:51.3928504Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.36%, Target Weight: 11.11%, Price: $8.04, EMA: $8.01
+2025-07-15T13:36:51.3934144Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.29%, Target Weight: -11.11%, Price: $121.94, EMA: $123.64
+2025-07-15T13:36:51.3938894Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.23%, Target Weight: 11.11%, Price: $124.66, EMA: $123.74
+2025-07-15T13:36:51.3943210Z TRACE:: Log: Rebalancing PLTR: Current Weight: 11.22%, Target Weight: -11.11%, Price: $8.22, EMA: $8.32
+2025-07-15T13:36:51.3948163Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.37%, Target Weight: 11.11%, Price: $141.56, EMA: $130.51
+2025-07-15T13:36:51.3952167Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.26%, Target Weight: -11.11%, Price: $7.02, EMA: $8.14
+2025-07-15T13:36:51.3957548Z TRACE:: Log: Rebalancing PLTR: Current Weight: -13.36%, Target Weight: 11.11%, Price: $8.41, EMA: $7.97
+2025-07-15T13:36:51.3961303Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.65%, Target Weight: 11.11%, Price: $163.27, EMA: $138.41
+2025-07-15T13:36:51.3964727Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.12%, Target Weight: -11.11%, Price: $7.62, EMA: $7.98
+2025-07-15T13:36:51.3969398Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.31%, Target Weight: 11.11%, Price: $7.86, EMA: $7.62
+2025-07-15T13:36:51.3973018Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.20%, Target Weight: -11.11%, Price: $7.19, EMA: $7.58
+2025-07-15T13:36:51.3977991Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.50%, Target Weight: 11.11%, Price: $7.50, EMA: $7.41
+2025-07-15T13:36:51.3981400Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.18%, Target Weight: 11.11%, Price: $180.72, EMA: $163.75
+2025-07-15T13:36:51.3984999Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.91%, Target Weight: -11.11%, Price: $7.35, EMA: $7.41
+2025-07-15T13:36:51.3990299Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.56%, Target Weight: -11.11%, Price: $6.35, EMA: $7.23
+2025-07-15T13:36:51.3995508Z TRACE:: Log: Rebalancing NVDA: Current Weight: 9.98%, Target Weight: -11.11%, Price: $162.54, EMA: $165.17
+2025-07-15T13:36:51.3998626Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.24%, Target Weight: 11.11%, Price: $165.01, EMA: $164.78
+2025-07-15T13:36:51.4001832Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.20%, Target Weight: -11.11%, Price: $153.39, EMA: $163.70
+2025-07-15T13:36:51.4006104Z TRACE:: Log: Rebalancing NVDA: Current Weight: -10.04%, Target Weight: -11.11%, Price: $141.21, EMA: $160.55
+2025-07-15T13:36:51.4010823Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.45%, Target Weight: 11.11%, Price: $156.28, EMA: $153.14
+2025-07-15T13:36:51.4014902Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.86%, Target Weight: 11.11%, Price: $6.70, EMA: $6.61
+2025-07-15T13:36:51.4019993Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.26%, Target Weight: 11.11%, Price: $177.02, EMA: $158.58
+2025-07-15T13:36:51.4024040Z TRACE:: Log: Rebalancing PLTR: Current Weight: 11.11%, Target Weight: -11.11%, Price: $6.73, EMA: $6.76
+2025-07-15T13:36:51.4028223Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.53%, Target Weight: 11.11%, Price: $7.02, EMA: $6.78
+2025-07-15T13:36:51.4032154Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.24%, Target Weight: 11.11%, Price: $198.02, EMA: $172.91
+2025-07-15T13:36:51.4039505Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.48%, Target Weight: 11.11%, Price: $8.20, EMA: $7.20
+2025-07-15T13:36:51.4044117Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.12%, Target Weight: 11.11%, Price: $223.37, EMA: $198.38
+2025-07-15T13:36:51.4048568Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.22%, Target Weight: -11.11%, Price: $7.51, EMA: $7.69
+2025-07-15T13:36:51.4051689Z TRACE:: Log: Rebalancing PLTR: Current Weight: -13.80%, Target Weight: 11.11%, Price: $9.22, EMA: $7.83
+2025-07-15T13:36:51.4055261Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.59%, Target Weight: -11.11%, Price: $206.55, EMA: $208.11
+2025-07-15T13:36:51.4063250Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.21%, Target Weight: -11.11%, Price: $8.17, EMA: $8.30
+2025-07-15T13:36:51.4072806Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.94%, Target Weight: 11.11%, Price: $236.64, EMA: $210.78
+2025-07-15T13:36:51.4083131Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.33%, Target Weight: 11.11%, Price: $8.33, EMA: $8.17
+2025-07-15T13:36:51.4088865Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.83%, Target Weight: -11.11%, Price: $8.13, EMA: $8.18
+2025-07-15T13:36:51.4599053Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.98%, Target Weight: -11.11%, Price: $7.35, EMA: $8.06
+2025-07-15T13:36:51.4603126Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.15%, Target Weight: 11.11%, Price: $8.08, EMA: $8.01
+2025-07-15T13:36:51.4610381Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.17%, Target Weight: 11.11%, Price: $261.99, EMA: $239.03
+2025-07-15T13:36:51.4613516Z TRACE:: Log: Rebalancing PLTR: Current Weight: 11.04%, Target Weight: -11.11%, Price: $8.04, EMA: $8.09
+2025-07-15T13:36:51.4617103Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.33%, Target Weight: 11.11%, Price: $8.22, EMA: $8.10
+2025-07-15T13:36:51.4623096Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.83%, Target Weight: -11.11%, Price: $7.98, EMA: $8.16
+2025-07-15T13:36:51.4630368Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.72%, Target Weight: 11.11%, Price: $8.39, EMA: $8.17
+2025-07-15T13:36:51.4635550Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.81%, Target Weight: -11.11%, Price: $8.15, EMA: $8.38
+2025-07-15T13:36:51.4640841Z TRACE:: Log: Rebalancing NVDA: Current Weight: 11.15%, Target Weight: -11.11%, Price: $262.41, EMA: $267.66
+2025-07-15T13:36:51.4644209Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.19%, Target Weight: 11.11%, Price: $269.56, EMA: $267.84
+2025-07-15T13:36:51.4649353Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.95%, Target Weight: -11.11%, Price: $7.38, EMA: $7.95
+2025-07-15T13:36:51.4653854Z TRACE:: Log: Rebalancing PLTR: Current Weight: -14.76%, Target Weight: 11.11%, Price: $9.55, EMA: $8.05
+2025-07-15T13:36:51.4657934Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.13%, Target Weight: 11.11%, Price: $289.53, EMA: $280.16
+2025-07-15T13:36:51.4662434Z TRACE:: Log: Rebalancing PLTR: Current Weight: 13.19%, Target Weight: 11.11%, Price: $11.74, EMA: $9.10
+2025-07-15T13:36:51.4666987Z TRACE:: Log: Rebalancing NVDA: Current Weight: 13.37%, Target Weight: 11.11%, Price: $379.80, EMA: $302.02
+2025-07-15T13:36:51.4672244Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.34%, Target Weight: 11.11%, Price: $13.65, EMA: $10.67
+2025-07-15T13:36:51.4677783Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.19%, Target Weight: 11.11%, Price: $15.24, EMA: $12.28
+2025-07-15T13:36:51.4683888Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.17%, Target Weight: 11.11%, Price: $438.08, EMA: $386.45
+2025-07-15T13:36:51.4687422Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.19%, Target Weight: -11.11%, Price: $14.05, EMA: $14.46
+2025-07-15T13:36:51.4690665Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.68%, Target Weight: 11.11%, Price: $14.61, EMA: $14.40
+2025-07-15T13:36:51.4694221Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.18%, Target Weight: 11.11%, Price: $16.30, EMA: $15.02
+2025-07-15T13:36:51.4701612Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.88%, Target Weight: -11.11%, Price: $16.15, EMA: $16.28
+2025-07-15T13:36:51.4705259Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.15%, Target Weight: 11.11%, Price: $17.81, EMA: $16.43
+2025-07-15T13:36:51.4708834Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.34%, Target Weight: 11.11%, Price: $19.84, EMA: $16.75
+2025-07-15T13:36:51.4712608Z TRACE:: Log: Rebalancing NVDA: Current Weight: 11.10%, Target Weight: -11.11%, Price: $442.69, EMA: $448.59
+2025-07-15T13:36:51.4717429Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.16%, Target Weight: 11.11%, Price: $454.17, EMA: $448.70
+2025-07-15T13:36:51.4726939Z TRACE:: Log: Rebalancing PLTR: Current Weight: 9.77%, Target Weight: -11.11%, Price: $17.04, EMA: $17.47
+2025-07-15T13:36:51.4731572Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.68%, Target Weight: -11.11%, Price: $446.64, EMA: $448.50
+2025-07-15T13:36:51.4736900Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.80%, Target Weight: -11.11%, Price: $15.25, EMA: $17.25
+2025-07-15T13:36:51.4741292Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.94%, Target Weight: -11.11%, Price: $408.55, EMA: $440.79
+2025-07-15T13:36:51.4746554Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.62%, Target Weight: 11.11%, Price: $469.67, EMA: $441.60
+2025-07-15T13:36:51.4753806Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.10%, Target Weight: 11.11%, Price: $16.33, EMA: $15.53
+2025-07-15T13:36:51.4760127Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.15%, Target Weight: -11.11%, Price: $14.98, EMA: $15.48
+2025-07-15T13:36:51.4766482Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.86%, Target Weight: -11.11%, Price: $462.41, EMA: $465.98
+2025-07-15T13:36:51.4770112Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.79%, Target Weight: 11.11%, Price: $15.79, EMA: $15.41
+2025-07-15T13:36:51.4773919Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.70%, Target Weight: -11.11%, Price: $15.33, EMA: $15.47
+2025-07-15T13:36:51.4780345Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.85%, Target Weight: -11.11%, Price: $422.39, EMA: $451.92
+2025-07-15T13:36:51.4783366Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.97%, Target Weight: -11.11%, Price: $14.00, EMA: $15.24
+2025-07-15T13:36:51.4788318Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.72%, Target Weight: 11.11%, Price: $15.77, EMA: $15.01
+2025-07-15T13:36:51.4792615Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.71%, Target Weight: 11.11%, Price: $447.82, EMA: $438.86
+2025-07-15T13:36:51.4797126Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.67%, Target Weight: -11.11%, Price: $14.90, EMA: $15.15
+2025-07-15T13:36:51.4801185Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.80%, Target Weight: -11.11%, Price: $435.17, EMA: $438.50
+2025-07-15T13:36:51.4807245Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.67%, Target Weight: 11.11%, Price: $15.73, EMA: $15.21
+2025-07-15T13:36:51.4811545Z TRACE:: Log: Rebalancing NVDA: Current Weight: -10.91%, Target Weight: 11.11%, Price: $440.41, EMA: $438.69
+2025-07-15T13:36:51.5489779Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.18%, Target Weight: 11.11%, Price: $17.61, EMA: $15.61
+2025-07-15T13:36:51.5494919Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.71%, Target Weight: -11.11%, Price: $439.38, EMA: $449.05
+2025-07-15T13:36:51.5501768Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.26%, Target Weight: -11.11%, Price: $16.11, EMA: $16.60
+2025-07-15T13:36:51.5506214Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.59%, Target Weight: 11.11%, Price: $16.64, EMA: $16.57
+2025-07-15T13:36:51.5508897Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.39%, Target Weight: -11.11%, Price: $15.59, EMA: $16.48
+2025-07-15T13:36:51.5513807Z TRACE:: Log: Rebalancing PLTR: Current Weight: -13.04%, Target Weight: 11.11%, Price: $17.97, EMA: $16.07
+2025-07-15T13:36:51.5519987Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.47%, Target Weight: 11.11%, Price: $435.06, EMA: $427.94
+2025-07-15T13:36:51.5523271Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.30%, Target Weight: 11.11%, Price: $20.49, EMA: $18.37
+2025-07-15T13:36:51.5528382Z TRACE:: Log: Rebalancing NVDA: Current Weight: 11.35%, Target Weight: -11.11%, Price: $467.70, EMA: $474.05
+2025-07-15T13:36:51.5535196Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.11%, Target Weight: -11.11%, Price: $18.40, EMA: $19.18
+2025-07-15T13:36:51.5548395Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.26%, Target Weight: 11.11%, Price: $475.06, EMA: $469.80
+2025-07-15T13:36:51.5569722Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.69%, Target Weight: -11.11%, Price: $466.27, EMA: $469.46
+2025-07-15T13:36:51.5579442Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.36%, Target Weight: 11.11%, Price: $476.57, EMA: $470.14
+2025-07-15T13:36:51.5583361Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.99%, Target Weight: -11.11%, Price: $16.58, EMA: $17.74
+2025-07-15T13:36:51.5586668Z TRACE:: Log: Rebalancing NVDA: Current Weight: 11.01%, Target Weight: -11.11%, Price: $481.68, EMA: $484.78
+2025-07-15T13:36:51.5592451Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.24%, Target Weight: 11.11%, Price: $490.97, EMA: $484.24
+2025-07-15T13:36:51.5597006Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.31%, Target Weight: 11.11%, Price: $563.82, EMA: $511.63
+2025-07-15T13:36:51.5602221Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.67%, Target Weight: 11.11%, Price: $17.60, EMA: $16.95
+2025-07-15T13:36:51.5607399Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.56%, Target Weight: -11.11%, Price: $16.75, EMA: $16.97
+2025-07-15T13:36:51.5613997Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.28%, Target Weight: 11.11%, Price: $17.09, EMA: $16.89
+2025-07-15T13:36:51.5619330Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.14%, Target Weight: 11.11%, Price: $624.65, EMA: $565.95
+2025-07-15T13:36:51.5623055Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.86%, Target Weight: -11.11%, Price: $16.74, EMA: $16.87
+2025-07-15T13:36:51.5627091Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.27%, Target Weight: 11.11%, Price: $17.02, EMA: $16.78
+2025-07-15T13:36:51.5632614Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.92%, Target Weight: -11.11%, Price: $16.72, EMA: $16.77
+2025-07-15T13:36:51.5637699Z TRACE:: Log: Rebalancing PLTR: Current Weight: -14.34%, Target Weight: 11.11%, Price: $21.87, EMA: $17.26
+2025-07-15T13:36:51.5641619Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.19%, Target Weight: 11.11%, Price: $24.51, EMA: $18.50
+2025-07-15T13:36:51.5645378Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.14%, Target Weight: 11.11%, Price: $739.00, EMA: $657.46
+2025-07-15T13:36:51.5651224Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.52%, Target Weight: 11.11%, Price: $852.37, EMA: $744.71
+2025-07-15T13:36:51.5654268Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.38%, Target Weight: -11.11%, Price: $23.49, EMA: $24.17
+2025-07-15T13:36:51.5658599Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.57%, Target Weight: 11.11%, Price: $24.57, EMA: $24.16
+2025-07-15T13:36:51.5662103Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.95%, Target Weight: -11.11%, Price: $24.18, EMA: $24.19
+2025-07-15T13:36:51.5667230Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.24%, Target Weight: 11.11%, Price: $24.51, EMA: $24.22
+2025-07-15T13:36:51.5672187Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.55%, Target Weight: -11.11%, Price: $23.01, EMA: $24.18
+2025-07-15T13:36:51.5677409Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.87%, Target Weight: -11.11%, Price: $859.05, EMA: $881.95
+2025-07-15T13:36:51.5680026Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.52%, Target Weight: 11.11%, Price: $906.16, EMA: $880.18
+2025-07-15T13:36:51.5684085Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.24%, Target Weight: -11.11%, Price: $860.01, EMA: $878.40
+2025-07-15T13:36:51.5688710Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.73%, Target Weight: -11.11%, Price: $20.47, EMA: $22.48
+2025-07-15T13:36:51.5694160Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.48%, Target Weight: -11.11%, Price: $762.00, EMA: $861.32
+2025-07-15T13:36:51.6208872Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.53%, Target Weight: 11.11%, Price: $22.52, EMA: $22.19
+2025-07-15T13:36:51.6214423Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.62%, Target Weight: 11.11%, Price: $877.35, EMA: $847.96
+2025-07-15T13:36:51.6217593Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.87%, Target Weight: -11.11%, Price: $21.97, EMA: $22.23
+2025-07-15T13:36:51.6222141Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.07%, Target Weight: -11.11%, Price: $830.41, EMA: $849.98
+2025-07-15T13:36:51.6228184Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.46%, Target Weight: 11.11%, Price: $22.55, EMA: $22.25
+2025-07-15T13:36:51.6235175Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.13%, Target Weight: 11.11%, Price: $858.17, EMA: $850.76
+2025-07-15T13:36:51.6239093Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.30%, Target Weight: 11.11%, Price: $25.21, EMA: $22.62
+2025-07-15T13:36:51.6242927Z TRACE:: Log: Rebalancing PLTR: Current Weight: 9.59%, Target Weight: -11.11%, Price: $21.40, EMA: $22.51
+2025-07-15T13:36:51.6246561Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.53%, Target Weight: 11.11%, Price: $1,037.99, EMA: $921.41
+2025-07-15T13:36:51.6250744Z TRACE:: Log: Rebalancing PLTR: Current Weight: -10.99%, Target Weight: 11.11%, Price: $21.73, EMA: $21.50
+2025-07-15T13:36:51.6255878Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.85%, Target Weight: -11.11%, Price: $21.32, EMA: $21.50
+2025-07-15T13:36:51.6263662Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.54%, Target Weight: 11.11%, Price: $22.10, EMA: $21.56
+2025-07-15T13:36:51.6268135Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.20%, Target Weight: 11.11%, Price: $1,164.37, EMA: $1,025.36
+2025-07-15T13:36:51.6272283Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.75%, Target Weight: 11.11%, Price: $23.13, EMA: $22.13
+2025-07-15T13:36:51.6278034Z TRACE:: Log: Rebalancing NVDA: Current Weight: 1.19%, Target Weight: -11.11%, Price: $121.79, EMA: $983.55
+2025-07-15T13:36:51.6283056Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.35%, Target Weight: 11.11%, Price: $25.82, EMA: $23.13
+2025-07-15T13:36:51.6286770Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.25%, Target Weight: -11.11%, Price: $135.58, EMA: $598.11
+2025-07-15T13:36:51.6291266Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.56%, Target Weight: -11.11%, Price: $118.11, EMA: $475.33
+2025-07-15T13:36:51.6294412Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.23%, Target Weight: -11.11%, Price: $131.38, EMA: $254.74
+2025-07-15T13:36:51.6297720Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.80%, Target Weight: -11.11%, Price: $117.99, EMA: $196.91
+2025-07-15T13:36:51.6303091Z TRACE:: Log: Rebalancing PLTR: Current Weight: 11.18%, Target Weight: -11.11%, Price: $26.60, EMA: $27.21
+2025-07-15T13:36:51.6306633Z TRACE:: Log: Rebalancing PLTR: Current Weight: -11.37%, Target Weight: 11.11%, Price: $27.18, EMA: $27.16
+2025-07-15T13:36:51.6311803Z TRACE:: Log: Rebalancing PLTR: Current Weight: 11.05%, Target Weight: -11.11%, Price: $27.08, EMA: $27.15
+2025-07-15T13:36:51.6315662Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.69%, Target Weight: -11.11%, Price: $103.73, EMA: $147.80
+2025-07-15T13:36:51.6321840Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.64%, Target Weight: -11.11%, Price: $117.02, EMA: $144.87
+2025-07-15T13:36:51.6325830Z TRACE:: Log: Rebalancing PLTR: Current Weight: -9.97%, Target Weight: -11.11%, Price: $24.74, EMA: $26.75
+2025-07-15T13:36:51.6333308Z TRACE:: Log: Rebalancing NVDA: Current Weight: -9.91%, Target Weight: -11.11%, Price: $107.27, EMA: $138.22
+2025-07-15T13:36:51.6337830Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.01%, Target Weight: 11.11%, Price: $26.59, EMA: $26.51
+2025-07-15T13:36:51.6341829Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.97%, Target Weight: -11.11%, Price: $26.32, EMA: $26.49
+2025-07-15T13:36:51.6345370Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.49%, Target Weight: 11.11%, Price: $29.28, EMA: $26.76
+2025-07-15T13:36:51.6350847Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.27%, Target Weight: -11.11%, Price: $116.14, EMA: $122.20
+2025-07-15T13:36:51.6354184Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.71%, Target Weight: 11.11%, Price: $122.86, EMA: $121.91
+2025-07-15T13:36:51.6360082Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.18%, Target Weight: 11.11%, Price: $32.08, EMA: $28.59
+2025-07-15T13:36:51.6364415Z TRACE:: Log: Rebalancing NVDA: Current Weight: 11.08%, Target Weight: -11.11%, Price: $123.74, EMA: $123.81
+2025-07-15T13:36:51.6368084Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.60%, Target Weight: 11.11%, Price: $129.37, EMA: $124.34
+2025-07-15T13:36:51.6374522Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.15%, Target Weight: -11.11%, Price: $117.59, EMA: $124.26
+2025-07-15T13:36:51.6377650Z TRACE:: Log: Rebalancing NVDA: Current Weight: -10.00%, Target Weight: -11.11%, Price: $108.00, EMA: $122.29
+2025-07-15T13:36:51.6388748Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.48%, Target Weight: -11.11%, Price: $30.16, EMA: $30.38
+2025-07-15T13:36:51.6393372Z TRACE:: Log: Rebalancing PLTR: Current Weight: -12.85%, Target Weight: 11.11%, Price: $34.60, EMA: $30.78
+2025-07-15T13:36:51.6399599Z TRACE:: Log: Rebalancing NVDA: Current Weight: -12.27%, Target Weight: 11.11%, Price: $116.91, EMA: $116.06
+2025-07-15T13:36:51.6406167Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.82%, Target Weight: -11.11%, Price: $115.59, EMA: $116.53
+2025-07-15T13:36:51.6410693Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.25%, Target Weight: 11.11%, Price: $117.87, EMA: $116.39
+2025-07-15T13:36:51.6415446Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.85%, Target Weight: -11.11%, Price: $116.00, EMA: $116.35
+2025-07-15T13:36:51.6420399Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.19%, Target Weight: 11.11%, Price: $37.95, EMA: $34.34
+2025-07-15T13:36:51.6798126Z TRACE:: Synchronizer.GetEnumerator(): Exited thread.
+2025-07-15T13:36:51.6812539Z TRACE:: AlgorithmManager.Run(): Firing On End Of Algorithm...
+2025-07-15T13:36:51.6938094Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.57%, Target Weight: 11.11%, Price: $120.87, EMA: $116.77
+2025-07-15T13:36:51.6941332Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.74%, Target Weight: -11.11%, Price: $117.00, EMA: $118.50
+2025-07-15T13:36:51.6944697Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.24%, Target Weight: 11.11%, Price: $118.85, EMA: $118.53
+2025-07-15T13:36:51.6949905Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.43%, Target Weight: 11.11%, Price: $43.13, EMA: $37.68
+2025-07-15T13:36:51.6953006Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.15%, Target Weight: 11.11%, Price: $134.81, EMA: $123.72
+2025-07-15T13:36:51.6956615Z TRACE:: Log: Rebalancing PLTR: Current Weight: 10.72%, Target Weight: -11.11%, Price: $41.56, EMA: $42.20
+2025-07-15T13:36:51.6960638Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.98%, Target Weight: -11.11%, Price: $132.76, EMA: $135.45
+2025-07-15T13:36:51.6960887Z TRACE:: Engine.Run(): Exiting Algorithm Manager
+2025-07-15T13:36:51.6965000Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.22%, Target Weight: 11.11%, Price: $136.05, EMA: $135.51
+2025-07-15T13:36:51.6982719Z TRACE:: Log: Rebalancing PLTR: Current Weight: -13.91%, Target Weight: 11.11%, Price: $51.13, EMA: $42.96
+2025-07-15T13:36:51.6990726Z TRACE:: Log: Rebalancing NVDA: Current Weight: 12.24%, Target Weight: 11.11%, Price: $148.88, EMA: $137.99
+2025-07-15T13:36:51.6998946Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.48%, Target Weight: 11.11%, Price: $58.39, EMA: $46.52
+2025-07-15T13:36:51.7007648Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.31%, Target Weight: 11.11%, Price: $65.77, EMA: $52.37
+2025-07-15T13:36:51.7012950Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.31%, Target Weight: -11.11%, Price: $140.15, EMA: $141.39
+2025-07-15T13:36:51.7017683Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.63%, Target Weight: 11.11%, Price: $147.01, EMA: $141.93
+2025-07-15T13:36:51.7021307Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.60%, Target Weight: -11.11%, Price: $141.95, EMA: $142.65
+2025-07-15T13:36:51.7024618Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.16%, Target Weight: 11.11%, Price: $145.14, EMA: $140.91
+2025-07-15T13:36:51.7028268Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.12%, Target Weight: 11.11%, Price: $71.87, EMA: $62.97
+2025-07-15T13:36:51.7030972Z TRACE:: StopSafely(): Waiting for 'Isolator Thread' thread to stop...
+2025-07-15T13:36:51.7035234Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.55%, Target Weight: -11.11%, Price: $138.81, EMA: $141.17
+2025-07-15T13:36:51.7048679Z TRACE:: FileSystemDataFeed.Exit(): Start. Setting cancellation token...
+2025-07-15T13:36:51.7054359Z TRACE:: Log: Rebalancing PLTR: Current Weight: 12.27%, Target Weight: 11.11%, Price: $80.55, EMA: $70.82
+2025-07-15T13:36:51.7086036Z TRACE:: Log: Rebalancing NVDA: Current Weight: -10.99%, Target Weight: 11.11%, Price: $139.67, EMA: $136.71
+2025-07-15T13:36:51.7093080Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.83%, Target Weight: -11.11%, Price: $137.01, EMA: $137.29
+2025-07-15T13:36:51.7102591Z TRACE:: Log: Rebalancing NVDA: Current Weight: -11.19%, Target Weight: 11.11%, Price: $137.49, EMA: $137.31
+2025-07-15T13:36:51.7107031Z TRACE:: Log: Rebalancing NVDA: Current Weight: 10.87%, Target Weight: -11.11%, Price: $134.29, EMA: $137.02
+2025-07-15T13:36:51.7111084Z TRACE:: Log: === FINAL PORTFOLIO STATISTICS ===
+2025-07-15T13:36:51.7111867Z TRACE:: FileSystemDataFeed.Exit(): Exit Finished.
+2025-07-15T13:36:51.7118173Z TRACE:: Log: Starting Cash: $100,000.00
+2025-07-15T13:36:51.7128953Z TRACE:: Log: Ending Value: $109,984.91
+2025-07-15T13:36:51.7131969Z TRACE:: Log: Total Return: 9.98%
+2025-07-15T13:36:51.7137078Z TRACE:: Log: Annualized Return: 1.92%
+2025-07-15T13:36:51.7142122Z TRACE:: Log: Years: 5.00
+2025-07-15T13:36:51.7146583Z TRACE:: Log: PLTR: Holdings Value: $11,647.02, Quantity: 154, Unrealized P&L: $3,416.26
+2025-07-15T13:36:51.7150037Z TRACE:: Log: NVDA: Holdings Value: $11,951.81, Quantity: 89, Unrealized P&L: $-333.86
+2025-07-15T13:36:51.7152861Z TRACE:: Debug: Algorithm Id:(1113064533) completed in 1.82 seconds at 3k data points per second. Processing total of 5,222 data points.
+2025-07-15T13:36:51.7128135Z TRACE:: BacktestingResultHandler.Exit(): starting...
+2025-07-15T13:36:51.7173298Z TRACE:: BacktestingResultHandler.Exit(): Saving logs...
+2025-07-15T13:36:51.7269194Z TRACE:: StopSafely(): Waiting for 'Result Thread' thread to stop...
+2025-07-15T13:36:51.7270141Z TRACE:: Debug: Your log was successfully created and can be retrieved from: /Results/1113064533-log.txt
+2025-07-15T13:36:51.7273838Z TRACE:: BacktestingResultHandler.Run(): Ending Thread...
+2025-07-15T13:36:53.0502647Z TRACE:: 
+STATISTICS:: Total Orders 433
+STATISTICS:: Average Win 0.74%
+STATISTICS:: Average Loss -0.52%
+STATISTICS:: Compounding Annual Return 1.920%
+STATISTICS:: Drawdown 19.300%
+STATISTICS:: Expectancy 0.040
+STATISTICS:: Start Equity 100000
+STATISTICS:: End Equity 109984.91
+STATISTICS:: Net Profit 9.985%
+STATISTICS:: Sharpe Ratio -0.097
+STATISTICS:: Sortino Ratio -0.101
+STATISTICS:: Probabilistic Sharpe Ratio 1.489%
+STATISTICS:: Loss Rate 57%
+STATISTICS:: Win Rate 43%
+STATISTICS:: Profit-Loss Ratio 1.43
+STATISTICS:: Alpha -0.009
+STATISTICS:: Beta -0.039
+STATISTICS:: Annual Standard Deviation 0.094
+STATISTICS:: Annual Variance 0.009
+STATISTICS:: Information Ratio -0.142
+STATISTICS:: Tracking Error 0.162
+STATISTICS:: Treynor Ratio 0.234
+STATISTICS:: Total Fees $1527.08
+STATISTICS:: Estimated Strategy Capacity $3200000000.00
+STATISTICS:: Lowest Capacity Asset PLTR 2T
+STATISTICS:: Portfolio Turnover 3.32%
+STATISTICS:: OrderListHash a8a68b7ff1d12446d9958ef6804688fd
+2025-07-15T13:36:53.0525611Z TRACE:: BacktestingResultHandler.SendAnalysisResult(): Processed final packet
+2025-07-15T13:36:53.0589361Z TRACE:: Engine.Run(): Disconnecting from brokerage...
+2025-07-15T13:36:53.0595601Z TRACE:: Engine.Run(): Disposing of setup handler...
+2025-07-15T13:36:53.0601033Z TRACE:: Engine.Main(): Analysis Completed and Results Posted.
+2025-07-15T13:36:53.0615119Z TRACE:: StopSafely(): Waiting for '' thread to stop...
+2025-07-15T13:36:53.0652725Z TRACE:: DataMonitor.GenerateReport():
+DATA USAGE:: Total data requests 6
+DATA USAGE:: Succeeded data requests 4
+DATA USAGE:: Failed data requests 2
+DATA USAGE:: Failed data requests percentage 33%
+DATA USAGE:: Total universe data requests 0
+DATA USAGE:: Succeeded universe data requests 0
+DATA USAGE:: Failed universe data requests 0
+DATA USAGE:: Failed universe data requests percentage 0%
+2025-07-15T13:36:53.0752433Z TRACE:: Engine.Main(): Packet removed from queue: 1113064533
+2025-07-15T13:36:53.0774273Z TRACE:: LeanEngineSystemHandlers.Dispose(): start...
+2025-07-15T13:36:53.0799285Z TRACE:: LeanEngineSystemHandlers.Dispose(): Disposed of system handlers.
+2025-07-15T13:36:53.0804992Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): start...
+2025-07-15T13:36:53.0816490Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): Disposed of algorithm handlers.

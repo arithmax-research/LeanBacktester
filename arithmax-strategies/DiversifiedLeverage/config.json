@@ -4,5 +4,5 @@
         "rebalance-period": 4
     },
     "description": "Diversified Leverage Strategy - Invests in a diversified portfolio of leveraged ETFs (TQQQ, UPRO, UDOW, TMF, UGL, DIG) with regular rebalancing every 4 days to maintain target allocation weights.",
-    "local-id": 897093616
+    "local-id": 672566055
 }

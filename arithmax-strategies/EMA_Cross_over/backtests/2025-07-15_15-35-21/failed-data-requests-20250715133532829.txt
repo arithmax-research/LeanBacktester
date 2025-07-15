@@ -1,0 +1,2 @@
+/equity/usa/daily/msft.zip
+/equity/usa/daily/msft.zip
