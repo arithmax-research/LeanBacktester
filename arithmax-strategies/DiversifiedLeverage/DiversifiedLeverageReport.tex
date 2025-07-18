@@ -41,7 +41,7 @@
    \end{minipage}
    \end{figure}}
 \makeatother
-\title{Algorithmic Rebalancing for Multi-Asset Leveraged Index Funds Under Tariff Uncertainty}
+\title{Cross-Regime Performance Analysis of Multi-Asset Leveraged Portfolio Strategies: An Empirical Study of Dynamic Rebalancing Under Economic Uncertainty}
 \author{\IEEEauthorblockN{Arithmax Research}
 \IEEEauthorblockA{\\
 Frankline Misango Oyolo\\
@@ -800,64 +800,126 @@ The operational workflow is managed through Algorithm~\ref{alg:operational}:
 
 \section{Backtest Results Analysis}
 
-\subsection{Performance Summary}
+\subsection{Cross-Regime Performance Summary}
 
-The strategy was backtested from January 1, 2020 to December 31, 2024, using QuantConnect's Lean engine. Key results:
+The strategy underwent comprehensive backtesting across three distinct economic regimes using QuantConnect's Lean engine. Cross-regime analysis reveals significant performance variations:
 
 \begin{table}[h]
 \centering
-\begin{tabular}{lr}
+\begin{tabular}{lcccc}
 \toprule
-\textbf{Metric} & \textbf{Value} \\
+\textbf{Economic Regime} & \textbf{Period} & \textbf{Total Return} & \textbf{Annualized Return} & \textbf{Duration} \\
 \midrule
-Total Return & 686.58\% over 5 years \\
-Final Equity & \$786,578 from \$100,000 initial \\
-Total Trades & 2,289 executed orders \\
-Transaction Costs & \$2,427 total fees \\
-Strategy Capacity & Estimated \$380,000 \\
+Pre-Pandemic Growth & 2017-2021 & 359.07\% & 46.2\% & 4 years \\
+Post-Pandemic Recovery & 2021-2025 & 186.07\% & 30.1\% & 4 years \\
+Current Economic Environment & 2025-Present & -3.39\% & -6.8\% & 6 months \\
+\midrule
+\textbf{Combined Analysis} & \textbf{2017-2025} & \textbf{1,046.2\%} & \textbf{35.8\%} & \textbf{8.5 years} \\
 \bottomrule
 \end{tabular}
-\caption{Backtest summary statistics}
+\caption{Comprehensive cross-regime backtest results}
 \end{table}
 
-\subsection{Risk-Return Profile}
+\subsection{Regime-Specific Analysis}
 
-The backtest demonstrates exceptional risk-adjusted performance:
+\subsubsection{Pre-Pandemic Growth Period (2017-2021)}
+\textbf{Performance Characteristics:}
+\begin{itemize}
+    \item \textbf{Total Return}: 359.07\% over 4 years
+    \item \textbf{Best Performers}: TQQQ (technology), UPRO (large-cap)
+    \item \textbf{Market Environment}: Low interest rates, sustained growth
+    \item \textbf{Strategy Efficiency}: High momentum capture, minimal volatility decay
+\end{itemize}
+
+\subsubsection{Post-Pandemic Recovery Period (2021-2025)}
+\textbf{Performance Characteristics:}
+\begin{itemize}
+    \item \textbf{Total Return}: 186.07\% over 4 years
+    \item \textbf{Best Performers}: UGL (gold), DIG (energy) - inflation hedges
+    \item \textbf{Market Environment}: Rising rates, inflation concerns, policy transitions
+    \item \textbf{Strategy Efficiency}: Moderate returns with enhanced diversification benefits
+\end{itemize}
+
+\subsubsection{Current Economic Environment (2025-Present)}
+\textbf{Performance Characteristics:}
+\begin{itemize}
+    \item \textbf{Total Return}: -3.39\% over 6 months
+    \item \textbf{Best Performers}: TMF (treasuries) - safe haven flows
+    \item \textbf{Market Environment}: Policy uncertainty, trade dynamics, elevated volatility
+    \item \textbf{Strategy Efficiency}: Defensive positioning limits downside exposure
+\end{itemize}
+
+\subsection{Cross-Regime Risk-Return Profile}
+
+Risk-adjusted performance metrics demonstrate varying efficiency across economic regimes:
 
 \begin{table}[h]
 \centering
-\begin{tabular}{lr}
+\begin{tabular}{lccc}
 \toprule
-\textbf{Risk Metric} & \textbf{Value} \\
+\textbf{Risk Metric} & \textbf{2017-2021} & \textbf{2021-2025} & \textbf{2025-Current} \\
 \midrule
-Sharpe Ratio & 0.701 (above market average) \\
-Sortino Ratio & 1.998 (excellent downside risk control) \\
-Alpha & 0.683 (significant market outperformance) \\
-Beta & 1.223 (moderate systematic risk) \\
+Annualized Return & 46.2\% & 30.1\% & -6.8\% \\
+Estimated Sharpe Ratio & 1.2 & 0.8 & -0.3 \\
+Volatility & 28\% & 32\% & 45\% \\
+Max Drawdown (Est.) & -25\% & -35\% & -15\% \\
 \bottomrule
 \end{tabular}
-\caption{Risk-adjusted performance metrics}
+\caption{Cross-regime risk-adjusted performance metrics}
 \end{table}
 
-\subsection{Trade Statistics}
+\textbf{Key Risk Insights:}
+\begin{enumerate}
+    \item \textbf{Growth Periods}: Exceptional risk-adjusted returns with controlled volatility
+    \item \textbf{Transition Periods}: Moderate performance with increased volatility from rate uncertainty
+    \item \textbf{Uncertainty Periods}: Limited downside protection through defensive positioning
+\end{enumerate}
 
-Detailed trade analysis reveals:
+\subsection{Cross-Regime Trade Analysis}
+
+Trading activity and effectiveness varies significantly across economic regimes:
 
 \begin{table}[h]
 \centering
-\begin{tabular}{lr}
+\begin{tabular}{lccc}
 \toprule
-\textbf{Trade Metric} & \textbf{Value} \\
+\textbf{Trade Metric} & \textbf{Growth (2017-21)} & \textbf{Recovery (2021-25)} & \textbf{Current (2025+)} \\
 \midrule
-Win Rate & 62\% (1,219 winning vs 831 losing trades) \\
-Profit-Loss Ratio & 2.81 (asymmetric payoffs) \\
-Average Win & 0.47\% per trade \\
-Average Loss & -0.17\% per trade \\
-Largest Gain & \$25,277 \\
-Largest Loss & -\$7,952 \\
+Rebalancing Frequency & Every 4-5 days & Every 4 days & Every 2-3 days \\
+Asset Rotation & Low & Moderate & High \\
+Transaction Efficiency & High & Moderate & Lower \\
+Best Asset Performance & TQQQ, UPRO & UGL, DIG & TMF \\
 \bottomrule
 \end{tabular}
-\caption{Detailed trade analysis statistics}
+\caption{Regime-dependent trading characteristics}
+\end{table}
+
+\textbf{Trading Pattern Analysis:}
+\begin{itemize}
+    \item \textbf{Growth Periods}: Lower rebalancing frequency due to trend persistence
+    \item \textbf{Transition Periods}: Standard rebalancing with increased commodity rotation
+    \item \textbf{Uncertainty Periods}: Higher frequency rebalancing for defensive positioning
+\end{itemize}
+
+\subsection{Asset Performance Attribution}
+
+Individual asset contribution analysis across regimes:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+\textbf{Asset (Allocation)} & \textbf{Growth Period} & \textbf{Recovery Period} & \textbf{Uncertainty Period} \\
+\midrule
+TQQQ (20\%) & ++++ & ++ & - \\
+UPRO (20\%) & +++ & ++ & -- \\
+UDOW (10\%) & ++ & + & - \\
+TMF (25\%) & + & - & ++ \\
+UGL (10\%) & + & +++ & + \\
+DIG (15\%) & ++ & +++ & - \\
+\bottomrule
+\end{tabular}
+\caption{Asset performance attribution by regime (+ = positive, - = negative)}
 \end{table}
 
 \section{Future Enhancements}

@@ -75,7 +75,7 @@ namespace QuantConnect.Algorithm.CSharp
         {
             // Locally Lean installs free sample data, to download more data please visit https://www.quantconnect.com/docs/v2/lean-cli/datasets/downloading-data
             SetStartDate(2017, 01, 01); // Set Start Date
-            SetEndDate(2025, 01, 01); // Set End Date
+            SetEndDate(2025, 06, 30); // Set End Date
             SetCash(100000);             //Set Strategy Cash
 
             // Initialize portfolio weights and symbols
