@@ -62,7 +62,7 @@
 #endregion
 namespace QuantConnect.Algorithm.CSharp
 {
-    public class DiversifiedLeverage : QCAlgorithm
+    public class DiversifiedLeverageTrump2017 : QCAlgorithm
     {
         // Portfolio configuration
         private Dictionary<string, decimal> _targetWeights;
@@ -70,13 +70,19 @@ namespace QuantConnect.Algorithm.CSharp
         private int _rebalancePeriod = 4; // Rebalance every 4 days
         private Dictionary<string, OrderTicket> _orderDict;
         private DateTime _lastRebalanceTime;
+        private Dictionary<string, decimal> _individualReturns;
+        private Dictionary<string, decimal> _initialPrices;
 
         public override void Initialize()
         {
-            // Locally Lean installs free sample data, to download more data please visit https://www.quantconnect.com/docs/v2/lean-cli/datasets/downloading-data
-            SetStartDate(2017, 01, 01); // Set Start Date
-            SetEndDate(2025, 01, 01); // Set End Date
+            // Trump's First Term: January 20, 2017 - January 20, 2021
+            SetStartDate(2017, 01, 20); // Trump inauguration date
+            SetEndDate(2021, 01, 20); // End of Trump's first term
             SetCash(100000);             //Set Strategy Cash
+
+            // Initialize tracking dictionaries
+            _individualReturns = new Dictionary<string, decimal>();
+            _initialPrices = new Dictionary<string, decimal>();
 
             // Initialize portfolio weights and symbols
             _targetWeights = new Dictionary<string, decimal>
@@ -96,12 +102,14 @@ namespace QuantConnect.Algorithm.CSharp
             foreach (var symbol in _symbols)
             {
                 AddEquity(symbol, Resolution.Daily);
+                _individualReturns[symbol] = 0m;
             }
 
             // Schedule rebalancing
             Schedule.On(DateRules.Every(DayOfWeek.Monday), TimeRules.At(9, 31), RebalancePortfolio);
             
             // Log initial portfolio value
+            Log($"=== TRUMP 2017-2021 PERIOD ANALYSIS ===");
             Log($"Initial Portfolio Value: ${Portfolio.TotalPortfolioValue:F2}");
             Log($"Target Portfolio Weights: {string.Join(", ", _targetWeights.Select(kvp => $"{kvp.Key}: {kvp.Value:P2}"))}");
 
@@ -112,6 +120,16 @@ namespace QuantConnect.Algorithm.CSharp
         /// Slice object keyed by symbol containing the stock data
         public override void OnData(Slice data)
         {
+            // Store initial prices for individual ETF tracking
+            foreach (var symbol in _symbols)
+            {
+                if (!_initialPrices.ContainsKey(symbol) && data.ContainsKey(symbol) && data[symbol] != null)
+                {
+                    _initialPrices[symbol] = data[symbol].Price;
+                    Log($"Initial price for {symbol}: ${_initialPrices[symbol]:F2}");
+                }
+            }
+
             // Check if it's time to rebalance (every 4 days)
             if (Time.Subtract(_lastRebalanceTime).TotalDays >= _rebalancePeriod)
             {
@@ -199,7 +217,6 @@ namespace QuantConnect.Algorithm.CSharp
             }
 
             _lastRebalanceTime = Time;
-            Log($"Next portfolio rebalancing will be in {_rebalancePeriod} day(s)");
         }
 
         public override void OnOrderEvent(OrderEvent orderEvent)
@@ -225,9 +242,27 @@ namespace QuantConnect.Algorithm.CSharp
 
         public override void OnEndOfAlgorithm()
         {
+            Log($"=== TRUMP 2017-2021 PERIOD FINAL RESULTS ===");
             Log($"Final Portfolio Value: ${Portfolio.TotalPortfolioValue:F2}");
+            var totalReturn = (Portfolio.TotalPortfolioValue - 100000) / 100000 * 100;
+            Log($"Total Portfolio Return: {totalReturn:F2}%");
             
+            // Calculate individual ETF returns
+            Log($"=== INDIVIDUAL ETF PERFORMANCE (Trump 2017-2021) ===");
+            foreach (var symbol in _symbols)
+            {
+                if (_initialPrices.ContainsKey(symbol) && Securities[symbol].HasData)
+                {
+                    var initialPrice = _initialPrices[symbol];
+                    var finalPrice = Securities[symbol].Price;
+                    var etfReturn = (finalPrice - initialPrice) / initialPrice * 100;
+                    _individualReturns[symbol] = etfReturn;
+                    Log($"{symbol}: {initialPrice:F2} -> {finalPrice:F2} = {etfReturn:F2}% return");
+                }
+            }
+
             // Log final holdings
+            Log($"=== FINAL PORTFOLIO COMPOSITION ===");
             foreach (var kvp in Portfolio)
             {
                 if (kvp.Value.Invested)
@@ -236,6 +271,14 @@ namespace QuantConnect.Algorithm.CSharp
                     Log($"{kvp.Key}: {holding.Quantity} shares, Value: ${holding.HoldingsValue:F2}, Weight: {holding.HoldingsValue / Portfolio.TotalPortfolioValue:P2}");
                 }
             }
+
+            // Find best and worst performers
+            var bestPerformer = _individualReturns.OrderByDescending(x => x.Value).FirstOrDefault();
+            var worstPerformer = _individualReturns.OrderBy(x => x.Value).FirstOrDefault();
+            
+            Log($"=== TRUMP 2017-2021 PERIOD SUMMARY ===");
+            Log($"Best Performer: {bestPerformer.Key} with {bestPerformer.Value:F2}% return");
+            Log($"Worst Performer: {worstPerformer.Key} with {worstPerformer.Value:F2}% return");
         }
     }
 }
