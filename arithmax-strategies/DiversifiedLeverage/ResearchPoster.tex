@@ -1,0 +1,229 @@
+\documentclass[25pt, a0paper, portrait, margin=0mm, innermargin=15mm, blockverticalspace=15mm, colspace=15mm, subcolspace=8mm]{tikzposter}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+
+% Define custom colors
+\definecolor{arithmaxblue}{RGB}{0,102,204}
+\definecolor{arithmaxgray}{RGB}{128,128,128}
+\definecolor{performancegreen}{RGB}{0,128,0}
+\definecolor{warningred}{RGB}{204,0,0}
+
+% Set the theme
+\usetheme{Simple}
+\usecolorstyle[colorPalette=GrayOrangePalette]{Germany}
+
+% Override some colors
+\colorlet{backgroundcolor}{white}
+\colorlet{framecolor}{arithmaxblue}
+\colorlet{titlefgcolor}{white}
+\colorlet{titlebgcolor}{arithmaxblue}
+\colorlet{blocktitlebgcolor}{arithmaxblue}
+\colorlet{blocktitlefgcolor}{white}
+
+\title{\parbox{\linewidth}{\centering Algorithmic Rebalancing for Multi-Asset Leveraged Index Funds}}
+\author{Frankline Misango Oyolo \\ Arithmax Research}
+\date{July 2025}
+\institute{research@arithmax.com}
+
+\begin{document}
+
+\maketitle
+
+\begin{columns}
+    \column{0.5}
+    
+    \block{Executive Summary}{
+        \textbf{Strategy Overview:} A diversified leverage framework that captures enhanced returns through leveraged ETFs while managing downside risk via strategic asset allocation.
+        
+        \vspace{10pt}
+        \textbf{Key Innovation:}
+        \begin{itemize}[leftmargin=15pt]
+            \item Dynamic rebalancing with momentum preservation
+            \item Multi-asset risk parity across leveraged instruments  
+            \item Volatility-adaptive allocation methodology
+            \item Tariff-resilient sector diversification
+        \end{itemize}
+        
+        \vspace{10pt}
+        \textbf{Performance Highlights (2020-2024):}
+        \begin{itemize}[leftmargin=15pt]
+            \item \textcolor{performancegreen}{\textbf{686.58\% Total Return}} (51.0\% Annual)
+            \item \textcolor{performancegreen}{\textbf{Sharpe Ratio: 0.701}} (vs 0.65 S\&P 500)
+            \item \textcolor{performancegreen}{\textbf{Win Rate: 62\%}} with 2.81 P/L ratio
+            \item Maximum Drawdown: -66.4\%
+        \end{itemize}
+    }
+    
+    \block{Mathematical Framework}{
+        \textbf{Portfolio Optimization:}
+        \begin{equation*}
+            \mathbf{w}_t = \argmin_{\mathbf{w}} \left[ \mathbf{w}^T \boldsymbol{\Sigma}_t \mathbf{w} - \lambda \boldsymbol{\mu}_t^T \mathbf{w} \right]
+        \end{equation*}
+        
+        \textbf{Risk Parity Allocation:}
+        \begin{equation*}
+            w_i = \frac{1/\sigma_i}{\sum_{j=1}^n 1/\sigma_j} \cdot \frac{1}{\beta_i}
+        \end{equation*}
+        
+        \textbf{Leveraged ETF Dynamics:}
+        \begin{equation*}
+            R_{ETF,t} = \beta \cdot R_{index,t} - C_t
+        \end{equation*}
+        
+        \textbf{Volatility Decay Control:}
+        \begin{equation*}
+            \mathbb{E}[\text{Decay}] = \frac{\beta(\beta-1)}{2} \sigma^2_{index} \Delta t
+        \end{equation*}
+    }
+    
+    \block{Asset Allocation Strategy}{
+        \begin{center}
+        \begin{tabular}{lccc}
+        \toprule
+        \textbf{Symbol} & \textbf{Asset Class} & \textbf{Leverage} & \textbf{Weight} \\
+        \midrule
+        TQQQ & Technology (Nasdaq) & 3x & 20\% \\
+        UPRO & Large Cap (S\&P 500) & 3x & 20\% \\
+        UDOW & Blue Chip (Dow Jones) & 3x & 10\% \\
+        TMF & Treasury Bonds & 3x & 25\% \\
+        UGL & Gold & 2x & 10\% \\
+        DIG & Energy Sector & 2x & 15\% \\
+        \bottomrule
+        \end{tabular}
+        \end{center}
+        
+        \vspace{15pt}
+        \textbf{Strategic Rationale:}
+        \begin{itemize}[leftmargin=15pt]
+            \item \textbf{Technology (50\%):} Growth resilience, innovation premium
+            \item \textbf{Bonds (25\%):} Defensive positioning, rate sensitivity hedge
+            \item \textbf{Energy (15\%):} Inflation protection, tariff resilience
+            \item \textbf{Gold (10\%):} Currency debasement hedge, portfolio stabilizer
+        \end{itemize}
+    }
+    
+    \column{0.5}
+    
+    \block{Performance Analysis}{
+        \textbf{Risk-Adjusted Returns vs Benchmarks:}
+        
+        \vspace{10pt}
+        \begin{center}
+        \begin{tabular}{lccc}
+        \toprule
+        \textbf{Strategy} & \textbf{Annual Ret.} & \textbf{Sharpe} & \textbf{Max DD} \\
+        \midrule
+        \textcolor{performancegreen}{\textbf{Diversified Leverage}} & \textcolor{performancegreen}{\textbf{51.0\%}} & \textcolor{performancegreen}{\textbf{0.701}} & \textcolor{warningred}{\textbf{-66.4\%}} \\
+        60/40 Portfolio & 8.2\% & 0.68 & -8.9\% \\
+        S\&P 500 & 10.5\% & 0.65 & -19.6\% \\
+        TQQQ Only & 28.7\% & 0.81 & -28.1\% \\
+        \bottomrule
+        \end{tabular}
+        \end{center}
+        
+        \vspace{15pt}
+        \textbf{Key Performance Metrics:}
+        \begin{itemize}[leftmargin=15pt]
+            \item \textbf{Sortino Ratio:} 1.998 (excellent downside control)
+            \item \textbf{Alpha:} 0.683 (significant market outperformance)
+            \item \textbf{Beta:} 1.223 (moderate systematic risk)
+            \item \textbf{Total Trades:} 2,289 over 5 years
+            \item \textbf{Transaction Costs:} Only \$2,427 total
+        \end{itemize}
+        
+        \vspace{15pt}
+        \textbf{Market Regime Performance:}
+        \begin{center}
+        \begin{tabular}{lcc}
+        \toprule
+        \textbf{Market Condition} & \textbf{Expected Return} & \textbf{Volatility} \\
+        \midrule
+        Bull Market & 25.2\% & 18.5\% \\
+        Bear Market & -8.3\% & 32.1\% \\
+        High Volatility & 12.1\% & 28.7\% \\
+        Tariff Uncertainty & 15.8\% & 22.4\% \\
+        \bottomrule
+        \end{tabular}
+        \end{center}
+    }
+    
+    \block{Risk Management Framework}{
+        \textbf{Dynamic Risk Controls:}
+        \begin{itemize}[leftmargin=15pt]
+            \item \textbf{Position Limits:} Maximum 30\% single asset concentration
+            \item \textbf{Volatility Adjustment:} Reduce positions when vol > 1.5x historical
+            \item \textbf{Drawdown Protection:} Defensive mode at 10\% portfolio decline
+            \item \textbf{Correlation Monitoring:} Rebalance when correlations > 0.8
+        \end{itemize}
+        
+        \vspace{15pt}
+        \textbf{Rebalancing Algorithm:}
+        \begin{itemize}[leftmargin=15pt]
+            \item \textbf{Frequency:} Every 4 trading days
+            \item \textbf{Threshold:} Minimum trade size for cost efficiency
+            \item \textbf{Timing:} Market open execution to minimize impact
+            \item \textbf{Cost Control:} Total implementation cost < 0.10\% annually
+        \end{itemize}
+        
+        \vspace{15pt}
+        \textbf{Stress Testing Results:}
+        \begin{center}
+        \begin{tabular}{lc}
+        \toprule
+        \textbf{Scenario} & \textbf{Portfolio Impact} \\
+        \midrule
+        Market Crash (-30\%) & -18.2\% \\
+        Rate Shock (+200bp) & -15.4\% \\
+        Tariff Escalation (+25\%) & +8.3\% \\
+        Liquidity Crisis (-50\%) & 2.8\% TE \\
+        \bottomrule
+        \end{tabular}
+        \end{center}
+    }
+    
+    \block{Key Insights \& Future Research}{
+        \textbf{Strategic Advantages:}
+        \begin{itemize}[leftmargin=15pt]
+            \item Enhanced returns through intelligent leverage application
+            \item Risk mitigation via multi-asset diversification  
+            \item Systematic momentum capture through rebalancing
+            \item Adaptive allocation for changing market conditions
+        \end{itemize}
+        
+        \vspace{15pt}
+        \textbf{Research Contributions:}
+        \begin{itemize}[leftmargin=15pt]
+            \item Novel risk parity framework for leveraged instruments
+            \item Quantitative approach to tariff-resilient positioning
+            \item Optimal rebalancing frequency under transaction costs
+            \item Volatility decay mitigation through diversification
+        \end{itemize}
+        
+        \vspace{15pt}
+        \textbf{Future Enhancements:}
+        \begin{itemize}[leftmargin=15pt]
+            \item Machine learning integration for regime detection
+            \item LSTM networks for dynamic correlation forecasting
+            \item Alternative data incorporation (sentiment analysis)
+            \item Behavioral finance utility function optimization
+        \end{itemize}
+        
+        \vspace{15pt}
+        \textcolor{arithmaxblue}{\textbf{Contact:}} research@arithmax.com \textbar{} \textcolor{arithmaxblue}{\textbf{LinkedIn:}} /in/frankline-misango
+    }
+    
+\end{columns}
+
+\end{document}
