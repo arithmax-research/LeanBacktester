@@ -4,15 +4,6 @@
 # This script sets up the data pipeline environment and downloads sample data
 
 echo "Setting up LEAN Data Pipeline..."
-
-# Create virtual environment
-python3 -m venv data_pipeline_env
-source data_pipeline_env/bin/activate
-
-# Install required packages
-pip install -r requirements.txt
-
-echo "Environment setup complete!"
 echo ""
 echo "To use the data pipeline:"
 echo "1. Set your API keys as environment variables:"

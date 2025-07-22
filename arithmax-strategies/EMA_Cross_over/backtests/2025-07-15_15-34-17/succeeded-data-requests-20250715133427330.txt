@@ -1,5 +1,0 @@
-/equity/usa/daily/googl.zip
-/equity/usa/daily/nvda.zip
-/equity/usa/daily/spy.zip
-/equity/usa/hour/spy.zip
-/alternative/interest-rate/usa/interest-rate.csv

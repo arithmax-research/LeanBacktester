@@ -1,11 +1,6 @@
 {
     "algorithm-language": "CSharp",
-    "parameters": {
-        "lookback-period": 20,
-        "scale-factor": 200,
-        "morning-entry-hour": 8,
-        "afternoon-exit-hour": 15
-    },
-    "description": "Mean reversion strategy focusing on leveraged ETFs (TQQQ, UDOW, DIG, UGL, UPRO, TMF) with intraday pattern recognition. Strategy capitalizes on the observed pattern where these ETFs tend to rise around 8 AM and return to similar levels by 3 PM.",
-    "local-id": 511648148
+    "parameters": {},
+    "description": "",
+    "local-id": 443119230
 }
