@@ -1,0 +1,13 @@
+/Users/misango/codechest/Lean_cli_test/arithmax-strategies/GrahamStrategy/bin/Debug/GrahamStrategy.deps.json
+/Users/misango/codechest/Lean_cli_test/arithmax-strategies/GrahamStrategy/bin/Debug/GrahamStrategy.dll
+/Users/misango/codechest/Lean_cli_test/arithmax-strategies/GrahamStrategy/bin/Debug/GrahamStrategy.pdb
+/Users/misango/codechest/Lean_cli_test/arithmax-strategies/GrahamStrategy/obj/Debug/GrahamStrategy.csproj.AssemblyReference.cache
+/Users/misango/codechest/Lean_cli_test/arithmax-strategies/GrahamStrategy/obj/Debug/GrahamStrategy.GeneratedMSBuildEditorConfig.editorconfig
+/Users/misango/codechest/Lean_cli_test/arithmax-strategies/GrahamStrategy/obj/Debug/GrahamStrategy.AssemblyInfoInputs.cache
+/Users/misango/codechest/Lean_cli_test/arithmax-strategies/GrahamStrategy/obj/Debug/GrahamStrategy.AssemblyInfo.cs
+/Users/misango/codechest/Lean_cli_test/arithmax-strategies/GrahamStrategy/obj/Debug/GrahamStrategy.csproj.CoreCompileInputs.cache
+/Users/misango/codechest/Lean_cli_test/arithmax-strategies/GrahamStrategy/obj/Debug/GrahamStrategy.sourcelink.json
+/Users/misango/codechest/Lean_cli_test/arithmax-strategies/GrahamStrategy/obj/Debug/GrahamStrategy.dll
+/Users/misango/codechest/Lean_cli_test/arithmax-strategies/GrahamStrategy/obj/Debug/refint/GrahamStrategy.dll
+/Users/misango/codechest/Lean_cli_test/arithmax-strategies/GrahamStrategy/obj/Debug/GrahamStrategy.pdb
+/Users/misango/codechest/Lean_cli_test/arithmax-strategies/GrahamStrategy/obj/Debug/ref/GrahamStrategy.dll

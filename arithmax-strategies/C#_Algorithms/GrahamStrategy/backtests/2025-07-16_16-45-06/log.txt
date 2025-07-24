@@ -1,0 +1,321 @@
+2025-07-16T14:45:14.4069044Z TRACE:: Engine.Main(): LEAN ALGORITHMIC TRADING ENGINE v2.5.0.0 Mode: DEBUG (64bit) Host: tsf-500-wpa-0-085
+2025-07-16T14:45:14.4238780Z TRACE:: Engine.Main(): Started 2:45 PM
+2025-07-16T14:45:14.4338820Z TRACE:: Config.Get(): Configuration key not found. Key: lean-manager-type - Using default value: LocalLeanManager
+2025-07-16T14:45:14.4734035Z TRACE:: JobQueue.NextJob(): Selected GrahamStrategy.dll
+2025-07-16T14:45:14.5432934Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-capacity - Using default value: 120
+2025-07-16T14:45:14.5435734Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-time-interval-minutes - Using default value: 1440
+2025-07-16T14:45:14.5438546Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-refill-amount - Using default value: 18
+2025-07-16T14:45:14.5450972Z TRACE:: Config.GetValue(): storage-limit - Using default value: 10737418240
+2025-07-16T14:45:14.5464404Z TRACE:: Config.GetValue(): storage-permissions - Using default value: Read=True Write=True Delete=True
+2025-07-16T14:45:14.5467725Z TRACE:: Config.Get(): Configuration key not found. Key: optimization-id - Using default value: 
+2025-07-16T14:45:14.5471161Z TRACE:: Config.Get(): Configuration key not found. Key: backtest-name - Using default value: local
+2025-07-16T14:45:14.5526775Z TRACE:: Config.Get(): Configuration key not found. Key: data-channel - Using default value: 
+2025-07-16T14:45:14.5532955Z TRACE:: Config.Get(): Configuration key not found. Key: python-venv - Using default value: 
+2025-07-16T14:45:14.5536758Z TRACE:: Config.Get(): Configuration key not found. Key: out-of-sample-max-end-date - Using default value: 
+2025-07-16T14:45:14.5540122Z TRACE:: Config.GetValue(): out-of-sample-days - Using default value: 0
+2025-07-16T14:45:14.5566347Z TRACE:: Config.Get(): Configuration key not found. Key: data-permission-manager - Using default value: DataPermissionManager
+2025-07-16T14:45:14.5573009Z TRACE:: Config.Get(): Configuration key not found. Key: data-monitor - Using default value: QuantConnect.Data.DataMonitor
+2025-07-16T14:45:14.5784144Z TRACE:: Config.GetValue(): algorithm-creation-timeout - Using default value: 90
+2025-07-16T14:45:14.5957717Z TRACE:: Config.GetValue(): zip-data-cache-provider - Using default value: 10
+2025-07-16T14:45:14.5977856Z TRACE:: Config.Get(): Configuration key not found. Key: fundamental-data-provider - Using default value: CoarseFundamentalDataProvider
+2025-07-16T14:45:14.6014742Z TRACE:: AlgorithmManager.CreateTokenBucket(): Initializing LeakyBucket: Capacity: 120 RefillAmount: 18 TimeInterval: 1440
+2025-07-16T14:45:14.6027470Z TRACE:: Config.GetValue(): algorithm-manager-time-loop-maximum - Using default value: 20
+2025-07-16T14:45:14.6138618Z TRACE:: Config.GetValue(): downloader-data-update-period - Using default value: 7
+2025-07-16T14:45:14.6180113Z TRACE:: Engine.Run(): Resource limits '0' CPUs. 2147483647 MB RAM.
+2025-07-16T14:45:14.6193647Z TRACE:: TextSubscriptionDataSourceReader.SetCacheSize(): Setting cache size to 71582788 items
+2025-07-16T14:45:15.6266018Z TRACE:: Loader.TryCreateILAlgorithm(): Loading only the algorithm assembly
+2025-07-16T14:45:15.6464930Z TRACE:: Config.Get(): Configuration key not found. Key: databases-refresh-period - Using default value: 1.00:00:00
+2025-07-16T14:45:15.7936909Z TRACE:: Loader.TryCreateILAlgorithm(): Loaded GrahamStrategy
+2025-07-16T14:45:15.7981925Z TRACE:: LocalObjectStore.Initialize(): Storage Root: /Storage. StorageFileCount 9999999. StorageLimit 10240MB. StoragePermissions Read=True Write=True Delete=True
+2025-07-16T14:45:15.8081872Z TRACE:: Config.GetValue(): zip-data-cache-provider - Using default value: 10
+2025-07-16T14:45:15.8171735Z TRACE:: HistoryProviderManager.Initialize(): history providers [SubscriptionDataReaderHistoryProvider]
+2025-07-16T14:45:15.8226112Z TRACE:: BaseSetupHandler.Setup(LocalPlatform): UID: 395632, PID: -762702634, Version: 2.5.0.0, Source: WebIDE
+2025-07-16T14:45:15.8276594Z TRACE:: Config.Get(): Configuration key not found. Key: security-data-feeds - Using default value: 
+2025-07-16T14:45:15.9369077Z TRACE:: Event Name "MonthStart: 10", scheduled to run.
+2025-07-16T14:45:15.9375947Z TRACE:: Event Name "EveryDay: 15.5", scheduled to run.
+2025-07-16T14:45:15.9378811Z TRACE:: Event Name "EveryDay: 16", scheduled to run.
+2025-07-16T14:45:15.9709387Z TRACE:: Config.GetValue(): data-feed-workers-count - Using default value: 12
+2025-07-16T14:45:15.9722775Z TRACE:: Config.GetValue(): data-feed-max-work-weight - Using default value: 400
+2025-07-16T14:45:15.9724823Z TRACE:: WeightedWorkScheduler(): will use 12 workers and MaxWorkWeight is 400
+2025-07-16T14:45:16.0034364Z TRACE:: BaseSetupHandler.SetupCurrencyConversions():
+Account Type: Margin
+
+Symbol      Quantity    Conversion = Value in USD
+USD: $      100000.00 @       1.00 = $100000
+-------------------------------------------------
+CashBook Total Value:                $100000
+
+2025-07-16T14:45:16.0092274Z TRACE:: Total margin information: TotalMarginUsed: 0.00, MarginRemaining: 100000.00
+2025-07-16T14:45:16.0102858Z TRACE:: SetUp Backtesting: User: 395632 ProjectId: -762702634 AlgoId: 1738000259
+2025-07-16T14:45:16.0132752Z TRACE:: Dates: Start: 01/01/2019 End: 06/01/2025 Cash: ¤100,000.00 MaximumRuntime: 100.00:00:00 MaxOrders: 2147483647
+2025-07-16T14:45:16.0171846Z TRACE:: BacktestingResultHandler(): Sample Period Set: 843.84
+2025-07-16T14:45:16.0181097Z TRACE:: Config.GetValue(): forward-console-messages - Using default value: True
+2025-07-16T14:45:16.0194125Z TRACE:: JOB HANDLERS:
+         DataFeed:             QuantConnect.Lean.Engine.DataFeeds.FileSystemDataFeed
+         Setup:                QuantConnect.Lean.Engine.Setup.BacktestingSetupHandler
+         RealTime:             QuantConnect.Lean.Engine.RealTime.BacktestingRealTimeHandler
+         Results:              QuantConnect.Lean.Engine.Results.BacktestingResultHandler
+         Transactions:         QuantConnect.Lean.Engine.TransactionHandlers.BacktestingTransactionHandler
+         Object Store:         QuantConnect.Lean.Engine.Storage.LocalObjectStore
+         History Provider:     QuantConnect.Lean.Engine.HistoricalData.HistoryProviderManager
+         Brokerage:            QuantConnect.Brokerages.Backtesting.BacktestingBrokerage
+         Data Provider:        QuantConnect.Lean.Engine.DataFeeds.DefaultDataProvider
+
+2025-07-16T14:45:16.0557801Z TRACE:: Event Name "Daily Sampling", scheduled to run.
+2025-07-16T14:45:16.0572292Z TRACE:: AlgorithmManager.Run(): Begin DataStream - Start: 1/1/2019 12:00:00 AM Stop: 6/1/2025 11:59:59 PM Time: 12/2/2018 12:00:00 AM Warmup: True
+2025-07-16T14:45:16.0991128Z TRACE:: Debug: Launching analysis for 1738000259 with LEAN Engine v2.5.0.0
+2025-07-16T14:45:16.1048687Z TRACE:: UniverseSelection.AddPendingInternalDataFeeds(): Adding internal benchmark data feed SPY,#0,SPY,Hour,TradeBar,Trade,Adjusted,OpenInterest,Internal
+2025-07-16T14:45:16.5163324Z TRACE:: Debug: Warning: SetBenchmark(SPY): no existing symbol found, benchmark security will be added with Equity type.
+2025-07-16T14:45:16.5167447Z TRACE:: Debug: Accurate daily end-times now enabled by default. See more at https://qnt.co/3YHaWHL. To disable it and use legacy daily bars set self.settings.daily_precise_end_time = False.
+2025-07-16T14:45:16.5172603Z TRACE:: Debug: Algorithm starting warm up...
+2025-07-16T14:45:16.5176612Z TRACE:: Log: Graham Strategy initialized successfully
+2025-07-16T14:45:16.5180939Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.5690807Z TRACE:: Debug: Algorithm finished warming up.
+2025-07-16T14:45:16.5693242Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.5695769Z TRACE:: Log: Portfolio rebalanced on 2019-01-01
+2025-07-16T14:45:16.5699273Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.5702679Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.5707850Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.5713621Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.5731928Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.5743397Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.5747000Z TRACE:: Log: Portfolio rebalanced on 2019-04-01
+2025-07-16T14:45:16.5750835Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.5753941Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.5757742Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.5762904Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.5765660Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.5768323Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.6280134Z TRACE:: Log: Portfolio rebalanced on 2019-07-01
+2025-07-16T14:45:16.6282446Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.6284989Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.6287615Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.6290621Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.6294904Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.6297429Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.6299376Z TRACE:: Log: Portfolio rebalanced on 2019-10-01
+2025-07-16T14:45:16.6302145Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.6304280Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.6307639Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.6310132Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.6314063Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.6316477Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.6322429Z TRACE:: Log: Portfolio rebalanced on 2020-01-01
+2025-07-16T14:45:16.6324637Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.6326663Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.6330721Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.6333427Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.6841606Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.6844218Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.6847246Z TRACE:: Log: Portfolio rebalanced on 2020-04-01
+2025-07-16T14:45:16.6849926Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.6852292Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.6854774Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.6857236Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.6864000Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.6866649Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.6870695Z TRACE:: Log: Portfolio rebalanced on 2020-07-01
+2025-07-16T14:45:16.6873237Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.6876259Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.6880272Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.6883940Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.6887771Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.6892252Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.6895173Z TRACE:: Log: Portfolio rebalanced on 2020-10-01
+2025-07-16T14:45:16.6900738Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.6903517Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.7410714Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.7414445Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.7417433Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.7421409Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.7425380Z TRACE:: Log: Portfolio rebalanced on 2021-01-01
+2025-07-16T14:45:16.7428371Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.7432263Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.7435921Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.7438032Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.7441001Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.7443967Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.7949894Z TRACE:: Log: Portfolio rebalanced on 2021-04-01
+2025-07-16T14:45:16.7952306Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.7954532Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.7957046Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.7960512Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.7964228Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.7967400Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.7970819Z TRACE:: Log: Portfolio rebalanced on 2021-07-01
+2025-07-16T14:45:16.7974137Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.7977380Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.7981770Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.7984165Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.7986407Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.7988838Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.7993594Z TRACE:: Log: Portfolio rebalanced on 2021-10-01
+2025-07-16T14:45:16.7995760Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.7998537Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8001102Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8003344Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8006002Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8008678Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8013337Z TRACE:: Log: Portfolio rebalanced on 2022-01-01
+2025-07-16T14:45:16.8016784Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8021511Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8024909Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8027691Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8030147Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8033749Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8036646Z TRACE:: Log: Portfolio rebalanced on 2022-04-01
+2025-07-16T14:45:16.8040667Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8043268Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8063345Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8083499Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8087382Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8093945Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8098860Z TRACE:: Log: Portfolio rebalanced on 2022-07-01
+2025-07-16T14:45:16.8101785Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8104373Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8107898Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8111706Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8116235Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8119895Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8124462Z TRACE:: Log: Portfolio rebalanced on 2022-10-01
+2025-07-16T14:45:16.8128001Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8131128Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8134821Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8137415Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8141172Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8144837Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8148822Z TRACE:: Log: Portfolio rebalanced on 2023-01-01
+2025-07-16T14:45:16.8154464Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8157049Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8162702Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8164590Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8167516Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8171561Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8174185Z TRACE:: Log: Portfolio rebalanced on 2023-04-01
+2025-07-16T14:45:16.8178056Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8182021Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8186254Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8188853Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8702058Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8705627Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8707440Z TRACE:: Log: Portfolio rebalanced on 2023-07-01
+2025-07-16T14:45:16.8710505Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8713042Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8719251Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8766893Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8789679Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8794086Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8797865Z TRACE:: Log: Portfolio rebalanced on 2023-10-01
+2025-07-16T14:45:16.8802913Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8806732Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8813056Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8816054Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8822865Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8825614Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8829251Z TRACE:: Log: Portfolio rebalanced on 2024-01-01
+2025-07-16T14:45:16.8833562Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8836076Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8841467Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8846016Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8848969Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8853836Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8857212Z TRACE:: Log: Portfolio rebalanced on 2024-04-01
+2025-07-16T14:45:16.8860784Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8864047Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8867048Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8871526Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8876159Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8882176Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8887657Z TRACE:: Log: Portfolio rebalanced on 2024-07-01
+2025-07-16T14:45:16.8890990Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8894003Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8898275Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8904824Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8908328Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8914512Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8918251Z TRACE:: Log: Portfolio rebalanced on 2024-10-01
+2025-07-16T14:45:16.8922096Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8925228Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8928633Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8933638Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8937664Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8942155Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8945571Z TRACE:: Log: Portfolio rebalanced on 2025-01-01
+2025-07-16T14:45:16.8950675Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8953882Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8957879Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8962749Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8965707Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8970935Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8974533Z TRACE:: Log: Portfolio rebalanced on 2025-04-01
+2025-07-16T14:45:16.8978980Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8983027Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.8986953Z TRACE:: Log: Monthly Performance Update - Total Return: 0.00%, Portfolio Value: $100,000
+2025-07-16T14:45:16.8992865Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.9008027Z TRACE:: Synchronizer.GetEnumerator(): Exited thread.
+2025-07-16T14:45:16.9013480Z TRACE:: AlgorithmManager.Run(): Firing On End Of Algorithm...
+2025-07-16T14:45:16.9036847Z TRACE:: Engine.Run(): Exiting Algorithm Manager
+2025-07-16T14:45:16.9084581Z TRACE:: StopSafely(): Waiting for 'Isolator Thread' thread to stop...
+2025-07-16T14:45:16.9092192Z TRACE:: FileSystemDataFeed.Exit(): Start. Setting cancellation token...
+2025-07-16T14:45:16.9116298Z TRACE:: FileSystemDataFeed.Exit(): Exit Finished.
+2025-07-16T14:45:16.9122580Z TRACE:: BacktestingResultHandler.Exit(): starting...
+2025-07-16T14:45:16.9129076Z TRACE:: BacktestingResultHandler.Exit(): Saving logs...
+2025-07-16T14:45:16.9205743Z TRACE:: Log: Selected 0 stocks for universe
+2025-07-16T14:45:16.9207704Z TRACE:: Log: === FINAL PERFORMANCE SUMMARY ===
+2025-07-16T14:45:16.9210375Z TRACE:: Log: Initial Capital: $100,000
+2025-07-16T14:45:16.9212351Z TRACE:: Log: Final Portfolio Value: $100,000
+2025-07-16T14:45:16.9214978Z TRACE:: Log: Total Return: 0.00%
+2025-07-16T14:45:16.9217093Z TRACE:: Log: Max Drawdown: 0.00%
+2025-07-16T14:45:16.9220529Z TRACE:: Log: Number of Holdings: 0
+2025-07-16T14:45:16.9223410Z TRACE:: Log: Top 10 Holdings:
+2025-07-16T14:45:16.9226174Z TRACE:: Debug: Algorithm Id:(1738000259) completed in 0.88 seconds at 5k data points per second. Processing total of 4,084 data points.
+2025-07-16T14:45:16.9232881Z TRACE:: Debug: Your log was successfully created and can be retrieved from: /Results/1738000259-log.txt
+2025-07-16T14:45:16.9236008Z TRACE:: BacktestingResultHandler.Run(): Ending Thread...
+2025-07-16T14:45:16.9206508Z TRACE:: StopSafely(): Waiting for 'Result Thread' thread to stop...
+2025-07-16T14:45:17.8533624Z TRACE:: 
+STATISTICS:: Total Orders 0
+STATISTICS:: Average Win 0%
+STATISTICS:: Average Loss 0%
+STATISTICS:: Compounding Annual Return 0%
+STATISTICS:: Drawdown 0%
+STATISTICS:: Expectancy 0
+STATISTICS:: Start Equity 100000
+STATISTICS:: End Equity 100000
+STATISTICS:: Net Profit 0%
+STATISTICS:: Sharpe Ratio 0
+STATISTICS:: Sortino Ratio 0
+STATISTICS:: Probabilistic Sharpe Ratio 0%
+STATISTICS:: Loss Rate 0%
+STATISTICS:: Win Rate 0%
+STATISTICS:: Profit-Loss Ratio 0
+STATISTICS:: Alpha 0
+STATISTICS:: Beta 0
+STATISTICS:: Annual Standard Deviation 0
+STATISTICS:: Annual Variance 0
+STATISTICS:: Information Ratio -0.527
+STATISTICS:: Tracking Error 0.12
+STATISTICS:: Treynor Ratio 0
+STATISTICS:: Total Fees $0.00
+STATISTICS:: Estimated Strategy Capacity $0
+STATISTICS:: Lowest Capacity Asset 
+STATISTICS:: Portfolio Turnover 0%
+STATISTICS:: OrderListHash d41d8cd98f00b204e9800998ecf8427e
+2025-07-16T14:45:17.8536650Z TRACE:: BacktestingResultHandler.SendAnalysisResult(): Processed final packet
+2025-07-16T14:45:17.8546456Z TRACE:: Engine.Run(): Disconnecting from brokerage...
+2025-07-16T14:45:17.8551352Z TRACE:: Engine.Run(): Disposing of setup handler...
+2025-07-16T14:45:17.8555534Z TRACE:: Engine.Main(): Analysis Completed and Results Posted.
+2025-07-16T14:45:17.8566382Z TRACE:: StopSafely(): Waiting for '' thread to stop...
+2025-07-16T14:45:17.8603945Z TRACE:: DataMonitor.GenerateReport():
+DATA USAGE:: Total data requests 1635
+DATA USAGE:: Succeeded data requests 2
+DATA USAGE:: Failed data requests 1633
+DATA USAGE:: Failed data requests percentage 100%
+DATA USAGE:: Total universe data requests 1633
+DATA USAGE:: Succeeded universe data requests 0
+DATA USAGE:: Failed universe data requests 1633
+DATA USAGE:: Failed universe data requests percentage 100%
+2025-07-16T14:45:17.8693073Z TRACE:: Engine.Main(): Packet removed from queue: 1738000259
+2025-07-16T14:45:17.8696339Z TRACE:: LeanEngineSystemHandlers.Dispose(): start...
+2025-07-16T14:45:17.8725185Z TRACE:: LeanEngineSystemHandlers.Dispose(): Disposed of system handlers.
+2025-07-16T14:45:17.8747825Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): start...
+2025-07-16T14:45:17.8758538Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): Disposed of algorithm handlers.
