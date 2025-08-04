@@ -1,2 +1,9 @@
 .env
 .json
+
+# Build artifacts
+bin/
+obj/
+*.user
+*.suo
+*.cache
