@@ -3,7 +3,7 @@
 # Lean Backtest Visualizer Launcher
 # This script sets up the environment and launches the Streamlit app
 
-echo "Arithmax Backtest Visualizer Launcher"
+echo "Lean Backtest Visualizer"
 echo "===================================="
 echo "🎯 Launching Backtest Visualizer..."
 echo "The app will open in your default web browser."
