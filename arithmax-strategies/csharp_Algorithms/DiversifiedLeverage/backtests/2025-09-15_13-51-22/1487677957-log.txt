@@ -1,0 +1,2004 @@
+2017-01-01 00:00:00 Launching analysis for 1487677957 with LEAN Engine v2.5.0.0
+2017-01-01 00:00:00 Accurate daily end-times now enabled by default. See more at https://qnt.co/3YHaWHL. To disable it and use legacy daily bars set self.settings.daily_precise_end_time = False.
+2017-01-01 00:00:00 Initial Portfolio Value: $100000.00
+2017-01-01 00:00:00 Target Portfolio Weights: TQQQ: 20.00%, UPRO: 20.00%, UDOW: 10.00%, TMF: 25.00%, UGL: 10.00%, DIG: 15.00%
+2017-01-03 10:00:00 Rebalancing portfolio...
+2017-01-03 10:00:00 Current Portfolio Value: $100000.00
+2017-01-03 10:00:00 Warning: TQQQ has no data, skipping
+2017-01-03 10:00:00 Warning: UPRO has no data, skipping
+2017-01-03 10:00:00 Warning: UDOW has no data, skipping
+2017-01-03 10:00:00 Warning: TMF has no data, skipping
+2017-01-03 10:00:00 Warning: UGL has no data, skipping
+2017-01-03 10:00:00 Warning: DIG has no data, skipping
+2017-01-03 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-01-09 10:00:00 Rebalancing portfolio...
+2017-01-09 10:00:00 Current Portfolio Value: $100000.00
+2017-01-09 10:00:00 Warning: TQQQ has no data, skipping
+2017-01-09 10:00:00 Warning: UPRO has no data, skipping
+2017-01-09 10:00:00 Warning: UDOW has no data, skipping
+2017-01-09 10:00:00 Warning: TMF has no data, skipping
+2017-01-09 10:00:00 Warning: UGL has no data, skipping
+2017-01-09 10:00:00 Warning: DIG has no data, skipping
+2017-01-09 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-01-17 10:00:00 Rebalancing portfolio...
+2017-01-17 10:00:00 Current Portfolio Value: $100000.00
+2017-01-17 10:00:00 Warning: TQQQ has no data, skipping
+2017-01-17 10:00:00 Warning: UPRO has no data, skipping
+2017-01-17 10:00:00 Warning: UDOW has no data, skipping
+2017-01-17 10:00:00 Warning: TMF has no data, skipping
+2017-01-17 10:00:00 Warning: UGL has no data, skipping
+2017-01-17 10:00:00 Warning: DIG has no data, skipping
+2017-01-17 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-01-23 10:00:00 Rebalancing portfolio...
+2017-01-23 10:00:00 Current Portfolio Value: $100000.00
+2017-01-23 10:00:00 Warning: TQQQ has no data, skipping
+2017-01-23 10:00:00 Warning: UPRO has no data, skipping
+2017-01-23 10:00:00 Warning: UDOW has no data, skipping
+2017-01-23 10:00:00 Warning: TMF has no data, skipping
+2017-01-23 10:00:00 Warning: UGL has no data, skipping
+2017-01-23 10:00:00 Warning: DIG has no data, skipping
+2017-01-23 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-01-30 10:00:00 Rebalancing portfolio...
+2017-01-30 10:00:00 Current Portfolio Value: $100000.00
+2017-01-30 10:00:00 Warning: TQQQ has no data, skipping
+2017-01-30 10:00:00 Warning: UPRO has no data, skipping
+2017-01-30 10:00:00 Warning: UDOW has no data, skipping
+2017-01-30 10:00:00 Warning: TMF has no data, skipping
+2017-01-30 10:00:00 Warning: UGL has no data, skipping
+2017-01-30 10:00:00 Warning: DIG has no data, skipping
+2017-01-30 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-02-06 10:00:00 Rebalancing portfolio...
+2017-02-06 10:00:00 Current Portfolio Value: $100000.00
+2017-02-06 10:00:00 Warning: TQQQ has no data, skipping
+2017-02-06 10:00:00 Warning: UPRO has no data, skipping
+2017-02-06 10:00:00 Warning: UDOW has no data, skipping
+2017-02-06 10:00:00 Warning: TMF has no data, skipping
+2017-02-06 10:00:00 Warning: UGL has no data, skipping
+2017-02-06 10:00:00 Warning: DIG has no data, skipping
+2017-02-06 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-02-13 10:00:00 Rebalancing portfolio...
+2017-02-13 10:00:00 Current Portfolio Value: $100000.00
+2017-02-13 10:00:00 Warning: TQQQ has no data, skipping
+2017-02-13 10:00:00 Warning: UPRO has no data, skipping
+2017-02-13 10:00:00 Warning: UDOW has no data, skipping
+2017-02-13 10:00:00 Warning: TMF has no data, skipping
+2017-02-13 10:00:00 Warning: UGL has no data, skipping
+2017-02-13 10:00:00 Warning: DIG has no data, skipping
+2017-02-13 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-02-21 10:00:00 Rebalancing portfolio...
+2017-02-21 10:00:00 Current Portfolio Value: $100000.00
+2017-02-21 10:00:00 Warning: TQQQ has no data, skipping
+2017-02-21 10:00:00 Warning: UPRO has no data, skipping
+2017-02-21 10:00:00 Warning: UDOW has no data, skipping
+2017-02-21 10:00:00 Warning: TMF has no data, skipping
+2017-02-21 10:00:00 Warning: UGL has no data, skipping
+2017-02-21 10:00:00 Warning: DIG has no data, skipping
+2017-02-21 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-02-27 10:00:00 Rebalancing portfolio...
+2017-02-27 10:00:00 Current Portfolio Value: $100000.00
+2017-02-27 10:00:00 Warning: TQQQ has no data, skipping
+2017-02-27 10:00:00 Warning: UPRO has no data, skipping
+2017-02-27 10:00:00 Warning: UDOW has no data, skipping
+2017-02-27 10:00:00 Warning: TMF has no data, skipping
+2017-02-27 10:00:00 Warning: UGL has no data, skipping
+2017-02-27 10:00:00 Warning: DIG has no data, skipping
+2017-02-27 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-03-06 10:00:00 Rebalancing portfolio...
+2017-03-06 10:00:00 Current Portfolio Value: $100000.00
+2017-03-06 10:00:00 Warning: TQQQ has no data, skipping
+2017-03-06 10:00:00 Warning: UPRO has no data, skipping
+2017-03-06 10:00:00 Warning: UDOW has no data, skipping
+2017-03-06 10:00:00 Warning: TMF has no data, skipping
+2017-03-06 10:00:00 Warning: UGL has no data, skipping
+2017-03-06 10:00:00 Warning: DIG has no data, skipping
+2017-03-06 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-03-13 10:00:00 Rebalancing portfolio...
+2017-03-13 10:00:00 Current Portfolio Value: $100000.00
+2017-03-13 10:00:00 Warning: TQQQ has no data, skipping
+2017-03-13 10:00:00 Warning: UPRO has no data, skipping
+2017-03-13 10:00:00 Warning: UDOW has no data, skipping
+2017-03-13 10:00:00 Warning: TMF has no data, skipping
+2017-03-13 10:00:00 Warning: UGL has no data, skipping
+2017-03-13 10:00:00 Warning: DIG has no data, skipping
+2017-03-13 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-03-20 10:00:00 Rebalancing portfolio...
+2017-03-20 10:00:00 Current Portfolio Value: $100000.00
+2017-03-20 10:00:00 Warning: TQQQ has no data, skipping
+2017-03-20 10:00:00 Warning: UPRO has no data, skipping
+2017-03-20 10:00:00 Warning: UDOW has no data, skipping
+2017-03-20 10:00:00 Warning: TMF has no data, skipping
+2017-03-20 10:00:00 Warning: UGL has no data, skipping
+2017-03-20 10:00:00 Warning: DIG has no data, skipping
+2017-03-20 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-03-27 10:00:00 Rebalancing portfolio...
+2017-03-27 10:00:00 Current Portfolio Value: $100000.00
+2017-03-27 10:00:00 Warning: TQQQ has no data, skipping
+2017-03-27 10:00:00 Warning: UPRO has no data, skipping
+2017-03-27 10:00:00 Warning: UDOW has no data, skipping
+2017-03-27 10:00:00 Warning: TMF has no data, skipping
+2017-03-27 10:00:00 Warning: UGL has no data, skipping
+2017-03-27 10:00:00 Warning: DIG has no data, skipping
+2017-03-27 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-04-03 10:00:00 Rebalancing portfolio...
+2017-04-03 10:00:00 Current Portfolio Value: $100000.00
+2017-04-03 10:00:00 Warning: TQQQ has no data, skipping
+2017-04-03 10:00:00 Warning: UPRO has no data, skipping
+2017-04-03 10:00:00 Warning: UDOW has no data, skipping
+2017-04-03 10:00:00 Warning: TMF has no data, skipping
+2017-04-03 10:00:00 Warning: UGL has no data, skipping
+2017-04-03 10:00:00 Warning: DIG has no data, skipping
+2017-04-03 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-04-10 10:00:00 Rebalancing portfolio...
+2017-04-10 10:00:00 Current Portfolio Value: $100000.00
+2017-04-10 10:00:00 Warning: TQQQ has no data, skipping
+2017-04-10 10:00:00 Warning: UPRO has no data, skipping
+2017-04-10 10:00:00 Warning: UDOW has no data, skipping
+2017-04-10 10:00:00 Warning: TMF has no data, skipping
+2017-04-10 10:00:00 Warning: UGL has no data, skipping
+2017-04-10 10:00:00 Warning: DIG has no data, skipping
+2017-04-10 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-04-17 10:00:00 Rebalancing portfolio...
+2017-04-17 10:00:00 Current Portfolio Value: $100000.00
+2017-04-17 10:00:00 Warning: TQQQ has no data, skipping
+2017-04-17 10:00:00 Warning: UPRO has no data, skipping
+2017-04-17 10:00:00 Warning: UDOW has no data, skipping
+2017-04-17 10:00:00 Warning: TMF has no data, skipping
+2017-04-17 10:00:00 Warning: UGL has no data, skipping
+2017-04-17 10:00:00 Warning: DIG has no data, skipping
+2017-04-17 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-04-24 10:00:00 Rebalancing portfolio...
+2017-04-24 10:00:00 Current Portfolio Value: $100000.00
+2017-04-24 10:00:00 Warning: TQQQ has no data, skipping
+2017-04-24 10:00:00 Warning: UPRO has no data, skipping
+2017-04-24 10:00:00 Warning: UDOW has no data, skipping
+2017-04-24 10:00:00 Warning: TMF has no data, skipping
+2017-04-24 10:00:00 Warning: UGL has no data, skipping
+2017-04-24 10:00:00 Warning: DIG has no data, skipping
+2017-04-24 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-05-01 10:00:00 Rebalancing portfolio...
+2017-05-01 10:00:00 Current Portfolio Value: $100000.00
+2017-05-01 10:00:00 Warning: TQQQ has no data, skipping
+2017-05-01 10:00:00 Warning: UPRO has no data, skipping
+2017-05-01 10:00:00 Warning: UDOW has no data, skipping
+2017-05-01 10:00:00 Warning: TMF has no data, skipping
+2017-05-01 10:00:00 Warning: UGL has no data, skipping
+2017-05-01 10:00:00 Warning: DIG has no data, skipping
+2017-05-01 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-05-08 10:00:00 Rebalancing portfolio...
+2017-05-08 10:00:00 Current Portfolio Value: $100000.00
+2017-05-08 10:00:00 Warning: TQQQ has no data, skipping
+2017-05-08 10:00:00 Warning: UPRO has no data, skipping
+2017-05-08 10:00:00 Warning: UDOW has no data, skipping
+2017-05-08 10:00:00 Warning: TMF has no data, skipping
+2017-05-08 10:00:00 Warning: UGL has no data, skipping
+2017-05-08 10:00:00 Warning: DIG has no data, skipping
+2017-05-08 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-05-15 10:00:00 Rebalancing portfolio...
+2017-05-15 10:00:00 Current Portfolio Value: $100000.00
+2017-05-15 10:00:00 Warning: TQQQ has no data, skipping
+2017-05-15 10:00:00 Warning: UPRO has no data, skipping
+2017-05-15 10:00:00 Warning: UDOW has no data, skipping
+2017-05-15 10:00:00 Warning: TMF has no data, skipping
+2017-05-15 10:00:00 Warning: UGL has no data, skipping
+2017-05-15 10:00:00 Warning: DIG has no data, skipping
+2017-05-15 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-05-22 10:00:00 Rebalancing portfolio...
+2017-05-22 10:00:00 Current Portfolio Value: $100000.00
+2017-05-22 10:00:00 Warning: TQQQ has no data, skipping
+2017-05-22 10:00:00 Warning: UPRO has no data, skipping
+2017-05-22 10:00:00 Warning: UDOW has no data, skipping
+2017-05-22 10:00:00 Warning: TMF has no data, skipping
+2017-05-22 10:00:00 Warning: UGL has no data, skipping
+2017-05-22 10:00:00 Warning: DIG has no data, skipping
+2017-05-22 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-05-30 10:00:00 Rebalancing portfolio...
+2017-05-30 10:00:00 Current Portfolio Value: $100000.00
+2017-05-30 10:00:00 Warning: TQQQ has no data, skipping
+2017-05-30 10:00:00 Warning: UPRO has no data, skipping
+2017-05-30 10:00:00 Warning: UDOW has no data, skipping
+2017-05-30 10:00:00 Warning: TMF has no data, skipping
+2017-05-30 10:00:00 Warning: UGL has no data, skipping
+2017-05-30 10:00:00 Warning: DIG has no data, skipping
+2017-05-30 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-06-05 10:00:00 Rebalancing portfolio...
+2017-06-05 10:00:00 Current Portfolio Value: $100000.00
+2017-06-05 10:00:00 Warning: TQQQ has no data, skipping
+2017-06-05 10:00:00 Warning: UPRO has no data, skipping
+2017-06-05 10:00:00 Warning: UDOW has no data, skipping
+2017-06-05 10:00:00 Warning: TMF has no data, skipping
+2017-06-05 10:00:00 Warning: UGL has no data, skipping
+2017-06-05 10:00:00 Warning: DIG has no data, skipping
+2017-06-05 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-06-12 10:00:00 Rebalancing portfolio...
+2017-06-12 10:00:00 Current Portfolio Value: $100000.00
+2017-06-12 10:00:00 Warning: TQQQ has no data, skipping
+2017-06-12 10:00:00 Warning: UPRO has no data, skipping
+2017-06-12 10:00:00 Warning: UDOW has no data, skipping
+2017-06-12 10:00:00 Warning: TMF has no data, skipping
+2017-06-12 10:00:00 Warning: UGL has no data, skipping
+2017-06-12 10:00:00 Warning: DIG has no data, skipping
+2017-06-12 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-06-19 10:00:00 Rebalancing portfolio...
+2017-06-19 10:00:00 Current Portfolio Value: $100000.00
+2017-06-19 10:00:00 Warning: TQQQ has no data, skipping
+2017-06-19 10:00:00 Warning: UPRO has no data, skipping
+2017-06-19 10:00:00 Warning: UDOW has no data, skipping
+2017-06-19 10:00:00 Warning: TMF has no data, skipping
+2017-06-19 10:00:00 Warning: UGL has no data, skipping
+2017-06-19 10:00:00 Warning: DIG has no data, skipping
+2017-06-19 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-06-26 10:00:00 Rebalancing portfolio...
+2017-06-26 10:00:00 Current Portfolio Value: $100000.00
+2017-06-26 10:00:00 Warning: TQQQ has no data, skipping
+2017-06-26 10:00:00 Warning: UPRO has no data, skipping
+2017-06-26 10:00:00 Warning: UDOW has no data, skipping
+2017-06-26 10:00:00 Warning: TMF has no data, skipping
+2017-06-26 10:00:00 Warning: UGL has no data, skipping
+2017-06-26 10:00:00 Warning: DIG has no data, skipping
+2017-06-26 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-07-03 10:00:00 Rebalancing portfolio...
+2017-07-03 10:00:00 Current Portfolio Value: $100000.00
+2017-07-03 10:00:00 Warning: TQQQ has no data, skipping
+2017-07-03 10:00:00 Warning: UPRO has no data, skipping
+2017-07-03 10:00:00 Warning: UDOW has no data, skipping
+2017-07-03 10:00:00 Warning: TMF has no data, skipping
+2017-07-03 10:00:00 Warning: UGL has no data, skipping
+2017-07-03 10:00:00 Warning: DIG has no data, skipping
+2017-07-03 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-07-10 10:00:00 Rebalancing portfolio...
+2017-07-10 10:00:00 Current Portfolio Value: $100000.00
+2017-07-10 10:00:00 Warning: TQQQ has no data, skipping
+2017-07-10 10:00:00 Warning: UPRO has no data, skipping
+2017-07-10 10:00:00 Warning: UDOW has no data, skipping
+2017-07-10 10:00:00 Warning: TMF has no data, skipping
+2017-07-10 10:00:00 Warning: UGL has no data, skipping
+2017-07-10 10:00:00 Warning: DIG has no data, skipping
+2017-07-10 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-07-17 10:00:00 Rebalancing portfolio...
+2017-07-17 10:00:00 Current Portfolio Value: $100000.00
+2017-07-17 10:00:00 Warning: TQQQ has no data, skipping
+2017-07-17 10:00:00 Warning: UPRO has no data, skipping
+2017-07-17 10:00:00 Warning: UDOW has no data, skipping
+2017-07-17 10:00:00 Warning: TMF has no data, skipping
+2017-07-17 10:00:00 Warning: UGL has no data, skipping
+2017-07-17 10:00:00 Warning: DIG has no data, skipping
+2017-07-17 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-07-24 10:00:00 Rebalancing portfolio...
+2017-07-24 10:00:00 Current Portfolio Value: $100000.00
+2017-07-24 10:00:00 Warning: TQQQ has no data, skipping
+2017-07-24 10:00:00 Warning: UPRO has no data, skipping
+2017-07-24 10:00:00 Warning: UDOW has no data, skipping
+2017-07-24 10:00:00 Warning: TMF has no data, skipping
+2017-07-24 10:00:00 Warning: UGL has no data, skipping
+2017-07-24 10:00:00 Warning: DIG has no data, skipping
+2017-07-24 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-07-31 10:00:00 Rebalancing portfolio...
+2017-07-31 10:00:00 Current Portfolio Value: $100000.00
+2017-07-31 10:00:00 Warning: TQQQ has no data, skipping
+2017-07-31 10:00:00 Warning: UPRO has no data, skipping
+2017-07-31 10:00:00 Warning: UDOW has no data, skipping
+2017-07-31 10:00:00 Warning: TMF has no data, skipping
+2017-07-31 10:00:00 Warning: UGL has no data, skipping
+2017-07-31 10:00:00 Warning: DIG has no data, skipping
+2017-07-31 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-08-07 10:00:00 Rebalancing portfolio...
+2017-08-07 10:00:00 Current Portfolio Value: $100000.00
+2017-08-07 10:00:00 Warning: TQQQ has no data, skipping
+2017-08-07 10:00:00 Warning: UPRO has no data, skipping
+2017-08-07 10:00:00 Warning: UDOW has no data, skipping
+2017-08-07 10:00:00 Warning: TMF has no data, skipping
+2017-08-07 10:00:00 Warning: UGL has no data, skipping
+2017-08-07 10:00:00 Warning: DIG has no data, skipping
+2017-08-07 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-08-14 10:00:00 Rebalancing portfolio...
+2017-08-14 10:00:00 Current Portfolio Value: $100000.00
+2017-08-14 10:00:00 Warning: TQQQ has no data, skipping
+2017-08-14 10:00:00 Warning: UPRO has no data, skipping
+2017-08-14 10:00:00 Warning: UDOW has no data, skipping
+2017-08-14 10:00:00 Warning: TMF has no data, skipping
+2017-08-14 10:00:00 Warning: UGL has no data, skipping
+2017-08-14 10:00:00 Warning: DIG has no data, skipping
+2017-08-14 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-08-21 10:00:00 Rebalancing portfolio...
+2017-08-21 10:00:00 Current Portfolio Value: $100000.00
+2017-08-21 10:00:00 Warning: TQQQ has no data, skipping
+2017-08-21 10:00:00 Warning: UPRO has no data, skipping
+2017-08-21 10:00:00 Warning: UDOW has no data, skipping
+2017-08-21 10:00:00 Warning: TMF has no data, skipping
+2017-08-21 10:00:00 Warning: UGL has no data, skipping
+2017-08-21 10:00:00 Warning: DIG has no data, skipping
+2017-08-21 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-08-28 10:00:00 Rebalancing portfolio...
+2017-08-28 10:00:00 Current Portfolio Value: $100000.00
+2017-08-28 10:00:00 Warning: TQQQ has no data, skipping
+2017-08-28 10:00:00 Warning: UPRO has no data, skipping
+2017-08-28 10:00:00 Warning: UDOW has no data, skipping
+2017-08-28 10:00:00 Warning: TMF has no data, skipping
+2017-08-28 10:00:00 Warning: UGL has no data, skipping
+2017-08-28 10:00:00 Warning: DIG has no data, skipping
+2017-08-28 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-09-05 10:00:00 Rebalancing portfolio...
+2017-09-05 10:00:00 Current Portfolio Value: $100000.00
+2017-09-05 10:00:00 Warning: TQQQ has no data, skipping
+2017-09-05 10:00:00 Warning: UPRO has no data, skipping
+2017-09-05 10:00:00 Warning: UDOW has no data, skipping
+2017-09-05 10:00:00 Warning: TMF has no data, skipping
+2017-09-05 10:00:00 Warning: UGL has no data, skipping
+2017-09-05 10:00:00 Warning: DIG has no data, skipping
+2017-09-05 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-09-11 10:00:00 Rebalancing portfolio...
+2017-09-11 10:00:00 Current Portfolio Value: $100000.00
+2017-09-11 10:00:00 Warning: TQQQ has no data, skipping
+2017-09-11 10:00:00 Warning: UPRO has no data, skipping
+2017-09-11 10:00:00 Warning: UDOW has no data, skipping
+2017-09-11 10:00:00 Warning: TMF has no data, skipping
+2017-09-11 10:00:00 Warning: UGL has no data, skipping
+2017-09-11 10:00:00 Warning: DIG has no data, skipping
+2017-09-11 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-09-18 10:00:00 Rebalancing portfolio...
+2017-09-18 10:00:00 Current Portfolio Value: $100000.00
+2017-09-18 10:00:00 Warning: TQQQ has no data, skipping
+2017-09-18 10:00:00 Warning: UPRO has no data, skipping
+2017-09-18 10:00:00 Warning: UDOW has no data, skipping
+2017-09-18 10:00:00 Warning: TMF has no data, skipping
+2017-09-18 10:00:00 Warning: UGL has no data, skipping
+2017-09-18 10:00:00 Warning: DIG has no data, skipping
+2017-09-18 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-09-25 10:00:00 Rebalancing portfolio...
+2017-09-25 10:00:00 Current Portfolio Value: $100000.00
+2017-09-25 10:00:00 Warning: TQQQ has no data, skipping
+2017-09-25 10:00:00 Warning: UPRO has no data, skipping
+2017-09-25 10:00:00 Warning: UDOW has no data, skipping
+2017-09-25 10:00:00 Warning: TMF has no data, skipping
+2017-09-25 10:00:00 Warning: UGL has no data, skipping
+2017-09-25 10:00:00 Warning: DIG has no data, skipping
+2017-09-25 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-10-02 10:00:00 Rebalancing portfolio...
+2017-10-02 10:00:00 Current Portfolio Value: $100000.00
+2017-10-02 10:00:00 Warning: TQQQ has no data, skipping
+2017-10-02 10:00:00 Warning: UPRO has no data, skipping
+2017-10-02 10:00:00 Warning: UDOW has no data, skipping
+2017-10-02 10:00:00 Warning: TMF has no data, skipping
+2017-10-02 10:00:00 Warning: UGL has no data, skipping
+2017-10-02 10:00:00 Warning: DIG has no data, skipping
+2017-10-02 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-10-09 10:00:00 Rebalancing portfolio...
+2017-10-09 10:00:00 Current Portfolio Value: $100000.00
+2017-10-09 10:00:00 Warning: TQQQ has no data, skipping
+2017-10-09 10:00:00 Warning: UPRO has no data, skipping
+2017-10-09 10:00:00 Warning: UDOW has no data, skipping
+2017-10-09 10:00:00 Warning: TMF has no data, skipping
+2017-10-09 10:00:00 Warning: UGL has no data, skipping
+2017-10-09 10:00:00 Warning: DIG has no data, skipping
+2017-10-09 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-10-16 10:00:00 Rebalancing portfolio...
+2017-10-16 10:00:00 Current Portfolio Value: $100000.00
+2017-10-16 10:00:00 Warning: TQQQ has no data, skipping
+2017-10-16 10:00:00 Warning: UPRO has no data, skipping
+2017-10-16 10:00:00 Warning: UDOW has no data, skipping
+2017-10-16 10:00:00 Warning: TMF has no data, skipping
+2017-10-16 10:00:00 Warning: UGL has no data, skipping
+2017-10-16 10:00:00 Warning: DIG has no data, skipping
+2017-10-16 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-10-23 10:00:00 Rebalancing portfolio...
+2017-10-23 10:00:00 Current Portfolio Value: $100000.00
+2017-10-23 10:00:00 Warning: TQQQ has no data, skipping
+2017-10-23 10:00:00 Warning: UPRO has no data, skipping
+2017-10-23 10:00:00 Warning: UDOW has no data, skipping
+2017-10-23 10:00:00 Warning: TMF has no data, skipping
+2017-10-23 10:00:00 Warning: UGL has no data, skipping
+2017-10-23 10:00:00 Warning: DIG has no data, skipping
+2017-10-23 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-10-30 10:00:00 Rebalancing portfolio...
+2017-10-30 10:00:00 Current Portfolio Value: $100000.00
+2017-10-30 10:00:00 Warning: TQQQ has no data, skipping
+2017-10-30 10:00:00 Warning: UPRO has no data, skipping
+2017-10-30 10:00:00 Warning: UDOW has no data, skipping
+2017-10-30 10:00:00 Warning: TMF has no data, skipping
+2017-10-30 10:00:00 Warning: UGL has no data, skipping
+2017-10-30 10:00:00 Warning: DIG has no data, skipping
+2017-10-30 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-11-06 10:00:00 Rebalancing portfolio...
+2017-11-06 10:00:00 Current Portfolio Value: $100000.00
+2017-11-06 10:00:00 Warning: TQQQ has no data, skipping
+2017-11-06 10:00:00 Warning: UPRO has no data, skipping
+2017-11-06 10:00:00 Warning: UDOW has no data, skipping
+2017-11-06 10:00:00 Warning: TMF has no data, skipping
+2017-11-06 10:00:00 Warning: UGL has no data, skipping
+2017-11-06 10:00:00 Warning: DIG has no data, skipping
+2017-11-06 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-11-13 10:00:00 Rebalancing portfolio...
+2017-11-13 10:00:00 Current Portfolio Value: $100000.00
+2017-11-13 10:00:00 Warning: TQQQ has no data, skipping
+2017-11-13 10:00:00 Warning: UPRO has no data, skipping
+2017-11-13 10:00:00 Warning: UDOW has no data, skipping
+2017-11-13 10:00:00 Warning: TMF has no data, skipping
+2017-11-13 10:00:00 Warning: UGL has no data, skipping
+2017-11-13 10:00:00 Warning: DIG has no data, skipping
+2017-11-13 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-11-20 10:00:00 Rebalancing portfolio...
+2017-11-20 10:00:00 Current Portfolio Value: $100000.00
+2017-11-20 10:00:00 Warning: TQQQ has no data, skipping
+2017-11-20 10:00:00 Warning: UPRO has no data, skipping
+2017-11-20 10:00:00 Warning: UDOW has no data, skipping
+2017-11-20 10:00:00 Warning: TMF has no data, skipping
+2017-11-20 10:00:00 Warning: UGL has no data, skipping
+2017-11-20 10:00:00 Warning: DIG has no data, skipping
+2017-11-20 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-11-27 10:00:00 Rebalancing portfolio...
+2017-11-27 10:00:00 Current Portfolio Value: $100000.00
+2017-11-27 10:00:00 Warning: TQQQ has no data, skipping
+2017-11-27 10:00:00 Warning: UPRO has no data, skipping
+2017-11-27 10:00:00 Warning: UDOW has no data, skipping
+2017-11-27 10:00:00 Warning: TMF has no data, skipping
+2017-11-27 10:00:00 Warning: UGL has no data, skipping
+2017-11-27 10:00:00 Warning: DIG has no data, skipping
+2017-11-27 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-12-04 10:00:00 Rebalancing portfolio...
+2017-12-04 10:00:00 Current Portfolio Value: $100000.00
+2017-12-04 10:00:00 Warning: TQQQ has no data, skipping
+2017-12-04 10:00:00 Warning: UPRO has no data, skipping
+2017-12-04 10:00:00 Warning: UDOW has no data, skipping
+2017-12-04 10:00:00 Warning: TMF has no data, skipping
+2017-12-04 10:00:00 Warning: UGL has no data, skipping
+2017-12-04 10:00:00 Warning: DIG has no data, skipping
+2017-12-04 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-12-11 10:00:00 Rebalancing portfolio...
+2017-12-11 10:00:00 Current Portfolio Value: $100000.00
+2017-12-11 10:00:00 Warning: TQQQ has no data, skipping
+2017-12-11 10:00:00 Warning: UPRO has no data, skipping
+2017-12-11 10:00:00 Warning: UDOW has no data, skipping
+2017-12-11 10:00:00 Warning: TMF has no data, skipping
+2017-12-11 10:00:00 Warning: UGL has no data, skipping
+2017-12-11 10:00:00 Warning: DIG has no data, skipping
+2017-12-11 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-12-18 10:00:00 Rebalancing portfolio...
+2017-12-18 10:00:00 Current Portfolio Value: $100000.00
+2017-12-18 10:00:00 Warning: TQQQ has no data, skipping
+2017-12-18 10:00:00 Warning: UPRO has no data, skipping
+2017-12-18 10:00:00 Warning: UDOW has no data, skipping
+2017-12-18 10:00:00 Warning: TMF has no data, skipping
+2017-12-18 10:00:00 Warning: UGL has no data, skipping
+2017-12-18 10:00:00 Warning: DIG has no data, skipping
+2017-12-18 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2017-12-26 10:00:00 Rebalancing portfolio...
+2017-12-26 10:00:00 Current Portfolio Value: $100000.00
+2017-12-26 10:00:00 Warning: TQQQ has no data, skipping
+2017-12-26 10:00:00 Warning: UPRO has no data, skipping
+2017-12-26 10:00:00 Warning: UDOW has no data, skipping
+2017-12-26 10:00:00 Warning: TMF has no data, skipping
+2017-12-26 10:00:00 Warning: UGL has no data, skipping
+2017-12-26 10:00:00 Warning: DIG has no data, skipping
+2017-12-26 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-01-02 10:00:00 Rebalancing portfolio...
+2018-01-02 10:00:00 Current Portfolio Value: $100000.00
+2018-01-02 10:00:00 Warning: TQQQ has no data, skipping
+2018-01-02 10:00:00 Warning: UPRO has no data, skipping
+2018-01-02 10:00:00 Warning: UDOW has no data, skipping
+2018-01-02 10:00:00 Warning: TMF has no data, skipping
+2018-01-02 10:00:00 Warning: UGL has no data, skipping
+2018-01-02 10:00:00 Warning: DIG has no data, skipping
+2018-01-02 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-01-08 10:00:00 Rebalancing portfolio...
+2018-01-08 10:00:00 Current Portfolio Value: $100000.00
+2018-01-08 10:00:00 Warning: TQQQ has no data, skipping
+2018-01-08 10:00:00 Warning: UPRO has no data, skipping
+2018-01-08 10:00:00 Warning: UDOW has no data, skipping
+2018-01-08 10:00:00 Warning: TMF has no data, skipping
+2018-01-08 10:00:00 Warning: UGL has no data, skipping
+2018-01-08 10:00:00 Warning: DIG has no data, skipping
+2018-01-08 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-01-16 10:00:00 Rebalancing portfolio...
+2018-01-16 10:00:00 Current Portfolio Value: $100000.00
+2018-01-16 10:00:00 Warning: TQQQ has no data, skipping
+2018-01-16 10:00:00 Warning: UPRO has no data, skipping
+2018-01-16 10:00:00 Warning: UDOW has no data, skipping
+2018-01-16 10:00:00 Warning: TMF has no data, skipping
+2018-01-16 10:00:00 Warning: UGL has no data, skipping
+2018-01-16 10:00:00 Warning: DIG has no data, skipping
+2018-01-16 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-01-22 10:00:00 Rebalancing portfolio...
+2018-01-22 10:00:00 Current Portfolio Value: $100000.00
+2018-01-22 10:00:00 Warning: TQQQ has no data, skipping
+2018-01-22 10:00:00 Warning: UPRO has no data, skipping
+2018-01-22 10:00:00 Warning: UDOW has no data, skipping
+2018-01-22 10:00:00 Warning: TMF has no data, skipping
+2018-01-22 10:00:00 Warning: UGL has no data, skipping
+2018-01-22 10:00:00 Warning: DIG has no data, skipping
+2018-01-22 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-01-29 10:00:00 Rebalancing portfolio...
+2018-01-29 10:00:00 Current Portfolio Value: $100000.00
+2018-01-29 10:00:00 Warning: TQQQ has no data, skipping
+2018-01-29 10:00:00 Warning: UPRO has no data, skipping
+2018-01-29 10:00:00 Warning: UDOW has no data, skipping
+2018-01-29 10:00:00 Warning: TMF has no data, skipping
+2018-01-29 10:00:00 Warning: UGL has no data, skipping
+2018-01-29 10:00:00 Warning: DIG has no data, skipping
+2018-01-29 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-02-05 10:00:00 Rebalancing portfolio...
+2018-02-05 10:00:00 Current Portfolio Value: $100000.00
+2018-02-05 10:00:00 Warning: TQQQ has no data, skipping
+2018-02-05 10:00:00 Warning: UPRO has no data, skipping
+2018-02-05 10:00:00 Warning: UDOW has no data, skipping
+2018-02-05 10:00:00 Warning: TMF has no data, skipping
+2018-02-05 10:00:00 Warning: UGL has no data, skipping
+2018-02-05 10:00:00 Warning: DIG has no data, skipping
+2018-02-05 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-02-12 10:00:00 Rebalancing portfolio...
+2018-02-12 10:00:00 Current Portfolio Value: $100000.00
+2018-02-12 10:00:00 Warning: TQQQ has no data, skipping
+2018-02-12 10:00:00 Warning: UPRO has no data, skipping
+2018-02-12 10:00:00 Warning: UDOW has no data, skipping
+2018-02-12 10:00:00 Warning: TMF has no data, skipping
+2018-02-12 10:00:00 Warning: UGL has no data, skipping
+2018-02-12 10:00:00 Warning: DIG has no data, skipping
+2018-02-12 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-02-20 10:00:00 Rebalancing portfolio...
+2018-02-20 10:00:00 Current Portfolio Value: $100000.00
+2018-02-20 10:00:00 Warning: TQQQ has no data, skipping
+2018-02-20 10:00:00 Warning: UPRO has no data, skipping
+2018-02-20 10:00:00 Warning: UDOW has no data, skipping
+2018-02-20 10:00:00 Warning: TMF has no data, skipping
+2018-02-20 10:00:00 Warning: UGL has no data, skipping
+2018-02-20 10:00:00 Warning: DIG has no data, skipping
+2018-02-20 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-02-26 10:00:00 Rebalancing portfolio...
+2018-02-26 10:00:00 Current Portfolio Value: $100000.00
+2018-02-26 10:00:00 Warning: TQQQ has no data, skipping
+2018-02-26 10:00:00 Warning: UPRO has no data, skipping
+2018-02-26 10:00:00 Warning: UDOW has no data, skipping
+2018-02-26 10:00:00 Warning: TMF has no data, skipping
+2018-02-26 10:00:00 Warning: UGL has no data, skipping
+2018-02-26 10:00:00 Warning: DIG has no data, skipping
+2018-02-26 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-03-05 10:00:00 Rebalancing portfolio...
+2018-03-05 10:00:00 Current Portfolio Value: $100000.00
+2018-03-05 10:00:00 Warning: TQQQ has no data, skipping
+2018-03-05 10:00:00 Warning: UPRO has no data, skipping
+2018-03-05 10:00:00 Warning: UDOW has no data, skipping
+2018-03-05 10:00:00 Warning: TMF has no data, skipping
+2018-03-05 10:00:00 Warning: UGL has no data, skipping
+2018-03-05 10:00:00 Warning: DIG has no data, skipping
+2018-03-05 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-03-12 10:00:00 Rebalancing portfolio...
+2018-03-12 10:00:00 Current Portfolio Value: $100000.00
+2018-03-12 10:00:00 Warning: TQQQ has no data, skipping
+2018-03-12 10:00:00 Warning: UPRO has no data, skipping
+2018-03-12 10:00:00 Warning: UDOW has no data, skipping
+2018-03-12 10:00:00 Warning: TMF has no data, skipping
+2018-03-12 10:00:00 Warning: UGL has no data, skipping
+2018-03-12 10:00:00 Warning: DIG has no data, skipping
+2018-03-12 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-03-19 10:00:00 Rebalancing portfolio...
+2018-03-19 10:00:00 Current Portfolio Value: $100000.00
+2018-03-19 10:00:00 Warning: TQQQ has no data, skipping
+2018-03-19 10:00:00 Warning: UPRO has no data, skipping
+2018-03-19 10:00:00 Warning: UDOW has no data, skipping
+2018-03-19 10:00:00 Warning: TMF has no data, skipping
+2018-03-19 10:00:00 Warning: UGL has no data, skipping
+2018-03-19 10:00:00 Warning: DIG has no data, skipping
+2018-03-19 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-03-26 10:00:00 Rebalancing portfolio...
+2018-03-26 10:00:00 Current Portfolio Value: $100000.00
+2018-03-26 10:00:00 Warning: TQQQ has no data, skipping
+2018-03-26 10:00:00 Warning: UPRO has no data, skipping
+2018-03-26 10:00:00 Warning: UDOW has no data, skipping
+2018-03-26 10:00:00 Warning: TMF has no data, skipping
+2018-03-26 10:00:00 Warning: UGL has no data, skipping
+2018-03-26 10:00:00 Warning: DIG has no data, skipping
+2018-03-26 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-04-02 10:00:00 Rebalancing portfolio...
+2018-04-02 10:00:00 Current Portfolio Value: $100000.00
+2018-04-02 10:00:00 Warning: TQQQ has no data, skipping
+2018-04-02 10:00:00 Warning: UPRO has no data, skipping
+2018-04-02 10:00:00 Warning: UDOW has no data, skipping
+2018-04-02 10:00:00 Warning: TMF has no data, skipping
+2018-04-02 10:00:00 Warning: UGL has no data, skipping
+2018-04-02 10:00:00 Warning: DIG has no data, skipping
+2018-04-02 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-04-09 10:00:00 Rebalancing portfolio...
+2018-04-09 10:00:00 Current Portfolio Value: $100000.00
+2018-04-09 10:00:00 Warning: TQQQ has no data, skipping
+2018-04-09 10:00:00 Warning: UPRO has no data, skipping
+2018-04-09 10:00:00 Warning: UDOW has no data, skipping
+2018-04-09 10:00:00 Warning: TMF has no data, skipping
+2018-04-09 10:00:00 Warning: UGL has no data, skipping
+2018-04-09 10:00:00 Warning: DIG has no data, skipping
+2018-04-09 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-04-16 10:00:00 Rebalancing portfolio...
+2018-04-16 10:00:00 Current Portfolio Value: $100000.00
+2018-04-16 10:00:00 Warning: TQQQ has no data, skipping
+2018-04-16 10:00:00 Warning: UPRO has no data, skipping
+2018-04-16 10:00:00 Warning: UDOW has no data, skipping
+2018-04-16 10:00:00 Warning: TMF has no data, skipping
+2018-04-16 10:00:00 Warning: UGL has no data, skipping
+2018-04-16 10:00:00 Warning: DIG has no data, skipping
+2018-04-16 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-04-23 10:00:00 Rebalancing portfolio...
+2018-04-23 10:00:00 Current Portfolio Value: $100000.00
+2018-04-23 10:00:00 Warning: TQQQ has no data, skipping
+2018-04-23 10:00:00 Warning: UPRO has no data, skipping
+2018-04-23 10:00:00 Warning: UDOW has no data, skipping
+2018-04-23 10:00:00 Warning: TMF has no data, skipping
+2018-04-23 10:00:00 Warning: UGL has no data, skipping
+2018-04-23 10:00:00 Warning: DIG has no data, skipping
+2018-04-23 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-04-30 10:00:00 Rebalancing portfolio...
+2018-04-30 10:00:00 Current Portfolio Value: $100000.00
+2018-04-30 10:00:00 Warning: TQQQ has no data, skipping
+2018-04-30 10:00:00 Warning: UPRO has no data, skipping
+2018-04-30 10:00:00 Warning: UDOW has no data, skipping
+2018-04-30 10:00:00 Warning: TMF has no data, skipping
+2018-04-30 10:00:00 Warning: UGL has no data, skipping
+2018-04-30 10:00:00 Warning: DIG has no data, skipping
+2018-04-30 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-05-07 10:00:00 Rebalancing portfolio...
+2018-05-07 10:00:00 Current Portfolio Value: $100000.00
+2018-05-07 10:00:00 Warning: TQQQ has no data, skipping
+2018-05-07 10:00:00 Warning: UPRO has no data, skipping
+2018-05-07 10:00:00 Warning: UDOW has no data, skipping
+2018-05-07 10:00:00 Warning: TMF has no data, skipping
+2018-05-07 10:00:00 Warning: UGL has no data, skipping
+2018-05-07 10:00:00 Warning: DIG has no data, skipping
+2018-05-07 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-05-14 10:00:00 Rebalancing portfolio...
+2018-05-14 10:00:00 Current Portfolio Value: $100000.00
+2018-05-14 10:00:00 Warning: TQQQ has no data, skipping
+2018-05-14 10:00:00 Warning: UPRO has no data, skipping
+2018-05-14 10:00:00 Warning: UDOW has no data, skipping
+2018-05-14 10:00:00 Warning: TMF has no data, skipping
+2018-05-14 10:00:00 Warning: UGL has no data, skipping
+2018-05-14 10:00:00 Warning: DIG has no data, skipping
+2018-05-14 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-05-21 10:00:00 Rebalancing portfolio...
+2018-05-21 10:00:00 Current Portfolio Value: $100000.00
+2018-05-21 10:00:00 Warning: TQQQ has no data, skipping
+2018-05-21 10:00:00 Warning: UPRO has no data, skipping
+2018-05-21 10:00:00 Warning: UDOW has no data, skipping
+2018-05-21 10:00:00 Warning: TMF has no data, skipping
+2018-05-21 10:00:00 Warning: UGL has no data, skipping
+2018-05-21 10:00:00 Warning: DIG has no data, skipping
+2018-05-21 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-05-29 10:00:00 Rebalancing portfolio...
+2018-05-29 10:00:00 Current Portfolio Value: $100000.00
+2018-05-29 10:00:00 Warning: TQQQ has no data, skipping
+2018-05-29 10:00:00 Warning: UPRO has no data, skipping
+2018-05-29 10:00:00 Warning: UDOW has no data, skipping
+2018-05-29 10:00:00 Warning: TMF has no data, skipping
+2018-05-29 10:00:00 Warning: UGL has no data, skipping
+2018-05-29 10:00:00 Warning: DIG has no data, skipping
+2018-05-29 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-06-04 10:00:00 Rebalancing portfolio...
+2018-06-04 10:00:00 Current Portfolio Value: $100000.00
+2018-06-04 10:00:00 Warning: TQQQ has no data, skipping
+2018-06-04 10:00:00 Warning: UPRO has no data, skipping
+2018-06-04 10:00:00 Warning: UDOW has no data, skipping
+2018-06-04 10:00:00 Warning: TMF has no data, skipping
+2018-06-04 10:00:00 Warning: UGL has no data, skipping
+2018-06-04 10:00:00 Warning: DIG has no data, skipping
+2018-06-04 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-06-11 10:00:00 Rebalancing portfolio...
+2018-06-11 10:00:00 Current Portfolio Value: $100000.00
+2018-06-11 10:00:00 Warning: TQQQ has no data, skipping
+2018-06-11 10:00:00 Warning: UPRO has no data, skipping
+2018-06-11 10:00:00 Warning: UDOW has no data, skipping
+2018-06-11 10:00:00 Warning: TMF has no data, skipping
+2018-06-11 10:00:00 Warning: UGL has no data, skipping
+2018-06-11 10:00:00 Warning: DIG has no data, skipping
+2018-06-11 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-06-18 10:00:00 Rebalancing portfolio...
+2018-06-18 10:00:00 Current Portfolio Value: $100000.00
+2018-06-18 10:00:00 Warning: TQQQ has no data, skipping
+2018-06-18 10:00:00 Warning: UPRO has no data, skipping
+2018-06-18 10:00:00 Warning: UDOW has no data, skipping
+2018-06-18 10:00:00 Warning: TMF has no data, skipping
+2018-06-18 10:00:00 Warning: UGL has no data, skipping
+2018-06-18 10:00:00 Warning: DIG has no data, skipping
+2018-06-18 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-06-25 10:00:00 Rebalancing portfolio...
+2018-06-25 10:00:00 Current Portfolio Value: $100000.00
+2018-06-25 10:00:00 Warning: TQQQ has no data, skipping
+2018-06-25 10:00:00 Warning: UPRO has no data, skipping
+2018-06-25 10:00:00 Warning: UDOW has no data, skipping
+2018-06-25 10:00:00 Warning: TMF has no data, skipping
+2018-06-25 10:00:00 Warning: UGL has no data, skipping
+2018-06-25 10:00:00 Warning: DIG has no data, skipping
+2018-06-25 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-07-02 10:00:00 Rebalancing portfolio...
+2018-07-02 10:00:00 Current Portfolio Value: $100000.00
+2018-07-02 10:00:00 Warning: TQQQ has no data, skipping
+2018-07-02 10:00:00 Warning: UPRO has no data, skipping
+2018-07-02 10:00:00 Warning: UDOW has no data, skipping
+2018-07-02 10:00:00 Warning: TMF has no data, skipping
+2018-07-02 10:00:00 Warning: UGL has no data, skipping
+2018-07-02 10:00:00 Warning: DIG has no data, skipping
+2018-07-02 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-07-09 10:00:00 Rebalancing portfolio...
+2018-07-09 10:00:00 Current Portfolio Value: $100000.00
+2018-07-09 10:00:00 Warning: TQQQ has no data, skipping
+2018-07-09 10:00:00 Warning: UPRO has no data, skipping
+2018-07-09 10:00:00 Warning: UDOW has no data, skipping
+2018-07-09 10:00:00 Warning: TMF has no data, skipping
+2018-07-09 10:00:00 Warning: UGL has no data, skipping
+2018-07-09 10:00:00 Warning: DIG has no data, skipping
+2018-07-09 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-07-16 10:00:00 Rebalancing portfolio...
+2018-07-16 10:00:00 Current Portfolio Value: $100000.00
+2018-07-16 10:00:00 Warning: TQQQ has no data, skipping
+2018-07-16 10:00:00 Warning: UPRO has no data, skipping
+2018-07-16 10:00:00 Warning: UDOW has no data, skipping
+2018-07-16 10:00:00 Warning: TMF has no data, skipping
+2018-07-16 10:00:00 Warning: UGL has no data, skipping
+2018-07-16 10:00:00 Warning: DIG has no data, skipping
+2018-07-16 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-07-23 10:00:00 Rebalancing portfolio...
+2018-07-23 10:00:00 Current Portfolio Value: $100000.00
+2018-07-23 10:00:00 Warning: TQQQ has no data, skipping
+2018-07-23 10:00:00 Warning: UPRO has no data, skipping
+2018-07-23 10:00:00 Warning: UDOW has no data, skipping
+2018-07-23 10:00:00 Warning: TMF has no data, skipping
+2018-07-23 10:00:00 Warning: UGL has no data, skipping
+2018-07-23 10:00:00 Warning: DIG has no data, skipping
+2018-07-23 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-07-30 10:00:00 Rebalancing portfolio...
+2018-07-30 10:00:00 Current Portfolio Value: $100000.00
+2018-07-30 10:00:00 Warning: TQQQ has no data, skipping
+2018-07-30 10:00:00 Warning: UPRO has no data, skipping
+2018-07-30 10:00:00 Warning: UDOW has no data, skipping
+2018-07-30 10:00:00 Warning: TMF has no data, skipping
+2018-07-30 10:00:00 Warning: UGL has no data, skipping
+2018-07-30 10:00:00 Warning: DIG has no data, skipping
+2018-07-30 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-08-06 10:00:00 Rebalancing portfolio...
+2018-08-06 10:00:00 Current Portfolio Value: $100000.00
+2018-08-06 10:00:00 Warning: TQQQ has no data, skipping
+2018-08-06 10:00:00 Warning: UPRO has no data, skipping
+2018-08-06 10:00:00 Warning: UDOW has no data, skipping
+2018-08-06 10:00:00 Warning: TMF has no data, skipping
+2018-08-06 10:00:00 Warning: UGL has no data, skipping
+2018-08-06 10:00:00 Warning: DIG has no data, skipping
+2018-08-06 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-08-13 10:00:00 Rebalancing portfolio...
+2018-08-13 10:00:00 Current Portfolio Value: $100000.00
+2018-08-13 10:00:00 Warning: TQQQ has no data, skipping
+2018-08-13 10:00:00 Warning: UPRO has no data, skipping
+2018-08-13 10:00:00 Warning: UDOW has no data, skipping
+2018-08-13 10:00:00 Warning: TMF has no data, skipping
+2018-08-13 10:00:00 Warning: UGL has no data, skipping
+2018-08-13 10:00:00 Warning: DIG has no data, skipping
+2018-08-13 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-08-20 10:00:00 Rebalancing portfolio...
+2018-08-20 10:00:00 Current Portfolio Value: $100000.00
+2018-08-20 10:00:00 Warning: TQQQ has no data, skipping
+2018-08-20 10:00:00 Warning: UPRO has no data, skipping
+2018-08-20 10:00:00 Warning: UDOW has no data, skipping
+2018-08-20 10:00:00 Warning: TMF has no data, skipping
+2018-08-20 10:00:00 Warning: UGL has no data, skipping
+2018-08-20 10:00:00 Warning: DIG has no data, skipping
+2018-08-20 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-08-27 10:00:00 Rebalancing portfolio...
+2018-08-27 10:00:00 Current Portfolio Value: $100000.00
+2018-08-27 10:00:00 Warning: TQQQ has no data, skipping
+2018-08-27 10:00:00 Warning: UPRO has no data, skipping
+2018-08-27 10:00:00 Warning: UDOW has no data, skipping
+2018-08-27 10:00:00 Warning: TMF has no data, skipping
+2018-08-27 10:00:00 Warning: UGL has no data, skipping
+2018-08-27 10:00:00 Warning: DIG has no data, skipping
+2018-08-27 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-09-04 10:00:00 Rebalancing portfolio...
+2018-09-04 10:00:00 Current Portfolio Value: $100000.00
+2018-09-04 10:00:00 Warning: TQQQ has no data, skipping
+2018-09-04 10:00:00 Warning: UPRO has no data, skipping
+2018-09-04 10:00:00 Warning: UDOW has no data, skipping
+2018-09-04 10:00:00 Warning: TMF has no data, skipping
+2018-09-04 10:00:00 Warning: UGL has no data, skipping
+2018-09-04 10:00:00 Warning: DIG has no data, skipping
+2018-09-04 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-09-10 10:00:00 Rebalancing portfolio...
+2018-09-10 10:00:00 Current Portfolio Value: $100000.00
+2018-09-10 10:00:00 Warning: TQQQ has no data, skipping
+2018-09-10 10:00:00 Warning: UPRO has no data, skipping
+2018-09-10 10:00:00 Warning: UDOW has no data, skipping
+2018-09-10 10:00:00 Warning: TMF has no data, skipping
+2018-09-10 10:00:00 Warning: UGL has no data, skipping
+2018-09-10 10:00:00 Warning: DIG has no data, skipping
+2018-09-10 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-09-17 10:00:00 Rebalancing portfolio...
+2018-09-17 10:00:00 Current Portfolio Value: $100000.00
+2018-09-17 10:00:00 Warning: TQQQ has no data, skipping
+2018-09-17 10:00:00 Warning: UPRO has no data, skipping
+2018-09-17 10:00:00 Warning: UDOW has no data, skipping
+2018-09-17 10:00:00 Warning: TMF has no data, skipping
+2018-09-17 10:00:00 Warning: UGL has no data, skipping
+2018-09-17 10:00:00 Warning: DIG has no data, skipping
+2018-09-17 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-09-24 10:00:00 Rebalancing portfolio...
+2018-09-24 10:00:00 Current Portfolio Value: $100000.00
+2018-09-24 10:00:00 Warning: TQQQ has no data, skipping
+2018-09-24 10:00:00 Warning: UPRO has no data, skipping
+2018-09-24 10:00:00 Warning: UDOW has no data, skipping
+2018-09-24 10:00:00 Warning: TMF has no data, skipping
+2018-09-24 10:00:00 Warning: UGL has no data, skipping
+2018-09-24 10:00:00 Warning: DIG has no data, skipping
+2018-09-24 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-10-01 10:00:00 Rebalancing portfolio...
+2018-10-01 10:00:00 Current Portfolio Value: $100000.00
+2018-10-01 10:00:00 Warning: TQQQ has no data, skipping
+2018-10-01 10:00:00 Warning: UPRO has no data, skipping
+2018-10-01 10:00:00 Warning: UDOW has no data, skipping
+2018-10-01 10:00:00 Warning: TMF has no data, skipping
+2018-10-01 10:00:00 Warning: UGL has no data, skipping
+2018-10-01 10:00:00 Warning: DIG has no data, skipping
+2018-10-01 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-10-08 10:00:00 Rebalancing portfolio...
+2018-10-08 10:00:00 Current Portfolio Value: $100000.00
+2018-10-08 10:00:00 Warning: TQQQ has no data, skipping
+2018-10-08 10:00:00 Warning: UPRO has no data, skipping
+2018-10-08 10:00:00 Warning: UDOW has no data, skipping
+2018-10-08 10:00:00 Warning: TMF has no data, skipping
+2018-10-08 10:00:00 Warning: UGL has no data, skipping
+2018-10-08 10:00:00 Warning: DIG has no data, skipping
+2018-10-08 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-10-15 10:00:00 Rebalancing portfolio...
+2018-10-15 10:00:00 Current Portfolio Value: $100000.00
+2018-10-15 10:00:00 Warning: TQQQ has no data, skipping
+2018-10-15 10:00:00 Warning: UPRO has no data, skipping
+2018-10-15 10:00:00 Warning: UDOW has no data, skipping
+2018-10-15 10:00:00 Warning: TMF has no data, skipping
+2018-10-15 10:00:00 Warning: UGL has no data, skipping
+2018-10-15 10:00:00 Warning: DIG has no data, skipping
+2018-10-15 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-10-22 10:00:00 Rebalancing portfolio...
+2018-10-22 10:00:00 Current Portfolio Value: $100000.00
+2018-10-22 10:00:00 Warning: TQQQ has no data, skipping
+2018-10-22 10:00:00 Warning: UPRO has no data, skipping
+2018-10-22 10:00:00 Warning: UDOW has no data, skipping
+2018-10-22 10:00:00 Warning: TMF has no data, skipping
+2018-10-22 10:00:00 Warning: UGL has no data, skipping
+2018-10-22 10:00:00 Warning: DIG has no data, skipping
+2018-10-22 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-10-29 10:00:00 Rebalancing portfolio...
+2018-10-29 10:00:00 Current Portfolio Value: $100000.00
+2018-10-29 10:00:00 Warning: TQQQ has no data, skipping
+2018-10-29 10:00:00 Warning: UPRO has no data, skipping
+2018-10-29 10:00:00 Warning: UDOW has no data, skipping
+2018-10-29 10:00:00 Warning: TMF has no data, skipping
+2018-10-29 10:00:00 Warning: UGL has no data, skipping
+2018-10-29 10:00:00 Warning: DIG has no data, skipping
+2018-10-29 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-11-05 10:00:00 Rebalancing portfolio...
+2018-11-05 10:00:00 Current Portfolio Value: $100000.00
+2018-11-05 10:00:00 Warning: TQQQ has no data, skipping
+2018-11-05 10:00:00 Warning: UPRO has no data, skipping
+2018-11-05 10:00:00 Warning: UDOW has no data, skipping
+2018-11-05 10:00:00 Warning: TMF has no data, skipping
+2018-11-05 10:00:00 Warning: UGL has no data, skipping
+2018-11-05 10:00:00 Warning: DIG has no data, skipping
+2018-11-05 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-11-12 10:00:00 Rebalancing portfolio...
+2018-11-12 10:00:00 Current Portfolio Value: $100000.00
+2018-11-12 10:00:00 Warning: TQQQ has no data, skipping
+2018-11-12 10:00:00 Warning: UPRO has no data, skipping
+2018-11-12 10:00:00 Warning: UDOW has no data, skipping
+2018-11-12 10:00:00 Warning: TMF has no data, skipping
+2018-11-12 10:00:00 Warning: UGL has no data, skipping
+2018-11-12 10:00:00 Warning: DIG has no data, skipping
+2018-11-12 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-11-19 10:00:00 Rebalancing portfolio...
+2018-11-19 10:00:00 Current Portfolio Value: $100000.00
+2018-11-19 10:00:00 Warning: TQQQ has no data, skipping
+2018-11-19 10:00:00 Warning: UPRO has no data, skipping
+2018-11-19 10:00:00 Warning: UDOW has no data, skipping
+2018-11-19 10:00:00 Warning: TMF has no data, skipping
+2018-11-19 10:00:00 Warning: UGL has no data, skipping
+2018-11-19 10:00:00 Warning: DIG has no data, skipping
+2018-11-19 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-11-26 10:00:00 Rebalancing portfolio...
+2018-11-26 10:00:00 Current Portfolio Value: $100000.00
+2018-11-26 10:00:00 Warning: TQQQ has no data, skipping
+2018-11-26 10:00:00 Warning: UPRO has no data, skipping
+2018-11-26 10:00:00 Warning: UDOW has no data, skipping
+2018-11-26 10:00:00 Warning: TMF has no data, skipping
+2018-11-26 10:00:00 Warning: UGL has no data, skipping
+2018-11-26 10:00:00 Warning: DIG has no data, skipping
+2018-11-26 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-12-03 10:00:00 Rebalancing portfolio...
+2018-12-03 10:00:00 Current Portfolio Value: $100000.00
+2018-12-03 10:00:00 Warning: TQQQ has no data, skipping
+2018-12-03 10:00:00 Warning: UPRO has no data, skipping
+2018-12-03 10:00:00 Warning: UDOW has no data, skipping
+2018-12-03 10:00:00 Warning: TMF has no data, skipping
+2018-12-03 10:00:00 Warning: UGL has no data, skipping
+2018-12-03 10:00:00 Warning: DIG has no data, skipping
+2018-12-03 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-12-10 10:00:00 Rebalancing portfolio...
+2018-12-10 10:00:00 Current Portfolio Value: $100000.00
+2018-12-10 10:00:00 Warning: TQQQ has no data, skipping
+2018-12-10 10:00:00 Warning: UPRO has no data, skipping
+2018-12-10 10:00:00 Warning: UDOW has no data, skipping
+2018-12-10 10:00:00 Warning: TMF has no data, skipping
+2018-12-10 10:00:00 Warning: UGL has no data, skipping
+2018-12-10 10:00:00 Warning: DIG has no data, skipping
+2018-12-10 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-12-17 10:00:00 Rebalancing portfolio...
+2018-12-17 10:00:00 Current Portfolio Value: $100000.00
+2018-12-17 10:00:00 Warning: TQQQ has no data, skipping
+2018-12-17 10:00:00 Warning: UPRO has no data, skipping
+2018-12-17 10:00:00 Warning: UDOW has no data, skipping
+2018-12-17 10:00:00 Warning: TMF has no data, skipping
+2018-12-17 10:00:00 Warning: UGL has no data, skipping
+2018-12-17 10:00:00 Warning: DIG has no data, skipping
+2018-12-17 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-12-24 10:00:00 Rebalancing portfolio...
+2018-12-24 10:00:00 Current Portfolio Value: $100000.00
+2018-12-24 10:00:00 Warning: TQQQ has no data, skipping
+2018-12-24 10:00:00 Warning: UPRO has no data, skipping
+2018-12-24 10:00:00 Warning: UDOW has no data, skipping
+2018-12-24 10:00:00 Warning: TMF has no data, skipping
+2018-12-24 10:00:00 Warning: UGL has no data, skipping
+2018-12-24 10:00:00 Warning: DIG has no data, skipping
+2018-12-24 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2018-12-31 10:00:00 Rebalancing portfolio...
+2018-12-31 10:00:00 Current Portfolio Value: $100000.00
+2018-12-31 10:00:00 Warning: TQQQ has no data, skipping
+2018-12-31 10:00:00 Warning: UPRO has no data, skipping
+2018-12-31 10:00:00 Warning: UDOW has no data, skipping
+2018-12-31 10:00:00 Warning: TMF has no data, skipping
+2018-12-31 10:00:00 Warning: UGL has no data, skipping
+2018-12-31 10:00:00 Warning: DIG has no data, skipping
+2018-12-31 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-01-07 10:00:00 Rebalancing portfolio...
+2019-01-07 10:00:00 Current Portfolio Value: $100000.00
+2019-01-07 10:00:00 Warning: TQQQ has no data, skipping
+2019-01-07 10:00:00 Warning: UPRO has no data, skipping
+2019-01-07 10:00:00 Warning: UDOW has no data, skipping
+2019-01-07 10:00:00 Warning: TMF has no data, skipping
+2019-01-07 10:00:00 Warning: UGL has no data, skipping
+2019-01-07 10:00:00 Warning: DIG has no data, skipping
+2019-01-07 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-01-14 10:00:00 Rebalancing portfolio...
+2019-01-14 10:00:00 Current Portfolio Value: $100000.00
+2019-01-14 10:00:00 Warning: TQQQ has no data, skipping
+2019-01-14 10:00:00 Warning: UPRO has no data, skipping
+2019-01-14 10:00:00 Warning: UDOW has no data, skipping
+2019-01-14 10:00:00 Warning: TMF has no data, skipping
+2019-01-14 10:00:00 Warning: UGL has no data, skipping
+2019-01-14 10:00:00 Warning: DIG has no data, skipping
+2019-01-14 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-01-22 10:00:00 Rebalancing portfolio...
+2019-01-22 10:00:00 Current Portfolio Value: $100000.00
+2019-01-22 10:00:00 Warning: TQQQ has no data, skipping
+2019-01-22 10:00:00 Warning: UPRO has no data, skipping
+2019-01-22 10:00:00 Warning: UDOW has no data, skipping
+2019-01-22 10:00:00 Warning: TMF has no data, skipping
+2019-01-22 10:00:00 Warning: UGL has no data, skipping
+2019-01-22 10:00:00 Warning: DIG has no data, skipping
+2019-01-22 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-01-28 10:00:00 Rebalancing portfolio...
+2019-01-28 10:00:00 Current Portfolio Value: $100000.00
+2019-01-28 10:00:00 Warning: TQQQ has no data, skipping
+2019-01-28 10:00:00 Warning: UPRO has no data, skipping
+2019-01-28 10:00:00 Warning: UDOW has no data, skipping
+2019-01-28 10:00:00 Warning: TMF has no data, skipping
+2019-01-28 10:00:00 Warning: UGL has no data, skipping
+2019-01-28 10:00:00 Warning: DIG has no data, skipping
+2019-01-28 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-02-04 10:00:00 Rebalancing portfolio...
+2019-02-04 10:00:00 Current Portfolio Value: $100000.00
+2019-02-04 10:00:00 Warning: TQQQ has no data, skipping
+2019-02-04 10:00:00 Warning: UPRO has no data, skipping
+2019-02-04 10:00:00 Warning: UDOW has no data, skipping
+2019-02-04 10:00:00 Warning: TMF has no data, skipping
+2019-02-04 10:00:00 Warning: UGL has no data, skipping
+2019-02-04 10:00:00 Warning: DIG has no data, skipping
+2019-02-04 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-02-11 10:00:00 Rebalancing portfolio...
+2019-02-11 10:00:00 Current Portfolio Value: $100000.00
+2019-02-11 10:00:00 Warning: TQQQ has no data, skipping
+2019-02-11 10:00:00 Warning: UPRO has no data, skipping
+2019-02-11 10:00:00 Warning: UDOW has no data, skipping
+2019-02-11 10:00:00 Warning: TMF has no data, skipping
+2019-02-11 10:00:00 Warning: UGL has no data, skipping
+2019-02-11 10:00:00 Warning: DIG has no data, skipping
+2019-02-11 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-02-19 10:00:00 Rebalancing portfolio...
+2019-02-19 10:00:00 Current Portfolio Value: $100000.00
+2019-02-19 10:00:00 Warning: TQQQ has no data, skipping
+2019-02-19 10:00:00 Warning: UPRO has no data, skipping
+2019-02-19 10:00:00 Warning: UDOW has no data, skipping
+2019-02-19 10:00:00 Warning: TMF has no data, skipping
+2019-02-19 10:00:00 Warning: UGL has no data, skipping
+2019-02-19 10:00:00 Warning: DIG has no data, skipping
+2019-02-19 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-02-25 10:00:00 Rebalancing portfolio...
+2019-02-25 10:00:00 Current Portfolio Value: $100000.00
+2019-02-25 10:00:00 Warning: TQQQ has no data, skipping
+2019-02-25 10:00:00 Warning: UPRO has no data, skipping
+2019-02-25 10:00:00 Warning: UDOW has no data, skipping
+2019-02-25 10:00:00 Warning: TMF has no data, skipping
+2019-02-25 10:00:00 Warning: UGL has no data, skipping
+2019-02-25 10:00:00 Warning: DIG has no data, skipping
+2019-02-25 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-03-04 10:00:00 Rebalancing portfolio...
+2019-03-04 10:00:00 Current Portfolio Value: $100000.00
+2019-03-04 10:00:00 Warning: TQQQ has no data, skipping
+2019-03-04 10:00:00 Warning: UPRO has no data, skipping
+2019-03-04 10:00:00 Warning: UDOW has no data, skipping
+2019-03-04 10:00:00 Warning: TMF has no data, skipping
+2019-03-04 10:00:00 Warning: UGL has no data, skipping
+2019-03-04 10:00:00 Warning: DIG has no data, skipping
+2019-03-04 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-03-11 10:00:00 Rebalancing portfolio...
+2019-03-11 10:00:00 Current Portfolio Value: $100000.00
+2019-03-11 10:00:00 Warning: TQQQ has no data, skipping
+2019-03-11 10:00:00 Warning: UPRO has no data, skipping
+2019-03-11 10:00:00 Warning: UDOW has no data, skipping
+2019-03-11 10:00:00 Warning: TMF has no data, skipping
+2019-03-11 10:00:00 Warning: UGL has no data, skipping
+2019-03-11 10:00:00 Warning: DIG has no data, skipping
+2019-03-11 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-03-18 10:00:00 Rebalancing portfolio...
+2019-03-18 10:00:00 Current Portfolio Value: $100000.00
+2019-03-18 10:00:00 Warning: TQQQ has no data, skipping
+2019-03-18 10:00:00 Warning: UPRO has no data, skipping
+2019-03-18 10:00:00 Warning: UDOW has no data, skipping
+2019-03-18 10:00:00 Warning: TMF has no data, skipping
+2019-03-18 10:00:00 Warning: UGL has no data, skipping
+2019-03-18 10:00:00 Warning: DIG has no data, skipping
+2019-03-18 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-03-25 10:00:00 Rebalancing portfolio...
+2019-03-25 10:00:00 Current Portfolio Value: $100000.00
+2019-03-25 10:00:00 Warning: TQQQ has no data, skipping
+2019-03-25 10:00:00 Warning: UPRO has no data, skipping
+2019-03-25 10:00:00 Warning: UDOW has no data, skipping
+2019-03-25 10:00:00 Warning: TMF has no data, skipping
+2019-03-25 10:00:00 Warning: UGL has no data, skipping
+2019-03-25 10:00:00 Warning: DIG has no data, skipping
+2019-03-25 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-04-01 10:00:00 Rebalancing portfolio...
+2019-04-01 10:00:00 Current Portfolio Value: $100000.00
+2019-04-01 10:00:00 Warning: TQQQ has no data, skipping
+2019-04-01 10:00:00 Warning: UPRO has no data, skipping
+2019-04-01 10:00:00 Warning: UDOW has no data, skipping
+2019-04-01 10:00:00 Warning: TMF has no data, skipping
+2019-04-01 10:00:00 Warning: UGL has no data, skipping
+2019-04-01 10:00:00 Warning: DIG has no data, skipping
+2019-04-01 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-04-08 10:00:00 Rebalancing portfolio...
+2019-04-08 10:00:00 Current Portfolio Value: $100000.00
+2019-04-08 10:00:00 Warning: TQQQ has no data, skipping
+2019-04-08 10:00:00 Warning: UPRO has no data, skipping
+2019-04-08 10:00:00 Warning: UDOW has no data, skipping
+2019-04-08 10:00:00 Warning: TMF has no data, skipping
+2019-04-08 10:00:00 Warning: UGL has no data, skipping
+2019-04-08 10:00:00 Warning: DIG has no data, skipping
+2019-04-08 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-04-15 10:00:00 Rebalancing portfolio...
+2019-04-15 10:00:00 Current Portfolio Value: $100000.00
+2019-04-15 10:00:00 Warning: TQQQ has no data, skipping
+2019-04-15 10:00:00 Warning: UPRO has no data, skipping
+2019-04-15 10:00:00 Warning: UDOW has no data, skipping
+2019-04-15 10:00:00 Warning: TMF has no data, skipping
+2019-04-15 10:00:00 Warning: UGL has no data, skipping
+2019-04-15 10:00:00 Warning: DIG has no data, skipping
+2019-04-15 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-04-22 10:00:00 Rebalancing portfolio...
+2019-04-22 10:00:00 Current Portfolio Value: $100000.00
+2019-04-22 10:00:00 Warning: TQQQ has no data, skipping
+2019-04-22 10:00:00 Warning: UPRO has no data, skipping
+2019-04-22 10:00:00 Warning: UDOW has no data, skipping
+2019-04-22 10:00:00 Warning: TMF has no data, skipping
+2019-04-22 10:00:00 Warning: UGL has no data, skipping
+2019-04-22 10:00:00 Warning: DIG has no data, skipping
+2019-04-22 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-04-29 10:00:00 Rebalancing portfolio...
+2019-04-29 10:00:00 Current Portfolio Value: $100000.00
+2019-04-29 10:00:00 Warning: TQQQ has no data, skipping
+2019-04-29 10:00:00 Warning: UPRO has no data, skipping
+2019-04-29 10:00:00 Warning: UDOW has no data, skipping
+2019-04-29 10:00:00 Warning: TMF has no data, skipping
+2019-04-29 10:00:00 Warning: UGL has no data, skipping
+2019-04-29 10:00:00 Warning: DIG has no data, skipping
+2019-04-29 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-05-06 10:00:00 Rebalancing portfolio...
+2019-05-06 10:00:00 Current Portfolio Value: $100000.00
+2019-05-06 10:00:00 Warning: TQQQ has no data, skipping
+2019-05-06 10:00:00 Warning: UPRO has no data, skipping
+2019-05-06 10:00:00 Warning: UDOW has no data, skipping
+2019-05-06 10:00:00 Warning: TMF has no data, skipping
+2019-05-06 10:00:00 Warning: UGL has no data, skipping
+2019-05-06 10:00:00 Warning: DIG has no data, skipping
+2019-05-06 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-05-13 10:00:00 Rebalancing portfolio...
+2019-05-13 10:00:00 Current Portfolio Value: $100000.00
+2019-05-13 10:00:00 Warning: TQQQ has no data, skipping
+2019-05-13 10:00:00 Warning: UPRO has no data, skipping
+2019-05-13 10:00:00 Warning: UDOW has no data, skipping
+2019-05-13 10:00:00 Warning: TMF has no data, skipping
+2019-05-13 10:00:00 Warning: UGL has no data, skipping
+2019-05-13 10:00:00 Warning: DIG has no data, skipping
+2019-05-13 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-05-20 10:00:00 Rebalancing portfolio...
+2019-05-20 10:00:00 Current Portfolio Value: $100000.00
+2019-05-20 10:00:00 Warning: TQQQ has no data, skipping
+2019-05-20 10:00:00 Warning: UPRO has no data, skipping
+2019-05-20 10:00:00 Warning: UDOW has no data, skipping
+2019-05-20 10:00:00 Warning: TMF has no data, skipping
+2019-05-20 10:00:00 Warning: UGL has no data, skipping
+2019-05-20 10:00:00 Warning: DIG has no data, skipping
+2019-05-20 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-05-28 10:00:00 Rebalancing portfolio...
+2019-05-28 10:00:00 Current Portfolio Value: $100000.00
+2019-05-28 10:00:00 Warning: TQQQ has no data, skipping
+2019-05-28 10:00:00 Warning: UPRO has no data, skipping
+2019-05-28 10:00:00 Warning: UDOW has no data, skipping
+2019-05-28 10:00:00 Warning: TMF has no data, skipping
+2019-05-28 10:00:00 Warning: UGL has no data, skipping
+2019-05-28 10:00:00 Warning: DIG has no data, skipping
+2019-05-28 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-06-03 10:00:00 Rebalancing portfolio...
+2019-06-03 10:00:00 Current Portfolio Value: $100000.00
+2019-06-03 10:00:00 Warning: TQQQ has no data, skipping
+2019-06-03 10:00:00 Warning: UPRO has no data, skipping
+2019-06-03 10:00:00 Warning: UDOW has no data, skipping
+2019-06-03 10:00:00 Warning: TMF has no data, skipping
+2019-06-03 10:00:00 Warning: UGL has no data, skipping
+2019-06-03 10:00:00 Warning: DIG has no data, skipping
+2019-06-03 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-06-10 10:00:00 Rebalancing portfolio...
+2019-06-10 10:00:00 Current Portfolio Value: $100000.00
+2019-06-10 10:00:00 Warning: TQQQ has no data, skipping
+2019-06-10 10:00:00 Warning: UPRO has no data, skipping
+2019-06-10 10:00:00 Warning: UDOW has no data, skipping
+2019-06-10 10:00:00 Warning: TMF has no data, skipping
+2019-06-10 10:00:00 Warning: UGL has no data, skipping
+2019-06-10 10:00:00 Warning: DIG has no data, skipping
+2019-06-10 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-06-17 10:00:00 Rebalancing portfolio...
+2019-06-17 10:00:00 Current Portfolio Value: $100000.00
+2019-06-17 10:00:00 Warning: TQQQ has no data, skipping
+2019-06-17 10:00:00 Warning: UPRO has no data, skipping
+2019-06-17 10:00:00 Warning: UDOW has no data, skipping
+2019-06-17 10:00:00 Warning: TMF has no data, skipping
+2019-06-17 10:00:00 Warning: UGL has no data, skipping
+2019-06-17 10:00:00 Warning: DIG has no data, skipping
+2019-06-17 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-06-24 10:00:00 Rebalancing portfolio...
+2019-06-24 10:00:00 Current Portfolio Value: $100000.00
+2019-06-24 10:00:00 Warning: TQQQ has no data, skipping
+2019-06-24 10:00:00 Warning: UPRO has no data, skipping
+2019-06-24 10:00:00 Warning: UDOW has no data, skipping
+2019-06-24 10:00:00 Warning: TMF has no data, skipping
+2019-06-24 10:00:00 Warning: UGL has no data, skipping
+2019-06-24 10:00:00 Warning: DIG has no data, skipping
+2019-06-24 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-07-01 10:00:00 Rebalancing portfolio...
+2019-07-01 10:00:00 Current Portfolio Value: $100000.00
+2019-07-01 10:00:00 Warning: TQQQ has no data, skipping
+2019-07-01 10:00:00 Warning: UPRO has no data, skipping
+2019-07-01 10:00:00 Warning: UDOW has no data, skipping
+2019-07-01 10:00:00 Warning: TMF has no data, skipping
+2019-07-01 10:00:00 Warning: UGL has no data, skipping
+2019-07-01 10:00:00 Warning: DIG has no data, skipping
+2019-07-01 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-07-08 10:00:00 Rebalancing portfolio...
+2019-07-08 10:00:00 Current Portfolio Value: $100000.00
+2019-07-08 10:00:00 Warning: TQQQ has no data, skipping
+2019-07-08 10:00:00 Warning: UPRO has no data, skipping
+2019-07-08 10:00:00 Warning: UDOW has no data, skipping
+2019-07-08 10:00:00 Warning: TMF has no data, skipping
+2019-07-08 10:00:00 Warning: UGL has no data, skipping
+2019-07-08 10:00:00 Warning: DIG has no data, skipping
+2019-07-08 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-07-15 10:00:00 Rebalancing portfolio...
+2019-07-15 10:00:00 Current Portfolio Value: $100000.00
+2019-07-15 10:00:00 Warning: TQQQ has no data, skipping
+2019-07-15 10:00:00 Warning: UPRO has no data, skipping
+2019-07-15 10:00:00 Warning: UDOW has no data, skipping
+2019-07-15 10:00:00 Warning: TMF has no data, skipping
+2019-07-15 10:00:00 Warning: UGL has no data, skipping
+2019-07-15 10:00:00 Warning: DIG has no data, skipping
+2019-07-15 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-07-22 10:00:00 Rebalancing portfolio...
+2019-07-22 10:00:00 Current Portfolio Value: $100000.00
+2019-07-22 10:00:00 Warning: TQQQ has no data, skipping
+2019-07-22 10:00:00 Warning: UPRO has no data, skipping
+2019-07-22 10:00:00 Warning: UDOW has no data, skipping
+2019-07-22 10:00:00 Warning: TMF has no data, skipping
+2019-07-22 10:00:00 Warning: UGL has no data, skipping
+2019-07-22 10:00:00 Warning: DIG has no data, skipping
+2019-07-22 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-07-29 10:00:00 Rebalancing portfolio...
+2019-07-29 10:00:00 Current Portfolio Value: $100000.00
+2019-07-29 10:00:00 Warning: TQQQ has no data, skipping
+2019-07-29 10:00:00 Warning: UPRO has no data, skipping
+2019-07-29 10:00:00 Warning: UDOW has no data, skipping
+2019-07-29 10:00:00 Warning: TMF has no data, skipping
+2019-07-29 10:00:00 Warning: UGL has no data, skipping
+2019-07-29 10:00:00 Warning: DIG has no data, skipping
+2019-07-29 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-08-05 10:00:00 Rebalancing portfolio...
+2019-08-05 10:00:00 Current Portfolio Value: $100000.00
+2019-08-05 10:00:00 Warning: TQQQ has no data, skipping
+2019-08-05 10:00:00 Warning: UPRO has no data, skipping
+2019-08-05 10:00:00 Warning: UDOW has no data, skipping
+2019-08-05 10:00:00 Warning: TMF has no data, skipping
+2019-08-05 10:00:00 Warning: UGL has no data, skipping
+2019-08-05 10:00:00 Warning: DIG has no data, skipping
+2019-08-05 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-08-12 10:00:00 Rebalancing portfolio...
+2019-08-12 10:00:00 Current Portfolio Value: $100000.00
+2019-08-12 10:00:00 Warning: TQQQ has no data, skipping
+2019-08-12 10:00:00 Warning: UPRO has no data, skipping
+2019-08-12 10:00:00 Warning: UDOW has no data, skipping
+2019-08-12 10:00:00 Warning: TMF has no data, skipping
+2019-08-12 10:00:00 Warning: UGL has no data, skipping
+2019-08-12 10:00:00 Warning: DIG has no data, skipping
+2019-08-12 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-08-19 10:00:00 Rebalancing portfolio...
+2019-08-19 10:00:00 Current Portfolio Value: $100000.00
+2019-08-19 10:00:00 Warning: TQQQ has no data, skipping
+2019-08-19 10:00:00 Warning: UPRO has no data, skipping
+2019-08-19 10:00:00 Warning: UDOW has no data, skipping
+2019-08-19 10:00:00 Warning: TMF has no data, skipping
+2019-08-19 10:00:00 Warning: UGL has no data, skipping
+2019-08-19 10:00:00 Warning: DIG has no data, skipping
+2019-08-19 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-08-26 10:00:00 Rebalancing portfolio...
+2019-08-26 10:00:00 Current Portfolio Value: $100000.00
+2019-08-26 10:00:00 Warning: TQQQ has no data, skipping
+2019-08-26 10:00:00 Warning: UPRO has no data, skipping
+2019-08-26 10:00:00 Warning: UDOW has no data, skipping
+2019-08-26 10:00:00 Warning: TMF has no data, skipping
+2019-08-26 10:00:00 Warning: UGL has no data, skipping
+2019-08-26 10:00:00 Warning: DIG has no data, skipping
+2019-08-26 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-09-03 10:00:00 Rebalancing portfolio...
+2019-09-03 10:00:00 Current Portfolio Value: $100000.00
+2019-09-03 10:00:00 Warning: TQQQ has no data, skipping
+2019-09-03 10:00:00 Warning: UPRO has no data, skipping
+2019-09-03 10:00:00 Warning: UDOW has no data, skipping
+2019-09-03 10:00:00 Warning: TMF has no data, skipping
+2019-09-03 10:00:00 Warning: UGL has no data, skipping
+2019-09-03 10:00:00 Warning: DIG has no data, skipping
+2019-09-03 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-09-09 10:00:00 Rebalancing portfolio...
+2019-09-09 10:00:00 Current Portfolio Value: $100000.00
+2019-09-09 10:00:00 Warning: TQQQ has no data, skipping
+2019-09-09 10:00:00 Warning: UPRO has no data, skipping
+2019-09-09 10:00:00 Warning: UDOW has no data, skipping
+2019-09-09 10:00:00 Warning: TMF has no data, skipping
+2019-09-09 10:00:00 Warning: UGL has no data, skipping
+2019-09-09 10:00:00 Warning: DIG has no data, skipping
+2019-09-09 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-09-16 10:00:00 Rebalancing portfolio...
+2019-09-16 10:00:00 Current Portfolio Value: $100000.00
+2019-09-16 10:00:00 Warning: TQQQ has no data, skipping
+2019-09-16 10:00:00 Warning: UPRO has no data, skipping
+2019-09-16 10:00:00 Warning: UDOW has no data, skipping
+2019-09-16 10:00:00 Warning: TMF has no data, skipping
+2019-09-16 10:00:00 Warning: UGL has no data, skipping
+2019-09-16 10:00:00 Warning: DIG has no data, skipping
+2019-09-16 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-09-23 10:00:00 Rebalancing portfolio...
+2019-09-23 10:00:00 Current Portfolio Value: $100000.00
+2019-09-23 10:00:00 Warning: TQQQ has no data, skipping
+2019-09-23 10:00:00 Warning: UPRO has no data, skipping
+2019-09-23 10:00:00 Warning: UDOW has no data, skipping
+2019-09-23 10:00:00 Warning: TMF has no data, skipping
+2019-09-23 10:00:00 Warning: UGL has no data, skipping
+2019-09-23 10:00:00 Warning: DIG has no data, skipping
+2019-09-23 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-09-30 10:00:00 Rebalancing portfolio...
+2019-09-30 10:00:00 Current Portfolio Value: $100000.00
+2019-09-30 10:00:00 Warning: TQQQ has no data, skipping
+2019-09-30 10:00:00 Warning: UPRO has no data, skipping
+2019-09-30 10:00:00 Warning: UDOW has no data, skipping
+2019-09-30 10:00:00 Warning: TMF has no data, skipping
+2019-09-30 10:00:00 Warning: UGL has no data, skipping
+2019-09-30 10:00:00 Warning: DIG has no data, skipping
+2019-09-30 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-10-07 10:00:00 Rebalancing portfolio...
+2019-10-07 10:00:00 Current Portfolio Value: $100000.00
+2019-10-07 10:00:00 Warning: TQQQ has no data, skipping
+2019-10-07 10:00:00 Warning: UPRO has no data, skipping
+2019-10-07 10:00:00 Warning: UDOW has no data, skipping
+2019-10-07 10:00:00 Warning: TMF has no data, skipping
+2019-10-07 10:00:00 Warning: UGL has no data, skipping
+2019-10-07 10:00:00 Warning: DIG has no data, skipping
+2019-10-07 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-10-14 10:00:00 Rebalancing portfolio...
+2019-10-14 10:00:00 Current Portfolio Value: $100000.00
+2019-10-14 10:00:00 Warning: TQQQ has no data, skipping
+2019-10-14 10:00:00 Warning: UPRO has no data, skipping
+2019-10-14 10:00:00 Warning: UDOW has no data, skipping
+2019-10-14 10:00:00 Warning: TMF has no data, skipping
+2019-10-14 10:00:00 Warning: UGL has no data, skipping
+2019-10-14 10:00:00 Warning: DIG has no data, skipping
+2019-10-14 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-10-21 10:00:00 Rebalancing portfolio...
+2019-10-21 10:00:00 Current Portfolio Value: $100000.00
+2019-10-21 10:00:00 Warning: TQQQ has no data, skipping
+2019-10-21 10:00:00 Warning: UPRO has no data, skipping
+2019-10-21 10:00:00 Warning: UDOW has no data, skipping
+2019-10-21 10:00:00 Warning: TMF has no data, skipping
+2019-10-21 10:00:00 Warning: UGL has no data, skipping
+2019-10-21 10:00:00 Warning: DIG has no data, skipping
+2019-10-21 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-10-28 10:00:00 Rebalancing portfolio...
+2019-10-28 10:00:00 Current Portfolio Value: $100000.00
+2019-10-28 10:00:00 Warning: TQQQ has no data, skipping
+2019-10-28 10:00:00 Warning: UPRO has no data, skipping
+2019-10-28 10:00:00 Warning: UDOW has no data, skipping
+2019-10-28 10:00:00 Warning: TMF has no data, skipping
+2019-10-28 10:00:00 Warning: UGL has no data, skipping
+2019-10-28 10:00:00 Warning: DIG has no data, skipping
+2019-10-28 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-11-04 10:00:00 Rebalancing portfolio...
+2019-11-04 10:00:00 Current Portfolio Value: $100000.00
+2019-11-04 10:00:00 Warning: TQQQ has no data, skipping
+2019-11-04 10:00:00 Warning: UPRO has no data, skipping
+2019-11-04 10:00:00 Warning: UDOW has no data, skipping
+2019-11-04 10:00:00 Warning: TMF has no data, skipping
+2019-11-04 10:00:00 Warning: UGL has no data, skipping
+2019-11-04 10:00:00 Warning: DIG has no data, skipping
+2019-11-04 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-11-11 10:00:00 Rebalancing portfolio...
+2019-11-11 10:00:00 Current Portfolio Value: $100000.00
+2019-11-11 10:00:00 Warning: TQQQ has no data, skipping
+2019-11-11 10:00:00 Warning: UPRO has no data, skipping
+2019-11-11 10:00:00 Warning: UDOW has no data, skipping
+2019-11-11 10:00:00 Warning: TMF has no data, skipping
+2019-11-11 10:00:00 Warning: UGL has no data, skipping
+2019-11-11 10:00:00 Warning: DIG has no data, skipping
+2019-11-11 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-11-18 10:00:00 Rebalancing portfolio...
+2019-11-18 10:00:00 Current Portfolio Value: $100000.00
+2019-11-18 10:00:00 Warning: TQQQ has no data, skipping
+2019-11-18 10:00:00 Warning: UPRO has no data, skipping
+2019-11-18 10:00:00 Warning: UDOW has no data, skipping
+2019-11-18 10:00:00 Warning: TMF has no data, skipping
+2019-11-18 10:00:00 Warning: UGL has no data, skipping
+2019-11-18 10:00:00 Warning: DIG has no data, skipping
+2019-11-18 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-11-25 10:00:00 Rebalancing portfolio...
+2019-11-25 10:00:00 Current Portfolio Value: $100000.00
+2019-11-25 10:00:00 Warning: TQQQ has no data, skipping
+2019-11-25 10:00:00 Warning: UPRO has no data, skipping
+2019-11-25 10:00:00 Warning: UDOW has no data, skipping
+2019-11-25 10:00:00 Warning: TMF has no data, skipping
+2019-11-25 10:00:00 Warning: UGL has no data, skipping
+2019-11-25 10:00:00 Warning: DIG has no data, skipping
+2019-11-25 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-12-02 10:00:00 Rebalancing portfolio...
+2019-12-02 10:00:00 Current Portfolio Value: $100000.00
+2019-12-02 10:00:00 Warning: TQQQ has no data, skipping
+2019-12-02 10:00:00 Warning: UPRO has no data, skipping
+2019-12-02 10:00:00 Warning: UDOW has no data, skipping
+2019-12-02 10:00:00 Warning: TMF has no data, skipping
+2019-12-02 10:00:00 Warning: UGL has no data, skipping
+2019-12-02 10:00:00 Warning: DIG has no data, skipping
+2019-12-02 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-12-09 10:00:00 Rebalancing portfolio...
+2019-12-09 10:00:00 Current Portfolio Value: $100000.00
+2019-12-09 10:00:00 Warning: TQQQ has no data, skipping
+2019-12-09 10:00:00 Warning: UPRO has no data, skipping
+2019-12-09 10:00:00 Warning: UDOW has no data, skipping
+2019-12-09 10:00:00 Warning: TMF has no data, skipping
+2019-12-09 10:00:00 Warning: UGL has no data, skipping
+2019-12-09 10:00:00 Warning: DIG has no data, skipping
+2019-12-09 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-12-16 10:00:00 Rebalancing portfolio...
+2019-12-16 10:00:00 Current Portfolio Value: $100000.00
+2019-12-16 10:00:00 Warning: TQQQ has no data, skipping
+2019-12-16 10:00:00 Warning: UPRO has no data, skipping
+2019-12-16 10:00:00 Warning: UDOW has no data, skipping
+2019-12-16 10:00:00 Warning: TMF has no data, skipping
+2019-12-16 10:00:00 Warning: UGL has no data, skipping
+2019-12-16 10:00:00 Warning: DIG has no data, skipping
+2019-12-16 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-12-23 10:00:00 Rebalancing portfolio...
+2019-12-23 10:00:00 Current Portfolio Value: $100000.00
+2019-12-23 10:00:00 Warning: TQQQ has no data, skipping
+2019-12-23 10:00:00 Warning: UPRO has no data, skipping
+2019-12-23 10:00:00 Warning: UDOW has no data, skipping
+2019-12-23 10:00:00 Warning: TMF has no data, skipping
+2019-12-23 10:00:00 Warning: UGL has no data, skipping
+2019-12-23 10:00:00 Warning: DIG has no data, skipping
+2019-12-23 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2019-12-30 10:00:00 Rebalancing portfolio...
+2019-12-30 10:00:00 Current Portfolio Value: $100000.00
+2019-12-30 10:00:00 Warning: TQQQ has no data, skipping
+2019-12-30 10:00:00 Warning: UPRO has no data, skipping
+2019-12-30 10:00:00 Warning: UDOW has no data, skipping
+2019-12-30 10:00:00 Warning: TMF has no data, skipping
+2019-12-30 10:00:00 Warning: UGL has no data, skipping
+2019-12-30 10:00:00 Warning: DIG has no data, skipping
+2019-12-30 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-01-06 10:00:00 Rebalancing portfolio...
+2020-01-06 10:00:00 Current Portfolio Value: $100000.00
+2020-01-06 10:00:00 Warning: TQQQ has no data, skipping
+2020-01-06 10:00:00 Warning: UPRO has no data, skipping
+2020-01-06 10:00:00 Warning: UDOW has no data, skipping
+2020-01-06 10:00:00 Warning: TMF has no data, skipping
+2020-01-06 10:00:00 Warning: UGL has no data, skipping
+2020-01-06 10:00:00 Warning: DIG has no data, skipping
+2020-01-06 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-01-13 10:00:00 Rebalancing portfolio...
+2020-01-13 10:00:00 Current Portfolio Value: $100000.00
+2020-01-13 10:00:00 Warning: TQQQ has no data, skipping
+2020-01-13 10:00:00 Warning: UPRO has no data, skipping
+2020-01-13 10:00:00 Warning: UDOW has no data, skipping
+2020-01-13 10:00:00 Warning: TMF has no data, skipping
+2020-01-13 10:00:00 Warning: UGL has no data, skipping
+2020-01-13 10:00:00 Warning: DIG has no data, skipping
+2020-01-13 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-01-21 10:00:00 Rebalancing portfolio...
+2020-01-21 10:00:00 Current Portfolio Value: $100000.00
+2020-01-21 10:00:00 Warning: TQQQ has no data, skipping
+2020-01-21 10:00:00 Warning: UPRO has no data, skipping
+2020-01-21 10:00:00 Warning: UDOW has no data, skipping
+2020-01-21 10:00:00 Warning: TMF has no data, skipping
+2020-01-21 10:00:00 Warning: UGL has no data, skipping
+2020-01-21 10:00:00 Warning: DIG has no data, skipping
+2020-01-21 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-01-27 10:00:00 Rebalancing portfolio...
+2020-01-27 10:00:00 Current Portfolio Value: $100000.00
+2020-01-27 10:00:00 Warning: TQQQ has no data, skipping
+2020-01-27 10:00:00 Warning: UPRO has no data, skipping
+2020-01-27 10:00:00 Warning: UDOW has no data, skipping
+2020-01-27 10:00:00 Warning: TMF has no data, skipping
+2020-01-27 10:00:00 Warning: UGL has no data, skipping
+2020-01-27 10:00:00 Warning: DIG has no data, skipping
+2020-01-27 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-02-03 10:00:00 Rebalancing portfolio...
+2020-02-03 10:00:00 Current Portfolio Value: $100000.00
+2020-02-03 10:00:00 Warning: TQQQ has no data, skipping
+2020-02-03 10:00:00 Warning: UPRO has no data, skipping
+2020-02-03 10:00:00 Warning: UDOW has no data, skipping
+2020-02-03 10:00:00 Warning: TMF has no data, skipping
+2020-02-03 10:00:00 Warning: UGL has no data, skipping
+2020-02-03 10:00:00 Warning: DIG has no data, skipping
+2020-02-03 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-02-10 10:00:00 Rebalancing portfolio...
+2020-02-10 10:00:00 Current Portfolio Value: $100000.00
+2020-02-10 10:00:00 Warning: TQQQ has no data, skipping
+2020-02-10 10:00:00 Warning: UPRO has no data, skipping
+2020-02-10 10:00:00 Warning: UDOW has no data, skipping
+2020-02-10 10:00:00 Warning: TMF has no data, skipping
+2020-02-10 10:00:00 Warning: UGL has no data, skipping
+2020-02-10 10:00:00 Warning: DIG has no data, skipping
+2020-02-10 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-02-18 10:00:00 Rebalancing portfolio...
+2020-02-18 10:00:00 Current Portfolio Value: $100000.00
+2020-02-18 10:00:00 Warning: TQQQ has no data, skipping
+2020-02-18 10:00:00 Warning: UPRO has no data, skipping
+2020-02-18 10:00:00 Warning: UDOW has no data, skipping
+2020-02-18 10:00:00 Warning: TMF has no data, skipping
+2020-02-18 10:00:00 Warning: UGL has no data, skipping
+2020-02-18 10:00:00 Warning: DIG has no data, skipping
+2020-02-18 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-02-24 10:00:00 Rebalancing portfolio...
+2020-02-24 10:00:00 Current Portfolio Value: $100000.00
+2020-02-24 10:00:00 Warning: TQQQ has no data, skipping
+2020-02-24 10:00:00 Warning: UPRO has no data, skipping
+2020-02-24 10:00:00 Warning: UDOW has no data, skipping
+2020-02-24 10:00:00 Warning: TMF has no data, skipping
+2020-02-24 10:00:00 Warning: UGL has no data, skipping
+2020-02-24 10:00:00 Warning: DIG has no data, skipping
+2020-02-24 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-03-02 10:00:00 Rebalancing portfolio...
+2020-03-02 10:00:00 Current Portfolio Value: $100000.00
+2020-03-02 10:00:00 Warning: TQQQ has no data, skipping
+2020-03-02 10:00:00 Warning: UPRO has no data, skipping
+2020-03-02 10:00:00 Warning: UDOW has no data, skipping
+2020-03-02 10:00:00 Warning: TMF has no data, skipping
+2020-03-02 10:00:00 Warning: UGL has no data, skipping
+2020-03-02 10:00:00 Warning: DIG has no data, skipping
+2020-03-02 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-03-09 10:00:00 Rebalancing portfolio...
+2020-03-09 10:00:00 Current Portfolio Value: $100000.00
+2020-03-09 10:00:00 Warning: TQQQ has no data, skipping
+2020-03-09 10:00:00 Warning: UPRO has no data, skipping
+2020-03-09 10:00:00 Warning: UDOW has no data, skipping
+2020-03-09 10:00:00 Warning: TMF has no data, skipping
+2020-03-09 10:00:00 Warning: UGL has no data, skipping
+2020-03-09 10:00:00 Warning: DIG has no data, skipping
+2020-03-09 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-03-16 10:00:00 Rebalancing portfolio...
+2020-03-16 10:00:00 Current Portfolio Value: $100000.00
+2020-03-16 10:00:00 Warning: TQQQ has no data, skipping
+2020-03-16 10:00:00 Warning: UPRO has no data, skipping
+2020-03-16 10:00:00 Warning: UDOW has no data, skipping
+2020-03-16 10:00:00 Warning: TMF has no data, skipping
+2020-03-16 10:00:00 Warning: UGL has no data, skipping
+2020-03-16 10:00:00 Warning: DIG has no data, skipping
+2020-03-16 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-03-23 10:00:00 Rebalancing portfolio...
+2020-03-23 10:00:00 Current Portfolio Value: $100000.00
+2020-03-23 10:00:00 Warning: TQQQ has no data, skipping
+2020-03-23 10:00:00 Warning: UPRO has no data, skipping
+2020-03-23 10:00:00 Warning: UDOW has no data, skipping
+2020-03-23 10:00:00 Warning: TMF has no data, skipping
+2020-03-23 10:00:00 Warning: UGL has no data, skipping
+2020-03-23 10:00:00 Warning: DIG has no data, skipping
+2020-03-23 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-03-30 10:00:00 Rebalancing portfolio...
+2020-03-30 10:00:00 Current Portfolio Value: $100000.00
+2020-03-30 10:00:00 Warning: TQQQ has no data, skipping
+2020-03-30 10:00:00 Warning: UPRO has no data, skipping
+2020-03-30 10:00:00 Warning: UDOW has no data, skipping
+2020-03-30 10:00:00 Warning: TMF has no data, skipping
+2020-03-30 10:00:00 Warning: UGL has no data, skipping
+2020-03-30 10:00:00 Warning: DIG has no data, skipping
+2020-03-30 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-04-06 10:00:00 Rebalancing portfolio...
+2020-04-06 10:00:00 Current Portfolio Value: $100000.00
+2020-04-06 10:00:00 Warning: TQQQ has no data, skipping
+2020-04-06 10:00:00 Warning: UPRO has no data, skipping
+2020-04-06 10:00:00 Warning: UDOW has no data, skipping
+2020-04-06 10:00:00 Warning: TMF has no data, skipping
+2020-04-06 10:00:00 Warning: UGL has no data, skipping
+2020-04-06 10:00:00 Warning: DIG has no data, skipping
+2020-04-06 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-04-13 10:00:00 Rebalancing portfolio...
+2020-04-13 10:00:00 Current Portfolio Value: $100000.00
+2020-04-13 10:00:00 Warning: TQQQ has no data, skipping
+2020-04-13 10:00:00 Warning: UPRO has no data, skipping
+2020-04-13 10:00:00 Warning: UDOW has no data, skipping
+2020-04-13 10:00:00 Warning: TMF has no data, skipping
+2020-04-13 10:00:00 Warning: UGL has no data, skipping
+2020-04-13 10:00:00 Warning: DIG has no data, skipping
+2020-04-13 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-04-20 10:00:00 Rebalancing portfolio...
+2020-04-20 10:00:00 Current Portfolio Value: $100000.00
+2020-04-20 10:00:00 Warning: TQQQ has no data, skipping
+2020-04-20 10:00:00 Warning: UPRO has no data, skipping
+2020-04-20 10:00:00 Warning: UDOW has no data, skipping
+2020-04-20 10:00:00 Warning: TMF has no data, skipping
+2020-04-20 10:00:00 Warning: UGL has no data, skipping
+2020-04-20 10:00:00 Warning: DIG has no data, skipping
+2020-04-20 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-04-27 10:00:00 Rebalancing portfolio...
+2020-04-27 10:00:00 Current Portfolio Value: $100000.00
+2020-04-27 10:00:00 Warning: TQQQ has no data, skipping
+2020-04-27 10:00:00 Warning: UPRO has no data, skipping
+2020-04-27 10:00:00 Warning: UDOW has no data, skipping
+2020-04-27 10:00:00 Warning: TMF has no data, skipping
+2020-04-27 10:00:00 Warning: UGL has no data, skipping
+2020-04-27 10:00:00 Warning: DIG has no data, skipping
+2020-04-27 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-05-04 10:00:00 Rebalancing portfolio...
+2020-05-04 10:00:00 Current Portfolio Value: $100000.00
+2020-05-04 10:00:00 Warning: TQQQ has no data, skipping
+2020-05-04 10:00:00 Warning: UPRO has no data, skipping
+2020-05-04 10:00:00 Warning: UDOW has no data, skipping
+2020-05-04 10:00:00 Warning: TMF has no data, skipping
+2020-05-04 10:00:00 Warning: UGL has no data, skipping
+2020-05-04 10:00:00 Warning: DIG has no data, skipping
+2020-05-04 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-05-11 10:00:00 Rebalancing portfolio...
+2020-05-11 10:00:00 Current Portfolio Value: $100000.00
+2020-05-11 10:00:00 Warning: TQQQ has no data, skipping
+2020-05-11 10:00:00 Warning: UPRO has no data, skipping
+2020-05-11 10:00:00 Warning: UDOW has no data, skipping
+2020-05-11 10:00:00 Warning: TMF has no data, skipping
+2020-05-11 10:00:00 Warning: UGL has no data, skipping
+2020-05-11 10:00:00 Warning: DIG has no data, skipping
+2020-05-11 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-05-18 10:00:00 Rebalancing portfolio...
+2020-05-18 10:00:00 Current Portfolio Value: $100000.00
+2020-05-18 10:00:00 Warning: TQQQ has no data, skipping
+2020-05-18 10:00:00 Warning: UPRO has no data, skipping
+2020-05-18 10:00:00 Warning: UDOW has no data, skipping
+2020-05-18 10:00:00 Warning: TMF has no data, skipping
+2020-05-18 10:00:00 Warning: UGL has no data, skipping
+2020-05-18 10:00:00 Warning: DIG has no data, skipping
+2020-05-18 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-05-26 10:00:00 Rebalancing portfolio...
+2020-05-26 10:00:00 Current Portfolio Value: $100000.00
+2020-05-26 10:00:00 Warning: TQQQ has no data, skipping
+2020-05-26 10:00:00 Warning: UPRO has no data, skipping
+2020-05-26 10:00:00 Warning: UDOW has no data, skipping
+2020-05-26 10:00:00 Warning: TMF has no data, skipping
+2020-05-26 10:00:00 Warning: UGL has no data, skipping
+2020-05-26 10:00:00 Warning: DIG has no data, skipping
+2020-05-26 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-06-01 10:00:00 Rebalancing portfolio...
+2020-06-01 10:00:00 Current Portfolio Value: $100000.00
+2020-06-01 10:00:00 Warning: TQQQ has no data, skipping
+2020-06-01 10:00:00 Warning: UPRO has no data, skipping
+2020-06-01 10:00:00 Warning: UDOW has no data, skipping
+2020-06-01 10:00:00 Warning: TMF has no data, skipping
+2020-06-01 10:00:00 Warning: UGL has no data, skipping
+2020-06-01 10:00:00 Warning: DIG has no data, skipping
+2020-06-01 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-06-08 10:00:00 Rebalancing portfolio...
+2020-06-08 10:00:00 Current Portfolio Value: $100000.00
+2020-06-08 10:00:00 Warning: TQQQ has no data, skipping
+2020-06-08 10:00:00 Warning: UPRO has no data, skipping
+2020-06-08 10:00:00 Warning: UDOW has no data, skipping
+2020-06-08 10:00:00 Warning: TMF has no data, skipping
+2020-06-08 10:00:00 Warning: UGL has no data, skipping
+2020-06-08 10:00:00 Warning: DIG has no data, skipping
+2020-06-08 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-06-15 10:00:00 Rebalancing portfolio...
+2020-06-15 10:00:00 Current Portfolio Value: $100000.00
+2020-06-15 10:00:00 Warning: TQQQ has no data, skipping
+2020-06-15 10:00:00 Warning: UPRO has no data, skipping
+2020-06-15 10:00:00 Warning: UDOW has no data, skipping
+2020-06-15 10:00:00 Warning: TMF has no data, skipping
+2020-06-15 10:00:00 Warning: UGL has no data, skipping
+2020-06-15 10:00:00 Warning: DIG has no data, skipping
+2020-06-15 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-06-22 10:00:00 Rebalancing portfolio...
+2020-06-22 10:00:00 Current Portfolio Value: $100000.00
+2020-06-22 10:00:00 Warning: TQQQ has no data, skipping
+2020-06-22 10:00:00 Warning: UPRO has no data, skipping
+2020-06-22 10:00:00 Warning: UDOW has no data, skipping
+2020-06-22 10:00:00 Warning: TMF has no data, skipping
+2020-06-22 10:00:00 Warning: UGL has no data, skipping
+2020-06-22 10:00:00 Warning: DIG has no data, skipping
+2020-06-22 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-06-29 10:00:00 Rebalancing portfolio...
+2020-06-29 10:00:00 Current Portfolio Value: $100000.00
+2020-06-29 10:00:00 Warning: TQQQ has no data, skipping
+2020-06-29 10:00:00 Warning: UPRO has no data, skipping
+2020-06-29 10:00:00 Warning: UDOW has no data, skipping
+2020-06-29 10:00:00 Warning: TMF has no data, skipping
+2020-06-29 10:00:00 Warning: UGL has no data, skipping
+2020-06-29 10:00:00 Warning: DIG has no data, skipping
+2020-06-29 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-07-06 10:00:00 Rebalancing portfolio...
+2020-07-06 10:00:00 Current Portfolio Value: $100000.00
+2020-07-06 10:00:00 Warning: TQQQ has no data, skipping
+2020-07-06 10:00:00 Warning: UPRO has no data, skipping
+2020-07-06 10:00:00 Warning: UDOW has no data, skipping
+2020-07-06 10:00:00 Warning: TMF has no data, skipping
+2020-07-06 10:00:00 Warning: UGL has no data, skipping
+2020-07-06 10:00:00 Warning: DIG has no data, skipping
+2020-07-06 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-07-13 10:00:00 Rebalancing portfolio...
+2020-07-13 10:00:00 Current Portfolio Value: $100000.00
+2020-07-13 10:00:00 Warning: TQQQ has no data, skipping
+2020-07-13 10:00:00 Warning: UPRO has no data, skipping
+2020-07-13 10:00:00 Warning: UDOW has no data, skipping
+2020-07-13 10:00:00 Warning: TMF has no data, skipping
+2020-07-13 10:00:00 Warning: UGL has no data, skipping
+2020-07-13 10:00:00 Warning: DIG has no data, skipping
+2020-07-13 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-07-20 10:00:00 Rebalancing portfolio...
+2020-07-20 10:00:00 Current Portfolio Value: $100000.00
+2020-07-20 10:00:00 Warning: TQQQ has no data, skipping
+2020-07-20 10:00:00 Warning: UPRO has no data, skipping
+2020-07-20 10:00:00 Warning: UDOW has no data, skipping
+2020-07-20 10:00:00 Warning: TMF has no data, skipping
+2020-07-20 10:00:00 Warning: UGL has no data, skipping
+2020-07-20 10:00:00 Warning: DIG has no data, skipping
+2020-07-20 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-07-27 10:00:00 Rebalancing portfolio...
+2020-07-27 10:00:00 Current Portfolio Value: $100000.00
+2020-07-27 10:00:00 Warning: TQQQ has no data, skipping
+2020-07-27 10:00:00 Warning: UPRO has no data, skipping
+2020-07-27 10:00:00 Warning: UDOW has no data, skipping
+2020-07-27 10:00:00 Warning: TMF has no data, skipping
+2020-07-27 10:00:00 Warning: UGL has no data, skipping
+2020-07-27 10:00:00 Warning: DIG has no data, skipping
+2020-07-27 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-08-03 10:00:00 Rebalancing portfolio...
+2020-08-03 10:00:00 Current Portfolio Value: $100000.00
+2020-08-03 10:00:00 Warning: TQQQ has no data, skipping
+2020-08-03 10:00:00 Warning: UPRO has no data, skipping
+2020-08-03 10:00:00 Warning: UDOW has no data, skipping
+2020-08-03 10:00:00 Warning: TMF has no data, skipping
+2020-08-03 10:00:00 Warning: UGL has no data, skipping
+2020-08-03 10:00:00 Warning: DIG has no data, skipping
+2020-08-03 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-08-10 10:00:00 Rebalancing portfolio...
+2020-08-10 10:00:00 Current Portfolio Value: $100000.00
+2020-08-10 10:00:00 Warning: TQQQ has no data, skipping
+2020-08-10 10:00:00 Warning: UPRO has no data, skipping
+2020-08-10 10:00:00 Warning: UDOW has no data, skipping
+2020-08-10 10:00:00 Warning: TMF has no data, skipping
+2020-08-10 10:00:00 Warning: UGL has no data, skipping
+2020-08-10 10:00:00 Warning: DIG has no data, skipping
+2020-08-10 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-08-17 10:00:00 Rebalancing portfolio...
+2020-08-17 10:00:00 Current Portfolio Value: $100000.00
+2020-08-17 10:00:00 Warning: TQQQ has no data, skipping
+2020-08-17 10:00:00 Warning: UPRO has no data, skipping
+2020-08-17 10:00:00 Warning: UDOW has no data, skipping
+2020-08-17 10:00:00 Warning: TMF has no data, skipping
+2020-08-17 10:00:00 Warning: UGL has no data, skipping
+2020-08-17 10:00:00 Warning: DIG has no data, skipping
+2020-08-17 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-08-24 10:00:00 Rebalancing portfolio...
+2020-08-24 10:00:00 Current Portfolio Value: $100000.00
+2020-08-24 10:00:00 Warning: TQQQ has no data, skipping
+2020-08-24 10:00:00 Warning: UPRO has no data, skipping
+2020-08-24 10:00:00 Warning: UDOW has no data, skipping
+2020-08-24 10:00:00 Warning: TMF has no data, skipping
+2020-08-24 10:00:00 Warning: UGL has no data, skipping
+2020-08-24 10:00:00 Warning: DIG has no data, skipping
+2020-08-24 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-08-31 10:00:00 Rebalancing portfolio...
+2020-08-31 10:00:00 Current Portfolio Value: $100000.00
+2020-08-31 10:00:00 Warning: TQQQ has no data, skipping
+2020-08-31 10:00:00 Warning: UPRO has no data, skipping
+2020-08-31 10:00:00 Warning: UDOW has no data, skipping
+2020-08-31 10:00:00 Warning: TMF has no data, skipping
+2020-08-31 10:00:00 Warning: UGL has no data, skipping
+2020-08-31 10:00:00 Warning: DIG has no data, skipping
+2020-08-31 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-09-08 10:00:00 Rebalancing portfolio...
+2020-09-08 10:00:00 Current Portfolio Value: $100000.00
+2020-09-08 10:00:00 Warning: TQQQ has no data, skipping
+2020-09-08 10:00:00 Warning: UPRO has no data, skipping
+2020-09-08 10:00:00 Warning: UDOW has no data, skipping
+2020-09-08 10:00:00 Warning: TMF has no data, skipping
+2020-09-08 10:00:00 Warning: UGL has no data, skipping
+2020-09-08 10:00:00 Warning: DIG has no data, skipping
+2020-09-08 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-09-14 10:00:00 Rebalancing portfolio...
+2020-09-14 10:00:00 Current Portfolio Value: $100000.00
+2020-09-14 10:00:00 Warning: TQQQ has no data, skipping
+2020-09-14 10:00:00 Warning: UPRO has no data, skipping
+2020-09-14 10:00:00 Warning: UDOW has no data, skipping
+2020-09-14 10:00:00 Warning: TMF has no data, skipping
+2020-09-14 10:00:00 Warning: UGL has no data, skipping
+2020-09-14 10:00:00 Warning: DIG has no data, skipping
+2020-09-14 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-09-21 10:00:00 Rebalancing portfolio...
+2020-09-21 10:00:00 Current Portfolio Value: $100000.00
+2020-09-21 10:00:00 Warning: TQQQ has no data, skipping
+2020-09-21 10:00:00 Warning: UPRO has no data, skipping
+2020-09-21 10:00:00 Warning: UDOW has no data, skipping
+2020-09-21 10:00:00 Warning: TMF has no data, skipping
+2020-09-21 10:00:00 Warning: UGL has no data, skipping
+2020-09-21 10:00:00 Warning: DIG has no data, skipping
+2020-09-21 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-09-28 10:00:00 Rebalancing portfolio...
+2020-09-28 10:00:00 Current Portfolio Value: $100000.00
+2020-09-28 10:00:00 Warning: TQQQ has no data, skipping
+2020-09-28 10:00:00 Warning: UPRO has no data, skipping
+2020-09-28 10:00:00 Warning: UDOW has no data, skipping
+2020-09-28 10:00:00 Warning: TMF has no data, skipping
+2020-09-28 10:00:00 Warning: UGL has no data, skipping
+2020-09-28 10:00:00 Warning: DIG has no data, skipping
+2020-09-28 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-10-05 10:00:00 Rebalancing portfolio...
+2020-10-05 10:00:00 Current Portfolio Value: $100000.00
+2020-10-05 10:00:00 Warning: TQQQ has no data, skipping
+2020-10-05 10:00:00 Warning: UPRO has no data, skipping
+2020-10-05 10:00:00 Warning: UDOW has no data, skipping
+2020-10-05 10:00:00 Warning: TMF has no data, skipping
+2020-10-05 10:00:00 Warning: UGL has no data, skipping
+2020-10-05 10:00:00 Warning: DIG has no data, skipping
+2020-10-05 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-10-12 10:00:00 Rebalancing portfolio...
+2020-10-12 10:00:00 Current Portfolio Value: $100000.00
+2020-10-12 10:00:00 Warning: TQQQ has no data, skipping
+2020-10-12 10:00:00 Warning: UPRO has no data, skipping
+2020-10-12 10:00:00 Warning: UDOW has no data, skipping
+2020-10-12 10:00:00 Warning: TMF has no data, skipping
+2020-10-12 10:00:00 Warning: UGL has no data, skipping
+2020-10-12 10:00:00 Warning: DIG has no data, skipping
+2020-10-12 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-10-19 10:00:00 Rebalancing portfolio...
+2020-10-19 10:00:00 Current Portfolio Value: $100000.00
+2020-10-19 10:00:00 Warning: TQQQ has no data, skipping
+2020-10-19 10:00:00 Warning: UPRO has no data, skipping
+2020-10-19 10:00:00 Warning: UDOW has no data, skipping
+2020-10-19 10:00:00 Warning: TMF has no data, skipping
+2020-10-19 10:00:00 Warning: UGL has no data, skipping
+2020-10-19 10:00:00 Warning: DIG has no data, skipping
+2020-10-19 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-10-26 10:00:00 Rebalancing portfolio...
+2020-10-26 10:00:00 Current Portfolio Value: $100000.00
+2020-10-26 10:00:00 Warning: TQQQ has no data, skipping
+2020-10-26 10:00:00 Warning: UPRO has no data, skipping
+2020-10-26 10:00:00 Warning: UDOW has no data, skipping
+2020-10-26 10:00:00 Warning: TMF has no data, skipping
+2020-10-26 10:00:00 Warning: UGL has no data, skipping
+2020-10-26 10:00:00 Warning: DIG has no data, skipping
+2020-10-26 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-11-02 10:00:00 Rebalancing portfolio...
+2020-11-02 10:00:00 Current Portfolio Value: $100000.00
+2020-11-02 10:00:00 Warning: TQQQ has no data, skipping
+2020-11-02 10:00:00 Warning: UPRO has no data, skipping
+2020-11-02 10:00:00 Warning: UDOW has no data, skipping
+2020-11-02 10:00:00 Warning: TMF has no data, skipping
+2020-11-02 10:00:00 Warning: UGL has no data, skipping
+2020-11-02 10:00:00 Warning: DIG has no data, skipping
+2020-11-02 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-11-09 10:00:00 Rebalancing portfolio...
+2020-11-09 10:00:00 Current Portfolio Value: $100000.00
+2020-11-09 10:00:00 Warning: TQQQ has no data, skipping
+2020-11-09 10:00:00 Warning: UPRO has no data, skipping
+2020-11-09 10:00:00 Warning: UDOW has no data, skipping
+2020-11-09 10:00:00 Warning: TMF has no data, skipping
+2020-11-09 10:00:00 Warning: UGL has no data, skipping
+2020-11-09 10:00:00 Warning: DIG has no data, skipping
+2020-11-09 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-11-16 10:00:00 Rebalancing portfolio...
+2020-11-16 10:00:00 Current Portfolio Value: $100000.00
+2020-11-16 10:00:00 Warning: TQQQ has no data, skipping
+2020-11-16 10:00:00 Warning: UPRO has no data, skipping
+2020-11-16 10:00:00 Warning: UDOW has no data, skipping
+2020-11-16 10:00:00 Warning: TMF has no data, skipping
+2020-11-16 10:00:00 Warning: UGL has no data, skipping
+2020-11-16 10:00:00 Warning: DIG has no data, skipping
+2020-11-16 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-11-23 10:00:00 Rebalancing portfolio...
+2020-11-23 10:00:00 Current Portfolio Value: $100000.00
+2020-11-23 10:00:00 Warning: TQQQ has no data, skipping
+2020-11-23 10:00:00 Warning: UPRO has no data, skipping
+2020-11-23 10:00:00 Warning: UDOW has no data, skipping
+2020-11-23 10:00:00 Warning: TMF has no data, skipping
+2020-11-23 10:00:00 Warning: UGL has no data, skipping
+2020-11-23 10:00:00 Warning: DIG has no data, skipping
+2020-11-23 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-11-30 10:00:00 Rebalancing portfolio...
+2020-11-30 10:00:00 Current Portfolio Value: $100000.00
+2020-11-30 10:00:00 Warning: TQQQ has no data, skipping
+2020-11-30 10:00:00 Warning: UPRO has no data, skipping
+2020-11-30 10:00:00 Warning: UDOW has no data, skipping
+2020-11-30 10:00:00 Warning: TMF has no data, skipping
+2020-11-30 10:00:00 Warning: UGL has no data, skipping
+2020-11-30 10:00:00 Warning: DIG has no data, skipping
+2020-11-30 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-12-07 10:00:00 Rebalancing portfolio...
+2020-12-07 10:00:00 Current Portfolio Value: $100000.00
+2020-12-07 10:00:00 Warning: TQQQ has no data, skipping
+2020-12-07 10:00:00 Warning: UPRO has no data, skipping
+2020-12-07 10:00:00 Warning: UDOW has no data, skipping
+2020-12-07 10:00:00 Warning: TMF has no data, skipping
+2020-12-07 10:00:00 Warning: UGL has no data, skipping
+2020-12-07 10:00:00 Warning: DIG has no data, skipping
+2020-12-07 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-12-14 10:00:00 Rebalancing portfolio...
+2020-12-14 10:00:00 Current Portfolio Value: $100000.00
+2020-12-14 10:00:00 Warning: TQQQ has no data, skipping
+2020-12-14 10:00:00 Warning: UPRO has no data, skipping
+2020-12-14 10:00:00 Warning: UDOW has no data, skipping
+2020-12-14 10:00:00 Warning: TMF has no data, skipping
+2020-12-14 10:00:00 Warning: UGL has no data, skipping
+2020-12-14 10:00:00 Warning: DIG has no data, skipping
+2020-12-14 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-12-21 10:00:00 Rebalancing portfolio...
+2020-12-21 10:00:00 Current Portfolio Value: $100000.00
+2020-12-21 10:00:00 Warning: TQQQ has no data, skipping
+2020-12-21 10:00:00 Warning: UPRO has no data, skipping
+2020-12-21 10:00:00 Warning: UDOW has no data, skipping
+2020-12-21 10:00:00 Warning: TMF has no data, skipping
+2020-12-21 10:00:00 Warning: UGL has no data, skipping
+2020-12-21 10:00:00 Warning: DIG has no data, skipping
+2020-12-21 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2020-12-28 10:00:00 Rebalancing portfolio...
+2020-12-28 10:00:00 Current Portfolio Value: $100000.00
+2020-12-28 10:00:00 Warning: TQQQ has no data, skipping
+2020-12-28 10:00:00 Warning: UPRO has no data, skipping
+2020-12-28 10:00:00 Warning: UDOW has no data, skipping
+2020-12-28 10:00:00 Warning: TMF has no data, skipping
+2020-12-28 10:00:00 Warning: UGL has no data, skipping
+2020-12-28 10:00:00 Warning: DIG has no data, skipping
+2020-12-28 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2021-01-04 10:00:00 Rebalancing portfolio...
+2021-01-04 10:00:00 Current Portfolio Value: $100000.00
+2021-01-04 10:00:00 Warning: TQQQ has no data, skipping
+2021-01-04 10:00:00 Warning: UPRO has no data, skipping
+2021-01-04 10:00:00 Warning: UDOW has no data, skipping
+2021-01-04 10:00:00 Warning: TMF has no data, skipping
+2021-01-04 10:00:00 Warning: UGL has no data, skipping
+2021-01-04 10:00:00 Warning: DIG has no data, skipping
+2021-01-04 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2021-01-11 10:00:00 Rebalancing portfolio...
+2021-01-11 10:00:00 Current Portfolio Value: $100000.00
+2021-01-11 10:00:00 Warning: TQQQ has no data, skipping
+2021-01-11 10:00:00 Warning: UPRO has no data, skipping
+2021-01-11 10:00:00 Warning: UDOW has no data, skipping
+2021-01-11 10:00:00 Warning: TMF has no data, skipping
+2021-01-11 10:00:00 Warning: UGL has no data, skipping
+2021-01-11 10:00:00 Warning: DIG has no data, skipping
+2021-01-11 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2021-01-19 10:00:00 Rebalancing portfolio...
+2021-01-19 10:00:00 Current Portfolio Value: $100000.00
+2021-01-19 10:00:00 Warning: TQQQ has no data, skipping
+2021-01-19 10:00:00 Warning: UPRO has no data, skipping
+2021-01-19 10:00:00 Warning: UDOW has no data, skipping
+2021-01-19 10:00:00 Warning: TMF has no data, skipping
+2021-01-19 10:00:00 Warning: UGL has no data, skipping
+2021-01-19 10:00:00 Warning: DIG has no data, skipping
+2021-01-19 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2021-01-25 10:00:00 Rebalancing portfolio...
+2021-01-25 10:00:00 Current Portfolio Value: $100000.00
+2021-01-25 10:00:00 Warning: TQQQ has no data, skipping
+2021-01-25 10:00:00 Warning: UPRO has no data, skipping
+2021-01-25 10:00:00 Warning: UDOW has no data, skipping
+2021-01-25 10:00:00 Warning: TMF has no data, skipping
+2021-01-25 10:00:00 Warning: UGL has no data, skipping
+2021-01-25 10:00:00 Warning: DIG has no data, skipping
+2021-01-25 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2021-02-01 10:00:00 Rebalancing portfolio...
+2021-02-01 10:00:00 Current Portfolio Value: $100000.00
+2021-02-01 10:00:00 Warning: TQQQ has no data, skipping
+2021-02-01 10:00:00 Warning: UPRO has no data, skipping
+2021-02-01 10:00:00 Warning: UDOW has no data, skipping
+2021-02-01 10:00:00 Warning: TMF has no data, skipping
+2021-02-01 10:00:00 Warning: UGL has no data, skipping
+2021-02-01 10:00:00 Warning: DIG has no data, skipping
+2021-02-01 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2021-02-08 10:00:00 Rebalancing portfolio...
+2021-02-08 10:00:00 Current Portfolio Value: $100000.00
+2021-02-08 10:00:00 Warning: TQQQ has no data, skipping
+2021-02-08 10:00:00 Warning: UPRO has no data, skipping
+2021-02-08 10:00:00 Warning: UDOW has no data, skipping
+2021-02-08 10:00:00 Warning: TMF has no data, skipping
+2021-02-08 10:00:00 Warning: UGL has no data, skipping
+2021-02-08 10:00:00 Warning: DIG has no data, skipping
+2021-02-08 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2021-02-16 10:00:00 Rebalancing portfolio...
+2021-02-16 10:00:00 Current Portfolio Value: $100000.00
+2021-02-16 10:00:00 Warning: TQQQ has no data, skipping
+2021-02-16 10:00:00 Warning: UPRO has no data, skipping
+2021-02-16 10:00:00 Warning: UDOW has no data, skipping
+2021-02-16 10:00:00 Warning: TMF has no data, skipping
+2021-02-16 10:00:00 Warning: UGL has no data, skipping
+2021-02-16 10:00:00 Warning: DIG has no data, skipping
+2021-02-16 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2021-02-22 10:00:00 Rebalancing portfolio...
+2021-02-22 10:00:00 Current Portfolio Value: $100000.00
+2021-02-22 10:00:00 Warning: TQQQ has no data, skipping
+2021-02-22 10:00:00 Warning: UPRO has no data, skipping
+2021-02-22 10:00:00 Warning: UDOW has no data, skipping
+2021-02-22 10:00:00 Warning: TMF has no data, skipping
+2021-02-22 10:00:00 Warning: UGL has no data, skipping
+2021-02-22 10:00:00 Warning: DIG has no data, skipping
+2021-02-22 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2021-03-01 10:00:00 Rebalancing portfolio...
+2021-03-01 10:00:00 Current Portfolio Value: $100000.00
+2021-03-01 10:00:00 Warning: TQQQ has no data, skipping
+2021-03-01 10:00:00 Warning: UPRO has no data, skipping
+2021-03-01 10:00:00 Warning: UDOW has no data, skipping
+2021-03-01 10:00:00 Warning: TMF has no data, skipping
+2021-03-01 10:00:00 Warning: UGL has no data, skipping
+2021-03-01 10:00:00 Warning: DIG has no data, skipping
+2021-03-01 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2021-03-08 10:00:00 Rebalancing portfolio...
+2021-03-08 10:00:00 Current Portfolio Value: $100000.00
+2021-03-08 10:00:00 Warning: TQQQ has no data, skipping
+2021-03-08 10:00:00 Warning: UPRO has no data, skipping
+2021-03-08 10:00:00 Warning: UDOW has no data, skipping
+2021-03-08 10:00:00 Warning: TMF has no data, skipping
+2021-03-08 10:00:00 Warning: UGL has no data, skipping
+2021-03-08 10:00:00 Warning: DIG has no data, skipping
+2021-03-08 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2021-03-15 10:00:00 Rebalancing portfolio...
+2021-03-15 10:00:00 Current Portfolio Value: $100000.00
+2021-03-15 10:00:00 Warning: TQQQ has no data, skipping
+2021-03-15 10:00:00 Warning: UPRO has no data, skipping
+2021-03-15 10:00:00 Warning: UDOW has no data, skipping
+2021-03-15 10:00:00 Warning: TMF has no data, skipping
+2021-03-15 10:00:00 Warning: UGL has no data, skipping
+2021-03-15 10:00:00 Warning: DIG has no data, skipping
+2021-03-15 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2021-03-22 10:00:00 Rebalancing portfolio...
+2021-03-22 10:00:00 Current Portfolio Value: $100000.00
+2021-03-22 10:00:00 Warning: TQQQ has no data, skipping
+2021-03-22 10:00:00 Warning: UPRO has no data, skipping
+2021-03-22 10:00:00 Warning: UDOW has no data, skipping
+2021-03-22 10:00:00 Warning: TMF has no data, skipping
+2021-03-22 10:00:00 Warning: UGL has no data, skipping
+2021-03-22 10:00:00 Warning: DIG has no data, skipping
+2021-03-22 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2021-03-29 10:00:00 Rebalancing portfolio...
+2021-03-29 10:00:00 Current Portfolio Value: $100000.00
+2021-03-29 10:00:00 Warning: TQQQ has no data, skipping
+2021-03-29 10:00:00 Warning: UPRO has no data, skipping
+2021-03-29 10:00:00 Warning: UDOW has no data, skipping
+2021-03-29 10:00:00 Warning: TMF has no data, skipping
+2021-03-29 10:00:00 Warning: UGL has no data, skipping
+2021-03-29 10:00:00 Warning: DIG has no data, skipping
+2021-03-29 10:00:00 Next portfolio rebalancing will be in 4 day(s)
+2021-03-31 16:00:00 Final Portfolio Value: $100000.00
+2021-03-31 16:00:00 Algorithm Id:(1487677957) completed in 1.58 seconds at 5k data points per second. Processing total of 7,454 data points.

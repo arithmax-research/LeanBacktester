@@ -1,0 +1,2131 @@
+2025-09-15T05:52:35.7307336Z TRACE:: Engine.Main(): LEAN ALGORITHMIC TRADING ENGINE v2.5.0.0 Mode: DEBUG (64bit) Host: Franklines-MacBook-Pro
+2025-09-15T05:52:35.7478616Z TRACE:: Engine.Main(): Started 5:52 AM
+2025-09-15T05:52:35.7581189Z TRACE:: Config.Get(): Configuration key not found. Key: lean-manager-type - Using default value: LocalLeanManager
+2025-09-15T05:52:35.8032571Z TRACE:: JobQueue.NextJob(): Selected DiversifiedLeverage.dll
+2025-09-15T05:52:35.9071539Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-capacity - Using default value: 120
+2025-09-15T05:52:35.9076436Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-time-interval-minutes - Using default value: 1440
+2025-09-15T05:52:35.9082029Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-refill-amount - Using default value: 18
+2025-09-15T05:52:35.9106410Z TRACE:: Config.GetValue(): storage-limit - Using default value: 10737418240
+2025-09-15T05:52:35.9127893Z TRACE:: Config.GetValue(): storage-permissions - Using default value: Read=True Write=True Delete=True
+2025-09-15T05:52:35.9132113Z TRACE:: Config.Get(): Configuration key not found. Key: optimization-id - Using default value: 
+2025-09-15T05:52:35.9137518Z TRACE:: Config.Get(): Configuration key not found. Key: backtest-name - Using default value: local
+2025-09-15T05:52:35.9178793Z TRACE:: Config.Get(): Configuration key not found. Key: data-channel - Using default value: 
+2025-09-15T05:52:35.9188768Z TRACE:: Config.Get(): Configuration key not found. Key: python-venv - Using default value: 
+2025-09-15T05:52:35.9196160Z TRACE:: Config.Get(): Configuration key not found. Key: out-of-sample-max-end-date - Using default value: 
+2025-09-15T05:52:35.9201888Z TRACE:: Config.GetValue(): out-of-sample-days - Using default value: 0
+2025-09-15T05:52:35.9227101Z TRACE:: Config.Get(): Configuration key not found. Key: data-permission-manager - Using default value: DataPermissionManager
+2025-09-15T05:52:35.9230889Z TRACE:: Config.Get(): Configuration key not found. Key: data-monitor - Using default value: QuantConnect.Data.DataMonitor
+2025-09-15T05:52:35.9444219Z TRACE:: Config.GetValue(): algorithm-creation-timeout - Using default value: 90
+2025-09-15T05:52:35.9570818Z TRACE:: Config.GetValue(): zip-data-cache-provider - Using default value: 10
+2025-09-15T05:52:35.9594693Z TRACE:: Config.Get(): Configuration key not found. Key: fundamental-data-provider - Using default value: CoarseFundamentalDataProvider
+2025-09-15T05:52:35.9638290Z TRACE:: AlgorithmManager.CreateTokenBucket(): Initializing LeakyBucket: Capacity: 120 RefillAmount: 18 TimeInterval: 1440
+2025-09-15T05:52:35.9650729Z TRACE:: Config.GetValue(): algorithm-manager-time-loop-maximum - Using default value: 20
+2025-09-15T05:52:35.9754213Z TRACE:: Config.GetValue(): downloader-data-update-period - Using default value: 7
+2025-09-15T05:52:35.9808355Z TRACE:: Engine.Run(): Resource limits '0' CPUs. 2147483647 MB RAM.
+2025-09-15T05:52:35.9827930Z TRACE:: TextSubscriptionDataSourceReader.SetCacheSize(): Setting cache size to 71582788 items
+2025-09-15T05:52:37.2410514Z TRACE:: Loader.TryCreateILAlgorithm(): Loading only the algorithm assembly
+2025-09-15T05:52:37.2651941Z TRACE:: Config.Get(): Configuration key not found. Key: databases-refresh-period - Using default value: 1.00:00:00
+2025-09-15T05:52:37.4144399Z TRACE:: Loader.TryCreateILAlgorithm(): Loaded DiversifiedLeverage
+2025-09-15T05:52:37.4211038Z TRACE:: LocalObjectStore.Initialize(): Storage Root: /Storage. StorageFileCount 9999999. StorageLimit 10240MB. StoragePermissions Read=True Write=True Delete=True
+2025-09-15T05:52:37.4331353Z TRACE:: Config.GetValue(): zip-data-cache-provider - Using default value: 10
+2025-09-15T05:52:37.4410171Z TRACE:: HistoryProviderManager.Initialize(): history providers [SubscriptionDataReaderHistoryProvider]
+2025-09-15T05:52:37.4475674Z TRACE:: BaseSetupHandler.Setup(LocalPlatform): UID: 395632, PID: -672566055, Version: 2.5.0.0, Source: WebIDE
+2025-09-15T05:52:37.4531603Z TRACE:: Config.Get(): Configuration key not found. Key: security-data-feeds - Using default value: 
+2025-09-15T05:52:37.6327360Z TRACE:: Event Name "Monday: 9.52", scheduled to run.
+2025-09-15T05:52:37.7042761Z TRACE:: BaseSetupHandler.SetupCurrencyConversions():
+Account Type: Margin
+
+Symbol      Quantity    Conversion = Value in USD
+USD: $      100000.00 @       1.00 = $100000
+-------------------------------------------------
+CashBook Total Value:                $100000
+
+2025-09-15T05:52:37.7068362Z TRACE:: Total margin information: TotalMarginUsed: 0.00, MarginRemaining: 100000.00
+2025-09-15T05:52:37.7077375Z TRACE:: SetUp Backtesting: User: 395632 ProjectId: -672566055 AlgoId: 1640145553
+2025-09-15T05:52:37.7120010Z TRACE:: Dates: Start: 01/01/2017 End: 06/30/2025 Cash: ¤100,000.00 MaximumRuntime: 100.00:00:00 MaxOrders: 2147483647
+2025-09-15T05:52:37.7160759Z TRACE:: BacktestingResultHandler(): Sample Period Set: 1117.08
+2025-09-15T05:52:37.7180494Z TRACE:: Config.GetValue(): forward-console-messages - Using default value: True
+2025-09-15T05:52:37.7192561Z TRACE:: JOB HANDLERS:
+         DataFeed:             QuantConnect.Lean.Engine.DataFeeds.FileSystemDataFeed
+         Setup:                QuantConnect.Lean.Engine.Setup.BacktestingSetupHandler
+         RealTime:             QuantConnect.Lean.Engine.RealTime.BacktestingRealTimeHandler
+         Results:              QuantConnect.Lean.Engine.Results.BacktestingResultHandler
+         Transactions:         QuantConnect.Lean.Engine.TransactionHandlers.BacktestingTransactionHandler
+         Object Store:         QuantConnect.Lean.Engine.Storage.LocalObjectStore
+         History Provider:     QuantConnect.Lean.Engine.HistoricalData.HistoryProviderManager
+         Brokerage:            QuantConnect.Brokerages.Backtesting.BacktestingBrokerage
+         Data Provider:        QuantConnect.Lean.Engine.DataFeeds.DefaultDataProvider
+
+2025-09-15T05:52:37.7592204Z TRACE:: Event Name "Daily Sampling", scheduled to run.
+2025-09-15T05:52:37.7631773Z TRACE:: AlgorithmManager.Run(): Begin DataStream - Start: 1/1/2017 12:00:00 AM Stop: 6/30/2025 11:59:59 PM Time: 1/1/2017 12:00:00 AM Warmup: False
+2025-09-15T05:52:37.7704744Z TRACE:: Debug: Launching analysis for 1640145553 with LEAN Engine v2.5.0.0
+2025-09-15T05:52:37.8541254Z TRACE:: Config.GetValue(): data-feed-workers-count - Using default value: 12
+2025-09-15T05:52:37.8560803Z TRACE:: Config.GetValue(): data-feed-max-work-weight - Using default value: 400
+2025-09-15T05:52:37.8568758Z TRACE:: WeightedWorkScheduler(): will use 12 workers and MaxWorkWeight is 400
+2025-09-15T05:52:38.0516690Z TRACE:: UniverseSelection.AddPendingInternalDataFeeds(): Adding internal benchmark data feed SPY,#0,SPY,Hour,TradeBar,Trade,Adjusted,OpenInterest,Internal
+2025-09-15T05:52:38.5355959Z TRACE:: Debug: Accurate daily end-times now enabled by default. See more at https://qnt.co/3YHaWHL. To disable it and use legacy daily bars set self.settings.daily_precise_end_time = False.
+2025-09-15T05:52:38.5364279Z TRACE:: Log: Initial Portfolio Value: $100000.00
+2025-09-15T05:52:38.5370441Z TRACE:: Log: Target Portfolio Weights: TQQQ: 20.00%, UPRO: 20.00%, UDOW: 10.00%, TMF: 25.00%, UGL: 10.00%, DIG: 15.00%
+2025-09-15T05:52:38.5379914Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.5386975Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.5394979Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.5400375Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.5404320Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.5411427Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.5415306Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.5420339Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.5424356Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.5428654Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.5432790Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.5439651Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.5444219Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.5453297Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.5458826Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.5463593Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.5469541Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.5475034Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.5480619Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.5486127Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.5490109Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.5495321Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.5499608Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.5503857Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.5510378Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.5513936Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.5521425Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.5527911Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.5532668Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.5539803Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.5546288Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.5558045Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.5562893Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.5569570Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.5576292Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.5581910Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.5588995Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.5596912Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.5601055Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.5608409Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.5612323Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.5617577Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.5621446Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.5625668Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.5631417Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.5636188Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.5640781Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.5647078Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.5652708Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.5659315Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.5662992Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.5669080Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.5675923Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.5682032Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.5687906Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.5691376Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.5696148Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.5700378Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.5705696Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.5710467Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.5714910Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.5720605Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.5725601Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.5730193Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.5737780Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.5742278Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.5753223Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.5758993Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.5762803Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.5771201Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.5776237Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.5780366Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.5788401Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.5793064Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.5800471Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.5808028Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.5812549Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.5819082Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.5824137Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.5835906Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.5843339Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.5852887Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.5857972Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.5863070Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.5869133Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.5874557Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.5882928Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.5889655Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.5896457Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.5901963Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.5908342Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.5916836Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.5920295Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.5925721Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.5932095Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.5939375Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.5945172Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.5949640Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.5954957Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.5960535Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.5965337Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.5970663Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.5979282Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.5984690Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.5989456Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.5993659Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.5999547Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6004670Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6008455Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6012416Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6016073Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6020307Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6033274Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6037966Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6044577Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6051713Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6059165Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6068613Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6078088Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6084128Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6088973Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6096956Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6100424Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6105116Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6113013Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6117754Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6122874Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6130703Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6134874Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6137988Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6146877Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6151244Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6155573Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6161292Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6166455Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6170432Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6175204Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6181425Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6185006Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6194154Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6198137Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6201406Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6210085Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6215645Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6219713Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6225560Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6233104Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6236753Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6240310Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6248747Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6256678Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6262701Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6268038Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6272698Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6277917Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6285391Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6288906Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6298432Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6306501Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6311254Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6315958Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6320265Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6328525Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6332982Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6338599Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6342943Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6349781Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6353457Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6363529Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6370819Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6376600Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6383974Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6387824Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6391564Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6398963Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6403574Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6408774Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6412159Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6419115Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6426447Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6431585Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6435557Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6443196Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6450720Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6454485Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6459056Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6461709Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6466584Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6472110Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6477788Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6481643Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6489598Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6493645Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6498914Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6501901Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6508425Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6513333Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6518269Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6522116Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6527669Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6533853Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6540486Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6544300Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6551512Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6557675Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6562989Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6568511Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6572506Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6577071Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6581737Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6586828Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6592529Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6596781Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6600559Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6604730Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6609781Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6617370Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6623177Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6629324Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6635782Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6640909Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6646412Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6651320Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6656384Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6665251Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6669859Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6679656Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6683817Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6687716Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6691082Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6698000Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6702439Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6708476Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6714862Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6722184Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6728493Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6736680Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6746143Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6751662Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6756898Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6761050Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6769164Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6776842Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6787557Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6796195Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6802320Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6807557Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6812313Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6818503Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6827776Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6832378Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6839533Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6842252Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6846727Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6850581Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6856373Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6860597Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6865192Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6870120Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6875020Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6878465Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6883077Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6888887Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6893136Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6903108Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6911748Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6919906Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6929376Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6935145Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6940255Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6948079Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.6953339Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.6959050Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.6963769Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.6969653Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.6974246Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.6979654Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.6990147Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.6994993Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.6998896Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.7005071Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.7012219Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.7019907Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.7025515Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.7030403Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.7034900Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.7040367Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.7045096Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.7048877Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.7056061Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.7060968Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.7065901Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.7069967Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.7075421Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.7079620Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.7083638Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.7089707Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.7093844Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.7099090Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.7104723Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.7109062Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.7115782Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.7121919Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.7128199Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.7134407Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.7141828Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.7145984Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.7151151Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.7156317Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.7162933Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.7166884Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.7173002Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.7178074Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.7186999Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.7192434Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.7196649Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.7201081Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.7207209Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.7212052Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.7216429Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.7223360Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.7227821Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.7236044Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.7249044Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.7255460Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.7261725Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.7266624Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.7272567Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.7276571Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.7282719Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.7289721Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.7296703Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.7300975Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.7306410Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.7311198Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.7317519Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.7328550Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.7336050Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.7340152Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.7345131Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.7348433Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.7353876Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.7360756Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.7366682Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.7371386Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.7377007Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.7384115Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.7390361Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.7394699Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.7397924Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.7402894Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.7411317Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.7415695Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.7423113Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.7430104Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.7435671Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.7443696Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.7449184Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.7454615Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.7461710Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.7470439Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.7479264Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.7486567Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.7491297Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.7497699Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.7513106Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.7516650Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.7520620Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.7525837Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.7530509Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.7537324Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.7541911Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.7552307Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.7558604Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.7563300Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.7567897Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.7571609Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.7579198Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.7588407Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.7592100Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.7597051Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.7601012Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.7613851Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.7618147Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.7622866Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.7632431Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.7636580Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.7640331Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.7644395Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.7682115Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.7685869Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.7690171Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.7698805Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.7707049Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.7712595Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.7716474Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.7720495Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.7723931Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.7728727Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.7733435Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.7742231Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.7745909Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.7750887Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.7757756Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.7770410Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.7774816Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.7780421Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.7785894Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.7791962Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.7798120Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.7803177Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.7806809Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.7811755Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.7815234Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.7821292Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.7824943Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.7831330Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.7838109Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.7843172Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.7850380Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.7857421Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.7862666Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.7868551Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.7873263Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.7878974Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.7884722Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.7888856Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.7894608Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.7899069Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.7902471Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.7942599Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.7947483Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.7951352Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.7954860Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.7972358Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.7979380Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.7986494Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.7992432Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.7996302Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.8001355Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.8006756Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.8020727Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.8024375Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.8028647Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.8032290Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.8038887Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.8043463Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.8047965Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.8053601Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.8058277Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.8062497Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.8066807Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.8070604Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.8076024Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.8081093Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.8086838Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.8091713Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.8096355Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.8100791Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.8106540Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.8139901Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.8145690Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.8150683Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.8158440Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.8163410Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.8167961Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.8172464Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.8178210Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.8182406Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.8190727Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.8194700Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.8199285Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.8205784Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.8211488Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.8216541Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.8220797Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.8226371Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.8231689Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.8237486Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.8241872Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.8247360Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.8252640Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.8258950Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.8264766Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.8269706Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.8276853Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.8316235Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.8320271Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.8326977Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.8332174Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.8338925Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.8342738Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.8346420Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.8352133Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.8356402Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.8359971Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.8369413Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.8389545Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.8394396Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.8397994Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.8405230Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.8411163Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.8415442Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.8420251Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.8425476Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.8428858Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.8435303Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.8439545Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.8450616Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.8456713Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.8461698Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.8466821Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.8480489Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.8488740Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.8496831Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.8501614Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.8513510Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.8520219Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.8525154Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.8543545Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.8548285Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.8552456Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.8556480Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.8560522Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.8570269Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.8575136Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.8579867Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.8586746Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.8590714Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.8594956Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.8600192Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.8606424Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.8610367Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.8615687Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.8619050Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.8623089Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.8627951Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.8632165Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.8636705Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.8640886Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.8652169Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.8657923Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.8666772Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.8671970Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.8677239Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.8682548Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.8721343Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.8726905Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.8730967Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.8750002Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.8753936Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.8758975Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.8762238Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.8777440Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.8781931Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.8791495Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.8796068Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.8800432Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.8806421Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.8810107Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.8821721Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.8826288Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.8831349Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.8836900Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.8841640Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.8857652Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.8863530Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.8868864Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.8873472Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.8879661Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.8883785Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.8888021Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.8894166Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.8915181Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.8923360Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.8940275Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.8945291Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.8951998Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.8957625Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.8961291Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.8967185Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.8971506Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.8978938Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.8985029Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.8992350Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.8998776Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.9004126Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.9011024Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.9016460Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.9020550Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.9026143Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.9030258Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.9036779Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.9045774Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.9050959Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.9057440Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.9067511Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.9071976Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.9115981Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.9119929Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.9124793Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.9128720Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.9132994Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.9139779Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.9145927Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.9151006Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.9156957Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.9161395Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.9165957Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.9170612Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.9175664Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.9179553Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.9185551Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.9190989Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.9198108Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.9201491Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.9206359Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.9209872Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.9214897Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.9219405Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.9225893Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.9231312Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.9238225Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.9243544Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.9278864Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.9285177Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.9289772Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.9295845Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.9300111Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.9304509Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.9310048Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.9316986Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.9320990Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.9330612Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.9335058Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.9339059Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.9342281Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.9349366Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.9365390Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.9369367Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.9375005Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.9378995Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.9388482Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.9393277Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.9397423Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.9401442Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.9411603Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.9415340Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.9420516Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.9426722Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.9433424Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.9440143Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.9445060Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.9449237Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.9455072Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.9460113Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.9463183Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.9469170Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.9473219Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.9475888Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.9482199Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.9486199Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.9490526Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.9495443Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.9499877Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.9505586Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.9545330Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.9549393Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.9553494Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.9560891Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.9567190Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.9571779Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.9577503Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.9581963Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.9586446Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.9591925Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.9597269Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.9600824Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.9605945Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.9612172Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.9617838Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.9621584Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.9625945Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.9630987Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.9638531Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.9646806Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.9651939Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.9660858Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.9666455Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.9670212Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.9673917Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.9680273Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.9683836Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.9690051Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.9711399Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.9714265Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.9718125Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:38.9721590Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:38.9729041Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:38.9732575Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:38.9738255Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:38.9742255Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:38.9759871Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:38.9763213Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:38.9768704Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:38.9772646Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.0305898Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.0311135Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.0315858Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.0322659Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.0351527Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.0356405Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.0360486Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.0365265Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.0370400Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.0376796Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.0382204Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.0387610Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.0390666Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.0393789Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.0399786Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.0405503Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.0425820Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.0432039Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.0438048Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.0447211Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.0471497Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.0476214Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.0481581Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.0485729Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.0490565Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.0498807Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.0503699Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.0510788Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.0515099Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.0520649Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.0526721Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.0531681Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.0535995Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.0540385Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.0547566Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.0553082Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.0559447Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.0566717Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.0572597Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.0579159Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.0583672Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.0589362Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.0594445Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.0601406Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.0606697Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.0659342Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.0665561Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.0671126Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.0676993Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.0681201Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.0689640Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.0698356Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.0705987Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.0716381Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.0722554Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.0729884Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.0735901Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.0741464Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.0748965Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.0757843Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.0761964Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.0767133Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.0771669Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.0777758Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.0780897Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.0785158Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.0790351Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.0796704Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.0801906Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.0806057Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.0810918Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.0817008Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.0821664Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.0826516Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.0831297Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.0835227Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.0840149Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.0844426Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.0849805Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.0852636Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.0857961Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.0894273Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.0897641Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.0901476Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.0905166Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.0920538Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.0925268Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.0929133Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.0933210Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.0939352Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.0944627Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.0949595Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.0957568Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.0966243Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.0971591Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.0976230Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.0979128Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.0982087Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.0989992Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.0995125Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.0999633Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1004589Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1010598Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1016918Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1020999Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1026631Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1031357Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1035962Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1039764Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1045322Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1050242Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1055378Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1059142Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1065196Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1069383Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1073293Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1081510Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1089802Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1096790Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1102256Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1108110Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1114830Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1119764Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1126071Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1130239Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1135617Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1139358Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1146746Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1151354Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1156458Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1160751Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1166560Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1173108Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1177414Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1182156Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1186567Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1190427Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1195230Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1199033Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1206792Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1211522Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1216171Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1219925Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1224456Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1257573Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1262300Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1266848Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1270421Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1274726Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1278676Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1282156Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1289627Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1296833Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1300407Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1306775Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1316417Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1323294Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1330940Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1334392Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1337404Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1340518Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1355688Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1359026Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1362998Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1367949Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1373166Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1387104Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1390878Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1394415Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1397619Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1400905Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1406185Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1410051Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1413305Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1424073Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1427813Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1431757Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1437201Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1441884Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1461685Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1466367Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1469961Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1476269Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1480330Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1485085Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1489230Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1492408Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1497871Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1501987Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1508748Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1513511Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1518859Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1524508Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1528793Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1533302Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1537881Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1541783Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1546983Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1551920Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1556367Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1560264Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1565309Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1571316Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1579364Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1582735Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1589638Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1593453Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1626881Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1631251Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1638695Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1647706Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1651839Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1657654Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1661746Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1665063Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1668739Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1672997Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1677020Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1681893Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1685727Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1689416Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1707954Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1711421Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1714900Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1720027Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1726390Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1730719Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1734774Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1738556Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1743116Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1748558Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1751986Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1761460Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1769254Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1776763Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1789570Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1793310Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1798374Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1802928Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1818790Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1821921Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1826377Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1830053Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1836154Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1840052Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1846036Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1851995Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1860100Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1864856Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1870001Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1873513Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1878390Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1890449Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1894839Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1899374Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1905851Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1915252Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1919783Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1924661Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1928517Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1932719Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1939755Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1944518Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1948524Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1953145Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1958212Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.1961896Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.1966375Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.1970082Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.1973934Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.1978015Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.1982336Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.1986478Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.1991233Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.1995431Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2000670Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2004083Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2008364Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2013068Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2016497Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2021792Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2065756Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2069260Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2072607Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2078128Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2081332Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2099112Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2102991Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2107809Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2110931Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2114795Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2119813Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2126455Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2129524Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2132955Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2138996Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2142981Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2148480Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2164177Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2168547Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2172687Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2176941Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2181310Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2185879Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2189455Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2192062Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2197600Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2210034Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2218322Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2225752Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2229198Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2233023Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2236695Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2239838Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2243929Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2247734Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2252367Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2295480Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2298679Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2302514Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2308229Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2311833Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2317720Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2320881Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2325528Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2328995Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2332842Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2338157Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2341157Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2345382Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2350670Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2357088Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2360241Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2366379Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2375929Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2379440Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2382947Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2385897Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2388491Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2398173Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2401633Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2407009Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2410163Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2412637Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2415573Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2418995Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2421663Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2426925Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2429466Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2431891Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2434161Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2439825Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2441849Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2444690Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2449053Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2452920Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2458922Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2461419Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2467160Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2472047Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2478879Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2482482Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2488925Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2492846Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2495958Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2499041Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2501865Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2506535Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2510973Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2515117Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2519053Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2522478Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2526490Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2528810Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2531954Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2534479Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2539608Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2542858Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2545999Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2549369Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2552675Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2559718Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2562639Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2567203Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2570109Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2573711Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2577568Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2582308Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2586998Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2591795Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2597007Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2600473Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2604546Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2608652Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2613250Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2618227Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2621262Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2624280Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2628680Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2632336Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2634804Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2638321Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2640738Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2643180Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2647890Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2652012Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2659071Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2662491Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2669000Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2671488Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2674312Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2677926Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2682109Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2685073Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2691092Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2698643Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2701961Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2705899Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2708857Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2713328Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2722551Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2725578Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2728449Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2731335Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2735549Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2741049Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2745009Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2748027Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2752157Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2756646Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2761119Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2765095Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2769824Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2772233Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2776740Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2780081Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2782343Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2788877Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2796470Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2799546Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2804177Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2809681Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2816443Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2821642Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2825078Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2829555Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2836700Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2840647Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2846373Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2850990Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2854437Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2859873Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2864741Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2868301Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2872079Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2879510Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2886758Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2891022Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2895213Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2899757Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2907396Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2913687Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2923239Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2925705Z TRACE:: Synchronizer.GetEnumerator(): Exited thread.
+2025-09-15T05:52:39.2928849Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2938702Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2941700Z TRACE:: AlgorithmManager.Run(): Firing On End Of Algorithm...
+2025-09-15T05:52:39.2942063Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2954828Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.2958348Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.2964642Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.2969625Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.2974182Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.2980025Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.2984008Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.2987980Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.2993173Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.2998158Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3002051Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3009893Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3007602Z TRACE:: Engine.Run(): Exiting Algorithm Manager
+2025-09-15T05:52:39.3013724Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3025522Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3029161Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3034158Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3039834Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3046234Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3050461Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3055137Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3058955Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3066558Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3069593Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3077671Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3081944Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3087385Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3091924Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3100258Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3104869Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3112102Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3118818Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3124483Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3131480Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3140125Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3141019Z TRACE:: StopSafely(): Waiting for 'Isolator Thread' thread to stop...
+2025-09-15T05:52:39.3148905Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3156081Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3161599Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3168990Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3161758Z TRACE:: FileSystemDataFeed.Exit(): Start. Setting cancellation token...
+2025-09-15T05:52:39.3175514Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3182209Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3186943Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3193178Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3202424Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3206640Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3210611Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3216310Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3220330Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3225050Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3233164Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3224337Z TRACE:: FileSystemDataFeed.Exit(): Exit Finished.
+2025-09-15T05:52:39.3238476Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3246301Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3251331Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3256042Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3248822Z TRACE:: BacktestingResultHandler.Exit(): starting...
+2025-09-15T05:52:39.3262907Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3273193Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3277550Z TRACE:: BacktestingResultHandler.Exit(): Saving logs...
+2025-09-15T05:52:39.3278910Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3284452Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3289086Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3292113Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3297108Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3302632Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3309784Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3313121Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3319181Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3321971Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3328537Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3332416Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3339487Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3344968Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3348467Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3356288Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3360424Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3366421Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3371147Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3375227Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3379777Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3383470Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3388965Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3393089Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3399200Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3403567Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3409923Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3421686Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3427379Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3432223Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3438583Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3446923Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3451553Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3458166Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3462131Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3468791Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3475546Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3480075Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3485226Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3489261Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3497570Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3500923Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3506829Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3511927Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3517098Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3521548Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3526849Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3533224Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3539589Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3545025Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3549050Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3554665Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3559633Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3565163Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3571166Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3576275Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3580991Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3586268Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3591459Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3596442Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3600542Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3605906Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3610128Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3615848Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3620315Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3625568Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3629463Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3634459Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3638719Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3642798Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3647353Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3651042Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3655326Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3659012Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3662961Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3666736Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3673146Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3677847Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3682100Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3687587Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3692645Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3697158Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3701490Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3705723Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3710187Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3714557Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3719567Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3726039Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3730650Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3735998Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3741962Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3749517Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3753439Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3760396Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3765817Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3775182Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3778839Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3782635Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3788117Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3791990Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3799026Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3805144Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3810259Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3814708Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3818266Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3822458Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3828422Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3837266Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3841789Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3846527Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3850572Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3855272Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3860052Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3865222Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3870528Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3874544Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3882432Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3887038Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3891624Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3479112Z TRACE:: StopSafely(): Waiting for 'Result Thread' thread to stop...
+2025-09-15T05:52:39.3897981Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3929817Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3932792Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3935586Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3939967Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3944258Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3948644Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.3953705Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.3960067Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.3966452Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.3970507Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.3976327Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.3981830Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.3986044Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.3992688Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.3998820Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4006226Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4015292Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4020110Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4024526Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4028751Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4033687Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4040259Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4045223Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4049983Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4053469Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4060591Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4065905Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4071379Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4075247Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4079274Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4084773Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4091272Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4094887Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4098757Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4102882Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4106067Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4110236Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4114391Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4119931Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4126043Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4130104Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4135430Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4139293Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4143650Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4147445Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4152540Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4158668Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4164639Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4172140Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4176903Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4180972Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4188594Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4195622Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4200896Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4210630Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4216302Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4221634Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4228404Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4233414Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4240433Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4246404Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4251940Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4257736Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4262504Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4269284Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4275575Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4280514Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4285482Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4289226Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4293353Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4298468Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4303170Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4308088Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4313271Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4318361Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4322753Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4326243Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4330571Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4338328Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4342367Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4350374Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4354734Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4358595Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4363050Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4367611Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4373727Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4381048Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4387107Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4391352Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4395306Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4399420Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4403106Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4407523Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4412538Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4416661Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4420401Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4424639Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4429706Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4434711Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4440070Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4445438Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4449961Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4455582Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4459884Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4465954Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4470119Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4475273Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4478867Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4482993Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4486184Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4491183Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4496284Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4501504Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4505168Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4511309Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4517675Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4521346Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4525442Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4529593Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4534156Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4539898Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4544313Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4546916Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4551816Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4557338Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4563036Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4568587Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4576723Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4580752Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4585531Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4590606Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4598974Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4609200Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4613030Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4618398Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4624682Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4628950Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4632607Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4639792Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4645381Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4649715Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4655438Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4658483Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4662920Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4666894Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4669813Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4674310Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4681606Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4685581Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4691055Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4697217Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4706721Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4712079Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4715180Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4718475Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4722677Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4729100Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4732565Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4739185Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4748405Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4756722Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4760773Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4766552Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4774285Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4778966Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4783251Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4788906Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4792661Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4797235Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4800842Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4807445Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4811269Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4814781Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4819380Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4823066Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4828343Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4832176Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4837528Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4841293Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4846252Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4851496Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4858240Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4862460Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4867644Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4875859Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4884871Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4889128Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4897475Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4901132Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4905998Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4911968Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4917953Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4922734Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4927038Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4932104Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4938034Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4943163Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4948056Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.4957551Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.4961638Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.4965139Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.4971322Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.4975660Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.4980552Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.4988892Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.4994956Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.4999698Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5005688Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5011959Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5017991Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5022897Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5028778Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5033271Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5040387Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5048703Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5054971Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5060882Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5065629Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5071778Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5074796Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5079908Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5083984Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5090531Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5094951Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5099235Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5103905Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5111509Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5116087Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5121089Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5125229Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5129502Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5135134Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5140067Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5145147Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5150229Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5154862Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5159122Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5163479Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5172107Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5176847Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5182019Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5187162Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5193133Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5198191Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5205301Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5211437Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5219737Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5226127Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5231501Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5236869Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5240553Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5245087Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5249251Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5253911Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5259690Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5267641Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5272767Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5277136Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5281251Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5288240Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5294509Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5300248Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5306017Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5311703Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5316263Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5320385Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5325783Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5333029Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5342653Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5346911Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5350011Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5355490Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5361629Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5366567Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5369684Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5373516Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5377847Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5382495Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5387548Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5391877Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5396032Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5401358Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5406488Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5410060Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5412989Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5416948Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5424452Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5429580Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5438100Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5443244Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5449241Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5461516Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5466753Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5470252Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5474998Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5479845Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5488948Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5497137Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5502746Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5509379Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5516316Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5521653Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5527867Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5531310Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5536502Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5541336Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5546584Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5551053Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5557427Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5564082Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5568905Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5572197Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5579929Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5583725Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5591975Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5598390Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5601766Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5605780Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5610458Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5616845Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5621850Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5626360Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5630932Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5634629Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5638323Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5641745Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5647783Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5652088Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5658293Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5661540Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5667390Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5672392Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5675908Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5681248Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5684522Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5689554Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5695266Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5701412Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5708285Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5718273Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5722951Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5727488Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5732459Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5740893Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5745505Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5749811Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5755398Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5761833Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5768141Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5772367Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5778731Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5785113Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5789372Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5796860Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5805195Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5807927Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5815585Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5819815Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5824712Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5829434Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5833962Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5838282Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5842996Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5847459Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5852013Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5858258Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5867749Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5871750Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5877901Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5886347Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5891044Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5896028Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5901376Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5906937Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5911623Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5916907Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.5922761Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.5935928Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.5946034Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.5951994Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.5960341Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.5968915Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.5982780Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.5989471Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.5995302Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6000916Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6012650Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.6020938Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.6030101Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.6034210Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.6042270Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.6053351Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.6061765Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.6068092Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6075708Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6080162Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.6086714Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.6095743Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.6102997Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.6110233Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.6116874Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.6126310Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.6133593Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6140124Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6147199Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.6154772Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.6160074Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.6164259Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.6170055Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.6176192Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.6179938Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.6186346Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6193409Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6202353Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.6208821Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.6212985Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.6217189Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.6225822Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.6229514Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.6235301Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.6242690Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6247238Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6251022Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.6259001Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.6265929Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.6278367Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.6283423Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.6290543Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.6297687Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.6302206Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6306391Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6311342Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.6318444Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.6325127Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.6335240Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.6340648Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.6346352Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.6354527Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.6377611Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6390776Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6398078Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.6417995Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.6429540Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.6435951Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.6445614Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.6450635Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.6455642Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.6459918Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6466224Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6476146Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.6479954Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.6484678Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.6489280Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.6498340Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.6502269Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.6508548Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.6512412Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6519527Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6523796Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.6528745Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.6533868Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.6540579Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.6548007Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.6554988Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.6560645Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.6567442Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6577420Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6581282Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.6586436Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.6590782Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.6594057Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.6599229Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.6603644Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.6608835Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.6612732Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6616367Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6620188Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.6626323Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.6629894Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.6636422Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.6641298Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.6645979Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.6651019Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.6655754Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6661408Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6666482Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.6670308Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.6675666Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.6680433Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.6688965Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.6692733Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.6697032Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.6701982Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6707743Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6714742Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.6718892Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.6727964Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.6732959Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.6738845Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.6742930Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.6747252Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.6751491Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6759581Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6765811Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.6769680Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.6774104Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.6779176Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.6784648Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.6790359Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.6795339Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.6801485Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6806803Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6811747Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.6820034Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.6827014Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.6832900Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.6836604Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.6841640Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.6846116Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.6853440Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6859276Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6863619Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.6867612Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.6871717Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.6875741Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.6879519Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.6885343Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.6890529Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.6894545Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6898311Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6902853Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.6907679Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.6912738Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.6919408Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.6925094Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.6930136Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.6934685Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.6941173Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6947694Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6951742Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.6955522Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.6959035Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.6965498Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.6970151Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.6976468Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.6980545Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.6985181Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.6989823Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.6995815Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.7002429Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.7008972Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.7013425Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.7018598Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.7022410Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.7030820Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.7037344Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.7040948Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.7045073Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.7050089Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.7054776Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.7058211Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.7061694Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.7065083Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.7068694Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.7077748Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.7082624Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.7086316Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.7091286Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.7096941Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.7103028Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.7108479Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.7113009Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.7119018Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.7122938Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.7128385Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.7132923Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.7137952Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.7142735Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.7147273Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.7151982Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.7155805Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.7161501Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.7166110Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.7170355Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.7175743Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.7180258Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.7189317Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.7194662Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.7202093Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.7209329Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.7212576Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.7217374Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.7221505Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.7226748Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.7233336Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.7239718Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.7247327Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.7253734Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.7262212Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.7268249Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.7277255Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.7281641Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.7286757Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.7290975Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.7298534Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.7303221Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.7308246Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.7315482Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.7320186Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.7325321Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.7330254Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.7334843Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.7338734Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.7342617Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.7346807Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.7350164Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.7353105Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.7358756Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.7362883Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.7368034Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.7372177Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.7378387Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.7381667Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.7386994Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.7391769Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.7396134Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.7400390Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.7406530Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.7411362Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.7416091Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.7423205Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.7430558Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.7437105Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.7441370Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.7446250Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.7451706Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.7456094Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.7461915Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.7467050Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.7472063Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.7476731Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.7480158Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.7483185Z TRACE:: Log: Rebalancing portfolio...
+2025-09-15T05:52:39.7486581Z TRACE:: Log: Current Portfolio Value: $100000.00
+2025-09-15T05:52:39.7490434Z TRACE:: Log: Warning: TQQQ has no data, skipping
+2025-09-15T05:52:39.7499211Z TRACE:: Log: Warning: UPRO has no data, skipping
+2025-09-15T05:52:39.7507671Z TRACE:: Log: Warning: UDOW has no data, skipping
+2025-09-15T05:52:39.7512847Z TRACE:: Log: Warning: TMF has no data, skipping
+2025-09-15T05:52:39.7526212Z TRACE:: Log: Warning: UGL has no data, skipping
+2025-09-15T05:52:39.7533531Z TRACE:: Log: Warning: DIG has no data, skipping
+2025-09-15T05:52:39.7542555Z TRACE:: Log: Next portfolio rebalancing will be in 4 day(s)
+2025-09-15T05:52:39.7548212Z TRACE:: Log: Final Portfolio Value: $100000.00
+2025-09-15T05:52:39.7554744Z TRACE:: Debug: Algorithm Id:(1640145553) completed in 1.58 seconds at 5k data points per second. Processing total of 7,454 data points.
+2025-09-15T05:52:39.7561721Z TRACE:: Debug: Your log was successfully created and can be retrieved from: /Results/1640145553-log.txt
+2025-09-15T05:52:39.7567569Z TRACE:: BacktestingResultHandler.Run(): Ending Thread...
+2025-09-15T05:52:40.7643690Z TRACE:: 
+STATISTICS:: Total Orders 0
+STATISTICS:: Average Win 0%
+STATISTICS:: Average Loss 0%
+STATISTICS:: Compounding Annual Return 0%
+STATISTICS:: Drawdown 0%
+STATISTICS:: Expectancy 0
+STATISTICS:: Start Equity 100000
+STATISTICS:: End Equity 100000
+STATISTICS:: Net Profit 0%
+STATISTICS:: Sharpe Ratio 0
+STATISTICS:: Sortino Ratio 0
+STATISTICS:: Probabilistic Sharpe Ratio 0%
+STATISTICS:: Loss Rate 0%
+STATISTICS:: Win Rate 0%
+STATISTICS:: Profit-Loss Ratio 0
+STATISTICS:: Alpha 0
+STATISTICS:: Beta 0
+STATISTICS:: Annual Standard Deviation 0
+STATISTICS:: Annual Variance 0
+STATISTICS:: Information Ratio -0.771
+STATISTICS:: Tracking Error 0.165
+STATISTICS:: Treynor Ratio 0
+STATISTICS:: Total Fees $0.00
+STATISTICS:: Estimated Strategy Capacity $0
+STATISTICS:: Lowest Capacity Asset 
+STATISTICS:: Portfolio Turnover 0%
+STATISTICS:: Drawdown Recovery 0
+STATISTICS:: OrderListHash d41d8cd98f00b204e9800998ecf8427e
+2025-09-15T05:52:40.7649264Z TRACE:: BacktestingResultHandler.SendAnalysisResult(): Processed final packet
+2025-09-15T05:52:40.7661806Z TRACE:: Engine.Run(): Disconnecting from brokerage...
+2025-09-15T05:52:40.7667674Z TRACE:: Engine.Run(): Disposing of setup handler...
+2025-09-15T05:52:40.7673200Z TRACE:: Engine.Main(): Analysis Completed and Results Posted.
+2025-09-15T05:52:40.7681570Z TRACE:: DataMonitor.Exit(): start...
+2025-09-15T05:52:40.7688447Z TRACE:: StopSafely(): Waiting for '' thread to stop...
+2025-09-15T05:52:40.7733589Z TRACE:: DataMonitor.GenerateReport():
+DATA USAGE:: Total data requests 8
+DATA USAGE:: Succeeded data requests 2
+DATA USAGE:: Failed data requests 6
+DATA USAGE:: Failed data requests percentage 75%
+DATA USAGE:: Total universe data requests 0
+DATA USAGE:: Succeeded universe data requests 0
+DATA USAGE:: Failed universe data requests 0
+DATA USAGE:: Failed universe data requests percentage 0%
+2025-09-15T05:52:40.7844998Z TRACE:: DataMonitor.Exit(): end
+2025-09-15T05:52:40.7857885Z TRACE:: Engine.Main(): Packet removed from queue: 1640145553
+2025-09-15T05:52:40.7863316Z TRACE:: LeanEngineSystemHandlers.Dispose(): start...
+2025-09-15T05:52:40.7885125Z TRACE:: LeanEngineSystemHandlers.Dispose(): Disposed of system handlers.
+2025-09-15T05:52:40.7892513Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): start...
+2025-09-15T05:52:40.7898599Z TRACE:: LocalObjectStore.Dispose(): start...
+2025-09-15T05:52:40.7907325Z TRACE:: LocalObjectStore.Dispose(): end
+2025-09-15T05:52:40.7915640Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): Disposed of algorithm handlers.

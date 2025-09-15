@@ -1,0 +1,6 @@
+{
+    "algorithm-language": "CSharp",
+    "parameters": {},
+    "description": "EMA Crossover Strategy - Multi-asset portfolio strategy using 20-period Exponential Moving Average signals with equal weighting across symbols. Strategy generates long/short signals based on price position relative to EMA and applies portfolio-level position sizing.",
+    "local-id": 977212551
+}

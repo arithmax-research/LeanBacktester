@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug with Lean CLI",
+            "request": "attach",
+            "type": "coreclr",
+            "processId": "1",
+            "pipeTransport": {
+                "pipeCwd": "${workspaceRoot}",
+                "pipeProgram": "docker",
+                "pipeArgs": ["exec", "-i", "lean_cli_vsdbg"],
+                "debuggerPath": "/root/vsdbg/vsdbg",
+                "quoteArgs": false
+            },
+            "logging": {
+                "moduleLoad": false
+            },
+            "sourceFileMap": {
+                "/Library": "${workspaceFolder}/../Library"
+            }
+        }
+    ]
+}
