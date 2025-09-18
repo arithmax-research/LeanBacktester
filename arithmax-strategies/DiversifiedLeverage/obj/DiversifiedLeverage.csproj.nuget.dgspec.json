@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/misango/codechest/Lean_cli_test/arithmax-strategies/DiversifiedLeverage/DiversifiedLeverage.csproj": {}
+    "/Users/misango/codechest/LeanBacktester/arithmax-strategies/csharp_Algorithms/DiversifiedLeverage/DiversifiedLeverage.csproj": {}
   },
   "projects": {
-    "/Users/misango/codechest/Lean_cli_test/arithmax-strategies/DiversifiedLeverage/DiversifiedLeverage.csproj": {
+    "/Users/misango/codechest/LeanBacktester/arithmax-strategies/csharp_Algorithms/DiversifiedLeverage/DiversifiedLeverage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/misango/codechest/Lean_cli_test/arithmax-strategies/DiversifiedLeverage/DiversifiedLeverage.csproj",
+        "projectUniqueName": "/Users/misango/codechest/LeanBacktester/arithmax-strategies/csharp_Algorithms/DiversifiedLeverage/DiversifiedLeverage.csproj",
         "projectName": "DiversifiedLeverage",
-        "projectPath": "/Users/misango/codechest/Lean_cli_test/arithmax-strategies/DiversifiedLeverage/DiversifiedLeverage.csproj",
+        "projectPath": "/Users/misango/codechest/LeanBacktester/arithmax-strategies/csharp_Algorithms/DiversifiedLeverage/DiversifiedLeverage.csproj",
         "packagesPath": "/Users/misango/.nuget/packages/",
-        "outputPath": "/Users/misango/codechest/Lean_cli_test/arithmax-strategies/DiversifiedLeverage/obj/",
+        "outputPath": "/Users/misango/codechest/LeanBacktester/arithmax-strategies/csharp_Algorithms/DiversifiedLeverage/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/misango/.nuget/NuGet/NuGet.Config"
@@ -64,12 +64,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[9.0.9, 9.0.9]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

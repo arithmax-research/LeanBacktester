@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/misango/codechest/Lean_cli_test/arithmax-strategies/GrahamStrategy/GrahamStrategy.csproj": {}
+    "/Users/misango/codechest/LeanBacktester/arithmax-strategies/csharp_Algorithms/GrahamStrategy/GrahamStrategy.csproj": {}
   },
   "projects": {
-    "/Users/misango/codechest/Lean_cli_test/arithmax-strategies/GrahamStrategy/GrahamStrategy.csproj": {
+    "/Users/misango/codechest/LeanBacktester/arithmax-strategies/csharp_Algorithms/GrahamStrategy/GrahamStrategy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/misango/codechest/Lean_cli_test/arithmax-strategies/GrahamStrategy/GrahamStrategy.csproj",
+        "projectUniqueName": "/Users/misango/codechest/LeanBacktester/arithmax-strategies/csharp_Algorithms/GrahamStrategy/GrahamStrategy.csproj",
         "projectName": "GrahamStrategy",
-        "projectPath": "/Users/misango/codechest/Lean_cli_test/arithmax-strategies/GrahamStrategy/GrahamStrategy.csproj",
+        "projectPath": "/Users/misango/codechest/LeanBacktester/arithmax-strategies/csharp_Algorithms/GrahamStrategy/GrahamStrategy.csproj",
         "packagesPath": "/Users/misango/.nuget/packages/",
-        "outputPath": "/Users/misango/codechest/Lean_cli_test/arithmax-strategies/GrahamStrategy/obj/",
+        "outputPath": "/Users/misango/codechest/LeanBacktester/arithmax-strategies/csharp_Algorithms/GrahamStrategy/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/misango/.nuget/NuGet/NuGet.Config"
@@ -69,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

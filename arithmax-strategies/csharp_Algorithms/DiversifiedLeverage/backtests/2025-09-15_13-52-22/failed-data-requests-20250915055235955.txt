@@ -1,6 +1,0 @@
-/equity/usa/daily/upro.zip
-/equity/usa/daily/tqqq.zip
-/equity/usa/daily/udow.zip
-/equity/usa/daily/dig.zip
-/equity/usa/daily/tmf.zip
-/equity/usa/daily/ugl.zip

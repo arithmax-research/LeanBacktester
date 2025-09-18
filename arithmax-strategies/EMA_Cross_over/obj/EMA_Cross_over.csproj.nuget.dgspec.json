@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/misango/codechest/Lean_cli_test/arithmax-strategies/EMA_Cross_over/EMA_Cross_over.csproj": {}
+    "/Users/misango/codechest/LeanBacktester/arithmax-strategies/csharp_Algorithms/EMA_Cross_over/EMA_Cross_over.csproj": {}
   },
   "projects": {
-    "/Users/misango/codechest/Lean_cli_test/arithmax-strategies/EMA_Cross_over/EMA_Cross_over.csproj": {
+    "/Users/misango/codechest/LeanBacktester/arithmax-strategies/csharp_Algorithms/EMA_Cross_over/EMA_Cross_over.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/misango/codechest/Lean_cli_test/arithmax-strategies/EMA_Cross_over/EMA_Cross_over.csproj",
+        "projectUniqueName": "/Users/misango/codechest/LeanBacktester/arithmax-strategies/csharp_Algorithms/EMA_Cross_over/EMA_Cross_over.csproj",
         "projectName": "EMA_Cross_over",
-        "projectPath": "/Users/misango/codechest/Lean_cli_test/arithmax-strategies/EMA_Cross_over/EMA_Cross_over.csproj",
+        "projectPath": "/Users/misango/codechest/LeanBacktester/arithmax-strategies/csharp_Algorithms/EMA_Cross_over/EMA_Cross_over.csproj",
         "packagesPath": "/Users/misango/.nuget/packages/",
-        "outputPath": "/Users/misango/codechest/Lean_cli_test/arithmax-strategies/EMA_Cross_over/obj/",
+        "outputPath": "/Users/misango/codechest/LeanBacktester/arithmax-strategies/csharp_Algorithms/EMA_Cross_over/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/misango/.nuget/NuGet/NuGet.Config"
@@ -69,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EMA_Cross_over")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a074f60ef279422b74d270d3c766a7831713a25")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec9ab0f7009994c4ad199e8158b35f467a3915b1")]
 [assembly: System.Reflection.AssemblyProductAttribute("EMA_Cross_over")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EMA_Cross_over")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

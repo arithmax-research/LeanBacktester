@@ -1,0 +1,60 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "arithmax-strategies", "arithmax-strategies", "{9703B7A3-3B85-40A6-E358-C2CFB5CACD81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csharp_Algorithms", "csharp_Algorithms", "{931B2361-8AFA-DA28-4B28-E1CAA968B3B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovingAverageCrossover", "arithmax-strategies\csharp_Algorithms\MovingAverageCrossover\MovingAverageCrossover.csproj", "{0ADC4142-AC60-95FC-800D-885BDD8618BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeanReversion", "arithmax-strategies\csharp_Algorithms\MeanReversion\MeanReversion.csproj", "{58515924-2FE9-3D86-C6E5-411EB7C56051}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMA_Cross_over", "arithmax-strategies\csharp_Algorithms\EMA_Cross_over\EMA_Cross_over.csproj", "{72316ACB-7C6F-9E40-1521-8BD34A0CF7BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiversifiedLeverage", "arithmax-strategies\csharp_Algorithms\DiversifiedLeverage\DiversifiedLeverage.csproj", "{11F8AD84-62AE-60B8-EF6F-C0D32B654D49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrahamStrategy", "arithmax-strategies\csharp_Algorithms\GrahamStrategy\GrahamStrategy.csproj", "{433B317F-4268-C494-2991-41D624B8E001}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0ADC4142-AC60-95FC-800D-885BDD8618BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ADC4142-AC60-95FC-800D-885BDD8618BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ADC4142-AC60-95FC-800D-885BDD8618BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ADC4142-AC60-95FC-800D-885BDD8618BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58515924-2FE9-3D86-C6E5-411EB7C56051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58515924-2FE9-3D86-C6E5-411EB7C56051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58515924-2FE9-3D86-C6E5-411EB7C56051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58515924-2FE9-3D86-C6E5-411EB7C56051}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72316ACB-7C6F-9E40-1521-8BD34A0CF7BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72316ACB-7C6F-9E40-1521-8BD34A0CF7BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72316ACB-7C6F-9E40-1521-8BD34A0CF7BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72316ACB-7C6F-9E40-1521-8BD34A0CF7BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11F8AD84-62AE-60B8-EF6F-C0D32B654D49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11F8AD84-62AE-60B8-EF6F-C0D32B654D49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11F8AD84-62AE-60B8-EF6F-C0D32B654D49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11F8AD84-62AE-60B8-EF6F-C0D32B654D49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{433B317F-4268-C494-2991-41D624B8E001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{433B317F-4268-C494-2991-41D624B8E001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{433B317F-4268-C494-2991-41D624B8E001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{433B317F-4268-C494-2991-41D624B8E001}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{931B2361-8AFA-DA28-4B28-E1CAA968B3B2} = {9703B7A3-3B85-40A6-E358-C2CFB5CACD81}
+		{0ADC4142-AC60-95FC-800D-885BDD8618BF} = {931B2361-8AFA-DA28-4B28-E1CAA968B3B2}
+		{58515924-2FE9-3D86-C6E5-411EB7C56051} = {931B2361-8AFA-DA28-4B28-E1CAA968B3B2}
+		{72316ACB-7C6F-9E40-1521-8BD34A0CF7BA} = {931B2361-8AFA-DA28-4B28-E1CAA968B3B2}
+		{11F8AD84-62AE-60B8-EF6F-C0D32B654D49} = {931B2361-8AFA-DA28-4B28-E1CAA968B3B2}
+		{433B317F-4268-C494-2991-41D624B8E001} = {931B2361-8AFA-DA28-4B28-E1CAA968B3B2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77BC7F19-82AD-4A8F-A24C-D4BCCD8EFC40}
+	EndGlobalSection
+EndGlobal

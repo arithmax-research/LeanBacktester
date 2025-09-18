@@ -8,8 +8,8 @@
     ".NETCoreApp,Version=v9.0": {
       "DiversifiedLeverage/1.0.0": {
         "dependencies": {
-          "QuantConnect.DataSource.Libraries": "2.5.17178",
-          "QuantConnect.Lean": "2.5.17178"
+          "QuantConnect.DataSource.Libraries": "2.5.17279",
+          "QuantConnect.Lean": "2.5.17279"
         },
         "runtime": {
           "DiversifiedLeverage.dll": {}
@@ -822,16 +822,16 @@
           }
         }
       },
-      "QuantConnect.Algorithm/2.5.17178": {
+      "QuantConnect.Algorithm/2.5.17279": {
         "dependencies": {
           "MathNet.Numerics": "5.0.0",
           "Newtonsoft.Json": "13.0.2",
           "NodaTime": "3.0.5",
-          "QuantConnect.Common": "2.5.17178",
-          "QuantConnect.Configuration": "2.5.17178",
-          "QuantConnect.Indicators": "2.5.17178",
-          "QuantConnect.Logging": "2.5.17178",
-          "QuantConnect.pythonnet": "2.0.44"
+          "QuantConnect.Common": "2.5.17279",
+          "QuantConnect.Configuration": "2.5.17279",
+          "QuantConnect.Indicators": "2.5.17279",
+          "QuantConnect.Logging": "2.5.17279",
+          "QuantConnect.pythonnet": "2.0.48"
         },
         "runtime": {
           "lib/net9.0/QuantConnect.Algorithm.dll": {
@@ -840,7 +840,7 @@
           }
         }
       },
-      "QuantConnect.Algorithm.CSharp/2.5.17178": {
+      "QuantConnect.Algorithm.CSharp/2.5.17279": {
         "dependencies": {
           "Accord": "3.6.0",
           "Accord.Fuzzy": "3.6.0",
@@ -851,11 +851,11 @@
           "MathNet.Numerics": "5.0.0",
           "Newtonsoft.Json": "13.0.2",
           "NodaTime": "3.0.5",
-          "QuantConnect.Algorithm": "2.5.17178",
-          "QuantConnect.Algorithm.Framework": "2.5.17178",
-          "QuantConnect.Common": "2.5.17178",
-          "QuantConnect.Indicators": "2.5.17178",
-          "QuantConnect.pythonnet": "2.0.44"
+          "QuantConnect.Algorithm": "2.5.17279",
+          "QuantConnect.Algorithm.Framework": "2.5.17279",
+          "QuantConnect.Common": "2.5.17279",
+          "QuantConnect.Indicators": "2.5.17279",
+          "QuantConnect.pythonnet": "2.0.48"
         },
         "runtime": {
           "lib/net9.0/QuantConnect.Algorithm.CSharp.dll": {
@@ -864,17 +864,17 @@
           }
         }
       },
-      "QuantConnect.Algorithm.Framework/2.5.17178": {
+      "QuantConnect.Algorithm.Framework/2.5.17279": {
         "dependencies": {
           "Accord": "3.6.0",
           "Accord.Math": "3.6.0",
           "Accord.Statistics": "3.6.0",
           "MathNet.Numerics": "5.0.0",
           "NodaTime": "3.0.5",
-          "QuantConnect.Algorithm": "2.5.17178",
-          "QuantConnect.Common": "2.5.17178",
-          "QuantConnect.Indicators": "2.5.17178",
-          "QuantConnect.pythonnet": "2.0.44"
+          "QuantConnect.Algorithm": "2.5.17279",
+          "QuantConnect.Common": "2.5.17279",
+          "QuantConnect.Indicators": "2.5.17279",
+          "QuantConnect.pythonnet": "2.0.48"
         },
         "runtime": {
           "lib/net9.0/QuantConnect.Algorithm.Framework.dll": {
@@ -883,14 +883,14 @@
           }
         }
       },
-      "QuantConnect.AlgorithmFactory/2.5.17178": {
+      "QuantConnect.AlgorithmFactory/2.5.17279": {
         "dependencies": {
           "NodaTime": "3.0.5",
-          "QuantConnect.Algorithm": "2.5.17178",
-          "QuantConnect.Common": "2.5.17178",
-          "QuantConnect.Configuration": "2.5.17178",
-          "QuantConnect.Logging": "2.5.17178",
-          "QuantConnect.pythonnet": "2.0.44"
+          "QuantConnect.Algorithm": "2.5.17279",
+          "QuantConnect.Common": "2.5.17279",
+          "QuantConnect.Configuration": "2.5.17279",
+          "QuantConnect.Logging": "2.5.17279",
+          "QuantConnect.pythonnet": "2.0.48"
         },
         "runtime": {
           "lib/net9.0/QuantConnect.AlgorithmFactory.dll": {
@@ -899,13 +899,13 @@
           }
         }
       },
-      "QuantConnect.Api/2.5.17178": {
+      "QuantConnect.Api/2.5.17279": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.2",
           "NodaTime": "3.0.5",
-          "QuantConnect.Common": "2.5.17178",
-          "QuantConnect.Configuration": "2.5.17178",
-          "QuantConnect.Logging": "2.5.17178",
+          "QuantConnect.Common": "2.5.17279",
+          "QuantConnect.Configuration": "2.5.17279",
+          "QuantConnect.Logging": "2.5.17279",
           "RestSharp": "106.12.0"
         },
         "runtime": {
@@ -915,15 +915,15 @@
           }
         }
       },
-      "QuantConnect.Brokerages/2.5.17178": {
+      "QuantConnect.Brokerages/2.5.17279": {
         "dependencies": {
           "CsvHelper": "19.0.0",
           "Newtonsoft.Json": "13.0.2",
-          "QuantConnect.Api": "2.5.17178",
-          "QuantConnect.Common": "2.5.17178",
-          "QuantConnect.Compression": "2.5.17178",
-          "QuantConnect.Configuration": "2.5.17178",
-          "QuantConnect.Logging": "2.5.17178",
+          "QuantConnect.Api": "2.5.17279",
+          "QuantConnect.Common": "2.5.17279",
+          "QuantConnect.Compression": "2.5.17279",
+          "QuantConnect.Configuration": "2.5.17279",
+          "QuantConnect.Logging": "2.5.17279",
           "RestSharp": "106.12.0"
         },
         "runtime": {
@@ -933,7 +933,7 @@
           }
         }
       },
-      "QuantConnect.Common/2.5.17178": {
+      "QuantConnect.Common/2.5.17279": {
         "dependencies": {
           "CloneExtensions": "1.3.0",
           "MathNet.Numerics": "5.0.0",
@@ -941,10 +941,10 @@
           "Newtonsoft.Json": "13.0.2",
           "NodaTime": "3.0.5",
           "QLNet": "1.13.1",
-          "QuantConnect.Compression": "2.5.17178",
-          "QuantConnect.Configuration": "2.5.17178",
-          "QuantConnect.Logging": "2.5.17178",
-          "QuantConnect.pythonnet": "2.0.44",
+          "QuantConnect.Compression": "2.5.17279",
+          "QuantConnect.Configuration": "2.5.17279",
+          "QuantConnect.Logging": "2.5.17279",
+          "QuantConnect.pythonnet": "2.0.48",
           "fasterflect": "3.0.0",
           "protobuf-net": "3.1.33"
         },
@@ -955,10 +955,10 @@
           }
         }
       },
-      "QuantConnect.Compression/2.5.17178": {
+      "QuantConnect.Compression/2.5.17279": {
         "dependencies": {
           "DotNetZip": "1.16.0",
-          "QuantConnect.Logging": "2.5.17178",
+          "QuantConnect.Logging": "2.5.17279",
           "SharpZipLib": "1.3.3"
         },
         "runtime": {
@@ -968,11 +968,11 @@
           }
         }
       },
-      "QuantConnect.Configuration/2.5.17178": {
+      "QuantConnect.Configuration/2.5.17279": {
         "dependencies": {
           "McMaster.Extensions.CommandLineUtils": "2.6.0",
           "Newtonsoft.Json": "13.0.2",
-          "QuantConnect.Logging": "2.5.17178"
+          "QuantConnect.Logging": "2.5.17279"
         },
         "runtime": {
           "lib/net9.0/QuantConnect.Configuration.dll": {
@@ -981,7 +981,7 @@
           }
         }
       },
-      "QuantConnect.DataSource.Libraries/2.5.17178": {
+      "QuantConnect.DataSource.Libraries/2.5.17279": {
         "runtime": {
           "lib/net9.0/QuantConnect.DataSource.BenzingaNews.dll": {
             "assemblyVersion": "0.0.0.0",
@@ -1117,12 +1117,12 @@
           }
         }
       },
-      "QuantConnect.DownloaderDataProvider.Launcher/2.5.17178": {
+      "QuantConnect.DownloaderDataProvider.Launcher/2.5.17279": {
         "dependencies": {
-          "QuantConnect.Common": "2.5.17178",
-          "QuantConnect.Configuration": "2.5.17178",
-          "QuantConnect.Lean.Engine": "2.5.17178",
-          "QuantConnect.Logging": "2.5.17178"
+          "QuantConnect.Common": "2.5.17279",
+          "QuantConnect.Configuration": "2.5.17279",
+          "QuantConnect.Lean.Engine": "2.5.17279",
+          "QuantConnect.Logging": "2.5.17279"
         },
         "runtime": {
           "lib/net9.0/QuantConnect.DownloaderDataProvider.Launcher.dll": {
@@ -1131,12 +1131,12 @@
           }
         }
       },
-      "QuantConnect.Indicators/2.5.17178": {
+      "QuantConnect.Indicators/2.5.17279": {
         "dependencies": {
           "MathNet.Numerics": "5.0.0",
-          "QuantConnect.Common": "2.5.17178",
-          "QuantConnect.Logging": "2.5.17178",
-          "QuantConnect.pythonnet": "2.0.44"
+          "QuantConnect.Common": "2.5.17279",
+          "QuantConnect.Logging": "2.5.17279",
+          "QuantConnect.pythonnet": "2.0.48"
         },
         "runtime": {
           "lib/net9.0/QuantConnect.Indicators.dll": {
@@ -1145,26 +1145,26 @@
           }
         }
       },
-      "QuantConnect.Lean/2.5.17178": {
+      "QuantConnect.Lean/2.5.17279": {
         "dependencies": {
           "DynamicInterop": "0.9.1",
-          "QuantConnect.Algorithm": "2.5.17178",
-          "QuantConnect.Algorithm.CSharp": "2.5.17178",
-          "QuantConnect.AlgorithmFactory": "2.5.17178",
-          "QuantConnect.Api": "2.5.17178",
-          "QuantConnect.Brokerages": "2.5.17178",
-          "QuantConnect.Common": "2.5.17178",
-          "QuantConnect.Compression": "2.5.17178",
-          "QuantConnect.Configuration": "2.5.17178",
-          "QuantConnect.DownloaderDataProvider.Launcher": "2.5.17178",
-          "QuantConnect.Indicators": "2.5.17178",
-          "QuantConnect.Lean.Engine": "2.5.17178",
-          "QuantConnect.Logging": "2.5.17178",
-          "QuantConnect.Messaging": "2.5.17178",
-          "QuantConnect.Optimizer.Launcher": "2.5.17178",
-          "QuantConnect.Queues": "2.5.17178",
-          "QuantConnect.Research": "2.5.17178",
-          "QuantConnect.ToolBox": "2.5.17178"
+          "QuantConnect.Algorithm": "2.5.17279",
+          "QuantConnect.Algorithm.CSharp": "2.5.17279",
+          "QuantConnect.AlgorithmFactory": "2.5.17279",
+          "QuantConnect.Api": "2.5.17279",
+          "QuantConnect.Brokerages": "2.5.17279",
+          "QuantConnect.Common": "2.5.17279",
+          "QuantConnect.Compression": "2.5.17279",
+          "QuantConnect.Configuration": "2.5.17279",
+          "QuantConnect.DownloaderDataProvider.Launcher": "2.5.17279",
+          "QuantConnect.Indicators": "2.5.17279",
+          "QuantConnect.Lean.Engine": "2.5.17279",
+          "QuantConnect.Logging": "2.5.17279",
+          "QuantConnect.Messaging": "2.5.17279",
+          "QuantConnect.Optimizer.Launcher": "2.5.17279",
+          "QuantConnect.Queues": "2.5.17279",
+          "QuantConnect.Research": "2.5.17279",
+          "QuantConnect.ToolBox": "2.5.17279"
         },
         "runtime": {
           "lib/net9.0/QuantConnect.Lean.Launcher.dll": {
@@ -1173,22 +1173,22 @@
           }
         }
       },
-      "QuantConnect.Lean.Engine/2.5.17178": {
+      "QuantConnect.Lean.Engine/2.5.17279": {
         "dependencies": {
           "MathNet.Numerics": "5.0.0",
           "Newtonsoft.Json": "13.0.2",
           "NodaTime": "3.0.5",
-          "QuantConnect.Algorithm": "2.5.17178",
-          "QuantConnect.Algorithm.CSharp": "2.5.17178",
-          "QuantConnect.AlgorithmFactory": "2.5.17178",
-          "QuantConnect.Api": "2.5.17178",
-          "QuantConnect.Brokerages": "2.5.17178",
-          "QuantConnect.Common": "2.5.17178",
-          "QuantConnect.Compression": "2.5.17178",
-          "QuantConnect.Configuration": "2.5.17178",
-          "QuantConnect.Indicators": "2.5.17178",
-          "QuantConnect.Logging": "2.5.17178",
-          "QuantConnect.pythonnet": "2.0.44",
+          "QuantConnect.Algorithm": "2.5.17279",
+          "QuantConnect.Algorithm.CSharp": "2.5.17279",
+          "QuantConnect.AlgorithmFactory": "2.5.17279",
+          "QuantConnect.Api": "2.5.17279",
+          "QuantConnect.Brokerages": "2.5.17279",
+          "QuantConnect.Common": "2.5.17279",
+          "QuantConnect.Compression": "2.5.17279",
+          "QuantConnect.Configuration": "2.5.17279",
+          "QuantConnect.Indicators": "2.5.17279",
+          "QuantConnect.Logging": "2.5.17279",
+          "QuantConnect.pythonnet": "2.0.48",
           "RestSharp": "106.12.0",
           "fasterflect": "3.0.0"
         },
@@ -1199,7 +1199,7 @@
           }
         }
       },
-      "QuantConnect.Logging/2.5.17178": {
+      "QuantConnect.Logging/2.5.17279": {
         "dependencies": {
           "System.ComponentModel.Composition": "6.0.0"
         },
@@ -1210,13 +1210,13 @@
           }
         }
       },
-      "QuantConnect.Messaging/2.5.17178": {
+      "QuantConnect.Messaging/2.5.17279": {
         "dependencies": {
           "NetMQ": "4.0.1.6",
           "Newtonsoft.Json": "13.0.2",
-          "QuantConnect.Common": "2.5.17178",
-          "QuantConnect.Configuration": "2.5.17178",
-          "QuantConnect.Logging": "2.5.17178",
+          "QuantConnect.Common": "2.5.17279",
+          "QuantConnect.Configuration": "2.5.17279",
+          "QuantConnect.Logging": "2.5.17279",
           "RestSharp": "106.12.0"
         },
         "runtime": {
@@ -1226,12 +1226,12 @@
           }
         }
       },
-      "QuantConnect.Optimizer/2.5.17178": {
+      "QuantConnect.Optimizer/2.5.17279": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.2",
-          "QuantConnect.Common": "2.5.17178",
-          "QuantConnect.Configuration": "2.5.17178",
-          "QuantConnect.Logging": "2.5.17178"
+          "QuantConnect.Common": "2.5.17279",
+          "QuantConnect.Configuration": "2.5.17279",
+          "QuantConnect.Logging": "2.5.17279"
         },
         "runtime": {
           "lib/net9.0/QuantConnect.Optimizer.dll": {
@@ -1240,13 +1240,13 @@
           }
         }
       },
-      "QuantConnect.Optimizer.Launcher/2.5.17178": {
+      "QuantConnect.Optimizer.Launcher/2.5.17279": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.2",
-          "QuantConnect.Common": "2.5.17178",
-          "QuantConnect.Configuration": "2.5.17178",
-          "QuantConnect.Logging": "2.5.17178",
-          "QuantConnect.Optimizer": "2.5.17178"
+          "QuantConnect.Common": "2.5.17279",
+          "QuantConnect.Configuration": "2.5.17279",
+          "QuantConnect.Logging": "2.5.17279",
+          "QuantConnect.Optimizer": "2.5.17279"
         },
         "runtime": {
           "lib/net9.0/QuantConnect.Optimizer.Launcher.dll": {
@@ -1255,24 +1255,24 @@
           }
         }
       },
-      "QuantConnect.pythonnet/2.0.44": {
+      "QuantConnect.pythonnet/2.0.48": {
         "dependencies": {
           "fasterflect": "3.0.0"
         },
         "runtime": {
           "lib/net9.0/Python.Runtime.dll": {
-            "assemblyVersion": "2.0.44.0",
-            "fileVersion": "2.0.44.0"
+            "assemblyVersion": "2.0.48.0",
+            "fileVersion": "2.0.48.0"
           }
         }
       },
-      "QuantConnect.Queues/2.5.17178": {
+      "QuantConnect.Queues/2.5.17279": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.2",
-          "QuantConnect.Brokerages": "2.5.17178",
-          "QuantConnect.Common": "2.5.17178",
-          "QuantConnect.Configuration": "2.5.17178",
-          "QuantConnect.Logging": "2.5.17178"
+          "QuantConnect.Brokerages": "2.5.17279",
+          "QuantConnect.Common": "2.5.17279",
+          "QuantConnect.Configuration": "2.5.17279",
+          "QuantConnect.Logging": "2.5.17279"
         },
         "runtime": {
           "lib/net9.0/QuantConnect.Queues.dll": {
@@ -1281,22 +1281,22 @@
           }
         }
       },
-      "QuantConnect.Research/2.5.17178": {
+      "QuantConnect.Research/2.5.17279": {
         "dependencies": {
           "NodaTime": "3.0.5",
           "Plotly.NET": "5.1.0",
           "Plotly.NET.CSharp": "0.13.0",
           "Plotly.NET.Interactive": "5.0.0",
-          "QuantConnect.Algorithm": "2.5.17178",
-          "QuantConnect.Algorithm.Framework": "2.5.17178",
-          "QuantConnect.Api": "2.5.17178",
-          "QuantConnect.Common": "2.5.17178",
-          "QuantConnect.Configuration": "2.5.17178",
-          "QuantConnect.Indicators": "2.5.17178",
-          "QuantConnect.Lean.Engine": "2.5.17178",
-          "QuantConnect.Logging": "2.5.17178",
-          "QuantConnect.Queues": "2.5.17178",
-          "QuantConnect.pythonnet": "2.0.44"
+          "QuantConnect.Algorithm": "2.5.17279",
+          "QuantConnect.Algorithm.Framework": "2.5.17279",
+          "QuantConnect.Api": "2.5.17279",
+          "QuantConnect.Common": "2.5.17279",
+          "QuantConnect.Configuration": "2.5.17279",
+          "QuantConnect.Indicators": "2.5.17279",
+          "QuantConnect.Lean.Engine": "2.5.17279",
+          "QuantConnect.Logging": "2.5.17279",
+          "QuantConnect.Queues": "2.5.17279",
+          "QuantConnect.pythonnet": "2.0.48"
         },
         "runtime": {
           "lib/net9.0/QuantConnect.Research.dll": {
@@ -1305,9 +1305,9 @@
           }
         }
       },
-      "QuantConnect.ToolBox/2.5.17178": {
+      "QuantConnect.ToolBox/2.5.17279": {
         "dependencies": {
-          "QuantConnect.Lean.Engine": "2.5.17178"
+          "QuantConnect.Lean.Engine": "2.5.17279"
         },
         "runtime": {
           "lib/net9.0/QuantConnect.ToolBox.dll": {
@@ -1990,159 +1990,159 @@
       "path": "qlnet/1.13.1",
       "hashPath": "qlnet.1.13.1.nupkg.sha512"
     },
-    "QuantConnect.Algorithm/2.5.17178": {
+    "QuantConnect.Algorithm/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ptO+ke6o3nBbZYGnEJ0vBAnBlywOIVrEFS7mltRryleZJh7Mgz0yt/k4R51JNuhyqsy4+n8sP2cQYtDTXV7nZg==",
-      "path": "quantconnect.algorithm/2.5.17178",
-      "hashPath": "quantconnect.algorithm.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-21NgApJgAo9BJaUAmC4aI2VIMnJDAXpmVlgtgTvXtmpNPQM6i42TaEbjB/QkhboGodcbGibXUzoPh7v3lwj5fw==",
+      "path": "quantconnect.algorithm/2.5.17279",
+      "hashPath": "quantconnect.algorithm.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.Algorithm.CSharp/2.5.17178": {
+    "QuantConnect.Algorithm.CSharp/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+qyR/IwDcC14H3VMD/1uL4MvFGR1yemsLW+MGA4xQS0AG1MSf7tahup/ebwfW+qHbzd5zV9/i2QRNeY+Ub+R+A==",
-      "path": "quantconnect.algorithm.csharp/2.5.17178",
-      "hashPath": "quantconnect.algorithm.csharp.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-R/1wFXDDHdPNvjqRoMBZXQMVZNlBkHynWnrybafViqVuCX7D95Rs6mnU6h3EJx6R9PB4ocgDl7vbjpS/+UrJ4g==",
+      "path": "quantconnect.algorithm.csharp/2.5.17279",
+      "hashPath": "quantconnect.algorithm.csharp.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.Algorithm.Framework/2.5.17178": {
+    "QuantConnect.Algorithm.Framework/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vjZ/dCMyjTrax0Coxvcu4m97SzSTg5svwomZR8mqGVyX41ZHpKGnJDZ32zPjnIxFKXmbJwoUBUGTF1RkDVZqFA==",
-      "path": "quantconnect.algorithm.framework/2.5.17178",
-      "hashPath": "quantconnect.algorithm.framework.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-1SzkF0F75TlcP6moOzLDshIgXQ6v08Tgj7OBpt0Q0bf3LSrqItSOeya8tzwKLnb5KY3o6XLSLOQPc22Lyg0WWg==",
+      "path": "quantconnect.algorithm.framework/2.5.17279",
+      "hashPath": "quantconnect.algorithm.framework.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.AlgorithmFactory/2.5.17178": {
+    "QuantConnect.AlgorithmFactory/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JYylvdJPzIiFeAvDDWpwxR9+zcwLslyW+NCl9Re4CtFxw7cNC7Ow/rzHiGy0RflGjJdR8BQrCjMDaWZzhOLQkg==",
-      "path": "quantconnect.algorithmfactory/2.5.17178",
-      "hashPath": "quantconnect.algorithmfactory.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-aJmr+/oDiOqyP2unABBVJtoEoA0bgxN9iPoWSx7mFNXNpSZx2iGDa6K1fOzPzeT9Z8y5pKOIE5Fq4TyFQleZnQ==",
+      "path": "quantconnect.algorithmfactory/2.5.17279",
+      "hashPath": "quantconnect.algorithmfactory.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.Api/2.5.17178": {
+    "QuantConnect.Api/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WqVQ5T1e9q1ashyahYIEPIAp/6ndmLBNdLgjwwpj2ldzpEz3rYgwTcO4x4sXxggQdT3wkX70SFk84P/f8zf4Ww==",
-      "path": "quantconnect.api/2.5.17178",
-      "hashPath": "quantconnect.api.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-sM8RkRTV8KTVmWKUf0fQllSCCOip0CyRLssRdzl+ZPNnGqbhgYqJXzxq+eBsbHIg/2cmI3KSjwFk+cQO7BcWQA==",
+      "path": "quantconnect.api/2.5.17279",
+      "hashPath": "quantconnect.api.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.Brokerages/2.5.17178": {
+    "QuantConnect.Brokerages/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rKLxa0KjqoMHEFTU9FXE35LHeH7VKh4FQO2FmBruUzWXUpL/XcwVGLvoj1llQtIhxiuDjf9FfqgGrbzKBLwSCA==",
-      "path": "quantconnect.brokerages/2.5.17178",
-      "hashPath": "quantconnect.brokerages.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-wi38pjxtSfoAx+DDilY/aKjwGodaeGEdVmcp/YOZfnPaZNn+kvs6YX6kNyo9B8XiA7+gv17NpntbdANIF/D6RQ==",
+      "path": "quantconnect.brokerages/2.5.17279",
+      "hashPath": "quantconnect.brokerages.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.Common/2.5.17178": {
+    "QuantConnect.Common/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qyINhJzVfEnJgNRhnkAY5MxoPwfp7enOsy5Zq9vg4RTrFvzrciBedVZHSkFsDW7O63wkC+yy8iIXjZgzsuB7jg==",
-      "path": "quantconnect.common/2.5.17178",
-      "hashPath": "quantconnect.common.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-tVsiTnBmIRV65WiLXEJy7EkRX8efu+MGeJRWQLalRlyN98SldUxqPzNMEvCDpOWiPRuXj8dSOPsqfG9ljk389g==",
+      "path": "quantconnect.common/2.5.17279",
+      "hashPath": "quantconnect.common.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.Compression/2.5.17178": {
+    "QuantConnect.Compression/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kd4sk3ydckwWzCLGQah7+BcU8DJz/qWJbSV7x1y3TB738NFbQjcWBpxNdRyRdWZ3gEA61VqojC9v8HJlQwxOEQ==",
-      "path": "quantconnect.compression/2.5.17178",
-      "hashPath": "quantconnect.compression.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-6ATiQxqGRx6P4HisROXsVR53/0R2oEVfKfgnVHBTHpXdNudolvlIk0LmnDayyNIMn3w1B5a/8EOajNGwfh6XDA==",
+      "path": "quantconnect.compression/2.5.17279",
+      "hashPath": "quantconnect.compression.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.Configuration/2.5.17178": {
+    "QuantConnect.Configuration/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6IfVbXnkAeUrSZsUcjqo4xhTz0oBQQfA1kbLT1TyAl/4zk1VRixmo7rZ57vnKE4ryUnbNIINmGZUzK/DyiI66Q==",
-      "path": "quantconnect.configuration/2.5.17178",
-      "hashPath": "quantconnect.configuration.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-zA1AvPc9Q8ovkxNFqoxvnHzv4lBubYL6gF68w2inwS221C6aEmbpxfMUVun9lHGHIMnvmXMyxWN4Tqeba+lu2Q==",
+      "path": "quantconnect.configuration/2.5.17279",
+      "hashPath": "quantconnect.configuration.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.DataSource.Libraries/2.5.17178": {
+    "QuantConnect.DataSource.Libraries/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7yGNQwApovf2GI0rFR62Q7+oqGH9NTpfcq+Y+7d5y3FWG6MDXraUzF5LV+t62sCJmmGppkZzi2lK4XQffU//Pg==",
-      "path": "quantconnect.datasource.libraries/2.5.17178",
-      "hashPath": "quantconnect.datasource.libraries.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-tM6BJeFsc3wgXK+L8V1RlNsnma21drywRwqAPVRNHTwtaDO4Z5Ekt/tl6qLjUwd5HgNFpSquIEY2LbjVAAurXg==",
+      "path": "quantconnect.datasource.libraries/2.5.17279",
+      "hashPath": "quantconnect.datasource.libraries.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.DownloaderDataProvider.Launcher/2.5.17178": {
+    "QuantConnect.DownloaderDataProvider.Launcher/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fdB81ZAmRrUA/2i9gIFNPwtgYcJY0jR3lQf9APK9ekLbKA8SwZV72AMa/8VBn8aHU1+HVz//MxGlUxjfjEdYgQ==",
-      "path": "quantconnect.downloaderdataprovider.launcher/2.5.17178",
-      "hashPath": "quantconnect.downloaderdataprovider.launcher.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-IkLBc1pR5iMIzrAMc7cOjfRooAAuxVUhs6seLdX94VmHgVigAbbnEGeKz1j9ofehgPO/QA5dW5i67ZAm9Bm5aw==",
+      "path": "quantconnect.downloaderdataprovider.launcher/2.5.17279",
+      "hashPath": "quantconnect.downloaderdataprovider.launcher.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.Indicators/2.5.17178": {
+    "QuantConnect.Indicators/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qaUoOZGfg0fnxGkukAUHiZFVjswwTzpnFEthuCzGMQHeOqAx7P9twmH5bEJu4wszpNcahzYzin+2YbArtA+JSQ==",
-      "path": "quantconnect.indicators/2.5.17178",
-      "hashPath": "quantconnect.indicators.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-Jh/2FPg2zcGavokrvf3FvqfCy+MNncEYdrWzOlUXQcf9fhd/ZMy7JTmbVlq7mSE3djQ4ymwRFwYFc1MAETGCoA==",
+      "path": "quantconnect.indicators/2.5.17279",
+      "hashPath": "quantconnect.indicators.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.Lean/2.5.17178": {
+    "QuantConnect.Lean/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tV9sFcOYUxqOojSxRVQ0GsDqO5UYJYHNFapBjS0UwussXn3moWvBqb+4cBLwfbuPC0HSUT4eIOzjGylRrTSrHw==",
-      "path": "quantconnect.lean/2.5.17178",
-      "hashPath": "quantconnect.lean.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-J86hLJca3B3IGzkngdDb3ZwrGzUPPBiV7DuywW51L1w+oK9qhxY5IptyAqRKkpKIeQ17+ADvjwCfHzos48c1Dg==",
+      "path": "quantconnect.lean/2.5.17279",
+      "hashPath": "quantconnect.lean.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.Lean.Engine/2.5.17178": {
+    "QuantConnect.Lean.Engine/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7fxJgtIgBT8TrvxJOBV4ZlEhdY1XL65WvySMVfrSqxcMnnO/Z/tp2EUXNM4Vr2JSpIf8nTnjidmHmAFYf4utoQ==",
-      "path": "quantconnect.lean.engine/2.5.17178",
-      "hashPath": "quantconnect.lean.engine.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-KShUMxcnz4qFp1pzQAGwNHLa8DnEHY+qZEo/o9OfVltWLXjJwJIHQfzRPp4g34wi/KI81YyAod3clkCPn59c+A==",
+      "path": "quantconnect.lean.engine/2.5.17279",
+      "hashPath": "quantconnect.lean.engine.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.Logging/2.5.17178": {
+    "QuantConnect.Logging/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-czqcFYjbtKwcAlEwNHntVA3gBIPYq9YCE/c3hr65RELecTq6Isk7uLK9t9xzt/eKiay5PAbuUpTA7iJ+k/gPQg==",
-      "path": "quantconnect.logging/2.5.17178",
-      "hashPath": "quantconnect.logging.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-vH9thtDzMCtzrWJfJUcF5A8QLj1sfC+WAQAWOKfwv83YUdOeYDLwHlY5FbRTCkygu/eCu70EApVN1Xj12yn1kg==",
+      "path": "quantconnect.logging/2.5.17279",
+      "hashPath": "quantconnect.logging.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.Messaging/2.5.17178": {
+    "QuantConnect.Messaging/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-82fGUji/gE6raom6x6ybMzBIeO4tFMFsHYmeJgvoxd7CBkoOUMwNgnZb1aa1zoEFT1BGZvfC6IZ0soURd9Yw4g==",
-      "path": "quantconnect.messaging/2.5.17178",
-      "hashPath": "quantconnect.messaging.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-vFD24AFYakCWgCkcRA4C0Vprnp38vOv9EELwBr6K73SwUDdQSW+cCUHzEOEGhaW6A1Uz6KVfpqGRURdWNdhaDA==",
+      "path": "quantconnect.messaging/2.5.17279",
+      "hashPath": "quantconnect.messaging.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.Optimizer/2.5.17178": {
+    "QuantConnect.Optimizer/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BqIfi2QxwRcm0VvFTg0SrMYQIMO1k/Gm3eo7qe/8MdQcBZrlUpWbWs4gVx6cM4DjO/j/DtzRsrlvAfNgs/es9Q==",
-      "path": "quantconnect.optimizer/2.5.17178",
-      "hashPath": "quantconnect.optimizer.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-zblTIWTzLFU0LkU9kywXYTCJLWdtXd+iikywX1bVX5rPh6/z/QBXc2ddFKzuifmy1giCzCcOQErIB2raxrjbXw==",
+      "path": "quantconnect.optimizer/2.5.17279",
+      "hashPath": "quantconnect.optimizer.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.Optimizer.Launcher/2.5.17178": {
+    "QuantConnect.Optimizer.Launcher/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8Aelwx35zPOVyc85rBVkN0nPZwQtuqG8eh8sqtWgJYIT2CyFEPcp8PURDd6gT8EJd/Ss9jlFR4ax61P1hj0QKQ==",
-      "path": "quantconnect.optimizer.launcher/2.5.17178",
-      "hashPath": "quantconnect.optimizer.launcher.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-K9lC5fFLkDZ17yiDMF4B+DbKnkw1vm+4uBeJTD/JClfYxQwi1P4pjQrvublTRowN8US8V3b6ZzF/b25TnNCEZg==",
+      "path": "quantconnect.optimizer.launcher/2.5.17279",
+      "hashPath": "quantconnect.optimizer.launcher.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.pythonnet/2.0.44": {
+    "QuantConnect.pythonnet/2.0.48": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-MxcGXN/2C1YdN8iFn9GI9Yq02H8DV+yEGeYZEkmM9/hUkV+sYS5fLp1Fz2Xpc4QtunZhPpZxEAh0SPycSXA9sg==",
-      "path": "quantconnect.pythonnet/2.0.44",
-      "hashPath": "quantconnect.pythonnet.2.0.44.nupkg.sha512"
+      "sha512": "sha512-srwCLZPtCq9iW0CJEHYIQXIoWOn7rdcir1qs+dxVzLoRqTaxorF/B7xKGU3nFxpV5HrvB9sFgXGsN/BNcQyblw==",
+      "path": "quantconnect.pythonnet/2.0.48",
+      "hashPath": "quantconnect.pythonnet.2.0.48.nupkg.sha512"
     },
-    "QuantConnect.Queues/2.5.17178": {
+    "QuantConnect.Queues/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-CM17fQmr67hT3KAbKBdebVp+9scKMrVUh8WELiL3e4EDm+L/GSnE+tsZNhJucxxtsojN5V/PZBUGLZoWjf6kUQ==",
-      "path": "quantconnect.queues/2.5.17178",
-      "hashPath": "quantconnect.queues.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-NsNnL0eHhZbgV7PlDgpSs+q0DCT/sbyG1sGfcuiCEdowExDF4l2cj4/TgoTESpfqzhtEgEXgOQtmit6eVgJN5Q==",
+      "path": "quantconnect.queues/2.5.17279",
+      "hashPath": "quantconnect.queues.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.Research/2.5.17178": {
+    "QuantConnect.Research/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HF1sgP0GTzFnT+R3/tPwR8VeHqsnxrdhrZ2FT2951wSfztKJoP4io/BNZGtQCtYC+E45hudhCDuYXffB910QzQ==",
-      "path": "quantconnect.research/2.5.17178",
-      "hashPath": "quantconnect.research.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-SueYWd/IMUWIf16HSRW8k81Ph06LdWp7ARgxGe4dQ4VjeUvCQEKSRhaOefFdTU8k6i7PxBe/Z6g9jMDMG2addg==",
+      "path": "quantconnect.research/2.5.17279",
+      "hashPath": "quantconnect.research.2.5.17279.nupkg.sha512"
     },
-    "QuantConnect.ToolBox/2.5.17178": {
+    "QuantConnect.ToolBox/2.5.17279": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-506kCTPj5ylhgRWKUu3C8HEcrriCNsbXmV+R6qwhVF15XDL3b418PYqc9Vyd0FY5fnnDl4bD29kHbgk3wGWo/Q==",
-      "path": "quantconnect.toolbox/2.5.17178",
-      "hashPath": "quantconnect.toolbox.2.5.17178.nupkg.sha512"
+      "sha512": "sha512-6vLMtFjucx/vObNaZSMLDgQ+0a+QiTPPDFxQ+ixxnroCIxSQp7JkSqjJzLU/RPX5WuQA+SUkA6lELxSfhypcLg==",
+      "path": "quantconnect.toolbox/2.5.17279",
+      "hashPath": "quantconnect.toolbox.2.5.17279.nupkg.sha512"
     },
     "RestSharp/106.12.0": {
       "type": "package",
