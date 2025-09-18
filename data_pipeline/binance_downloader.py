@@ -45,8 +45,8 @@ class BinanceDataDownloader:
             klines = self.client.get_historical_klines(
                 symbol,
                 binance_interval,
-                start_date.strftime('%Y-%m-%d'),
-                end_date.strftime('%Y-%m-%d')
+                start_date.strftime('%d %b %Y'),
+                end_date.strftime('%d %b %Y')
             )
             
             # Convert to our format
@@ -82,7 +82,8 @@ class BinanceDataDownloader:
         
         return interval_map.get(interval, '1m')
     
-    def download_symbol_data(self, symbol: str, resolution: str, start_date: datetime, end_date: datetime):
+    def download_symbol_data(self, symbol: str, resolution: str, start_date: datetime, end_date: datetime,
+                           lean_format: bool = True, output_folder: str = "data"):
         """Download and save data for a single symbol"""
         logger.info(f"Downloading {symbol} data for {resolution} resolution")
         
@@ -95,8 +96,18 @@ class BinanceDataDownloader:
                 cleaned_data = DataValidator.clean_ohlcv_data(data)
                 
                 if cleaned_data:
-                    output_path = os.path.join(CRYPTO_DATA_PATH, resolution, f"{symbol.lower()}.zip")
-                    csv_filename = f"{symbol.lower()}_{resolution}_trade.csv"
+                    # Determine output path based on format
+                    if lean_format:
+                        from config import CRYPTO_DATA_PATH
+                        base_path = CRYPTO_DATA_PATH
+                        csv_filename = f"{symbol.lower()}_{resolution}_trade.csv"
+                    else:
+                        # Raw format in data_chest folder
+                        base_path = os.path.join(output_folder, "crypto")
+                        ensure_directory_exists(base_path)
+                        csv_filename = f"{symbol}_{resolution}_raw.csv"
+                    
+                    output_path = os.path.join(base_path, resolution, f"{symbol.lower()}.zip")
                     
                     # Group data by date for processing
                     daily_data = {}
@@ -166,6 +177,30 @@ class BinanceDataDownloader:
         
         logger.info("Download completed")
     
+    def download_crypto_symbols(self, symbols: List[str], start_date: datetime, end_date: datetime, 
+                              resolution: str = 'daily', lean_format: bool = True, output_folder: str = "data"):
+        """Download crypto symbols (orchestrator-compatible method)"""
+        logger.info(f"Starting crypto download for {len(symbols)} symbols from Binance")
+        logger.info(f"Output: {'Lean format' if lean_format else 'Raw format'} in {output_folder}/ folder")
+        downloaded_files = []
+        
+        for symbol in symbols:
+            try:
+                # Use the existing download method with custom folder
+                self.download_symbol_data(symbol, resolution, start_date, end_date, 
+                                        lean_format=lean_format, output_folder=output_folder)
+                # Generate expected filename pattern
+                folder_prefix = f"{output_folder}/crypto/{resolution}/"
+                filename = f"{folder_prefix}{symbol}_{resolution}_{start_date.strftime('%Y%m%d')}_{end_date.strftime('%Y%m%d')}.zip"
+                downloaded_files.append(filename)
+                logger.info(f"SUCCESS: Downloaded {symbol}")
+            except Exception as e:
+                logger.error(f"ERROR: Error downloading {symbol}: {str(e)}")
+                continue
+        
+        logger.info(f"Crypto download completed: {len(downloaded_files)} files")
+        return downloaded_files
+    
     def get_available_symbols(self) -> List[str]:
         """Get list of available USDT trading pairs"""
         try:
@@ -183,23 +218,3 @@ class BinanceDataDownloader:
         except Exception as e:
             logger.error(f"Error getting symbols: {str(e)}")
             return []
-
-def main():
-    """Main function for testing"""
-    from config import DEFAULT_CRYPTO_SYMBOLS, DEFAULT_START_DATE, DEFAULT_END_DATE
-    
-    downloader = BinanceDataDownloader()
-    
-    # Test with a small set of symbols
-    test_symbols = ['BTCUSDT', 'ETHUSDT', 'ADAUSDT']
-    test_start = datetime.now() - timedelta(days=30)
-    test_end = datetime.now()
-    
-    # Download minute data
-    downloader.download_multiple_symbols(test_symbols, 'minute', test_start, test_end)
-    
-    # Download daily data
-    downloader.download_multiple_symbols(test_symbols, 'daily', test_start, test_end)
-
-if __name__ == "__main__":
-    main()

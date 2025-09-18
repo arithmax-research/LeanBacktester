@@ -1,9 +1,8 @@
-"""
-Load environment variables from .env file
-"""
-
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def load_env_file(env_file='.env'):
     """Load environment variables from .env file"""

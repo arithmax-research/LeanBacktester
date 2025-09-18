@@ -10,6 +10,22 @@ from datetime import datetime, timedelta
 import pytz
 from typing import List, Dict, Optional
 import logging
+from tqdm import tqdm
+
+# Configuration for progress bars
+STATIC_PROGRESS_BARS = True  # Set to True for static progress bars
+
+def static_tqdm(iterable, **kwargs):
+    """Wrapper for tqdm that can be configured to be static"""
+    if STATIC_PROGRESS_BARS:
+        # Static progress bar - only shows start and end
+        kwargs.update({
+            'disable': False,
+            'dynamic_ncols': False,
+            'ncols': 80,
+            'bar_format': '{desc}: {percentage:3.0f}%|{bar}| {n_fmt}/{total_fmt}'
+        })
+    return tqdm(iterable, **kwargs)
 
 def setup_logging(log_level=logging.INFO):
     """Setup logging configuration"""
@@ -162,3 +178,88 @@ class DataValidator:
                 cleaned_data.append(bar)
         
         return cleaned_data
+
+def format_symbol_for_lean(symbol: str, asset_type: str) -> str:
+    """Format symbol for Lean compatibility"""
+    # Remove special characters and convert to uppercase
+    symbol = ''.join(c for c in symbol if c.isalnum() or c in ['_', '-']).upper()
+    
+    # Add asset type suffix if not already present
+    if asset_type == 'equity' and not symbol.endswith('_EQUITY'):
+        symbol += '_EQUITY'
+    elif asset_type == 'forex' and not symbol.endswith('_FOREX'):
+        symbol += '_FOREX'
+    elif asset_type == 'crypto' and not symbol.endswith('_CRYPTO'):
+        symbol += '_CRYPTO'
+    elif asset_type == 'index' and not symbol.endswith('_INDEX'):
+        symbol += '_INDEX'
+    elif asset_type == 'cfd' and not symbol.endswith('_CFD'):
+        symbol += '_CFD'
+    
+    return symbol
+
+def convert_to_lean_format(df: pd.DataFrame, symbol: str, asset_type: str) -> List[List]:
+    """Convert pandas DataFrame to Lean format CSV content"""
+    lean_data = []
+    
+    for index, row in df.iterrows():
+        try:
+            # Convert timestamp to Lean format
+            if isinstance(index, pd.Timestamp):
+                timestamp = index.to_pydatetime()
+            else:
+                timestamp = pd.to_datetime(index).to_pydatetime()
+            
+            # Format timestamp based on asset type
+            if asset_type in ['equity', 'index', 'cfd']:
+                # Daily format: YYYYMMDD HH:MM
+                time_str = timestamp.strftime("%Y%m%d %H:%M")
+            else:
+                # Intraday format: milliseconds since midnight
+                time_str = str(milliseconds_since_midnight(timestamp))
+            
+            # Get OHLCV values
+            open_price = float(row['Open'])
+            high_price = float(row['High'])
+            low_price = float(row['Low'])
+            close_price = float(row['Close'])
+            volume = int(row['Volume'])
+            
+            # Convert prices to Lean format (deci-cents for equity, actual prices for others)
+            if asset_type in ['equity', 'index']:
+                multiplier = LEAN_PRICE_MULTIPLIER
+            else:
+                multiplier = 1
+            
+            lean_row = [
+                time_str,
+                int(open_price * multiplier),
+                int(high_price * multiplier),
+                int(low_price * multiplier),
+                int(close_price * multiplier),
+                volume
+            ]
+            
+            lean_data.append(lean_row)
+            
+        except Exception as e:
+            logger.warning(f"Error converting row for {symbol}: {str(e)}")
+            continue
+    
+    return lean_data
+
+def create_zip_file(lean_data: List[List], zip_path: str, symbol: str):
+    """Create a zip file containing Lean format CSV data"""
+    ensure_directory_exists(os.path.dirname(zip_path))
+    
+    # Create CSV content
+    csv_content = "Time,Open,High,Low,Close,Volume\n"
+    for row in lean_data:
+        csv_content += ",".join(str(item) for item in row) + "\n"
+    
+    # Create CSV filename
+    csv_filename = f"{symbol.lower()}_trade.csv"
+    
+    # Create zip file
+    with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zip_file:
+        zip_file.writestr(csv_filename, csv_content)

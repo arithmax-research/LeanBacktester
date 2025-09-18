@@ -19,7 +19,7 @@ from config import (
 from utils import (
     setup_logging, ensure_directory_exists, format_lean_date,
     create_lean_tradebar_csv, write_lean_zip_file, get_trading_days,
-    DataValidator
+    DataValidator, static_tqdm
 )
 
 logger = setup_logging()
@@ -125,7 +125,7 @@ class AlpacaDataDownloader:
             # For minute/second, save data by date
             trading_days = get_trading_days(start_date, end_date)
             
-            for date in tqdm(trading_days, desc=f"Downloading {symbol} {resolution}"):
+            for date in static_tqdm(trading_days, desc=f"Downloading {symbol} {resolution}"):
                 date_start = date.replace(hour=0, minute=0, second=0)
                 date_end = date.replace(hour=23, minute=59, second=59)
                 
@@ -159,7 +159,7 @@ class AlpacaDataDownloader:
         """Download data for multiple symbols"""
         logger.info(f"Starting download for {len(symbols)} symbols")
         
-        for symbol in tqdm(symbols, desc="Downloading symbols"):
+        for symbol in static_tqdm(symbols, desc="Downloading symbols"):
             try:
                 self.download_symbol_data(symbol, resolution, start_date, end_date)
             except Exception as e:
@@ -167,23 +167,3 @@ class AlpacaDataDownloader:
                 continue
         
         logger.info("Download completed")
-
-def main():
-    """Main function for testing"""
-    from config import DEFAULT_EQUITY_SYMBOLS, DEFAULT_START_DATE, DEFAULT_END_DATE
-    
-    downloader = AlpacaDataDownloader()
-    
-    # Test with a small set of symbols
-    test_symbols = ['AAPL', 'GOOGL', 'MSFT']
-    test_start = datetime.now() - timedelta(days=30)
-    test_end = datetime.now()
-    
-    # Download minute data
-    downloader.download_multiple_symbols(test_symbols, 'minute', test_start, test_end)
-    
-    # Download daily data
-    downloader.download_multiple_symbols(test_symbols, 'daily', test_start, test_end)
-
-if __name__ == "__main__":
-    main()
