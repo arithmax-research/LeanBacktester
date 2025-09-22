@@ -1,104 +1,199 @@
 # LeanBacktester
-A comprehensive command-line backtesting platform that integrates with QuantConnect's LEAN engine, featuring automated data acquisition from Alpaca Markets (US equities) and Binance (cryptocurrencies) with seamless conversion to LEAN format.
+
+A comprehensive algorithmic trading platform combining AI-powered strategy generation with automated data quality assurance and QuantConnect LEAN integration.
 
 ## Overview
 
-AlgoForge solves the costly data problem in algorithmic trading by providing:
-- Free market data acquisition from Alpaca and Binance
-- Automatic conversion to QuantConnect LEAN format
-- Command-line backtesting interface
-- Interactive visualization of backtest results
-- Sample trading strategies in both Python and C#
+LeanBacktester transforms natural language trading strategy descriptions into executable C# algorithms, validates data quality, and provides seamless backtesting capabilities.
 
-## Features
+## Key Features
+
+### AI-Powered Strategy Generation (RAGENTIC)
+- Convert text descriptions into complete QuantConnect C# algorithms
+- Automatic compilation verification and iterative error fixing
+- Data requirements analysis and extraction
+- Professional project structure creation
+
+### Data Quality Assurance
+- AI-powered analysis of downloaded market data
+- Statistical validation and integrity checks
+- Automated quality scoring and recommendations
+- Support for CSV, Parquet, HDF5, and other formats
 
 ### Data Pipeline
-- **Multiple Data Sources**: Download from Alpaca (US equities), Binance (cryptocurrencies), Polygon (premium market data), and Databento (institutional-grade data)
-- **LEAN Format Conversion**: Automatic conversion to QuantConnect's CSV format with proper compression
-- **Multiple Resolutions**: Support for tick, minute, hour, and daily data frequencies
-- **Rate Limiting**: Built-in API rate limiting to prevent throttling
-- **Data Validation**: Comprehensive OHLCV data integrity checks
-- **Timezone Handling**: Proper timezone conversion for different markets
+- Multi-source data acquisition (Alpaca, Binance, Polygon, Databento, etc.)
+- Interactive command-line interface
+- Automatic LEAN format conversion
+- Rate limiting and error handling
 
 ### Backtesting Platform
-- **LEAN Integration**: Full compatibility with QuantConnect's LEAN engine
-- **Multi-Language Support**: Algorithms in Python and C#
-- **Sample Strategies**: Pre-built strategies including diversified leverage portfolios
-- **Command-Line Interface**: Easy-to-use CLI for running backtests
+- Full QuantConnect LEAN integration
+- C# algorithm support
+- Automated project setup
+- Performance analysis and reporting
 
-### Visualization
-- **Interactive Charts**: TradingView-style charts for backtest analysis
-- **Performance Metrics**: Comprehensive performance statistics and analysis
-- **Multi-Strategy Comparison**: Compare multiple strategies side-by-side
-- **Streamlit Interface**: Web-based visualization dashboard
+## Quick Start
 
-## Installation
+### Installation
 
-### Prerequisites
-- Python 3.8 or higher
-- Git
-- .NET 6.0 SDK or higher
-- Docker (for LEAN Engine)
-- QuantConnect LEAN CLI (required for backtesting)
-
-### LEAN CLI Setup
-
-**1. Install LEAN CLI**:
-
-For macOS:
+1. Clone the repository:
 ```bash
-# Install using pip
-pip install lean
-
-# Or using Homebrew
-brew install quantconnect/lean/lean
+git clone https://github.com/arithmax-research/LeanBacktester.git
+cd LeanBacktester
 ```
 
-For Linux:
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+cd data_pipeline && pip install -r requirements.txt && cd ..
+```
+
+3. Install LEAN CLI:
 ```bash
 pip install lean
 ```
 
-For Windows:
+4. Configure API keys in `.env`:
 ```bash
-pip install lean
+DEEP_SEEK_API=your_deepseek_api_key
+ALPACA_API_KEY=your_alpaca_key
+ALPACA_SECRET_KEY=your_alpaca_secret
 ```
 
-**2. Login to QuantConnect** (Optional but recommended):
-```bash
-# Login to access cloud features and data
-lean login
+### Generate Strategy from Text
 
-# Follow the prompts to enter your QuantConnect credentials
-# If you don't have an account, create one at https://www.quantconnect.com/
+Create a strategy from a text description:
+
+```bash
+# Create strategy file
+echo "Buy SPY when RSI < 30, sell when RSI > 70" > strategy_prompts/my_strategy.txt
+
+# Generate C# algorithm
+python rag_agent.py strategy_prompts/my_strategy.txt
 ```
 
-**3. Initialize LEAN Configuration**:
-```bash
-# Navigate to your AlgoForge directory
-cd /path/to/AlgoForge
+The system will:
+- Generate complete C# code
+- Extract data requirements
+- Verify compilation
+- Create LEAN project structure
 
-# Initialize LEAN configuration
+### Download Data
+
+Use the interactive data pipeline:
+
+```bash
+# Launch data downloader
+python data_pipeline/interactive.py
+
+# Or download directly
+cd data_pipeline
+python main.py --source alpaca --equity-symbols AAPL MSFT --resolution daily
+```
+
+### Check Data Quality
+
+Analyze downloaded data:
+
+```bash
+# Quality check all data files
+python data_quality_checker.py
+```
+
+### Run Backtests
+
+Execute strategies in LEAN:
+
+```bash
+# Navigate to generated strategy
+cd arithmax-strategies/YourStrategyName
+
+# Run backtest
+lean backtest
+
+# Generate report
+lean report
+```
+
+## Project Structure
+
+```
+LeanBacktester/
+├── rag_agent.py                 # AI strategy generation
+├── deep_seek_coder.py          # DeepSeek API integration
+├── data_quality_checker.py     # Data quality analysis
+├── arithmax-strategies/        # Generated strategies
+├── data_pipeline/              # Data acquisition system
+│   ├── interactive.py          # Interactive downloader
+│   ├── main.py                 # Command-line pipeline
+│   └── [downloaders]/          # Data source modules
+├── data/                       # Downloaded market data
+├── strategy_prompts/           # Strategy descriptions
+├── requirements.txt            # Python dependencies
+└── README.md                   # This file
+```
+
+## Configuration
+
+### API Keys (.env)
+
+Required for full functionality:
+- `DEEP_SEEK_API`: AI strategy generation
+- `ALPACA_API_KEY/SECRET`: US equity data
+- `BINANCE_API_KEY/SECRET`: Cryptocurrency data
+
+### LEAN Setup
+
+Initialize LEAN environment:
+```bash
 lean init
-
-# This creates the lean.json configuration file
+lean login
 ```
 
-**4. Verify LEAN Installation**:
+## Usage Examples
+
+### Strategy Generation
 ```bash
-lean --version
-lean doctor  # Diagnoses common setup issues
+# Simple momentum strategy
+echo "Buy when price > 200-day MA, sell when price < 200-day MA" > momentum.txt
+python rag_agent.py momentum.txt
 ```
 
-### Quick Setup
+### Data Acquisition
+```bash
+# Download tech stocks
+python data_pipeline/interactive.py
+# Select: alpaca -> AAPL, MSFT, GOOGL -> daily
+```
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/FranklineMisango/AlgoForge.git
-   cd AlgoForge
-   ```
+### Quality Assurance
+```bash
+# Check all downloaded data
+python data_quality_checker.py
+# Review AI-generated quality reports
+```
 
-2. **Set up LEAN CLI** (follow LEAN CLI Setup above)
+### Backtesting
+```bash
+# Run generated strategy
+cd arithmax-strategies/MomentumStrategy
+lean backtest --start 20200101 --end 20241231
+```
+
+## Requirements
+
+- Python 3.8+
+- .NET 6.0+ SDK
+- QuantConnect LEAN CLI
+- API keys for data sources
+
+## License
+
+Licensed under the terms in LICENSE file.
+
+## Disclaimer
+
+For educational and research purposes only. Not financial advice.2. **Set up LEAN CLI** (follow LEAN CLI Setup above)
 
 3. **Set up the data pipeline**:
    ```bash
