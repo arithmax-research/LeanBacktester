@@ -1,0 +1,91 @@
+PLTR Algorithmic Trading Strategy (QuantConnect/LEAN C# Template)
+-----------------------------------------------------------------
+Last Updated: 2025-09-22 07:02:13 UTC
+
+// Strategy Parameters
+private decimal _supportLevel = 20.00m; // 2025 observed low
+private decimal _resistanceLevel = 30.00m; // YTD high
+private int _rsiPeriod = 14;
+private int _emaPeriod = 20;
+private decimal _positionRiskPercent = 2.5m;
+private decimal _volatilityThreshold = 0.015m; // 1.5% ATR
+
+// Entry Conditions (Swing Trading)
+1. Long Entry:
+   - Close > _resistanceLevel
+   - Volume > 1.5 * 30-day average volume
+   - RSI(14) < 70
+   - Confirm with EMA20 slope > 0 (3-period positive gradient)
+
+2. Mean Reversion Entry:
+   - Price within 2% of _supportLevel
+   - RSI(14) < 35
+   - Volume spike > 2 * 10-day average
+   - Negative correlation to SPY < -0.7 (30-min basis)
+
+// Exit Framework
+- Profit Targets:
+  1. First Target: 6% gain (liquidate 50%)
+  2. Second Target: 11% gain (liquidate remaining)
+  
+- Dynamic Trailing Stop:
+  Base: 5% from entry
+  Adjusted daily using ATR(14):
+  Stop = Close - (2 * ATR) for long positions
+
+// Earnings Strategy (Options)
+- Activation: 5 trading days before earnings
+- Sell Strangle Parameters:
+  * Expiry: 1 week post-earnings
+  * Delta: 0.16 for both put/call
+  * Minimum IV Rank: 40%
+  * Max Allocation: 15% capital per event
+
+// Risk Management
+- Position Sizing:
+  DollarAmount = (Portfolio.TotalPortfolioValue * _positionRiskPercent) 
+                 / (EntryPrice * (EntryPrice - StopLevel))
+
+- Circuit Breakers:
+  1. Daily Drawdown > 1.5%: Reduce position sizes by 50%
+  2. Weekly Drawdown > 5%: Full liquidation
+  3. Black Swan Hedge: 10% in SPY 2-month 5% OTM puts (rebalanced weekly)
+
+// Technical Indicators
+- Custom Composite Index:
+  (0.4 * RSI(14)) + (0.3 * Volume ROC(5)) + (0.3 * VWAP Delta)
+
+// Data Requirements
+1. Primary Data:
+   - PLTR Minute Bars (OHLCV)
+   - Corporate Action Handling enabled
+
+2. Secondary Data:
+   - SPY 5-minute bars (correlation check)
+   - VIX Daily Close
+   - US10Y Yield (macro filter)
+
+// Backtest Configuration
+- Benchmark: SPY
+- Commission: Interactive Brokers Tiered
+- Slippage: VolumeShareModel(0.1, 5)
+- Warmup Period: 200 trading days
+- Optimization Params:
+  Genetic Settings:
+  Population Size: 100
+  Generations: 20
+  Mutation Probability: 0.1
+
+// Known Limitations
+1. Assumes continuous options liquidity
+2. Doesn't account for sudden geopolitical events
+3. Government contract news simulated via random walk
+4. Commercial growth estimated through sector ETFs
+
+// Implementation Notes
+- Requires custom Universe Selection for earnings dates
+- Needs fundamental data integration for contract news
+- Suggested walk-forward period: 90 days
+- Critical to implement IV percentile calculations
+
+DISCLAIMER: This strategy contains hypothetical assumptions. Actual market conditions may vary significantly. Always test with out-of-sample data before live deployment. Options trading carries substantial risk of loss.

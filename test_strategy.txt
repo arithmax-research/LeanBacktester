@@ -1,0 +1,1 @@
+Create a simple moving average crossover strategy that buys when the fast MA crosses above the slow MA and sells when it crosses below.

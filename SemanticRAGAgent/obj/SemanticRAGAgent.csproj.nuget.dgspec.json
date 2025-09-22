@@ -1,0 +1,94 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/misango/codechest/LeanBacktester/SemanticRAGAgent/SemanticRAGAgent.csproj": {}
+  },
+  "projects": {
+    "/home/misango/codechest/LeanBacktester/SemanticRAGAgent/SemanticRAGAgent.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/misango/codechest/LeanBacktester/SemanticRAGAgent/SemanticRAGAgent.csproj",
+        "projectName": "SemanticRAGAgent",
+        "projectPath": "/home/misango/codechest/LeanBacktester/SemanticRAGAgent/SemanticRAGAgent.csproj",
+        "packagesPath": "/home/misango/.nuget/packages/",
+        "outputPath": "/home/misango/codechest/LeanBacktester/SemanticRAGAgent/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/misango/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.SemanticKernel": {
+              "target": "Package",
+              "version": "[1.65.0, )"
+            },
+            "Microsoft.SemanticKernel.Connectors.Ollama": {
+              "target": "Package",
+              "version": "[1.65.0-alpha, )"
+            },
+            "Microsoft.SemanticKernel.Plugins.Core": {
+              "target": "Package",
+              "version": "[1.65.0-alpha, )"
+            },
+            "Microsoft.SemanticKernel.Plugins.Memory": {
+              "target": "Package",
+              "version": "[1.65.0-alpha, )"
+            },
+            "System.Linq.Async": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[9.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,9 @@ Interactive Terminal App for Data Pipeline
 import sys
 from datetime import datetime, timedelta
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TaskProgressColumn, TimeRemainingColumn
+from rich.console import Console
+from rich.panel import Panel
+from rich.prompt import Prompt, Confirm
 
 from config import (
     DEFAULT_EQUITY_SYMBOLS, DEFAULT_CRYPTO_SYMBOLS, DEFAULT_OPTION_SYMBOLS, DEFAULT_FUTURES_SYMBOLS,
@@ -48,7 +51,7 @@ def parse_date(date_str: str) -> datetime:
 
 def get_user_inputs():
     """Collect user inputs interactively"""
-    console.print(Panel.fit("Lean Backtester Data Pipeline - Interactive Mode", style="bold blue"))
+    console.print(Panel.fit("Arithmax Research Data Chest", style="bold blue"))
 
     # Data source selection
     sources = ['alpaca', 'binance', 'options', 'futures', 'databento',
