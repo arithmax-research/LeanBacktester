@@ -1,0 +1,13 @@
+/home/misango/codechest/LeanBacktester/arithmax-strategies/StratTest2Strategy/obj/Debug/StratTest2Strategy.csproj.AssemblyReference.cache
+/home/misango/codechest/LeanBacktester/arithmax-strategies/StratTest2Strategy/obj/Debug/StratTest2Strategy.GeneratedMSBuildEditorConfig.editorconfig
+/home/misango/codechest/LeanBacktester/arithmax-strategies/StratTest2Strategy/obj/Debug/StratTest2Strategy.AssemblyInfoInputs.cache
+/home/misango/codechest/LeanBacktester/arithmax-strategies/StratTest2Strategy/obj/Debug/StratTest2Strategy.AssemblyInfo.cs
+/home/misango/codechest/LeanBacktester/arithmax-strategies/StratTest2Strategy/obj/Debug/StratTest2Strategy.csproj.CoreCompileInputs.cache
+/home/misango/codechest/LeanBacktester/arithmax-strategies/StratTest2Strategy/obj/Debug/StratTest2Strategy.sourcelink.json
+/home/misango/codechest/LeanBacktester/arithmax-strategies/StratTest2Strategy/bin/Debug/StratTest2Strategy.deps.json
+/home/misango/codechest/LeanBacktester/arithmax-strategies/StratTest2Strategy/bin/Debug/StratTest2Strategy.dll
+/home/misango/codechest/LeanBacktester/arithmax-strategies/StratTest2Strategy/bin/Debug/StratTest2Strategy.pdb
+/home/misango/codechest/LeanBacktester/arithmax-strategies/StratTest2Strategy/obj/Debug/StratTest2Strategy.dll
+/home/misango/codechest/LeanBacktester/arithmax-strategies/StratTest2Strategy/obj/Debug/refint/StratTest2Strategy.dll
+/home/misango/codechest/LeanBacktester/arithmax-strategies/StratTest2Strategy/obj/Debug/StratTest2Strategy.pdb
+/home/misango/codechest/LeanBacktester/arithmax-strategies/StratTest2Strategy/obj/Debug/ref/StratTest2Strategy.dll
