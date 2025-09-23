@@ -13,7 +13,7 @@ import logging
 from tqdm import tqdm
 
 # Configuration for progress bars
-STATIC_PROGRESS_BARS = True  # Set to True for static progress bars
+STATIC_PROGRESS_BARS = False  # Set to True for static progress bars
 
 def static_tqdm(iterable, **kwargs):
     """Wrapper for tqdm that can be configured to be static"""
@@ -98,6 +98,32 @@ def create_lean_crypto_csv(data: List[Dict], symbol: str, date: datetime, resolu
     
     return csv_content
 
+def create_lean_quotebar_csv(data: List[Dict], symbol: str, date: datetime, resolution: str) -> str:
+    """Create Lean format CSV content for QuoteBar data"""
+    csv_content = []
+    
+    for bar in data:
+        if resolution == 'daily':
+            # For daily data, use full date format YYYYMMDD HH:MM
+            time_str = bar['timestamp'].strftime("%Y%m%d %H:%M")
+        else:
+            # For intraday data, use milliseconds since midnight
+            time_str = milliseconds_since_midnight(bar['timestamp'])
+        
+        # For quotes, treat each snapshot as OHLC = the price
+        bid_price = int(bar['bid_price'] * 10000)
+        ask_price = int(bar['ask_price'] * 10000)
+        
+        # Format: Time, BidOpen, BidHigh, BidLow, BidClose, AskOpen, AskHigh, AskLow, AskClose
+        row = [
+            time_str,
+            bid_price, bid_price, bid_price, bid_price,  # Bid OHLC
+            ask_price, ask_price, ask_price, ask_price   # Ask OHLC
+        ]
+        csv_content.append(row)
+    
+    return csv_content
+
 def write_lean_zip_file(csv_content: List[List], output_path: str, csv_filename: str):
     """Write CSV content to a zip file in Lean format"""
     ensure_directory_exists(os.path.dirname(output_path))
@@ -176,6 +202,36 @@ class DataValidator:
         for bar in data:
             if DataValidator.validate_ohlcv_data(bar):
                 cleaned_data.append(bar)
+        
+        return cleaned_data
+    
+    @staticmethod
+    def validate_quote_data(data: Dict) -> bool:
+        """Validate quote data structure"""
+        required_fields = ['bid_price', 'bid_size', 'ask_price', 'ask_size', 'timestamp']
+        
+        for field in required_fields:
+            if field not in data:
+                return False
+        
+        # Validate prices are positive
+        if data['bid_price'] <= 0 or data['ask_price'] <= 0:
+            return False
+        
+        # Validate sizes are non-negative
+        if data['bid_size'] < 0 or data['ask_size'] < 0:
+            return False
+        
+        return True
+    
+    @staticmethod
+    def clean_quote_data(data: List[Dict]) -> List[Dict]:
+        """Clean and validate quote data"""
+        cleaned_data = []
+        
+        for quote in data:
+            if DataValidator.validate_quote_data(quote):
+                cleaned_data.append(quote)
         
         return cleaned_data
 

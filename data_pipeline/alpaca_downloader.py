@@ -18,7 +18,7 @@ from config import (
 )
 from utils import (
     setup_logging, ensure_directory_exists, format_lean_date,
-    create_lean_tradebar_csv, write_lean_zip_file, get_trading_days,
+    create_lean_tradebar_csv, create_lean_quotebar_csv, write_lean_zip_file, get_trading_days,
     DataValidator, static_tqdm
 )
 
@@ -58,8 +58,11 @@ class AlpacaDataDownloader:
             # Convert to our format
             data = []
             for bar in bars:
+                timestamp = bar.t
+                if isinstance(timestamp, str):
+                    timestamp = pd.to_datetime(timestamp)
                 data.append({
-                    'timestamp': bar.t.replace(tzinfo=pytz.timezone(LEAN_TIMEZONE_EQUITY)),
+                    'timestamp': timestamp.replace(tzinfo=pytz.timezone(LEAN_TIMEZONE_EQUITY)),
                     'open': float(bar.o),
                     'high': float(bar.h),
                     'low': float(bar.l),
@@ -74,6 +77,47 @@ class AlpacaDataDownloader:
             
         except Exception as e:
             logger.error(f"Error getting bars for {symbol}: {str(e)}")
+            return []
+    
+    def get_quotes(self, symbol: str, start_date: datetime, end_date: datetime) -> List[Dict]:
+        """Get quote data from Alpaca"""
+        try:
+            quotes = self.api.get_quotes(
+                symbol,
+                start=start_date.strftime('%Y-%m-%d'),
+                end=end_date.strftime('%Y-%m-%d')
+            )
+            
+            # Convert to our format
+            data = []
+            for quote in quotes:
+                try:
+                    timestamp = quote.t
+                    if isinstance(timestamp, str):
+                        timestamp = pd.to_datetime(timestamp)
+                    if timestamp:
+                        timestamp = timestamp.replace(tzinfo=pytz.timezone(LEAN_TIMEZONE_EQUITY))
+                    else:
+                        continue  # Skip if no timestamp
+                    
+                    data.append({
+                        'timestamp': timestamp,
+                        'bid_price': float(quote.bp),
+                        'bid_size': int(quote.bs),
+                        'ask_price': float(quote.ap),
+                        'ask_size': int(getattr(quote, 'as'))
+                    })
+                except Exception as e:
+                    logger.warning(f"Error processing quote: {str(e)}")
+                    continue
+            
+            # Rate limiting
+            time.sleep(self.rate_limit_delay)
+            
+            return data
+            
+        except Exception as e:
+            logger.error(f"Error getting quotes for {symbol}: {str(e)}")
             return []
     
     def _convert_timeframe(self, timeframe: str) -> str:
@@ -151,6 +195,22 @@ class AlpacaDataDownloader:
                         if csv_content:
                             write_lean_zip_file(csv_content, output_path, csv_filename)
                             logger.debug(f"Saved {len(csv_content)} bars for {symbol} on {date_str}")
+                        
+                        # Download and save quote data
+                        quote_data = self.get_quotes(symbol, date_start, date_end)
+                        
+                        if quote_data:
+                            cleaned_quote_data = DataValidator.clean_quote_data(quote_data)
+                            
+                            if cleaned_quote_data:
+                                output_path_quote = os.path.join(symbol_dir, f"{date_str}_quote.zip")
+                                csv_filename_quote = f"{date_str}_{symbol.lower()}_{resolution}_quote.csv"
+                                
+                                csv_content_quote = create_lean_quotebar_csv(cleaned_quote_data, symbol, date, resolution)
+                                
+                                if csv_content_quote:
+                                    write_lean_zip_file(csv_content_quote, output_path_quote, csv_filename_quote)
+                                    logger.debug(f"Saved {len(csv_content_quote)} quotes for {symbol} on {date_str}")
                 
                 # Rate limiting
                 time.sleep(self.rate_limit_delay)

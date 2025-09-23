@@ -91,7 +91,9 @@ def get_user_inputs():
     if source in ['binance', 'all']:
         crypto_symbols = Prompt.ask("Crypto symbols (comma-separated)", default=','.join(DEFAULT_CRYPTO_SYMBOLS))
         symbols['crypto_symbols'] = [s.strip() for s in crypto_symbols.split(',') if s.strip()]
-    # Add for other sources as needed...
+    if source not in ['alpaca', 'binance', 'all']:
+        symbols_input = Prompt.ask("Symbols (comma-separated)", default='')
+        symbols['symbols'] = [s.strip() for s in symbols_input.split(',') if s.strip()]
 
     return {
         'source': source,

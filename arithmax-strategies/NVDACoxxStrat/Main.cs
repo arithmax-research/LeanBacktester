@@ -13,12 +13,8 @@ namespace QuantConnect.Algorithm.CSharp
     public class NVDAAdvancedAIStrategy : QCAlgorithm
     {
         // Strategy Parameters
-        private decimal _supportLevel = 400.00m;
-        private decimal _resistanceLevel = 550.00m;
         private int _macdFast = 12;
         private int _macdSlow = 26;
-        private decimal _volatilityMultiplier = 1.8m;
-        private decimal _sectorBetaThreshold = 0.65m;
         // Position tracking
         private Symbol _nvdasymbol;
         private Symbol _soxxsymbol;
@@ -41,15 +37,14 @@ namespace QuantConnect.Algorithm.CSharp
         private decimal _currentExposure = 1.0m;
         // Event tracking
         private Dictionary<DateTime, string> _aiEvents;
-        private bool _eventModeActive = false;
         private DateTime _eventActivationTime;
         public override void Initialize()
         {
-            SetStartDate(2023, 1, 1);
-            SetEndDate(2024, 12, 31);
+            SetStartDate(2025, 1, 1);
+            SetEndDate(2025, 2, 28);
             SetCash(100000);
-            _nvdasymbol = AddEquity("NVDA", Resolution.Minute).Symbol;
-            _soxxsymbol = AddEquity("SOXX", Resolution.Daily).Symbol;
+            _nvdasymbol = AddEquity("nvda", Resolution.Minute).Symbol;
+            _soxxsymbol = AddEquity("soxx", Resolution.Daily).Symbol;
             // Initialize indicators
             _bb = BB(_nvdasymbol, 20, 2, MovingAverageType.Simple, Resolution.Daily);
             _macd = MACD(_nvdasymbol, _macdFast, _macdSlow, 9, MovingAverageType.Exponential, Resolution.Daily);
@@ -84,7 +79,7 @@ namespace QuantConnect.Algorithm.CSharp
             // Update rolling windows
             _volumeWindow.Add(nvdaBar.Volume);
             _priceWindow.Add(nvdaBar.Close);
-            _vwap.Update(nvdaBar.Time, nvdaBar.Close);
+            _vwap.Update(nvdaBar);
             // Check for emergency stop
             CheckEmergencyStop(nvdaBar);
             // Update risk filters
@@ -141,12 +136,10 @@ namespace QuantConnect.Algorithm.CSharp
         }
         private void CheckAIEventActivation()
         {
-            _eventModeActive = false;
             foreach (var aiEvent in _aiEvents)
             {
                 if (Time >= aiEvent.Key.AddHours(-72) && Time <= aiEvent.Key.AddHours(24))
                 {
-                    _eventModeActive = true;
                     _eventActivationTime = aiEvent.Key;
                     break;
                 }
@@ -156,8 +149,9 @@ namespace QuantConnect.Algorithm.CSharp
         {
             if (!_bb.IsReady || !_macd.IsReady || !_rsi.IsReady) return;
             // Calculate volume surge
-            var volumeSurge = _volumeWindow.IsReady ?
-                nvdaBar.Volume / Median(_volumeWindow) : 0;
+            var medianVolume = Median(_volumeWindow);
+            var volumeSurge = _volumeWindow.IsReady && medianVolume > 0 ?
+                nvdaBar.Volume / medianVolume : 0;
             // Calculate SOXX 5-day return
             var soxxHistory = History(_soxxsymbol, 5, Resolution.Daily);
             var soxxReturn = soxxHistory.Count() >= 5 ?
@@ -232,7 +226,7 @@ namespace QuantConnect.Algorithm.CSharp
             (_atr.Current.Value * (decimal)Math.Sqrt(daysHeld));
             positionValue *= _currentExposure;
             positionValue = Math.Min(positionValue, _maxSectorAllocation * Portfolio.TotalPortfolioValue);
-            _positionSize = positionValue / currentPrice;
+            _positionSize = Math.Round(positionValue / currentPrice);
             var ticket = MarketOrder(_nvdasymbol, _positionSize);
             if (ticket.Status == OrderStatus.Filled)
             {
@@ -256,14 +250,14 @@ namespace QuantConnect.Algorithm.CSharp
             if (currentProfit >= 0.15m && Portfolio[_nvdasymbol].Quantity == _positionSize)
             {
                 // First target hit - trim 40%
-                var trimQuantity = _positionSize * 0.4m;
+                var trimQuantity = Math.Round(_positionSize * 0.4m);
                 MarketOrder(_nvdasymbol, -trimQuantity);
                 Log("First profit target hit - trimmed 40%");
             }
             else if (currentProfit >= 0.15m && Portfolio[_nvdasymbol].Quantity > _positionSize * 0.6m)
             {
                 // Second target hit - trim 30%
-                var trimQuantity = _positionSize * 0.3m;
+                var trimQuantity = Math.Round(_positionSize * 0.3m);
                 MarketOrder(_nvdasymbol, -trimQuantity);
                 Log("Second profit target hit - trimmed 30%");
             }
