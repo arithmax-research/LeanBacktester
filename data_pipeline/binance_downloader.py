@@ -41,12 +41,15 @@ class BinanceDataDownloader:
             # Convert interval to Binance format
             binance_interval = self._convert_interval(interval)
             
-            # Get data from Binance
+            # Get data from Binance - using timestamps to avoid date parsing issues
+            start_timestamp = int(start_date.timestamp() * 1000)  # Convert to milliseconds
+            end_timestamp = int(end_date.timestamp() * 1000)      # Convert to milliseconds
+            
             klines = self.client.get_historical_klines(
                 symbol,
                 binance_interval,
-                start_date.strftime('%d %b %Y'),
-                end_date.strftime('%d %b %Y')
+                start_timestamp,
+                end_timestamp
             )
             
             # Convert to our format

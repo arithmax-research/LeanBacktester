@@ -1,9 +1,10 @@
 {
     "algorithm-language": "CSharp",
+    "algorithm-type-name": "TestCryptoData",
     "parameters": {
         "lookback": 100,
         "threshold": 2.0
     },
-    "description": "BTC/ETH Pairs Trading with Fractional Cointegration and Adaptive Stochastic Control - Implements statistical arbitrage between Bitcoin and Ethereum using cointegration analysis and mean-reversion signals.",
+    "description": "Test crypto data loading",
     "local-id": 123456789
 }

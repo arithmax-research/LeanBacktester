@@ -12,6 +12,8 @@ from typing import List, Dict, Optional
 import logging
 from tqdm import tqdm
 
+from config import LEAN_PRICE_MULTIPLIER, LEAN_CRYPTO_PRICE_MULTIPLIER
+
 # Configuration for progress bars
 STATIC_PROGRESS_BARS = False  # Set to True for static progress bars
 
@@ -53,9 +55,15 @@ def format_lean_date(date: datetime) -> str:
     """Format date for Lean file naming"""
     return date.strftime("%Y%m%d")
 
-def create_lean_tradebar_csv(data: List[Dict], symbol: str, date: datetime, resolution: str) -> str:
+def create_lean_tradebar_csv(data: List[Dict], symbol: str, date: datetime, resolution: str, asset_type: str = 'equity') -> str:
     """Create Lean format CSV content for TradeBar data"""
     csv_content = []
+    
+    # Determine price multiplier based on asset type
+    if asset_type in ['equity', 'index', 'future']:
+        price_multiplier = LEAN_PRICE_MULTIPLIER  # 10000 for deci-cents
+    else:  # crypto, cfd, etc.
+        price_multiplier = LEAN_CRYPTO_PRICE_MULTIPLIER  # 1 for actual prices
     
     for bar in data:
         if resolution == 'daily':
@@ -66,14 +74,26 @@ def create_lean_tradebar_csv(data: List[Dict], symbol: str, date: datetime, reso
             time_str = milliseconds_since_midnight(bar['timestamp'])
         
         # Format: Time, Open, High, Low, Close, Volume
-        row = [
-            time_str,
-            int(bar['open'] * 10000),  # Convert to deci-cents for equity
-            int(bar['high'] * 10000),
-            int(bar['low'] * 10000),
-            int(bar['close'] * 10000),
-            int(bar['volume'])
-        ]
+        if price_multiplier == 1:
+            # Keep as float for crypto/actual prices
+            row = [
+                time_str,
+                float(bar['open']),
+                float(bar['high']),
+                float(bar['low']),
+                float(bar['close']),
+                int(bar['volume'])
+            ]
+        else:
+            # Convert to integer for equity/scaled prices
+            row = [
+                time_str,
+                int(bar['open'] * price_multiplier),
+                int(bar['high'] * price_multiplier),
+                int(bar['low'] * price_multiplier),
+                int(bar['close'] * price_multiplier),
+                int(bar['volume'])
+            ]
         csv_content.append(row)
     
     return csv_content
@@ -83,11 +103,13 @@ def create_lean_crypto_csv(data: List[Dict], symbol: str, date: datetime, resolu
     csv_content = []
     
     for bar in data:
-        time_ms = milliseconds_since_midnight(bar['timestamp'])
+        # For crypto data, LEAN expects full datetime format for all resolutions
+        # This avoids the milliseconds parsing issue in LEAN's crypto parser
+        time_str = bar['timestamp'].strftime("%Y%m%d %H:%M")
         
         # Format: Time, Open, High, Low, Close, Volume
         row = [
-            time_ms,
+            time_str,
             float(bar['open']),  # Keep actual prices for crypto
             float(bar['high']),
             float(bar['low']),
@@ -98,9 +120,15 @@ def create_lean_crypto_csv(data: List[Dict], symbol: str, date: datetime, resolu
     
     return csv_content
 
-def create_lean_quotebar_csv(data: List[Dict], symbol: str, date: datetime, resolution: str) -> str:
+def create_lean_quotebar_csv(data: List[Dict], symbol: str, date: datetime, resolution: str, asset_type: str = 'forex') -> str:
     """Create Lean format CSV content for QuoteBar data"""
     csv_content = []
+    
+    # Determine price multiplier based on asset type
+    if asset_type in ['forex']:
+        price_multiplier = LEAN_PRICE_MULTIPLIER  # 10000 for forex precision
+    else:
+        price_multiplier = LEAN_CRYPTO_PRICE_MULTIPLIER  # 1 for actual prices
     
     for bar in data:
         if resolution == 'daily':
@@ -111,8 +139,14 @@ def create_lean_quotebar_csv(data: List[Dict], symbol: str, date: datetime, reso
             time_str = milliseconds_since_midnight(bar['timestamp'])
         
         # For quotes, treat each snapshot as OHLC = the price
-        bid_price = int(bar['bid_price'] * 10000)
-        ask_price = int(bar['ask_price'] * 10000)
+        if price_multiplier == 1:
+            # Keep as float for actual prices
+            bid_price = float(bar['bid_price'])
+            ask_price = float(bar['ask_price'])
+        else:
+            # Convert to integer for scaled prices
+            bid_price = int(bar['bid_price'] * price_multiplier)
+            ask_price = int(bar['ask_price'] * price_multiplier)
         
         # Format: Time, BidOpen, BidHigh, BidLow, BidClose, AskOpen, AskHigh, AskLow, AskClose
         row = [

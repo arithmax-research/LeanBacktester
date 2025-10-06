@@ -541,7 +541,7 @@ class TiingoDownloader:
                         output_path = os.path.join(data_path, f"{symbol.lower()}.zip")
                         csv_filename = f"{symbol.lower()}_{frequency}_trade.csv"
                         
-                        csv_content = create_lean_tradebar_csv(cleaned_data, symbol, cleaned_data[0]['timestamp'], frequency)
+                        csv_content = create_lean_tradebar_csv(cleaned_data, symbol, cleaned_data[0]['timestamp'], frequency, 'equity')
                         
                         if csv_content:
                             write_lean_zip_file(csv_content, output_path, csv_filename)
@@ -572,7 +572,7 @@ class TiingoDownloader:
                         output_path = os.path.join(data_path, f"{symbol.lower()}.zip")
                         csv_filename = f"{symbol.lower()}_{frequency}_trade.csv"
                         
-                        csv_content = create_lean_tradebar_csv(cleaned_data, symbol, cleaned_data[0]['timestamp'], frequency)
+                        csv_content = create_lean_tradebar_csv(cleaned_data, symbol, cleaned_data[0]['timestamp'], frequency, 'crypto')
                         
                         if csv_content:
                             write_lean_zip_file(csv_content, output_path, csv_filename)
@@ -603,7 +603,7 @@ class TiingoDownloader:
                         output_path = os.path.join(data_path, f"{pair.lower()}.zip")
                         csv_filename = f"{pair.lower()}_{frequency}_trade.csv"
                         
-                        csv_content = create_lean_tradebar_csv(cleaned_data, pair, cleaned_data[0]['timestamp'], frequency)
+                        csv_content = create_lean_tradebar_csv(cleaned_data, pair, cleaned_data[0]['timestamp'], frequency, 'forex')
                         
                         if csv_content:
                             write_lean_zip_file(csv_content, output_path, csv_filename)

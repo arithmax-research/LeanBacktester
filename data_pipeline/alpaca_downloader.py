@@ -158,7 +158,7 @@ class AlpacaDataDownloader:
                     all_csv_content = []
                     for date_key in sorted(daily_data.keys()):
                         date_bars = daily_data[date_key]
-                        csv_content = create_lean_tradebar_csv(date_bars, symbol, date_bars[0]['timestamp'], resolution)
+                        csv_content = create_lean_tradebar_csv(date_bars, symbol, date_bars[0]['timestamp'], resolution, 'equity')
                         all_csv_content.extend(csv_content)
                     
                     if all_csv_content:
@@ -190,7 +190,7 @@ class AlpacaDataDownloader:
                         csv_filename = f"{date_str}_{symbol.lower()}_{resolution}_trade.csv"
                         
                         # Convert to Lean format
-                        csv_content = create_lean_tradebar_csv(cleaned_data, symbol, date, resolution)
+                        csv_content = create_lean_tradebar_csv(cleaned_data, symbol, date, resolution, 'equity')
                         
                         if csv_content:
                             write_lean_zip_file(csv_content, output_path, csv_filename)

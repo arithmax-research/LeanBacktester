@@ -91,12 +91,12 @@ namespace QuantConnect.Algorithm.CSharp
 
         public override void Initialize()
         {
-            SetStartDate(2020, 1, 1);
-            SetEndDate(2020, 1, 31);  // Shorter test period
+            SetStartDate(2025, 1, 1);
+            SetEndDate(2025, 10, 06);  // Shorter test period
             SetCash(100000);
             _initialCapital = 100000;
 
-            // Try using the available symbols
+            // Try using the available symbols with Binance market
             _btcSymbol = AddCrypto("BTCUSDT", Resolution.Hour, Market.Binance).Symbol;
             _ethSymbol = AddCrypto("ETHUSDT", Resolution.Hour, Market.Binance).Symbol;
             
@@ -162,8 +162,8 @@ namespace QuantConnect.Algorithm.CSharp
             // Calculate spread
             var spread = btcPrice - _hedgeRatio * ethPrice;
             _spreads.Add(spread);
-            _spreadMean.Update(spread);
-            _spreadStd.Update(spread);
+            _spreadMean.Update(slice.Time, spread);
+            _spreadStd.Update(slice.Time, spread);
 
             // Fit OU process
             FitOUProcess();
@@ -250,15 +250,46 @@ namespace QuantConnect.Algorithm.CSharp
             var sumSLag2 = sLag.Sum(s => s * s);
 
             // OLS: deltaS = alpha + beta * sLag
-            var beta = (n * sumDeltaSLag - sumDelta * sumSLag) / (n * sumSLag2 - sumSLag * sumSLag);
+            var denominator = n * sumSLag2 - sumSLag * sumSLag;
+            if (Math.Abs(denominator) < 1e-10m)
+            {
+                // Not enough variance in spread data, use default values
+                _lambda = 0.1m;
+                _mu = _spreads.Average();
+                _sigma = 1.0m;
+                return;
+            }
+            
+            var beta = (n * sumDeltaSLag - sumDelta * sumSLag) / denominator;
             var alpha = (sumDelta - beta * sumSLag) / n;
 
             _lambda = -beta;
-            _mu = -alpha / beta;
+            _mu = Math.Abs(beta) < 1e-10m ? _spreads.Average() : -alpha / beta;
             
             // Calculate sigma
             var residuals = deltaS.Zip(sLag, (d, s) => d - alpha - beta * s).ToList();
-            _sigma = (decimal)Math.Sqrt(residuals.Sum(r => (double)(r * r)) / (n - 2));
+            if (n <= 2)
+            {
+                _sigma = 1.0m; // Default sigma for insufficient data
+                return;
+            }
+            
+            var variance = residuals.Sum(r => (double)(r * r)) / (n - 2);
+            if (variance < 0 || double.IsInfinity(variance) || double.IsNaN(variance))
+            {
+                _sigma = 1.0m; // Default sigma for invalid variance
+                return;
+            }
+            
+            var sigmaValue = Math.Sqrt(variance);
+            if (double.IsInfinity(sigmaValue) || double.IsNaN(sigmaValue) || sigmaValue > (double)decimal.MaxValue)
+            {
+                _sigma = 1.0m; // Default sigma for overflow/invalid values
+            }
+            else
+            {
+                _sigma = (decimal)sigmaValue;
+            }
         }
     }
 }

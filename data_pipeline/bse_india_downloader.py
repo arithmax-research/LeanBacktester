@@ -162,7 +162,7 @@ class BSEIndiaDownloader:
                         output_path = os.path.join(data_path, f"{symbol.lower()}.zip")
                         csv_filename = f"{symbol.lower()}_daily_trade.csv"
                         
-                        csv_content = create_lean_tradebar_csv(cleaned_data, symbol, cleaned_data[0]['timestamp'], 'daily')
+                        csv_content = create_lean_tradebar_csv(cleaned_data, symbol, cleaned_data[0]['timestamp'], 'daily', 'equity')
                         
                         if csv_content:
                             write_lean_zip_file(csv_content, output_path, csv_filename)

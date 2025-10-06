@@ -515,7 +515,7 @@ class YahooFinanceDownloader:
                         output_path = os.path.join(data_path, f"{clean_pair}.zip")
                         csv_filename = f"{clean_pair}_{interval}_trade.csv"
                         
-                        csv_content = create_lean_tradebar_csv(cleaned_data, pair, cleaned_data[0]['timestamp'], interval)
+                        csv_content = create_lean_tradebar_csv(cleaned_data, pair, cleaned_data[0]['timestamp'], interval, 'forex')
                         
                         if csv_content:
                             write_lean_zip_file(csv_content, output_path, csv_filename)
