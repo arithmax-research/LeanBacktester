@@ -74,9 +74,9 @@ namespace QuantConnect.Algorithm.CSharp
         private StandardDeviation _spreadStd;
         private ExponentialMovingAverage _ewmaVol;
         private decimal _hedgeRatio;
-        private decimal _threshold = 2.0m;
-        private decimal _thetaMin = 1.5m;
-        private decimal _thetaMax = 3.0m;
+        private decimal _threshold = 1.5m;
+        private decimal _thetaMin = 1.0m;
+        private decimal _thetaMax = 2.5m;
         private decimal _k = 2.0m;
         private decimal _initialCapital;
         private decimal _maxDrawdown = 0.05m;
@@ -84,15 +84,18 @@ namespace QuantConnect.Algorithm.CSharp
         private int _lookback = 100;
         private bool _inPosition = false;
         
-        // OU process parameters
-        private decimal _lambda; // mean-reversion speed
-        private decimal _mu;     // long-term mean
-        private decimal _sigma;  // volatility
+        // OU process parameters (with bounds for stability)
+        private decimal _lambda = 0.1m; // mean-reversion speed (0.001 to 5.0)
+        private decimal _mu = 0m;       // long-term mean (-100000 to 100000)
+        private decimal _sigma = 1.0m;  // volatility (0.001 to 1000)
 
         public override void Initialize()
         {
-            SetStartDate(2025, 1, 1);
+            SetStartDate(2020, 1, 1);
             SetEndDate(2025, 10, 06);  // Shorter test period
+            
+            // Set account currency to USDT to match trading pairs
+            SetAccountCurrency("USDT");
             SetCash(100000);
             _initialCapital = 100000;
 
@@ -173,7 +176,12 @@ namespace QuantConnect.Algorithm.CSharp
 
             if (_spreadMean.IsReady && _spreadStd.IsReady)
             {
-                var zScore = (spread - _mu) / _sigma;
+                // Use a more stable Z-score calculation with bounds
+                var spreadFromMean = spread - _spreadMean.Current.Value;
+                var zScore = _spreadStd.Current.Value > 0.001m ? spreadFromMean / _spreadStd.Current.Value : 0m;
+                
+                // Cap Z-score to prevent extreme values
+                zScore = Math.Max(-10m, Math.Min(10m, zScore));
                 
                 Debug($"Z-Score: {zScore}, Threshold: {_threshold}, In Position: {_inPosition}");
 
@@ -181,9 +189,13 @@ namespace QuantConnect.Algorithm.CSharp
                 {
                     Debug($"Entering position - Z-Score {zScore} exceeds threshold {_threshold}");
                     
-                    // Enter position
-                    var btcQuantity = Portfolio.TotalPortfolioValue / (2 * btcPrice);
-                    var ethQuantity = btcQuantity * _hedgeRatio;
+                    // Enter position with very conservative sizing - use only 5% of portfolio 
+                    var riskPercentage = 0.05m; // Use 5% of portfolio value to be safe
+                    var totalPositionValue = Portfolio.TotalPortfolioValue * riskPercentage;
+                    
+                    // Simple approach: equal dollar amounts for BTC and ETH positions
+                    var btcQuantity = totalPositionValue / (2 * btcPrice);
+                    var ethQuantity = totalPositionValue / (2 * ethPrice);
 
                     if (zScore > 0)
                     {
@@ -263,8 +275,9 @@ namespace QuantConnect.Algorithm.CSharp
             var beta = (n * sumDeltaSLag - sumDelta * sumSLag) / denominator;
             var alpha = (sumDelta - beta * sumSLag) / n;
 
-            _lambda = -beta;
-            _mu = Math.Abs(beta) < 1e-10m ? _spreads.Average() : -alpha / beta;
+            // Apply reasonable bounds to prevent extreme values
+            _lambda = Math.Max(0.001m, Math.Min(5.0m, Math.Abs(beta))); // Mean reversion speed: 0.001 to 5.0
+            _mu = Math.Abs(beta) < 1e-10m ? _spreads.Average() : Math.Max(-100000m, Math.Min(100000m, -alpha / beta));
             
             // Calculate sigma
             var residuals = deltaS.Zip(sLag, (d, s) => d - alpha - beta * s).ToList();
@@ -288,7 +301,8 @@ namespace QuantConnect.Algorithm.CSharp
             }
             else
             {
-                _sigma = (decimal)sigmaValue;
+                // Apply bounds to sigma to prevent extreme values
+                _sigma = Math.Max(0.001m, Math.Min(1000m, (decimal)sigmaValue));
             }
         }
     }
