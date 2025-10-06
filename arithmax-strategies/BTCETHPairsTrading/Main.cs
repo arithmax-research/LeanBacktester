@@ -92,12 +92,16 @@ namespace QuantConnect.Algorithm.CSharp
         public override void Initialize()
         {
             SetStartDate(2020, 1, 1);
-            SetEndDate(2024, 12, 31);
+            SetEndDate(2020, 1, 31);  // Shorter test period
             SetCash(100000);
             _initialCapital = 100000;
 
-            _btcSymbol = AddCrypto("BTCUSD", Resolution.Hour).Symbol;
-            _ethSymbol = AddCrypto("ETHUSD", Resolution.Hour).Symbol;
+            // Try using the available symbols
+            _btcSymbol = AddCrypto("BTCUSDT", Resolution.Hour, Market.Binance).Symbol;
+            _ethSymbol = AddCrypto("ETHUSDT", Resolution.Hour, Market.Binance).Symbol;
+            
+            Debug($"Added BTC symbol: {_btcSymbol}");
+            Debug($"Added ETH symbol: {_ethSymbol}");
 
             _btcPrices = new RollingWindow<decimal>(_lookback);
             _ethPrices = new RollingWindow<decimal>(_lookback);
@@ -109,28 +113,48 @@ namespace QuantConnect.Algorithm.CSharp
 
         public override void OnData(Slice slice)
         {
-            // Risk management: check drawdown
-            var currentValue = Portfolio.TotalPortfolioValue;
-            var drawdown = (currentValue - _initialCapital) / _initialCapital;
-            if (drawdown < -_maxDrawdown)
+            // Debug: Print what symbols we have in the slice
+            Debug($"OnData called at {Time}. Slice contains {slice.Count} items.");
+            
+            if (slice.ContainsKey(_btcSymbol))
             {
-                if (_inPosition)
-                {
-                    Liquidate();
-                    _inPosition = false;
-                }
-                return; // Don't enter new positions
+                Debug($"BTC data available: {slice[_btcSymbol].Close}");
+            }
+            else
+            {
+                Debug("BTC data NOT available");
+            }
+            
+            if (slice.ContainsKey(_ethSymbol))
+            {
+                Debug($"ETH data available: {slice[_ethSymbol].Close}");
+            }
+            else
+            {
+                Debug("ETH data NOT available");
             }
 
-            if (!slice.ContainsKey(_btcSymbol) || !slice.ContainsKey(_ethSymbol)) return;
+            if (!slice.ContainsKey(_btcSymbol) || !slice.ContainsKey(_ethSymbol))
+            {
+                Debug("Missing data for one or both symbols");
+                return;
+            }
 
             var btcPrice = slice[_btcSymbol].Close;
             var ethPrice = slice[_ethSymbol].Close;
+            
+            Debug($"BTC: {btcPrice}, ETH: {ethPrice}");
 
             _btcPrices.Add(btcPrice);
             _ethPrices.Add(ethPrice);
 
-            if (_btcPrices.Count < _lookback) return;
+            if (_btcPrices.Count < _lookback)
+            {
+                Debug($"Waiting for more data. Current count: {_btcPrices.Count}/{_lookback}");
+                return;
+            }
+
+            Debug("Have enough data to start trading logic");
 
             // Calculate hedge ratio using OLS
             _hedgeRatio = CalculateHedgeRatio();
@@ -150,9 +174,13 @@ namespace QuantConnect.Algorithm.CSharp
             if (_spreadMean.IsReady && _spreadStd.IsReady)
             {
                 var zScore = (spread - _mu) / _sigma;
+                
+                Debug($"Z-Score: {zScore}, Threshold: {_threshold}, In Position: {_inPosition}");
 
                 if (Math.Abs(zScore) > _threshold && !_inPosition)
                 {
+                    Debug($"Entering position - Z-Score {zScore} exceeds threshold {_threshold}");
+                    
                     // Enter position
                     var btcQuantity = Portfolio.TotalPortfolioValue / (2 * btcPrice);
                     var ethQuantity = btcQuantity * _hedgeRatio;
@@ -160,12 +188,14 @@ namespace QuantConnect.Algorithm.CSharp
                     if (zScore > 0)
                     {
                         // Spread is high, expect mean reversion: short BTC, long ETH
+                        Debug($"Short BTC {btcQuantity}, Long ETH {ethQuantity}");
                         MarketOrder(_btcSymbol, -btcQuantity);
                         MarketOrder(_ethSymbol, ethQuantity);
                     }
                     else
                     {
                         // Spread is low, expect mean reversion: long BTC, short ETH
+                        Debug($"Long BTC {btcQuantity}, Short ETH {ethQuantity}");
                         MarketOrder(_btcSymbol, btcQuantity);
                         MarketOrder(_ethSymbol, -ethQuantity);
                     }
@@ -173,10 +203,15 @@ namespace QuantConnect.Algorithm.CSharp
                 }
                 else if (Math.Abs(zScore) < 0.5m && _inPosition)
                 {
+                    Debug($"Exiting position - Z-Score {zScore} below exit threshold");
                     // Exit position
                     Liquidate();
                     _inPosition = false;
                 }
+            }
+            else
+            {
+                Debug("Indicators not ready yet");
             }
         }
 
