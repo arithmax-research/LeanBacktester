@@ -9,10 +9,11 @@ LeanBacktester transforms natural language trading strategy descriptions into ex
 ## Key Features
 
 ### AI-Powered Strategy Generation (RAGENTIC)
-- Convert text descriptions into complete QuantConnect C# algorithms
-- Automatic compilation verification and iterative error fixing
+- Convert text descriptions into complete QuantConnect algorithms (C# or Python)
+- Automatic compilation verification and iterative error fixing (C#)
 - Data requirements analysis and extraction
 - Professional project structure creation
+- Support for both C# and Python algorithm generation
 
 ### Data Quality Assurance
 - AI-powered analysis of downloaded market data
@@ -28,7 +29,7 @@ LeanBacktester transforms natural language trading strategy descriptions into ex
 
 ### Backtesting Platform
 - Full QuantConnect LEAN integration
-- C# algorithm support
+- C# and Python algorithm support
 - Automated project setup
 - Performance analysis and reporting
 
@@ -53,30 +54,51 @@ cd data_pipeline && pip install -r requirements.txt && cd ..
 pip install lean
 ```
 
-4. Configure API keys in `.env`:
+4. Configure Gemini API:
+
 ```bash
-DEEP_SEEK_API=your_deepseek_api_key
-ALPACA_API_KEY=your_alpaca_key
-ALPACA_SECRET_KEY=your_alpaca_secret
+# Copy the example file
+cp .env.example .env
+
+# Edit .env and add your Gemini API key:
+GEMINI_API_KEY=your_gemini_api_key_here
 ```
+
+**Getting a Gemini API Key:**
+1. Visit [Google AI Studio](https://aistudio.google.com/app/apikey)
+2. Sign in with your Google account
+3. Click "Create API Key"
+4. Copy the key and add it to your `.env` file
+
+**Note:** Gemini API has a generous free tier perfect for generating trading strategies.
 
 ### Generate Strategy from Text
 
-Create a strategy from a text description:
+Create a strategy from a text description in either Python or C#:
 
+**Generate Python Algorithm:**
 ```bash
 # Create strategy file
 echo "Buy SPY when RSI < 30, sell when RSI > 70" > strategy_prompts/my_strategy.txt
 
-# Generate C# algorithm
+# Generate Python algorithm
+python rag_agent.py strategy_prompts/my_strategy.txt --lang python
+```
+
+**Generate C# Algorithm (default):**
+```bash
+# Generate C# algorithm (default behavior)
+python rag_agent.py strategy_prompts/my_strategy.txt --lang csharp
+# or simply
 python rag_agent.py strategy_prompts/my_strategy.txt
 ```
 
 The system will:
-- Generate complete C# code
+- Generate complete Python or C# code
 - Extract data requirements
-- Verify compilation
+- Verify compilation (C# only)
 - Create LEAN project structure
+- Validate Python syntax (Python only)
 
 ### Download Data
 
@@ -153,9 +175,26 @@ lean login
 ## Usage Examples
 
 ### Strategy Generation
+
+**Python Strategy Generation:**
 ```bash
-# Simple momentum strategy
+# Generate Python RSI mean reversion strategy
+python rag_agent.py strategy_prompts/simple_rsi_python.txt --lang python
+
+# Generate Python EMA crossover strategy
+python rag_agent.py strategy_prompts/ema_crossover_python.txt --lang python
+
+# Custom Python strategy
 echo "Buy when price > 200-day MA, sell when price < 200-day MA" > momentum.txt
+python rag_agent.py momentum.txt --lang python
+```
+
+**C# Strategy Generation (default):**
+```bash
+# Generate C# momentum strategy (default behavior)
+echo "Buy when price > 200-day MA, sell when price < 200-day MA" > momentum.txt
+python rag_agent.py momentum.txt --lang csharp
+# or simply
 python rag_agent.py momentum.txt
 ```
 
@@ -175,15 +214,99 @@ python data_quality_checker.py
 
 ### Backtesting
 ```bash
-# Run generated strategy
+# Run generated Python strategy
+cd arithmax-strategies/RsiMeanReversionStrategy
+lean backtest
+
+# Run generated C# strategy
 cd arithmax-strategies/MomentumStrategy
 lean backtest --start 20200101 --end 20241231
 ```
 
+### Example Strategies
+
+The repository includes example strategy descriptions to help you get started:
+
+**Python Examples:**
+
+1. **simple_rsi_python.txt** - RSI Mean Reversion Strategy
+   - Trades SPY based on RSI(14) signals
+   - Buys when RSI < 30 (oversold)
+   - Sells when RSI > 70 (overbought)
+   - Simple mean reversion approach
+   
+   ```bash
+   python rag_agent.py strategy_prompts/simple_rsi_python.txt --lang python
+   ```
+
+2. **ema_crossover_python.txt** - EMA Crossover Momentum Strategy
+   - Trades QQQ using EMA crossovers
+   - Fast EMA: 20-period, Slow EMA: 50-period
+   - Buys on bullish crossover (fast > slow)
+   - Sells on bearish crossover (fast < slow)
+   - Classic trend-following strategy
+   
+   ```bash
+   python rag_agent.py strategy_prompts/ema_crossover_python.txt --lang python
+   ```
+
+These examples demonstrate different trading approaches and serve as templates for creating your own strategies.
+
+## Language Support: Python vs C#
+
+The strategy generator supports both Python and C# for QuantConnect/LEAN algorithms. Choose the language that best fits your workflow:
+
+### Python Strategies
+**Advantages:**
+- Simpler syntax, easier to read and modify
+- No compilation step (faster generation)
+- Rich ecosystem of data science libraries
+- Ideal for rapid prototyping and research
+
+**Folder Structure:**
+```
+strategy_name/
+├── main.py          # Algorithm entry point
+├── config.json      # LEAN configuration
+└── research.ipynb   # Jupyter notebook
+```
+
+**Generation:**
+```bash
+python rag_agent.py strategy_prompts/my_strategy.txt --lang python
+```
+
+### C# Strategies
+**Advantages:**
+- Better performance for complex strategies
+- Stronger type safety
+- Compilation catches errors early
+- More examples in QuantConnect documentation
+
+**Folder Structure:**
+```
+strategy_name/
+├── Main.cs                    # Algorithm entry point
+├── strategy_name.csproj       # .NET project file
+├── config.json                # LEAN configuration
+├── Research.ipynb             # Jupyter notebook
+├── bin/                       # Build output
+└── obj/                       # Build intermediates
+```
+
+**Generation (default):**
+```bash
+python rag_agent.py strategy_prompts/my_strategy.txt --lang csharp
+# or simply
+python rag_agent.py strategy_prompts/my_strategy.txt
+```
+
+**Note:** C# is the default language for backward compatibility with existing scripts.
+
 ## Requirements
 
 - Python 3.8+
-- .NET 6.0+ SDK
+- .NET 6.0+ SDK (for C# strategies)
 - QuantConnect LEAN CLI
 - API keys for data sources
 
