@@ -1,3 +1,8 @@
 .env
 .json
 /data/
+**/obj**/
+**/bin**/
+**/Debug**/
+**/__pycache__**/
+**/backtests**/

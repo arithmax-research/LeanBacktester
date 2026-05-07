@@ -1,7 +1,0 @@
-<project version="4">
-    <component name="SshConfigs">
-        <configs>
-            <sshConfig id="dotnet_debugger" host="localhost" port="2222" username="root" keyPath="/Users/misango/.lean/ssh/key" useOpenSSHConfig="true"/>
-        </configs>
-    </component>
-</project>
