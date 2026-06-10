@@ -288,6 +288,8 @@ def format_symbol_for_lean(symbol: str, asset_type: str) -> str:
     
     return symbol
 
+logger = setup_logging()
+
 def convert_to_lean_format(df: pd.DataFrame, symbol: str, asset_type: str) -> List[List]:
     """Convert pandas DataFrame to Lean format CSV content"""
     lean_data = []

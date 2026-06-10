@@ -408,13 +408,14 @@ class YahooFinanceDownloader:
     def get_comprehensive_fundamentals(self, symbol: str) -> Dict[str, Any]:
         """Get comprehensive fundamental data including financial statements"""
         try:
-            fundamentals = self.get_fundamental_data(symbol)
+            # get_fundamental_data doesn't exist; use get_financial_statements + earnings
+            # or get_economics_data if needed. Defaulting to financial statements + earnings
             financials = self.get_financial_statements(symbol)
             earnings = self.get_earnings_data(symbol)
             
             comprehensive_data = {
                 'symbol': symbol,
-                'overview': fundamentals,
+                'overview': financials,
                 'financial_statements': financials,
                 'earnings': earnings,
                 'last_updated': datetime.now().isoformat()
@@ -473,9 +474,10 @@ class YahooFinanceDownloader:
                     if cleaned_data:
                         # Create directory structure
                         if asset_type == 'crypto':
-                            data_path = os.path.join(CRYPTO_DATA_PATH, 'yahoo', interval)
+                            data_path = os.path.join(CRYPTO_DATA_PATH, interval)
                         else:
-                            data_path = os.path.join(EQUITY_DATA_PATH, asset_type, 'yahoo', interval)
+                            # Save directly to LEAN standard path: data/equity/usa/{interval}/
+                            data_path = os.path.join(EQUITY_DATA_PATH, interval)
                         
                         ensure_directory_exists(data_path)
                         
@@ -506,8 +508,9 @@ class YahooFinanceDownloader:
                     cleaned_data = DataValidator.clean_ohlcv_data(data)
                     
                     if cleaned_data:
-                        # Create directory structure
-                        data_path = os.path.join(EQUITY_DATA_PATH, 'forex', 'yahoo', interval)
+                        # Create directory structure - LEAN expects forex data under forex/oanda/{resolution}
+                        from config import FOREX_DATA_PATH
+                        data_path = os.path.join(FOREX_DATA_PATH, interval)
                         ensure_directory_exists(data_path)
                         
                         # Save data
@@ -538,8 +541,8 @@ class YahooFinanceDownloader:
                     cleaned_data = DataValidator.clean_ohlcv_data(data)
                     
                     if cleaned_data:
-                        # Create directory structure
-                        data_path = os.path.join(CRYPTO_DATA_PATH, 'yahoo', interval)
+                        # Create directory structure - LEAN expects crypto data under crypto/binance/{resolution}
+                        data_path = os.path.join(CRYPTO_DATA_PATH, interval)
                         ensure_directory_exists(data_path)
                         
                         # Save data
@@ -565,10 +568,21 @@ class YahooFinanceDownloader:
         
         for symbol in static_tqdm(symbols, desc="Downloading fundamentals"):
             try:
-                fundamentals = self.get_fundamental_data(symbol)
+                # Use existing methods to build fundamental data
+                financials = self.get_financial_statements(symbol)
+                earnings = self.get_earnings_data(symbol)
+                news = self.get_news_data(symbol, limit=3)
                 
-                if fundamentals:
-                    fundamentals_data.append(fundamentals)
+                combined = {
+                    'symbol': symbol,
+                    'financial_statements': financials,
+                    'earnings': earnings,
+                    'news_headlines': news[:3] if news else [],
+                    'last_updated': datetime.now().isoformat()
+                }
+                
+                if financials.get('income_statement') or earnings.get('earnings_history'):
+                    fundamentals_data.append(combined)
                 
             except Exception as e:
                 logger.error(f"Error downloading fundamentals for {symbol}: {str(e)}")
