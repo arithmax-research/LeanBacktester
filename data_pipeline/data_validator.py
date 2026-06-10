@@ -14,8 +14,8 @@ from utils import setup_logging
 
 logger = setup_logging()
 
-class DataValidator:
-    """Validate and analyze downloaded data"""
+class LeanDataValidator:
+    """Validate and analyze downloaded LEAN data files"""
     
     def __init__(self):
         self.equity_path = EQUITY_DATA_PATH
@@ -278,7 +278,7 @@ class DataValidator:
 
 def main():
     """Main function for data validation"""
-    validator = DataValidator()
+    validator = LeanDataValidator()
     
     print("Validating LEAN data files...")
     results = validator.validate_all_data()
