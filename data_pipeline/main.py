@@ -219,13 +219,10 @@ def main():
     # Download options data from yfinance (free, no API key required)
     if args.source in ['options', 'all']:
         try:
-            if YFinanceOptionsDownloader is not None:
-                logger.info("Starting Options data download...")
-                options_downloader = YFinanceOptionsDownloader()
-                options_downloader.download_symbols(args.option_symbols)
-                logger.info("Options download completed")
-            else:
-                logger.warning("YFinance options downloader not available, skipping options download")
+            logger.info("Starting Options data download...")
+            yahoo_downloader = YahooFinanceDownloader()
+            yahoo_downloader.download_options_data(args.option_symbols)
+            logger.info("Options download completed")
         except Exception as e:
             logger.error(f"Error with Options download: {str(e)}")
             if args.source == 'options':
@@ -306,7 +303,7 @@ def main():
             yahoo_downloader.download_forex_pairs(args.yahoo_forex, args.resolution, args.start_date, args.end_date)
             
             # Download crypto
-            yahoo_downloader.download_crypto_symbols(args.yahoo_crypto, args.resolution, args.start_date, args.end_date)
+            yahoo_downloader.download_crypto_symbols(args.yahoo_crypto, args.start_date, args.end_date, args.resolution)
             
             # Download fundamentals if requested
             if args.download_fundamentals:
