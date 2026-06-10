@@ -28,8 +28,6 @@ from utils import (
 
 logger = setup_logging()
 
-logger = setup_logging()
-
 class TiingoDownloader:
     """Download financial data from Tiingo and convert to Lean format"""
     
@@ -405,6 +403,17 @@ class TiingoDownloader:
             logger.error(f"Error getting bonds data for {symbol}: {str(e)}")
             return []
     
+    def get_earnings_data(self, symbol: str, limit: int = 5) -> Dict:
+        """Get earnings data for a symbol from Tiingo (stub - Tiingo API may not have direct earnings endpoint)"""
+        try:
+            # Tiingo doesn't have a direct earnings endpoint in the free API
+            # This is a placeholder that may work with their institutional API
+            logger.info(f"Earnings data not available via Tiingo free API for {symbol}")
+            return {'symbol': symbol, 'data': [], 'note': 'Earnings not available via Tiingo free tier'}
+        except Exception as e:
+            logger.error(f"Error getting earnings for {symbol}: {str(e)}")
+            return {}
+
     def get_financial_statements(self, symbol: str, period: str = 'annual', limit: int = 5) -> Dict:
         """Get comprehensive financial statements for a symbol"""
         try:

@@ -188,12 +188,25 @@ class StooqDownloader:
             # Sort by date
             df.sort_index(inplace=True)
             
-            # Validate data
-            if self.validator.validate_ohlcv_data(df):
-                logger.info(f"Successfully retrieved {len(df)} records for {symbol}")
+            # Validate data (convert DataFrame rows to dicts for validation)
+            valid_rows = 0
+            for _, row in df.iterrows():
+                row_dict = {
+                    'open': row['Open'],
+                    'high': row['High'],
+                    'low': row['Low'],
+                    'close': row['Close'],
+                    'volume': row['Volume'],
+                    'timestamp': row.name
+                }
+                if self.validator.validate_ohlcv_data(row_dict):
+                    valid_rows += 1
+            
+            if valid_rows > 0:
+                logger.info(f"Successfully retrieved {len(df)} records for {symbol} ({valid_rows} valid)")
                 return df
             else:
-                logger.warning(f"Data validation failed for {symbol}")
+                logger.warning(f"Data validation failed for {symbol} - no valid rows")
                 return None
                 
         except Exception as e:
@@ -259,8 +272,14 @@ class StooqDownloader:
         Returns:
             DataFrame with OHLCV data or None if failed
         """
+        interval = 'd'  # Stooq primarily supports daily data
+        # Handle when market param is actually an interval string
+        if market in ('d', 'w', 'm', 'daily', 'weekly', 'monthly'):
+            interval_map = {'daily': 'd', 'weekly': 'w', 'monthly': 'm'}
+            interval = interval_map.get(market, market[0] if market else 'd')
+            market = '.US'
         formatted_symbol = self._format_stooq_symbol(symbol, market)
-        return self.get_historical_data_csv(formatted_symbol, start_date, end_date)
+        return self.get_historical_data_csv(formatted_symbol, start_date, end_date, interval=interval)
     
     def get_forex_data(self, pair: str, start_date: datetime, end_date: datetime) -> Optional[pd.DataFrame]:
         """
@@ -321,9 +340,24 @@ class StooqDownloader:
         formatted_symbol = symbol.replace('-', '').upper()
         return self.get_historical_data_csv(formatted_symbol, start_date, end_date)
     
-    def download_stock_symbols(self, symbols: List[str], start_date: datetime, end_date: datetime,
-                              market: str = '.US'):
-        """Download multiple stock symbols and save in Lean format"""
+    def download_stock_symbols(self, symbols: List[str], start_date: datetime = None, end_date: datetime = None,
+                              market: str = '.US', interval: str = 'd'):
+        """
+        Download multiple stock symbols and save in Lean format.
+        
+        Supports two calling conventions:
+        1. (symbols, start_date, end_date, market='.US', interval='d') - standard
+        2. (symbols, interval, start_date, end_date) - used by interactive.py orchestrator
+        """
+        # Detect calling convention: if second arg is a string, it's the interval/resolution
+        if isinstance(start_date, str):
+            # Calling convention 2: (symbols, interval, start_date, end_date)
+            interval = start_date
+            start_date = end_date
+            end_date = market
+            market = '.US'
+        
+        logger.info(f"Starting download of {len(symbols)} stock symbols from Stooq")
         logger.info(f"Starting download of {len(symbols)} stock symbols from Stooq")
         
         for symbol in symbols:
