@@ -99,18 +99,15 @@ class BinanceDataDownloader:
                 cleaned_data = DataValidator.clean_ohlcv_data(data)
                 
                 if cleaned_data:
-                    # Determine output path based on format
+                    # Determine output base path
                     if lean_format:
                         from config import CRYPTO_DATA_PATH
                         base_path = CRYPTO_DATA_PATH
-                        csv_filename = f"{symbol.lower()}_{resolution}_trade.csv"
                     else:
-                        # Raw format in data_chest folder
                         base_path = os.path.join(output_folder, "crypto")
                         ensure_directory_exists(base_path)
-                        csv_filename = f"{symbol}_{resolution}_raw.csv"
                     
-                    output_path = os.path.join(base_path, resolution, f"{symbol.lower()}.zip")
+                    output_dir = os.path.join(base_path, resolution)
                     
                     # Group data by date for processing
                     daily_data = {}
@@ -120,16 +117,36 @@ class BinanceDataDownloader:
                             daily_data[date_key] = []
                         daily_data[date_key].append(bar)
                     
-                    # Create CSV content for all dates
-                    all_csv_content = []
+                    all_csv_content_trade = []
+                    all_csv_content_quote = []
                     for date_key in sorted(daily_data.keys()):
                         date_bars = daily_data[date_key]
-                        csv_content = create_lean_crypto_csv(date_bars, symbol, date_bars[0]['timestamp'], resolution)
-                        all_csv_content.extend(csv_content)
+                        trade_content = create_lean_crypto_csv(date_bars, symbol, date_bars[0]['timestamp'], resolution, data_type='trade')
+                        quote_content = create_lean_crypto_csv(date_bars, symbol, date_bars[0]['timestamp'], resolution, data_type='quote')
+                        all_csv_content_trade.extend(trade_content)
+                        all_csv_content_quote.extend(quote_content)
                     
-                    if all_csv_content:
-                        write_lean_zip_file(all_csv_content, output_path, csv_filename)
-                        logger.info(f"Saved {len(all_csv_content)} bars for {symbol} {resolution}")
+                    # Write trade file (6 cols)
+                    if all_csv_content_trade:
+                        symbol_lower = symbol.lower()
+                        trade_output_path = os.path.join(output_dir, f"{symbol_lower}_trade.zip")
+                        if lean_format:
+                            trade_csv_name = f"{symbol_lower}_{resolution}_trade.csv"
+                        else:
+                            trade_csv_name = f"{symbol}_{resolution}_raw.csv"
+                        write_lean_zip_file(all_csv_content_trade, trade_output_path, trade_csv_name)
+                        logger.info(f"Saved {len(all_csv_content_trade)} trade bars for {symbol} {resolution}")
+                    
+                    # Write quote file (11 cols) - needed by Lean for Hour/Daily crypto QuoteBar parsing
+                    if all_csv_content_quote:
+                        symbol_lower = symbol.lower()
+                        quote_output_path = os.path.join(output_dir, f"{symbol_lower}_quote.zip")
+                        if lean_format:
+                            quote_csv_name = f"{symbol_lower}_{resolution}_quote.csv"
+                        else:
+                            quote_csv_name = f"{symbol}_{resolution}_quote_raw.csv"
+                        write_lean_zip_file(all_csv_content_quote, quote_output_path, quote_csv_name)
+                        logger.info(f"Saved {len(all_csv_content_quote)} quote bars for {symbol} {resolution}")
         
         else:
             # For minute/second, save data by date

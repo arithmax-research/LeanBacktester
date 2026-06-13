@@ -120,8 +120,13 @@ def create_lean_crypto_csv(data: List[Dict], symbol: str, date: datetime, resolu
     
     return csv_content
 
-def create_lean_quotebar_csv(data: List[Dict], symbol: str, date: datetime, resolution: str, asset_type: str = 'forex') -> str:
-    """Create Lean format CSV content for QuoteBar data"""
+def create_lean_quotebar_csv(data: List[Dict], symbol: str, date: datetime, resolution: str, asset_type: str = 'forex') -> list:
+    """
+    Create Lean format CSV content for QuoteBar data.
+    
+    Lean expects 11 columns: Time, BidOpen, BidHigh, BidLow, BidClose, BidSize,
+                                    AskOpen, AskHigh, AskLow, AskClose, AskSize
+    """
     csv_content = []
     
     # Determine price multiplier based on asset type
@@ -148,11 +153,15 @@ def create_lean_quotebar_csv(data: List[Dict], symbol: str, date: datetime, reso
             bid_price = int(bar['bid_price'] * price_multiplier)
             ask_price = int(bar['ask_price'] * price_multiplier)
         
-        # Format: Time, BidOpen, BidHigh, BidLow, BidClose, AskOpen, AskHigh, AskLow, AskClose
+        bid_size = float(bar.get('bid_size', bar.get('volume', 0)))
+        ask_size = float(bar.get('ask_size', bar.get('volume', 0)))
+        
+        # Format: Time, BidOpen, BidHigh, BidLow, BidClose, BidSize,
+        #         AskOpen, AskHigh, AskLow, AskClose, AskSize
         row = [
             time_str,
-            bid_price, bid_price, bid_price, bid_price,  # Bid OHLC
-            ask_price, ask_price, ask_price, ask_price   # Ask OHLC
+            bid_price, bid_price, bid_price, bid_price, bid_size,  # Bid OHLC + size
+            ask_price, ask_price, ask_price, ask_price, ask_size   # Ask OHLC + size
         ]
         csv_content.append(row)
     
