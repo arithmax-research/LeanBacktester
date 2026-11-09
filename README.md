@@ -137,6 +137,16 @@ lean backtest
 lean report
 ```
 
+> **Docker Desktop users:** if `lean` aborts with `bind source path does not exist:
+> /tmp/lean-cli-XXXX/Directory.Build.props`, use the wrapper in `scripts/lean` (or install
+> the one-time environment hook). Both are explained in
+> [Troubleshooting](#bind-source-path-does-not-exist-tmplean-cli-xxxxdirectorybuildprops).
+
+```bash
+# Docker-safe alternative to `lean <command>`
+./scripts/lean backtest Strategies/NVDACoxxStrat/
+```
+
 ## Project Structure
 
 ```
@@ -302,6 +312,102 @@ python rag_agent.py strategy_prompts/my_strategy.txt
 ```
 
 **Note:** C# is the default language for backward compatibility with existing scripts.
+
+## Troubleshooting
+
+### `bind source path does not exist: /tmp/lean-cli-XXXX/Directory.Build.props`
+
+Full error:
+
+```
+Error: 400 Client Error for http+docker://localhost/v1.56/containers/create?name=lean_cli_...
+Bad Request ("invalid mount config for type "bind": bind source path does not exist:
+/tmp/lean-cli-XXXX/Directory.Build.props")
+```
+
+**Cause.** The Python LEAN CLI writes every file it bind-mounts into its containers
+(`Directory.Build.props`, `copy_csharp_dependencies.py`, `lean-cli-start.sh`, ...) to a
+`lean-cli-*` directory under `$TMPDIR`, which defaults to `/tmp`. Docker Desktop only
+shares directories below `$HOME` with its VM, so `/tmp/lean-cli-XXXX` is invisible to the
+Docker daemon and container creation is rejected — regardless of which strategy you run.
+Confirm with:
+
+```bash
+echo test > /tmp/probe.txt
+docker run --rm -v /tmp/probe.txt:/probe.txt ubuntu:24.04 cat /probe.txt
+# docker: Error response from daemon: ... The path /tmp/probe.txt is not shared
+# from the host and is not known to Docker.
+```
+
+**Fix (permanent).** Point the CLI's temporary directory at a path below `$HOME`:
+
+```bash
+# Once per conda environment: makes plain `lean ...` work everywhere in that env
+./scripts/install_lean_tmpdir_hook.sh
+conda deactivate && conda activate research_env
+
+# ...or per command, without touching the environment
+./scripts/lean backtest Strategies/NVDACoxxStrat/
+```
+
+Details:
+
+- `scripts/lean` is a transparent wrapper: it sets `TMPDIR` to
+  `${LEAN_CLI_TMPDIR:-$HOME/.cache/lean-cli/tmp}`, warns if Docker still cannot mount that
+  path, and execs the real `lean` binary (found in `PATH`, never itself).
+- `scripts/install_lean_tmpdir_hook.sh` writes `activate.d`/`deactivate.d` hooks for the
+  active conda environment, so subprocesses (e.g. `scripts/sweep_symbol_baskets.py`) inherit
+  the correct `TMPDIR` too. Remove them with `--uninstall`.
+- Daemon-level alternative: add `/tmp` under *Docker Desktop > Settings > Resources >
+  File sharing* and restart Docker Desktop.
+- Nothing is written to the repository: the CLI deletes its temporary files on exit.
+- The same sharing rule applies to every path you pass on the command line: the CLI bind-mounts
+  the *parent directory* of output paths. `lean report --report-destination /tmp/report.html`
+  therefore fails with `The path /tmp is not shared from the host and is not known to Docker.`
+  Keep inputs/outputs below `$HOME` (e.g. `--report-destination ./report.html`).
+
+### `lean report`: `Error generating statistics packet ... Nullable object must have a value`
+
+Full error (the tail of `lean report`):
+
+```
+20261109 12:07:54.914 ERROR:: BaseResultsHandler.GenerateStatisticsResults():
+Error generating statistics packet System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at QuantConnect.Lean.Engine.Results.BaseResultsHandler.GenerateStatisticsResults(...)
+   in Engine/Results/BaseResultsHandler.cs:line 1280
+```
+
+**This is harmless — the report is complete.** The last line of a successful run is
+`Successfully generated report to '<path>'` and `report.html` (~1.2 MB, all KPIs plus the
+equity/returns/drawdown/asset-allocation/crisis charts) exits with status 0. Do not treat this
+`ERROR` line as a failure.
+
+**Cause (upstream LEAN bug, not your data).** To draw the asset-allocation charts, the Report
+Creator replays the backtest orders through `Report/PortfolioLooper/PortfolioLooper.cs`
+(`QuantConnect.Report.Report(): Processing backtesting orders`). That class creates its own
+`new BacktestingResultHandler()` and disposes it when the replay finishes; `Exit()` regenerates
+statistics and `GenerateStatisticsResults()` dereferences
+`Algorithm.Settings.TradingDaysPerYear.Value`. Only the real engine setup
+(`BaseSetupHandler.SetupAlgorithm` in `Engine/Setup/BaseSetupHandler.cs`) fills that nullable
+from the brokerage model, so for the looper's synthetic algorithm it stays `null` and `.Value`
+throws `InvalidOperationException`. The exception is caught *inside*
+`GenerateStatisticsResults`, which is why the `ERROR` appears right after
+`Processing backtesting orders` and the run carries on to a normal, completed report.
+
+It is independent of the strategy and of the backtest: any `lean report` run on any
+`--backtest-results` file logs it, and the generated HTML is byte-identical across runs
+(`md5sum report.html` is stable). Verify that nothing was lost with:
+
+```bash
+grep -n 'Successfully generated report' report.log           # report was written
+grep -o '<td class="title">Sharpe Ratio</td><td>[^<]*' report.html   # KPIs are filled in
+```
+
+What to do: ignore it. It cannot be disabled with a CLI flag, and no engine-image tag fixes it —
+it needs a change in `QuantConnect/Lean` itself (`PortfolioLooper` should set
+`Algorithm.Settings.TradingDaysPerYear` like `BaseSetupHandler` does, or
+`BaseResultsHandler` should fall back to `?? 252`).
 
 ## Requirements
 

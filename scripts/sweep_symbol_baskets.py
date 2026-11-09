@@ -59,7 +59,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--lean",
         default="lean",
-        help="Lean CLI executable name or full path.",
+        help=(
+            "Lean CLI executable name or full path. Use ./scripts/lean to run through the "
+            "Docker-safe wrapper (needed when Docker Desktop cannot bind-mount /tmp)."
+        ),
     )
     parser.add_argument(
         "--output-root",
