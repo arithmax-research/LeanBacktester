@@ -40,10 +40,10 @@ namespace QuantConnect.Algorithm.CSharp
         private DateTime _eventActivationTime;
         public override void Initialize()
         {
-            SetStartDate(2025, 1, 1);
-            SetEndDate(2025, 2, 28);
+            SetStartDate(2020, 1, 1);
+            SetEndDate(2026, 10, 31);
             SetCash(100000);
-            _nvdasymbol = AddEquity("nvda", Resolution.Minute).Symbol;
+            _nvdasymbol = AddEquity("nvda", Resolution.Daily).Symbol;
             _soxxsymbol = AddEquity("soxx", Resolution.Daily).Symbol;
             // Initialize indicators
             _bb = BB(_nvdasymbol, 20, 2, MovingAverageType.Simple, Resolution.Daily);
@@ -56,7 +56,7 @@ namespace QuantConnect.Algorithm.CSharp
             // Set up AI events calendar
             InitializeAIEvents();
             // Warm up period
-            SetWarmUp(300, Resolution.Minute);
+            SetWarmUp(300, Resolution.Daily);
             // Risk settings
             Settings.FreePortfolioValuePercentage = 0.02m;
         }

@@ -13,6 +13,10 @@
     "symbol-minute-limit": 10000,
     "symbol-second-limit": 10000,
     "symbol-tick-limit": 10000,
+    "seed-lookback-period": 5,
+    "seed-retry-minute-lookback-period": 1440,
+    "seed-retry-hour-lookback-period": 24,
+    "seed-retry-daily-lookback-period": 10,
     "ignore-unknown-asset-holdings": true,
     "show-missing-data-logs": false,
     "maximum-warmup-history-days-look-back": 5,
@@ -59,8 +63,9 @@
     "binance-api-key": "",
     "binance-api-url": "https://api.binance.com",
     "binance-websocket-url": "wss://stream.binance.com:9443/ws",
+    "binance-orders-websocket-url": "wss://ws-api.binance.com:9443/ws-api/v3",
     "binance-fapi-url": "https://fapi.binance.com",
-    "binance-fwebsocket-url": "wss://fstream.binance.com/ws",
+    "binance-fwebsocket-url": "wss://fstream.binance.com/private/ws",
     "binance-dapi-url": "https://dapi.binance.com",
     "binance-dwebsocket-url": "wss://dstream.binance.com/ws",
     "binanceus-api-secret": "",
@@ -71,6 +76,14 @@
     "bybit-api-key": "",
     "bybit-api-url": "https://api.bybit.com",
     "bybit-websocket-url": "wss://stream.bybit.com",
+    "dydx-private-key-hex": "",
+    "dydx-address": "",
+    "dydx-subaccount-number": 0,
+    "dydx-node-api-rest": "https://dydx-ops-rest.kingnodes.com",
+    "dydx-node-api-grpc": "https://dydx-ops-grpc.kingnodes.com:443",
+    "dydx-indexer-api-rest": "https://indexer.dydx.trade/v4",
+    "dydx-indexer-api-wss": "wss://indexer.dydx.trade/v4/ws",
+    "dydx-chain-id": "dydx-mainnet-1",
     "eze-api-address-url": "",
     "eze-port": "",
     "eze-domain": "",
@@ -96,6 +109,16 @@
     "rbi-target-comp-id": "",
     "rbi-on-behalf-of-comp-id": "",
     "rbi-log-fix-messages": false,
+    "bloomberg-fix-host": "",
+    "bloomberg-fix-port": "",
+    "bloomberg-fix-sender-comp-id": "",
+    "bloomberg-fix-target-comp-id": "",
+    "bloomberg-fix-on-behalf-of-comp-id": "",
+    "bloomberg-fix-sender-sub-id": "",
+    "bloomberg-fix-deliver-to-comp-id": "",
+    "bloomberg-fix-log-messages": false,
+    "bloomberg-fix-ssl-certificate-path": "",
+    "bloomberg-fix-ssl-certificate-password": "",
     "tt-user-name": "",
     "tt-session-password": "",
     "tt-account-name": "",
@@ -129,11 +152,22 @@
     "charles-schwab-refresh-token": "",
     "charles-schwab-authorization-code-from-url": "",
     "charles-schwab-redirect-url": "",
+    "webull-api-url": "https://api.webull.com",
+    "webull-trade-grpc-url": "https://events-api.webull.com",
+    "webull-app-key": "",
+    "webull-app-secret": "",
+    "webull-account-id": "",
     "tastytrade-api-url": "",
     "tastytrade-websocket-url": "",
     "tastytrade-username": "",
     "tastytrade-password": "",
     "tastytrade-account-number": "",
+    "public-api-url": "https://api.public.com",
+    "public-secret-key": "",
+    "public-account-number": "",
+    "clearstreet-api-url": "https://api.clearstreet.com",
+    "clearstreet-access-token": "",
+    "clearstreet-account-id": "",
     "exante-client-id": "",
     "exante-application-id": "",
     "exante-shared-key": "",
@@ -596,6 +630,36 @@
             "real-time-handler": "QuantConnect.Lean.Engine.RealTime.LiveTradingRealTimeHandler",
             "transaction-handler": "QuantConnect.Lean.Engine.TransactionHandlers.BrokerageTransactionHandler"
         },
+        "live-bloomberg-fix": {
+            "live-mode": true,
+            "live-mode-brokerage": "BloombergFixBrokerage",
+            "data-queue-handler": [
+                "QuantConnect.Lean.Engine.DataFeeds.Queues.LiveDataQueue"
+            ],
+            "history-provider": [
+                "SubscriptionDataReaderHistoryProvider"
+            ],
+            "setup-handler": "QuantConnect.Lean.Engine.Setup.BrokerageSetupHandler",
+            "result-handler": "QuantConnect.Lean.Engine.Results.LiveTradingResultHandler",
+            "data-feed-handler": "QuantConnect.Lean.Engine.DataFeeds.LiveTradingDataFeed",
+            "real-time-handler": "QuantConnect.Lean.Engine.RealTime.LiveTradingRealTimeHandler",
+            "transaction-handler": "QuantConnect.Lean.Engine.TransactionHandlers.BrokerageTransactionHandler"
+        },
+        "live-clearstreet": {
+            "live-mode": true,
+            "live-mode-brokerage": "ClearStreetBrokerage",
+            "data-queue-handler": [
+                "QuantConnect.Lean.Engine.DataFeeds.Queues.LiveDataQueue"
+            ],
+            "history-provider": [
+                "SubscriptionDataReaderHistoryProvider"
+            ],
+            "setup-handler": "QuantConnect.Lean.Engine.Setup.BrokerageSetupHandler",
+            "result-handler": "QuantConnect.Lean.Engine.Results.LiveTradingResultHandler",
+            "data-feed-handler": "QuantConnect.Lean.Engine.DataFeeds.LiveTradingDataFeed",
+            "real-time-handler": "QuantConnect.Lean.Engine.RealTime.LiveTradingRealTimeHandler",
+            "transaction-handler": "QuantConnect.Lean.Engine.TransactionHandlers.BrokerageTransactionHandler"
+        },
         "live-eze": {
             "live-mode": true,
             "live-mode-brokerage": "QuantConnect.EzeBrokerage.EzeBrokerage",
@@ -611,10 +675,58 @@
                 "BrokerageHistoryProvider",
                 "SubscriptionDataReaderHistoryProvider"
             ]
+        },
+        "live-webull": {
+            "live-mode": true,
+            "live-mode-brokerage": "WebullBrokerage",
+            "data-queue-handler": [
+                "WebullBrokerage"
+            ],
+            "setup-handler": "QuantConnect.Lean.Engine.Setup.BrokerageSetupHandler",
+            "result-handler": "QuantConnect.Lean.Engine.Results.LiveTradingResultHandler",
+            "data-feed-handler": "QuantConnect.Lean.Engine.DataFeeds.LiveTradingDataFeed",
+            "real-time-handler": "QuantConnect.Lean.Engine.RealTime.LiveTradingRealTimeHandler",
+            "transaction-handler": "QuantConnect.Lean.Engine.TransactionHandlers.BrokerageTransactionHandler",
+            "history-provider": [
+                "BrokerageHistoryProvider",
+                "SubscriptionDataReaderHistoryProvider"
+            ]
+        },
+        "live-public": {
+            "live-mode": true,
+            "live-mode-brokerage": "PublicBrokerage",
+            "data-queue-handler": [
+                "PublicBrokerage"
+            ],
+            "setup-handler": "QuantConnect.Lean.Engine.Setup.BrokerageSetupHandler",
+            "result-handler": "QuantConnect.Lean.Engine.Results.LiveTradingResultHandler",
+            "data-feed-handler": "QuantConnect.Lean.Engine.DataFeeds.LiveTradingDataFeed",
+            "real-time-handler": "QuantConnect.Lean.Engine.RealTime.LiveTradingRealTimeHandler",
+            "transaction-handler": "QuantConnect.Lean.Engine.TransactionHandlers.BrokerageTransactionHandler",
+            "history-provider": [
+                "BrokerageHistoryProvider",
+                "SubscriptionDataReaderHistoryProvider"
+            ]
+        },
+        "live-dydx": {
+            "live-mode": true,
+            "live-mode-brokerage": "dYdXBrokerage",
+            "data-queue-handler": [
+                "dYdXBrokerage"
+            ],
+            "setup-handler": "QuantConnect.Lean.Engine.Setup.BrokerageSetupHandler",
+            "result-handler": "QuantConnect.Lean.Engine.Results.LiveTradingResultHandler",
+            "data-feed-handler": "QuantConnect.Lean.Engine.DataFeeds.LiveTradingDataFeed",
+            "real-time-handler": "QuantConnect.Lean.Engine.RealTime.LiveTradingRealTimeHandler",
+            "transaction-handler": "QuantConnect.Lean.Engine.TransactionHandlers.BrokerageTransactionHandler",
+            "history-provider": [
+                "BrokerageHistoryProvider",
+                "SubscriptionDataReaderHistoryProvider"
+            ]
         }
     },
     "job-organization-id": "6bc9f4f0ca4b1ee639f8f1aabcda2618",
     "organization-id": "6bc9f4f0ca4b1ee639f8f1aabcda2618",
-    "file-database-last-update": "06/12/2026 12:47:58",
+    "file-database-last-update": "11/09/2026 17:17:04",
     "id": "Local"
 }
