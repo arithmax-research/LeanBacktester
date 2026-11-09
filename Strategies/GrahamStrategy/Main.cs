@@ -96,8 +96,8 @@ namespace QuantConnect.Algorithm.CSharp
 
         public override void Initialize()
         {
-            SetStartDate(2019, 1, 1);
-            SetEndDate(2025, 6, 1);
+            SetStartDate(2015, 1, 1);
+            SetEndDate(2026, 9, 1);
             SetCash(_initialCapital);
 
             // Set benchmark
@@ -114,22 +114,7 @@ namespace QuantConnect.Algorithm.CSharp
             // Define specific stocks to analyze
             _stockList = new string[] 
             {
-                "AAPL", "MSFT", "AMZN", "GOOGL", "GOOG", "BRK.B", "JNJ", "UNH", "XOM", "NVDA", 
-                "TSLA", "PG", "MA", "HD", "V", "JPM", "DIS", "BAC", "ADBE", "CMCSA", 
-                "INTC", "PFE", "WMT", "COST", "KO", "CSCO", "PEP", "CRM", "ABBV", "T", 
-                "MRK", "ACN", "AVGO", "NFLX", "CVX", "TXN", "ORCL", "NKE", "LLY", "MCD", 
-                "QCOM", "MDT", "NEE", "BMY", "LOW", "UPS", "PM", "AMGN", "RTX", "UNP", 
-                "INTU", "C", "LIN", "GS", "AMD", "AXP", "IBM", "GE", "BLK", "SBUX", 
-                "ISRG", "SPGI", "CCI", "FIS", "MO", "PLD", "DE", "ADP", "TMUS", "CB", 
-                "DUK", "MDLZ", "BDX", "MMM", "SO", "EL", "CI", "CL", "ITW", "ICE", 
-                "SHW", "MMC", "PNC", "EW", "REGN", "CSX", "ROP", "GM", "EMR", "BSX", 
-                "VRTX", "ETN", "APD", "FCX", "DD", "DHR", "ADI", "NSC", "CTSH", "FDX", 
-                "ATVI", "APH", "EA", "COF", "ILMN", "BIIB", "ALGN", "CHTR", "DLR", "MET", 
-                "FTNT", "KLAC", "EXC", "CTAS", "CTXS", "IDXX", "ROST", "ODFL", "EBAY", "CE", 
-                "PEG", "KEYS", "MTB", "TT", "CDNS", "CPRT", "ORLY", "SWKS", "FAST", "STZ", 
-                "CDW", "DLTR", "PCAR", "TRV", "GRMN", "ANSS", "TTWO", "XYL", "ANET", "INCY", 
-                "TECH", "FTV", "HSY", "VAR", "LDOS", "GLW", "ALXN", "DXCM", "MSCI", "EXPE", 
-                "CPB", "CTRA", "JKHY", "AZO", "ULTA", "LYV", "MSI", "HLT", "CERN"
+                "AAPL", "AXP", "KO", "BAC", "GOOGL", "CVX", "OXY", "MCO", "CB", "KHC"
             };
 
             // Add securities manually

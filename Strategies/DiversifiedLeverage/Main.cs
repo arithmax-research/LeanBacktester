@@ -67,15 +67,15 @@ namespace QuantConnect.Algorithm.CSharp
         // Portfolio configuration
         private Dictionary<string, decimal> _targetWeights;
         private List<string> _symbols;
-        private int _rebalancePeriod = 4; // Rebalance every 4 days
+        private int _rebalancePeriod = 31; // Rebalance every 4 days
         private Dictionary<string, OrderTicket> _orderDict;
         private DateTime _lastRebalanceTime;
 
         public override void Initialize()
         {
             // Locally Lean installs free sample data, to download more data please visit https://www.quantconnect.com/docs/v2/lean-cli/datasets/downloading-data
-            SetStartDate(2017, 01, 01); // Set Start Date
-            SetEndDate(2026, 06, 30); // Set End Date
+            SetStartDate(2015, 01, 01); // Set Start Date
+            SetEndDate(2026, 10, 30); // Set End Date
             SetCash(100000);             //Set Strategy Cash
 
             // Initialize portfolio weights and symbols
